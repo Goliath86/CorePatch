@@ -8,11 +8,18 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-class CfgWeapons
-{
+class CfgAddons {
+    class PreloadAddons {
+       class CorePatch_CIT_30970 {
+          list[] = {"CorePatch_CIT_30970"};
+       };
+    };
+};
+
+class CfgWeapons {
 	class Rifle;
-	class DMR: Rifle
-	{
-		delete handAnim;
+
+	class DMR: Rifle {
+		handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\AK74.rtm"};
 	};
 };

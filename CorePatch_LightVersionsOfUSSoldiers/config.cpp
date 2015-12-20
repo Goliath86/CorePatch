@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {"US_Soldier_MG_Light_EP1", "US_Soldier_Crew_Light_EP1", "US_Soldier_Pilot_Light_EP1", "US_Delta_Force_TL_Light_EP1"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"CorePatch2"};
+		requiredAddons[] = {"CorePatch"};
 	};
 };
 

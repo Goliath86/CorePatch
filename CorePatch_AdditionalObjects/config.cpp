@@ -11,7 +11,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"CorePatch2"};
+		requiredAddons[] = {"CorePatch"};
 	};
 };
 

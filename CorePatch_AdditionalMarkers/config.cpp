@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"CorePatch2"};
+		requiredAddons[] = {"CorePatch"};
 	};
 };
 
@@ -37,10 +37,10 @@ class CfgMarkers {
 		size = 24;
 		shadow = 2;
 		color[] = {0.8,0.8,0.8,1};
-		icon = "\CorePatch2\CorePatch_AdditionalMarkers\data\corepatch_icon_man.paa";
+		icon = "\CorePatch\CorePatch_AdditionalMarkers\data\corepatch_icon_man.paa";
 	};
 	class CorepatchVeh:CorepatchMan {
-		icon = "\CorePatch2\CorePatch_AdditionalMarkers\data\corepatch_icon_veh.paa";
+		icon = "\CorePatch\CorePatch_AdditionalMarkers\data\corepatch_icon_veh.paa";
 	};
 	class CorepatchCrate:CorepatchMan {
 		size = 18;
