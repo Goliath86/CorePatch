@@ -88,7 +88,7 @@ class CfgWeapons
 				opticsZoomMax = 0.0623;
 				opticsZoomMin = 0.0623;
 				useModelOptics = 1;
-				visionMode[] = {"Normal"};
+				visionMode[] = {};
 			};
 			class Kolimator: Scope
 			{
@@ -102,7 +102,6 @@ class CfgWeapons
 				opticsZoomMax = 1.1;
 				opticsZoomMin = 0.25;
 				useModelOptics = 0;
-				visionMode[] = {};
 			};
 		};
 		class Single: Mode_SemiAuto
@@ -158,7 +157,7 @@ class CfgWeapons
 				opticsZoomMax = 0.0623;
 				opticsZoomMin = 0.0623;
 				useModelOptics = 1;
-				visionMode[] = {"Normal"};
+				visionMode[] = {};
 			};
 			class Kolimator: Scope
 			{
@@ -172,7 +171,6 @@ class CfgWeapons
 				opticsZoomMax = 1.1;
 				opticsZoomMin = 0.25;
 				useModelOptics = 0;
-				visionMode[] = {};
 			};
 		};
 	};
@@ -201,7 +199,7 @@ class CfgWeapons
 				opticsZoomMax = 0.0623;
 				opticsZoomMin = 0.0623;
 				useModelOptics = 1;
-				visionMode[] = {"Normal"};
+				visionMode[] = {};
 			};
 			class Kolimator: Scope
 			{
@@ -215,7 +213,6 @@ class CfgWeapons
 				opticsZoomMax = 1.1;
 				opticsZoomMin = 0.25;
 				useModelOptics = 0;
-				visionMode[] = {};
 			};
 		};
 	};
@@ -255,7 +252,7 @@ class CfgWeapons
 				opticsZoomMax = 0.0623;
 				opticsZoomMin = 0.0623;
 				useModelOptics = 1;
-				visionMode[] = {"Normal"};
+				visionMode[] = {};
 			};
 			class Ironsights: ACOG
 			{
@@ -270,7 +267,6 @@ class CfgWeapons
 				opticsZoomMax = 1.1;
 				opticsZoomMin = 0.25;
 				useModelOptics = 0;
-				visionMode[] = {};
 			};
 		};
 	};
