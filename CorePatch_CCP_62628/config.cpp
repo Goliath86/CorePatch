@@ -122,15 +122,15 @@ class CfgWeapons
 			};
 		};
 	};
-	class BAF_AS50_scoped : Rifle
+	/* class BAF_AS50_scoped : Rifle
 	{
 	};
 	class BAF_AS50_TWS : BAF_AS50_scoped
 	{
-		/*discreteDistance[] = {};
+		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";*/
-	};
+		weaponInfoType = "RscWeaponEmpty";
+	}; */
 	/*class DMR : Rifle
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -169,6 +169,22 @@ class CfgWeapons
 	class L85A2_base_BAF : Rifle
 	{
 	};
+	class BAF_L85A2_RIS_ACOG : L85A2_base_BAF
+	{
+		delete visionMode;
+
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
+			};
+		};
+	};
 	class BAF_L85A2_RIS_CWS : L85A2_base_BAF
 	{
 		/*delete discreteDistance;
@@ -185,11 +201,36 @@ class CfgWeapons
 	};
 	class BAF_L85A2_RIS_SUSAT : L85A2_base_BAF
 	{
+		delete visionMode;
+
 		class OpticsModes
 		{
 			class SUSAT
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600};
+				visionMode[] = {};
+			};
+			class ironsights : SUSAT
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
+	};
+	class BAF_L86A2_ACOG : Rifle
+	{
+		delete visionMode;
+
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
 			};
 		};
 	};
@@ -213,6 +254,25 @@ class CfgWeapons
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
+	};
+	class M4A3_CCO_EP1 : M16_base
+	{
+	};
+	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
+	{
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
 	};
 	class M4SPR : M4A1
 	{
@@ -252,18 +312,30 @@ class CfgWeapons
 	{
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
-		visionMode[] = {"Normal"};
 		weaponInfoType = "RscWeaponEmpty";
-	};
-	class m16a4_acg : m16a4
-	{
-		visionMode[] = {"Normal"};
 	};
 	class SCAR_Base : M16_base
 	{
 	};
 	class SCAR_H_Base : SCAR_Base
 	{
+	};
+	class SCAR_H_CQC_CCO : SCAR_H_Base
+	{
+	};
+	class SCAR_H_STD_EGLM_Spect : SCAR_H_CQC_CCO
+	{
+		class OpticsModes
+		{
+			class Specter
+			{
+				visionMode[] = {};
+			};
+			class Ironsights : Specter
+			{
+				delete visionMode;
+			};
+		};
 	};
 	class SCAR_H_LNG_Sniper : SCAR_H_Base
 	{
@@ -373,6 +445,34 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
 	};
+	class SCAR_L_STD_Mk4CQT : SCAR_L_Base
+	{
+		class OpticsModes
+		{
+			class Mk4
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : Mk4
+			{
+				delete visionMode;
+			};
+		};
+	};
+	class SCAR_L_STD_EGLM_RCO : SCAR_L_STD_Mk4CQT
+	{
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
+			};
+		};
+	};
 	class M24 : Rifle
 	{
 		class OpticsModes
@@ -395,9 +495,9 @@ class CfgWeapons
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100};
 	};
-	class M110_TWS_EP1 : Rifle
+	/* class M110_TWS_EP1 : Rifle
 	{
-		/*delete weaponInfoType;
+		delete weaponInfoType;
 
 		class OpticsModes
 		{
@@ -406,12 +506,12 @@ class CfgWeapons
 				delete discreteDistance;
 				delete discreteDistanceInitIndex;
 			};
-		};*/
+		};
 	};
 	class M110_NVG_EP1 : M110_TWS_EP1
 	{
 		weaponInfoType = "RscWeaponZeroing";
-	};
+	}; */
 	class M240 : Rifle
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -432,10 +532,20 @@ class CfgWeapons
 	};
 	class m240_scoped_EP1 : M240
 	{
+		delete visionMode;
+
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
 		optics = 1;
 		weaponInfoType = "RscWeaponEmpty";
+
+		class OpticsModes
+		{
+			class M145
+			{
+				visionMode[] = {};
+			};
+		};
 	};
 	class M249 : Rifle
 	{
@@ -460,11 +570,21 @@ class CfgWeapons
 		};*/
 	};
 	class M249_m145_EP1 : M249
-	{/*
-		discreteDistance[] = {};
+	{
+		delete visionMode;
+
+		/* discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
 		optics = 1;
-		weaponInfoType = "RscWeaponEmpty";*/
+		weaponInfoType = "RscWeaponEmpty"; */
+
+		class OpticsModes
+		{
+			class M145
+			{
+				visionMode[] = {};
+			};
+		};
 	};
 	class PK : Rifle
 	{
@@ -548,6 +668,28 @@ class CfgWeapons
 			};
 		};
 	};
+	class Sa58P_EP1 : Rifle
+	{
+	};
+	class Sa58V_EP1 : Sa58P_EP1
+	{
+	};
+	class Sa58V_RCO_EP1 : Sa58V_EP1
+	{
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Ironsigts : ACOG
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
+	};
 	class VSS_vintorez : Rifle
 	{
 		weaponInfoType = "RscWeaponZeroing";
@@ -580,10 +722,21 @@ class CfgWeapons
 	};
 	class m8_base : Rifle
 	{
+		delete visionMode;
 	};
-	class m8_tws : m8_base
+	class m8_sharpshooter : m8_base
 	{
-		/*discreteDistance[] = {};
+		class OpticsModes
+		{
+			class Scope
+			{
+				visionMode[] = {};
+			};
+		};
+	};
+	/* class m8_tws : m8_base
+	{
+		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
 
@@ -594,7 +747,7 @@ class CfgWeapons
 				delete discreteDistance;
 				delete discreteDistanceInitIndex;
 			};
-		};*/
+		};
 	};
 	class m8_tws_sd : m8_base
 	{
@@ -609,8 +762,8 @@ class CfgWeapons
 				delete discreteDistance;
 				delete discreteDistanceInitIndex;
 			};
-		};*/
-	};
+		};
+	}; */
 	class m107 : Rifle
 	{
 		class OpticsModes
@@ -626,9 +779,9 @@ class CfgWeapons
 			};
 		};
 	};
-	class m107_TWS_EP1 : m107
+	/* class m107_TWS_EP1 : m107
 	{
-		/*weaponInfoType = "RscWeaponEmpty";
+		weaponInfoType = "RscWeaponEmpty";
 
 		class OpticsModes : OpticsModes
 		{
@@ -639,6 +792,6 @@ class CfgWeapons
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
 			};
-		};*/
-	};
+		};
+	}; */
 };
