@@ -20,7 +20,7 @@ class CfgWeapons
 		class Full : Mode_FullAuto
 		{
 			begin1[] = {
-				"ca\sounds\weapons\rifles\m107",
+				"CorePatch\CorePatch_CIT_71270\as50",
 				2.5118864,
 				1,
 				1300
@@ -29,7 +29,7 @@ class CfgWeapons
 		class Single : Mode_SemiAuto
 		{
 			begin1[] = {
-				"ca\sounds\weapons\rifles\m107",
+				"CorePatch\CorePatch_CIT_71270\as50",
 				2.5118864,
 				1,
 				1300
