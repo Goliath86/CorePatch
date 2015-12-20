@@ -193,12 +193,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class LeeEnfield : Rifle
-	{
-		discreteDistance[] = {183, 274, 366, 457, 549, 640, 732, 823, 914, 1006, 1097, 1189};
-		discreteDistanceInitIndex = 1;
-		weaponInfoType = "RscWeaponZeroing";
-	};
 	class M16_base : Rifle
 	{
 	};
