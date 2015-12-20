@@ -1,0 +1,1 @@
+Add inventory cargo space for single weapon to motorcycles

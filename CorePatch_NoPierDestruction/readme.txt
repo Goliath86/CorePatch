@@ -1,0 +1,1 @@
+Fixes piers destruction type that was causing them to flatten and float above ground
