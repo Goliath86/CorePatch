@@ -1,10 +1,3 @@
-class CfgAddons {
-	class PreloadAddons {
-		class CorePatch_CCP_71142_CIT_13602_25047 {
-			list[] = {"CorePatch_CCP_71142_CIT_13602_25047"};
-		};
-	};
-};
 class CfgPatches
 {
 	class CorePatch_CCP_71142_CIT_13602_25047
@@ -13,6 +6,16 @@ class CfgPatches
 		requiredVersion = 1.00;
 		units[] = {};
 		weapons[] = {"BAF_M621"};
+	};
+};
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_CCP_71142_CIT_13602_25047
+		{
+			list[] = {"CorePatch_CCP_71142_CIT_13602_25047"};
+		};
 	};
 };
 class CfgMagazines
@@ -76,7 +79,6 @@ class CfgWeapons
 			maxRangeProbab = 0.0099999998;
 			midRange = 2;
 			midRangeProbab = 0.0099999998;
-			minRange = 1;
 			minRangeProbab = 0.0099999998;
 			reloadTime = 0.075000003;
 			sound[] = {
@@ -98,16 +100,14 @@ class CfgWeapons
 			showToPlayer = 0;
 			soundBurst = 0;
 		};
-		class far : close
+		class short : close
 		{
-			aiRateOfFire = 5;
-			aiRateOfFireDistance = 1000;
-			burst = 5;
-			maxRange = 800;
-			maxRangeProbab = 0.0099999998;
-			midRange = 600;
-			midRangeProbab = 0.40000001;
-			minRange = 500;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			burst = 8;
+			maxRange = 400;
+			midRange = 200;
+			minRange = 50;
 		};
 		class medium : close
 		{
@@ -118,14 +118,16 @@ class CfgWeapons
 			midRange = 400;
 			minRange = 300;
 		};
-		class short : close
+		class far : close
 		{
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 300;
-			burst = 8;
-			maxRange = 400;
-			midRange = 200;
-			minRange = 50;
+			aiRateOfFire = 5;
+			aiRateOfFireDistance = 1000;
+			burst = 5;
+			maxRange = 800;
+			maxRangeProbab = 0.0099999998;
+			midRange = 600;
+			midRangeProbab = 0.40000001;
+			minRange = 500;
 		};
 	};
 	class MGun;
@@ -260,35 +262,19 @@ class CfgWeapons
 
 		class manual : MGun
 		{
-			aiRateOfFire = 0.1;
-			aiRateOfFireDistance = 5;
-			autoFire = 1;
-			/* begin1[] = {
-				"ca\sounds_baf\weapons\L7A2",
-				1.7782794,
-				1,
-				1000
-			}; */
-			burst = 1;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
 			dispersion = 0.0035000001;
 			displayName = "$STR_BAF_BAF_L7A20";
-			reloadTime = 0.079999998;
-			showToPlayer = 1;
-			/* soundBegin[] = {
-				"begin1",
-				1
-			}; */
 			maxRange = 3;
 			maxRangeProbab = 0.0099999998;
 			midRange = 2;
 			midRangeProbab = 0.0099999998;
-			minRange = 1;
 			minRangeProbab = 0.0099999998;
+			reloadTime = 0.079999998;
 		};
 		class close : manual
 		{
-			aiRateOfFire = 0.5;
-			aiRateOfFireDistance = 50;
 			burst = 10;
 			maxRange = 200;
 			maxRangeProbab = 0.039999999;
@@ -298,6 +284,24 @@ class CfgWeapons
 			minRangeProbab = 0.050000001;
 			showToPlayer = 0;
 			soundBurst = 0;
+		};
+		class short : close
+		{
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			burst = 8;
+			maxRange = 400;
+			midRange = 200;
+			minRange = 50;
+		};
+		class medium : close
+		{
+			aiRateOfFire = 3;
+			aiRateOfFireDistance = 600;
+			burst = 4;
+			maxRange = 600;
+			midRange = 400;
+			minRange = 300;
 		};
 		class far : close
 		{
@@ -309,24 +313,6 @@ class CfgWeapons
 			midRange = 600;
 			midRangeProbab = 0.40000001;
 			minRange = 500;
-		};
-		class medium : close
-		{
-			aiRateOfFire = 3;
-			aiRateOfFireDistance = 600;
-			burst = 4;
-			maxRange = 600;
-			midRange = 400;
-			minRange = 300;
-		};
-		class short : close
-		{
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 300;
-			burst = 8;
-			maxRange = 400;
-			midRange = 200;
-			minRange = 50;
 		};
 	};
 	class BAF_L94A1 : MGun
@@ -457,41 +443,29 @@ class CfgWeapons
 
 		class manual : MGun
 		{
-			aiRateOfFire = 0.1;
-			aiRateOfFireDistance = 5;
-			autoFire = 1;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
 			begin1[] = {
 				"ca\sounds_baf\weapons\L7A2",
 				1.7782794,
 				1,
 				1000
 			};
-			/* begin1[] = {
-				"ca\sounds_baf\weapons\L94A1",
-				1.7782794,
-				1,
-				1300
-			}; */
-			burst = 1;
 			dispersion = 0.0020000001;
 			displayName = "$STR_BAF_BAF_L94A10";
-			reloadTime = 0.12;
-			showToPlayer = 1;
-			soundBegin[] = {
-				"begin1",
-				0.5
-			};
 			maxRange = 3;
 			maxRangeProbab = 0.0099999998;
 			midRange = 2;
 			midRangeProbab = 0.0099999998;
-			minRange = 1;
 			minRangeProbab = 0.0099999998;
+			reloadTime = 0.12;
+			soundBegin[] = {
+				"begin1",
+				0.5
+			};
 		};
 		class close : manual
 		{
-			aiRateOfFire = 0.5;
-			aiRateOfFireDistance = 50;
 			burst = 10;
 			maxRange = 200;
 			maxRangeProbab = 0.039999999;
@@ -501,6 +475,24 @@ class CfgWeapons
 			minRangeProbab = 0.050000001;
 			showToPlayer = 0;
 			soundBurst = 0;
+		};
+		class short : close
+		{
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			burst = 8;
+			maxRange = 400;
+			midRange = 200;
+			minRange = 50;
+		};
+		class medium : close
+		{
+			aiRateOfFire = 3;
+			aiRateOfFireDistance = 600;
+			burst = 4;
+			maxRange = 600;
+			midRange = 400;
+			minRange = 300;
 		};
 		class far : close
 		{
@@ -512,24 +504,6 @@ class CfgWeapons
 			midRange = 600;
 			midRangeProbab = 0.40000001;
 			minRange = 500;
-		};
-		class medium : close
-		{
-			aiRateOfFire = 3;
-			aiRateOfFireDistance = 600;
-			burst = 4;
-			maxRange = 600;
-			midRange = 400;
-			minRange = 300;
-		};
-		class short : close
-		{
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 300;
-			burst = 8;
-			maxRange = 400;
-			midRange = 200;
-			minRange = 50;
 		};
 	};
 	class BAF_static_GMG : MGun
@@ -557,14 +531,23 @@ class CfgWeapons
 		class manual : MGun
 		{
 			begin1[] = {
-				"\ca\sounds_baf\weapons\L2A1",
-				1.7782794,
+				"ca\sounds\weapons\machineguns\m2_single_1",
+				1.4125376,
 				1,
 				1200
 			};
+			begin2[] = {
+				"ca\sounds\weapons\machineguns\m2_single_2",
+				1.4125376,
+				1,
+				1200
+			};
+			reloadTime = 0.11;
 			soundBegin[] = {
 				"begin1",
-				1
+				0.30000001,
+				"begin2",
+				0.69999999
 			};
 		};
 	};
@@ -633,17 +616,23 @@ class CfgVehicles
 	};
 	class BAF_L2A1_ACOG_base : StaticMGWeapon
 	{
-		delete begin1;
-
-		sound[] = {
-			"ca\sounds_baf\weapons\L2A1",
-			3.1622777,
+		begin1[] = {
+			"ca\sounds\Weapons\machineguns\M2_single_1",
+			1.7782794,
 			1,
-			1200
+			1400
+		};
+		begin2[] = {
+			"ca\sounds\Weapons\machineguns\M2_single_2",
+			1.7782794,
+			1,
+			1400
 		};
 		soundBegin[] = {
-			"sound",
-			1
+			"begin1",
+			0.5,
+			"begin2",
+			0.5
 		};
 	};
 	class BAF_GPMG_Minitripod_D : BAF_L2A1_ACOG_base
