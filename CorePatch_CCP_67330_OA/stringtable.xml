@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DN_FN_BIS_CZ_CP">
+		<Original>ACR</Original>
+		<Chinese>ACR</Chinese>
+		<Czech>ACR</Czech>
+		<English>ACR</English>
+		<French>ACR</French>
+		<German>ACR</German>
+		<Hungarian>ACR</Hungarian>
+		<Italian>ACR</Italian>
+		<Japanese>ACR</Japanese>
+		<Polish>ACR</Polish>
+		<Russian>АЧР</Russian>
+		<Spanish>ACR</Spanish>
+	</Key>
+	<Key ID="STR_DN_HILUX1_CIVIL_3_OPEN_EP1_CP">
+		<Original>Off-road</Original>
+		<Chinese>Off-road</Chinese>
+		<Czech>Offroad</Czech>
+		<English>Off-road</English>
+		<French>Tout-terrain</French>
+		<German>Geländew.</German>
+		<Hungarian>Offroad</Hungarian>
+		<Italian>Fuoristrada</Italian>
+		<Japanese>Off-road</Japanese>
+		<Polish>Terenówka</Polish>
+		<Russian>Внедорожник</Russian>
+		<Spanish>Todoterreno</Spanish>
+	</Key>
+	<Key ID="STR_DN_MTVRREFUEL_DES_EP1_CP">
+		<Original>MTVR (Fuel)</Original>
+		<Chinese>MTVR (Fuel)</Chinese>
+		<Czech>MTVR (cisterna)</Czech>
+		<English>MTVR (Fuel)</English>
+		<French>MTVR (ravitaillement)</French>
+		<German>MTVR (Auftanken)</German>
+		<Hungarian>MTVR (Fuel)</Hungarian>
+		<Italian>MTVR (carburante)</Italian>
+		<Japanese>MTVR (Fuel)</Japanese>
+		<Polish>MTVR (cysterna)</Polish>
+		<Russian>MTVR (автозаправщик)</Russian>
+		<Spanish>MTVR (Combustible)</Spanish>
+	</Key>
+	<Key ID="STR_DN_SOLDIER_GL_CP">
+		<Original>Grenadier</Original>
+		<Chinese>Grenadier</Chinese>
+		<French>Grenadier</French>
+		<Spanish>Granadero</Spanish>
+		<Italian>Granatiere</Italian>
+		<Hungarian>Grenadier</Hungarian>
+		<Polish>Grenadier</Polish>
+		<Russian>Стрелок-гранатометчик</Russian>
+		<German>Grenadier</German>
+		<Czech>Granátometník</Czech>
+		<English>Grenadier</English>
+		<Japanese>Grenadier</Japanese>
+	</Key>
+	<Key ID="STR_DN_V3S_REFUEL_TK_GUE_EP1_CP">
+		<Original>V3S Refuel</Original>
+		<Chinese>V3S Refuel</Chinese>
+		<Czech>Cisterna V3S</Czech>
+		<English>V3S Refuel</English>
+		<French>V3S (ravitaillement)</French>
+		<German>V3S Auftanken</German>
+		<Hungarian>V3S Refuel</Hungarian>
+		<Italian>V3S carburante</Italian>
+		<Japanese>V3S Refuel</Japanese>
+		<Polish>Cysterna V3S</Polish>
+		<Russian>V3S (автозаправщик)</Russian>
+		<Spanish>V3S repostaje</Spanish>
+	</Key>
+</Project>

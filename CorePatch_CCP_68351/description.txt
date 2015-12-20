@@ -1,0 +1,1 @@
+Fixed: CTWS (Warrior main gun) HE rounds effect too big (http://dev.withsix.com/issues/68351).

@@ -1,0 +1,389 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"shapur_baf"
+	};
+	addOnsAuto[]=
+	{
+		"shapur_baf"
+	};
+	randomSeed=298254;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2012;
+		month=7;
+		day=1;
+		hour=10;
+		minute=0;
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"shapur_baf",
+		"CAAir_BAF",
+		"cawheeled_d_baf",
+		"CACharacters_BAF",
+		"CATracked_BAF",
+		"ca_modules_e_weather"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"CAAir_BAF",
+		"cawheeled_d_baf",
+		"CACharacters_BAF",
+		"CATracked_BAF",
+		"ca_modules_e_weather",
+		"shapur_baf"
+	};
+	randomSeed=278620;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2012;
+		month=7;
+		day=1;
+		hour=10;
+		minute=0;
+	};
+	class Groups
+	{
+		items=9;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1106.4672,38.658501,1517.2559};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="0 fadesound 0; 1 cuttext ["""",""black in"",999]; sqf = this execvm ""intro.sqf""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1044.6852,40.331863,1841.5146};
+					azimut=180;
+					special="FLY";
+					id=1;
+					side="WEST";
+					vehicle="BAF_Merlin_HC3_D";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={989.44794,39.416206,1259.5293};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1818.0074,47.207977,1428.7715};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1075.7562,40.365036,1858.7843};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1007.9955,42.452309,1959.4921};
+					azimut=180;
+					special="FLY";
+					id=2;
+					side="WEST";
+					vehicle="BAF_Merlin_HC3_D";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={952.75836,45.288506,1377.5067};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1781.318,45.758476,1546.7489};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1039.0668,42.156303,1976.7617};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1268.5945,42.12656,1354.6957};
+					azimut=198.923;
+					special="FLY";
+					id=3;
+					side="WEST";
+					vehicle="BAF_Jackal2_L2A1_D";
+					leader=1;
+					skill=0.60000002;
+					text="jackal";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1266.5676,42.207657,1351.0287};
+					azimut=118.31516;
+					special="FLY";
+					id=4;
+					side="WEST";
+					vehicle="BAF_Soldier_Officer_MTP";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1264.5498,41.935207,1359.3888};
+					azimut=180;
+					special="FLY";
+					id=5;
+					side="WEST";
+					vehicle="BAF_Soldier_MTP";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={1261.1464,45.894093,1342.0444};
+					speed="LIMITED";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1284.9706,42.730228,1341.14};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1264.3372,41.904694,1360.3462};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1255.5522,47.906727,1359.5443};
+					azimut=180;
+					special="FLY";
+					id=6;
+					side="WEST";
+					vehicle="BAF_Soldier_Marksman_MTP";
+					leader=1;
+					skill=0.60000002;
+					init="this setunitpos ""middle""";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1274.5475,49.469406,1244.8632};
+					azimut=68.647064;
+					special="FLY";
+					id=7;
+					side="WEST";
+					vehicle="BAF_FV510_D";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={1375.0439,43.048336,1305.0391};
+					speed="LIMITED";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1258.3805,50.629059,1233.9939};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1245.4447,39.859665,1637.3997};
+					id=8;
+					side="LOGIC";
+					vehicle="WeatherParticlesManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"shapur_baf"
+	};
+	addOnsAuto[]=
+	{
+		"shapur_baf"
+	};
+	randomSeed=16323621;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2012;
+		month=7;
+		day=1;
+		hour=10;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"shapur_baf"
+	};
+	addOnsAuto[]=
+	{
+		"shapur_baf"
+	};
+	randomSeed=8369515;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2012;
+		month=7;
+		day=1;
+		hour=10;
+		minute=0;
+	};
+};

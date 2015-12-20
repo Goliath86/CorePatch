@@ -1,0 +1,1 @@
+Added: two lights beam for all vehicles (http://dev.withsix.com/issues/69249).

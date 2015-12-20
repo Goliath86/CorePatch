@@ -1,0 +1,1 @@
+Fixed: Falanga missile in Mi-24 doesn't hit targets (http://dev.withsix.com/issues/11850).

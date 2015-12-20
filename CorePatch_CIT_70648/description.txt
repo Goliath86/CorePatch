@@ -1,0 +1,1 @@
+Fixed: AH-6J M134 @ 4000 rpm issue (http://dev.withsix.com/issues/70648).

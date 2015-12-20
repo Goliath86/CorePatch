@@ -1,0 +1,1 @@
+Fixed: CfgVehicles - faulty GhostView definition in Land_fort_artillery_nest (http://dev.withsix.com/issues/24664).

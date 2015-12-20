@@ -1,0 +1,3 @@
+Fixed:
+- CfgAmmo - obsolete aiRateOfFire definition in Laserbeam (http://dev.withsix.com/issues/23002);
+- CfgAmmo - obsolete sideAirFricion definition in Sh_82_HE (http://dev.withsix.com/issues/23003).

@@ -1,0 +1,3 @@
+Fixed:
+- GSh-30x mistakes (http://dev.withsix.com/issues/70342);
+- GSh-30-2K should have 250 rounds mag instead of 750 currently (http://dev.withsix.com/issues/71143).

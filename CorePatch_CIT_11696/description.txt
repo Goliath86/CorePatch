@@ -1,0 +1,1 @@
+Fixed: M4A3 ACOG GL IR laser missing (http://dev.withsix.com/issues/11696).

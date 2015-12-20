@@ -1,0 +1,1 @@
+Fixed: CfgMagazines - various obsolete definition in 2Rnd_Maverick_A10 (http://dev.withsix.com/issues/23000).

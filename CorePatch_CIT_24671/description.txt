@@ -1,0 +1,1 @@
+Fixed: CfgVehicles - faulty definitions in StrykerBase_EP1 (http://dev.withsix.com/issues/24671).

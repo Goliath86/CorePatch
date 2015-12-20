@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DN_GSH302K">
+		<Original>GSh-30-2K</Original>
+		<Chinese>GSh-30-2K</Chinese>
+		<Czech>GŠ-30-2K</Czech>
+		<English>GSh-30-2K</English>
+		<French>GSh-30-2K</French>
+		<German>GSh-30-2K</German>
+		<Hungarian>GSh-30-2K</Hungarian>
+		<Italian>GSh-30-2K</Italian>
+		<Japanese>GSh-30-2K</Japanese>
+		<Polish>GSh-30-2K</Polish>
+		<Russian>ГШ-30-2К</Russian>
+		<Spanish>GSh-30-2K</Spanish>
+	</Key>
+	<Key ID="STR_DN_GSH302K_MODE_LOW">
+		<Original>300 rpm</Original>
+		<Chinese>300 rpm</Chinese>
+		<Czech>300 ran/min</Czech>
+		<English>300 rpm</English>
+		<French>300 c./min</French>
+		<German>300 U/min</German>
+		<Hungarian>300 rpm</Hungarian>
+		<Italian>300 muniz./min</Italian>
+		<Japanese>300 rpm</Japanese>
+		<Polish>300 st./min.</Polish>
+		<Russian>300 в/м</Russian>
+		<Spanish>300 rpm</Spanish>
+	</Key>
+	<Key ID="STR_DN_GSH302K_MODE_MID">
+		<Original>2000 rpm</Original>
+		<Chinese>2000 rpm</Chinese>
+		<Czech>2000 ran/min</Czech>
+		<English>2000 rpm</English>
+		<French>2000 c./min</French>
+		<German>2000 U/min</German>
+		<Hungarian>2000 rpm</Hungarian>
+		<Italian>2000 muniz./min</Italian>
+		<Japanese>2000 rpm</Japanese>
+		<Polish>2000 st./min.</Polish>
+		<Russian>2000 в/м</Russian>
+		<Spanish>2000 rpm</Spanish>
+	</Key>
+	<Key ID="STR_DN_GSH302K_MODE_HIGH">
+		<Original>2600 rpm</Original>
+		<Chinese>2600 rpm</Chinese>
+		<Czech>2600 ran/min</Czech>
+		<English>2600 rpm</English>
+		<French>2600 c./min</French>
+		<German>2600 U/min</German>
+		<Hungarian>2600 rpm</Hungarian>
+		<Italian>2600 muniz./min</Italian>
+		<Japanese>2600 rpm</Japanese>
+		<Polish>2600 st./min.</Polish>
+		<Russian>2600 в/м</Russian>
+		<Spanish>2600 rpm</Spanish>
+	</Key>
+</Project>

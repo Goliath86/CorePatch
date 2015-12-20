@@ -1,0 +1,1 @@
+Fixed: Stryker MEV can carry 6 troops (http://dev.withsix.com/issues/67587).

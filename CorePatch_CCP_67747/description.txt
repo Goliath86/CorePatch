@@ -1,0 +1,1 @@
+Added: changeable textures for BTR-60 (http://dev.withsix.com/issues/67747).

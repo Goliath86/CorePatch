@@ -1,0 +1,1 @@
+Fixed: missing semicolon in ui\config.cpp (http://dev.withsix.com/issues/14421).

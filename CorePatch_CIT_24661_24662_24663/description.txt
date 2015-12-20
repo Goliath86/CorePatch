@@ -1,0 +1,4 @@
+Fixed:
+- CfgVehicles - faulty UiPicture definitions (http://dev.withsix.com/issues/24661);
+- CfgVehicles - faulty descriptionShort definitions (http://dev.withsix.com/issues/24662);
+- CfgVehicles - faulty definitions in BAF_GMG_Tripod_D (http://dev.withsix.com/issues/24663).

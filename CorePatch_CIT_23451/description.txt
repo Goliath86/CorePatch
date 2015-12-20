@@ -1,0 +1,1 @@
+Fixed: missing accuracy value definition for 'StaticCanon' or 'StaticWeapon' (http://dev.withsix.com/issues/23451).

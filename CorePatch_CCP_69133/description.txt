@@ -1,0 +1,1 @@
+Fixed: threat of MTVR faulty (http://dev.withsix.com/issues/69133).

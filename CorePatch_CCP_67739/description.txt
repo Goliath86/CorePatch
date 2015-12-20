@@ -1,0 +1,1 @@
+Fixed: Mi-8/17 Medevacs are lacking flare countermeasures (http://dev.withsix.com/issues/67739).

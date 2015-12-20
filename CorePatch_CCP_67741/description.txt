@@ -1,0 +1,1 @@
+Fixed: Su-34's GSh301 should be controlled by pilot rather than gunner (http://dev.withsix.com/issues/67741).

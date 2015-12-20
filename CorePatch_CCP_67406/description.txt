@@ -1,0 +1,1 @@
+Fixed: BAF Warriors engaging aircraft with Coaxial and not HE cannon (http://dev.withsix.com/issues/67406).

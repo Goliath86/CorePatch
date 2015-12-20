@@ -1,0 +1,1 @@
+Fixed: the RU UAV vehicle "Pchela-1T" is broken (http://dev.withsix.com/issues/22551).

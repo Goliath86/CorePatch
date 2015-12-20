@@ -1,0 +1,1 @@
+Added: made Library_WeaponHolder able to hold backpacks (http://dev.withsix.com/issues/67652).

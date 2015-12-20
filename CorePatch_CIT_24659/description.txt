@@ -1,0 +1,1 @@
+Fixed: CfgVehicles - faulty hasCommander definition in BTR60_TK_EP1 and M113_Base (http://dev.withsix.com/issues/24659).

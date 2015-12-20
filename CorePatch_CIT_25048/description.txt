@@ -1,0 +1,1 @@
+Fixed: CfgWeapons - M230 and GAU8 have strange xxxRangeProbab (http://dev.withsix.com/issues/25048).

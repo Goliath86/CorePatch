@@ -1,0 +1,1 @@
+Fixed: rifles from A2 lacking the scope/reflex switch that the OA variants feature (http://dev.withsix.com/issues/68220).

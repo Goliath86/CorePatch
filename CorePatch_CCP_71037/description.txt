@@ -1,0 +1,1 @@
+Fixed: Arkan and Refleks have wrong reloading time (http://dev.withsix.com/issues/71037).

@@ -1,0 +1,3 @@
+Fixed:
+- CfgVehicles - faulty wreck definitions (http://dev.withsix.com/issues/24666);
+- CfgVehicles - MQ9PredatorB has 'laserScanner = "true";' rather than 'laserScanner = 1;' (http://dev.withsix.com/issues/24668).

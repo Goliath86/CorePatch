@@ -1,0 +1,1 @@
+Fixed: wrong config value naming in M60A4_EP1 (http://dev.withsix.com/issues/69186).

@@ -1,0 +1,1 @@
+Fixed: several choppers and planes are missing lockDetectionSystem and incommingMissileDetectionSystem (http://dev.withsix.com/issues/67317).

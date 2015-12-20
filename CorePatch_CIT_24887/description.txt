@@ -1,0 +1,1 @@
+Fixed: CfgAmmo - maneuvrability/trackOversteer issue (http://dev.withsix.com/issues/24887).

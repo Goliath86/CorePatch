@@ -1,0 +1,1 @@
+Fixed: player cannot check gear while prone if equipped with pistol (http://dev.withsix.com/issues/24719).

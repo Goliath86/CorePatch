@@ -1,0 +1,1 @@
+Fixed: co-pilot jumps ejects from plane when it's heavily damaged (http://dev.withsix.com/issues/23378).

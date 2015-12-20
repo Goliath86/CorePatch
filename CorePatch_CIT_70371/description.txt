@@ -1,0 +1,1 @@
+Fixed: RPK fires wrong caliber (http://dev.withsix.com/issues/70371).

@@ -1,0 +1,1 @@
+Fixed: YakB-12.7 too weak compared to standard 12.7 machine guns (http://dev.withsix.com/issues/25593).

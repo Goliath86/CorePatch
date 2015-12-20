@@ -1,0 +1,1 @@
+Fixed: Mk16 EGLM RCO has ACOG optics model (http://dev.withsix.com/issues/24764).

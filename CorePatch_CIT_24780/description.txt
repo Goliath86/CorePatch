@@ -1,0 +1,1 @@
+Fixed: CfgWeapons - aiDispersionCoef faulty for BAF_L110A1_Aim (http://dev.withsix.com/issues/24780).

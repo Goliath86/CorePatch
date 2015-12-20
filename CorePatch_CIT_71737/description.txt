@@ -1,0 +1,1 @@
+Fixed: .338 Lapua has incorrect damage value (http://dev.withsix.com/issues/71737).

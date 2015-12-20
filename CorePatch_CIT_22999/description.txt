@@ -1,0 +1,1 @@
+Fixed: CfgMagazines - obsolete cartridge definition in 64Rnd_9x19_SD_Bizon (http://dev.withsix.com/issues/22999).

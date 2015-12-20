@@ -1,0 +1,1 @@
+Fixed: wrong direction of Su-25 gun funnel (http://dev.withsix.com/issues/19347).

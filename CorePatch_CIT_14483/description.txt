@@ -1,0 +1,1 @@
+Fixed: class CA_UpTitle contains a quoted macro (http://dev.withsix.com/issues/14483).

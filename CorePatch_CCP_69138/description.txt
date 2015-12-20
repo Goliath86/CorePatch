@@ -1,0 +1,1 @@
+Fixed: while sidestepping crouched with a pistol, the sound is too quick (http://dev.withsix.com/issues/69138).

@@ -1,0 +1,54 @@
+Added:
+- effective range of M242 Bushmaster 25mm automatic gun (http://dev.withsix.com/issues/27976);
+- zeroing for A2 vehicles (http://dev.withsix.com/issues/62629);
+- ballisticsComputer to more weapons (http://dev.withsix.com/issues/67380);
+- manual zeroing options for vehicles (http://dev.withsix.com/issues/70594).
+
+Fixed:
+- GMG Jackal zeroing breaks at 1500m setting (http://dev.withsix.com/issues/19295);
+- entering the gunner position of the BAF Jackal HMG breaks the display of rifle zero range (http://dev.withsix.com/issues/38229);
+- the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383);
+- Mi24 variants are lacking zeroing for YaK-B 12.7 and GSh-30-2 (http://dev.withsix.com/issues/67638);
+- Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640);
+- missing night vision view for gunner of Vodnik BPPU (http://dev.withsix.com/issues/68103);
+- Stryker MGS has no M68 zeroing (http://dev.withsix.com/issues/68347).
+
+Tweaked:
+- effective range of M242 Bushmaster 25mm Automatic Gun (http://dev.withsix.com/issues/27976);
+- AH-64D M230 gun exaggerated rotation possibility (http://dev.withsix.com/issues/67715).
+
+----------------------------
+
+Deleted faulty definitions:
+- displayName in BAF_Jackal2_GMG_D >> Turrets >> GMG_Turret class.
+- xxxElev in BAF_Jackal2_L2A1_D >> Turrets >> M2_Turret >> ViewOptics class;
+
+----------------------------
+
+//Obs
+Many vehicles lack the zeroing function for their weapons
+
+//Exp
+Add the correct zeroing function to all the vehicles that need it
+
+----------------------------
+
+Fixed:
+
+//Obs
+Ka-52 (Ka52, Ka52Black) are missing zeroing possibility (1200 meters) and laser rangefinder.
+
+//Exp
+Ka-52 (Ka52, Ka52Black) should have zeroing and laser rangefinder
+2A42 practical range is 2000
+
+----------------------------
+
+Fixed:
+
+//Obs
+Incorrect practical range for AH1Z, AH64D, AH64D_EP1 and BAF_Apache_AH1_D
+
+//Exp
+M197 (AH-1Z) practical range is 1500m
+M230 (AH64D variants) practical range is 1500m

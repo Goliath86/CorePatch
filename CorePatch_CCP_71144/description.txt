@@ -1,0 +1,1 @@
+Fixed: BMP-2 HQ Taki with only 2 smoke shells compared to 6 smoke shells like on BMP-2 HQ CDF/Ins (http://dev.withsix.com/issues/71144).
