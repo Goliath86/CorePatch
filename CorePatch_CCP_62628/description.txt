@@ -1,1 +1,1 @@
-http://dev.withsix.com/issues/62628
+Added: ArmA2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628).
