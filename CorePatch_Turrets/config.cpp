@@ -683,6 +683,11 @@ class CfgVehicles
 					1,
 					10
 				};
+
+				class ViewOptics
+				{
+					delete visionMode;
+				};
 			};
 		};
 	};
@@ -707,6 +712,7 @@ class CfgVehicles
 				{
 					delete maxElev;
 					delete minElev;
+					delete visionMode;
 				};
 			};
 		};
@@ -1640,6 +1646,8 @@ class CfgVehicles
 	};
 	class BAF_GMG_Tripod_D : GMG_TriPod
 	{
+		delete visionMode;
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1647,6 +1655,14 @@ class CfgVehicles
 				discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600};
 				discreteDistanceInitIndex = 0;
 				turretInfoType = "RscWeaponZeroing";
+
+				class OpticsIn
+				{
+					class ACOG
+					{
+						visionMode[] = {};
+					};
+				};
 			};
 		};
 	};
