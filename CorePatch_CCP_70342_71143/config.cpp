@@ -1,10 +1,3 @@
-class CfgAddons {
-	class PreloadAddons {
-		class CorePatch_CCP_70342_71143 {
-			list[] = {"CorePatch_CCP_70342_71143"};
-		};
-	};
-};
 class CfgPatches
 {
 	class CorePatch_CCP_70342_71143
@@ -13,6 +6,16 @@ class CfgPatches
 		requiredVersion = 1.00;
 		units[] = {};
 		weapons[] = {"GSh302K"};
+	};
+};
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_CCP_70342_71143
+		{
+			list[] = {"CorePatch_CCP_70342_71143"};
+		};
 	};
 };
 class CfgMagazines
@@ -76,7 +79,7 @@ class CfgWeapons
 			minRangeProbab = 0.059999999;
 			reloadTime = 0.2;
 			sound[] = {
-				"\Ca\sounds\Weapons\cannon\242_single",
+				"\Ca\sounds\Weapons\cannon\a10vulcanVII",
 				10,
 				1,
 				1400
@@ -84,7 +87,7 @@ class CfgWeapons
 		};
 		class MidROF: LowROF // 2000 SPM
 		{
-			burst = 8;
+			burst = 7;
 			displayName = "$STR_DN_GSH302K_MODE_MID";
 			maxRangeProbab = 0.0099999998;
 			midRangeProbab = 0.0099999998;
@@ -99,9 +102,9 @@ class CfgWeapons
 		};
 		class HighROF: MidROF // 2600 SPM
 		{
-			burst = 11;
+			burst = 9;
 			displayName = "$STR_DN_GSH302K_MODE_HIGH";
-			reloadTime = 0.023076;
+			reloadTime = 0.023077;
 		};
 		class close: HighROF
 		{
