@@ -18,8 +18,16 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 16;
+			burst = 13;
 			reloadTime = 0.015385; // 3900 SPM
+		};
+	};
+	class GAU12 : CannonCore
+	{
+		class manual : CannonCore
+		{
+			burst = 6;
+			reloadTime = 0.016667; // 3600 SPM
 			sound[] = {
 				"\Ca\Sounds_E\Weapons_E\Gatling\gatling_250ms",
 				3.1622777,
@@ -27,19 +35,9 @@ class CfgWeapons
 				1100
 			};
 		};
-	};
-	class GAU12 : CannonCore
-	{
-		class manual : CannonCore
+		class close : manual
 		{
-			burst = 16;
-			reloadTime = 0.015385; // 3900 SPM
-			sound[] = {
-				"\Ca\Sounds_E\Weapons_E\Gatling\gatling_250ms",
-				3.1622777,
-				1,
-				1100
-			};
+			soundBurst = 1;
 		};
 	};
 	class GSh23L : CannonCore
@@ -48,7 +46,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 13;
+			burst = 11;
 			reloadTime = 0.01875; // 3200 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\A10vulcanIV",
@@ -62,14 +60,14 @@ class CfgWeapons
 	{
 		class manual : CannonCore
 		{
-			burst = 6;
+			burst = 5;
 		};
 	};
 	class GSh302 : CannonCore
 	{
 		class manual : CannonCore
 		{
-			burst = 12;
+			burst = 10;
 			reloadTime = 0.02; // 3000 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\A10vulcanIV",
@@ -85,7 +83,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 25;
+			burst = 20;
 			reloadTime = 0.01; // 6000 SPM
 			sound[] = {
 				"\Ca\Sounds_E\Weapons_E\Gatling\gatling_burst_1",
