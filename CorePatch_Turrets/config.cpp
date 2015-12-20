@@ -1,11 +1,3 @@
-class CfgAddons {
-	class PreloadAddons {
-		class CorePatch_Turrets	{
-			list[] = {"CorePatch_Turrets"};
-		};
-	};
-};
-
 class CfgPatches
 {
 	class CorePatch_Turrets
@@ -18,6 +10,16 @@ class CfgPatches
 			"M240BC_veh_2",
 			"PKTBC_2",
 			"PKTBC_MG_Nest"
+		};
+	};
+};
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_Turrets
+		{
+			list[] = {"CorePatch_Turrets"};
 		};
 	};
 };
@@ -55,10 +57,6 @@ class CfgWeapons
 	class AGS30 : MGun
 	{
 		ballisticsComputer = 2;
-	};
-	class BAF_static_GMG : MGun
-	{
-		delete ballisticsComputer;
 	};
 	class DSHKM : MGun
 	{
@@ -675,11 +673,10 @@ class CfgVehicles
 		{
 			class GMG_Turret : MainTurret
 			{
-				delete discreteDistance;
-				delete discreteDistanceInitIndex;
 				delete displayName;
-				delete turretInfoType;
 
+				discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600};
+				discreteDistanceInitIndex = 0;
 				soundServo[] = {
 					"\Ca\sounds\Vehicles\Servos\turret-1",
 					0.0099999998,
@@ -1052,7 +1049,7 @@ class CfgVehicles
 		{
 			class AGS30_Turret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
 				discreteDistanceInitIndex = 2;
 				turretInfoType = "RscWeaponZeroing";
 			};
@@ -1172,7 +1169,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
 			};
 		};
 	};
@@ -1632,8 +1629,23 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
 				discreteDistanceInitIndex = 2;
+				turretInfoType = "RscWeaponZeroing";
+			};
+		};
+	};
+	class GMG_TriPod : StaticGrenadeLauncher
+	{
+	};
+	class BAF_GMG_Tripod_D : GMG_TriPod
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600};
+				discreteDistanceInitIndex = 0;
 				turretInfoType = "RscWeaponZeroing";
 			};
 		};
