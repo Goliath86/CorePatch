@@ -131,7 +131,7 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";*/
 	};
-	class DMR : Rifle
+	/*class DMR : Rifle
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 		discreteDistanceInitIndex = 2;
@@ -147,7 +147,7 @@ class CfgWeapons
 		};
 		visionMode[] = {"Normal"};
 		weaponInfoType = "RscWeaponZeroing";
-	};
+	};*/
 	class G36C : Rifle
 	{
 		discreteDistance[] = {100, 200, 300};
