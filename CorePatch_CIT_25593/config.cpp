@@ -66,7 +66,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 18;
+			burst = 7;
 			reloadTime = 0.014118; // 4250 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\gsh301",
