@@ -65,7 +65,7 @@ class CfgVehicles
 	};
 	class BTR90_Base : Wheeled_APC
 	{
-		model = "\CorePatch\CorePatch_Reflectors\btr90.p3d";
+		model = "\CorePatch\CorePatch_Reflectors\btr90";
 
 		class Reflectors
 		{
@@ -79,9 +79,8 @@ class CfgVehicles
 	};
 	class BTR90_HQ : BTR90_Base
 	{
-		delete transportSoldier;
-
-		model = "\CorePatch\CorePatch_Reflectors\btr90_HQ.p3d";
+		model = "\CorePatch\CorePatch_Reflectors\btr90_HQ";
+		transportSoldier = 7;
 		typicalCargo[] = {
 			"RU_Soldier_Crew",
 			"RU_Soldier_Crew",
