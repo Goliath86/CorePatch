@@ -64,8 +64,6 @@ class CfgVehicles
 	};
 	class HMMWV_Avenger : HMMWV_Base
 	{
-		// delete gunnerCanSee;
-
 		gunnerCanSee = "2 + 4 + 8 + 16";
 	};
 	class HMMWV_Avenger_base : HMMWV_Avenger
@@ -73,19 +71,17 @@ class CfgVehicles
 	};
 	class HMMWV_Avenger_DES_EP1 : HMMWV_Avenger_base
 	{
-		delete gunnerCanSee;
+		gunnerCanSee = "2 + 4 + 8 + 16";
 	};
 	class HMMWV_M998_crows_M2_DES_EP1 : HMMWV_Base
 	{
-		delete radarType;
-
 		gunnerCanSee = "2 + 4 + 8 + 16";
+		radarType = 0;
 	};
 	class HMMWV_M998_crows_MK19_DES_EP1 : HMMWV_Base
 	{
-		delete radarType;
-
 		gunnerCanSee = "2 + 4 + 8 + 16";
+		radarType = 0;
 	};
 	class HMMWV_M998A2_SOV_DES_EP1 : HMMWV_Base
 	{
@@ -93,8 +89,8 @@ class CfgVehicles
 	};
 	class HMMWV_TOW : HMMWV_Base
 	{
-		delete gunnerCanSee;
-		delete radarType;
+		gunnerCanSee = "2 + 8 + 32";
+		radarType = 0;
 	};
 	class LandRover_Base : Car
 	{
@@ -115,7 +111,7 @@ class CfgVehicles
 	};
 	class BTR60_TK_EP1 : BRDM2_Base
 	{
-		delete gunnerCanSee;
+		gunnerCanSee = 31;
 	};
 	class BTR90_Base : Wheeled_APC
 	{
