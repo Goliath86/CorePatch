@@ -222,15 +222,15 @@ class CfgVehicles
 		};
 		class Turrets : Turrets
 		{
-			class MainTurret : MainTurret
+			/* class MainTurret : MainTurret
 			{
-				/*initElev = -10;
+				initElev = -10;
 				initTurn = 80;
 				maxElev = 20;
 				maxTurn = 115;
 				minElev = -15;
-				minTurn = 45;*/
-			};
+				minTurn = 45;
+			}; */
 			class BackDoorGun : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -244,16 +244,16 @@ class CfgVehicles
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"M240BC_veh"};
 			};
-			class RightDoorGun : MainTurret
+			/* class RightDoorGun : MainTurret
 			{
-				/*delete initElev;
+				delete initElev;
 				delete maxElev;
 				delete minElev;
 
 				initTurn = -80;
 				maxTurn = -45;
-				minTurn = -115;*/
-			};
+				minTurn = -115;
+			}; */
 		};
 	};
 	class Ka60_Base_PMC : Helicopter
@@ -306,28 +306,28 @@ class CfgVehicles
 			};
 		};
 	};
-	class Mi17_base : Helicopter
+	/* class Mi17_base : Helicopter
 	{
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
-				/*initElev = 5;
+				initElev = 5;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 110;
 				minElev = -20;
-				minTurn = 70;*/
+				minTurn = 70;
 			};
 			class BackTurret : MainTurret
 			{
-				/*delete initElev;
+				delete initElev;
 				delete maxElev;
 				delete minElev;
 
 				initTurn = -115;
 				maxTurn = -100;
-				minTurn = -130;*/
+				minTurn = -130;
 			};
 		};
 	};
@@ -340,32 +340,32 @@ class CfgVehicles
 		{
 			class BackTurret : BackTurret
 			{
-				/*delete initElev;
+				delete initElev;
 				delete maxElev;
 
 				initTurn = 180;
 				maxTurn = 195;
 				minElev = -25;
-				minTurn = 165;*/
+				minTurn = 165;
 			};
 			class LeftTurret : MainTurret
 			{
-				/*delete initElev;
+				delete initElev;
 				delete initTurn;
 				delete maxElev;
 				delete maxTurn;
 				delete minElev;
-				delete minTurn;*/
+				delete minTurn;
 			};
 			class RightTurret : MainTurret
 			{
-				//delete initElev;
-				//delete maxElev;
+				delete initElev;
+				delete maxElev;
 
-				/*initTurn = -80;
+				initTurn = -80;
 				maxTurn = -50;
 				minElev = -25;
-				minTurn = -110;*/
+				minTurn = -110;
 			};
 		};
 	};
@@ -378,15 +378,15 @@ class CfgVehicles
 		{
 			class FrontTurret : MainTurret
 			{
-				/*initElev = 0;
+				initElev = 0;
 				initTurn = 0;
 				maxElev = 5;
 				maxTurn = 20;
 				minElev = -45;
-				minTurn = -20;*/
+				minTurn = -20;
 			};
 		};
-	};
+	}; */
 	class Mi24_Base : Helicopter
 	{
 		class Turrets : Turrets
@@ -420,25 +420,17 @@ class CfgVehicles
 
 		class Turrets : Turrets
 		{
-			class MainTurret : MainTurret
+			/* class MainTurret : MainTurret
 			{
-				/*initElev = -10;
+				initElev = -10;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 130;
 				minElev = -35;
-				minTurn = 60;*/
-			};
+				minTurn = 60;
+			}; */
 			class CoPilotObs : MainTurret
 			{
-				/* gunnerOutOpticsShowCursor = 0;
-				initElev = 0;
-				initTurn = 0;
-				maxElev = 25;
-				maxTurn = 180;
-				minElev = -80;
-				minTurn = -180;
-				outGunnerMayFire = 0; */
 				soundServo[] = {
 					"\ca\sounds\vehicles\servos\turret-1",
 					0.0099999998,
@@ -446,12 +438,12 @@ class CfgVehicles
 					30
 				};
 			};
-			class RightDoorGun : MainTurret
+			class RightDoorGun; /* : MainTurret
 			{
-				/*initTurn = -80;
+				initTurn = -80;
 				maxTurn = -60;
-				minTurn = -130;*/
-			};
+				minTurn = -130;
+			}; */
 		};
 	};
 	class UH1Y : UH1_Base
@@ -586,7 +578,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class UH60M_base_EP1 : UH60_Base
+	/* class UH60M_base_EP1 : UH60_Base
 	{
 	};
 	class UH60M_US_base_EP1 : UH60M_base_EP1
@@ -598,25 +590,25 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				/*initElev = -10;
+				initElev = -10;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 115;
 				minElev = -15;
-				minTurn = 65;*/
+				minTurn = 65;
 			};
 			class RightDoorGun : MainTurret
 			{
-				/*delete initElev;
+				delete initElev;
 				delete maxElev;
 				delete minElev;
 
 				initTurn = -80;
 				maxTurn = -65;
-				minTurn = -115;*/
+				minTurn = -115;
 			};
 		};
-	};
+	}; */
 	class Land : AllVehicles
 	{
 	};
@@ -1143,10 +1135,6 @@ class CfgVehicles
 	};
 	class Ural_ZU23_Base : Ural_Base_withTurret
 	{
-		delete initFov;
-		delete maxFov;
-		delete minFov;
-
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1554,6 +1542,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				delete turretInfoType;
+				delete visionMode;
 
 				startEngine = 1;
 			};
@@ -1646,7 +1635,7 @@ class CfgVehicles
 	};
 	class BAF_GMG_Tripod_D : GMG_TriPod
 	{
-		delete visionMode;
+		visionMode[] = {};
 
 		class Turrets : Turrets
 		{
