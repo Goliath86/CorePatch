@@ -1,5 +1,4 @@
 Added:
-- effective range of M242 Bushmaster 25mm automatic gun (http://dev.withsix.com/issues/27976);
 - zeroing for A2 vehicles (http://dev.withsix.com/issues/62629);
 - ballisticsComputer to more weapons (http://dev.withsix.com/issues/67380);
 - manual zeroing options for vehicles (http://dev.withsix.com/issues/70594).
@@ -14,7 +13,6 @@ Fixed:
 - Stryker MGS has no M68 zeroing (http://dev.withsix.com/issues/68347).
 
 Tweaked:
-- effective range of M242 Bushmaster 25mm Automatic Gun (http://dev.withsix.com/issues/27976);
 - AH-64D M230 gun exaggerated rotation possibility (http://dev.withsix.com/issues/67715).
 
 ----------------------------
