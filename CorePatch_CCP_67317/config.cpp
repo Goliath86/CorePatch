@@ -44,11 +44,6 @@ class CfgVehicles
 			2
 		};
 	};
-	class AH64D_EP1: AH64_base_EP1
-	{
-		delete soundIncommingMissile;
-		delete soundLocked;
-	};
 	class BAF_Merlin_HC3_D: Helicopter
 	{
 		lockDetectionSystem = "4 + 8";
@@ -122,13 +117,11 @@ class CfgVehicles
 	};
 	class Mi171Sh_Base_EP1: Mi17_base_CZ_EP1
 	{
-		delete IncommingMisslieDetectionSystem;
-		delete LockDetectionSystem;
+		lockDetectionSystem = "4 + 8";
 	};
 	class Mi171Sh_CZ_EP1: Mi171Sh_Base_EP1
 	{
-		delete IncommingMisslieDetectionSystem;
-		delete LockDetectionSystem;
+		lockDetectionSystem = "4 + 8";
 	};
 	class Mi24_Base: Helicopter
 	{
@@ -227,8 +220,7 @@ class CfgVehicles
 	};
 	class AV8B: AV8B2
 	{
-		delete IncommingMisslieDetectionSystem;
-		delete LockDetectionSystem;
+		lockDetectionSystem = "4 + 8";
 	};
 	class C130J: Plane
 	{
