@@ -38,8 +38,8 @@ class CfgWeapons
 	};
 	class 2A38M : CannonCore
 	{
-		delete multiplier;
-		delete reloadTime;
+		multiplier = 1;
+		reloadTime = 0.013333;
 
 		class manual : CannonCore
 		{
@@ -66,7 +66,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 7;
+			burst = 7; // 0.1 s
 			reloadTime = 0.014118; // 4250 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\gsh301",
