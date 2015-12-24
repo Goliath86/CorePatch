@@ -1,1 +1,1 @@
-Fixed: CfgVehicles - faulty definitions in BTR40_MG_base_EP1 and BTR60_TK_EP1 (http://dev.withsix.com/issues/24672).
+Fixed: CfgVehicles - faulty definitions in BTR40_MG_base_EP1 (http://dev.withsix.com/issues/24672).
