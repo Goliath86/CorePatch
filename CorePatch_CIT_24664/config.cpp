@@ -13,8 +13,6 @@ class CfgVehicles
 	class House;
 	class Land_fort_artillery_nest: House
 	{
-		delete GhostView;
-
 		ghostPreview = "Land_fort_artillery_nestPreview";
 	};
 };
