@@ -13,8 +13,6 @@ class CfgWeapons
 	class Rifle;
 	class M60A4_EP1: Rifle
 	{
-		delete tMin;
-
 		htMin = 1;
 	};
 };
