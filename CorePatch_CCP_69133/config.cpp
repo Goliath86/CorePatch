@@ -13,18 +13,6 @@ class CfgVehicles
 	class Truck;
 	class MTVR: Truck
 	{
-		delete threat;
-	};
-	class MtvrReammo: MTVR
-	{
-		delete threat;
-	};
-	class MtvrRefuel: MTVR
-	{
-		delete threat;
-	};
-	class MtvrRepair: MTVR
-	{
-		delete threat;
+		threat[] = {0, 0, 0};
 	};
 };
