@@ -202,6 +202,11 @@ class CfgWeapons
 		displayName = "$STR_DN_M4A1_RCO_GL_CP";
 		irDistance = 100;
 		model = "\CorePatch\CorePatch_CCP_63107\models\m4a1_rco_gl";
+
+		class M4_ACOG_Muzzle: M4A1
+		{
+			displayName = "$STR_DN_M4A1_RCO_GL_CP";
+		};
 	};
 	class M4A1_HWS_GL: M4A1_RCO_GL
 	{
