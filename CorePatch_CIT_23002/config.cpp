@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class CorePatch_CIT_23002_23003
+	class CorePatch_CIT_23002
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
@@ -15,12 +15,5 @@ class CfgAmmo
 	{
 		delete aiRateOfFire;
 		delete aiRateOfFireDistance;
-	};
-	class ShellBase;
-	class Sh_82_HE : ShellBase
-	{
-		delete sideAirFricion;
-
-		sideAirFriction = 0;
 	};
 };

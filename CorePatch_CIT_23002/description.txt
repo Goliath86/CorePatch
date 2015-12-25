@@ -1,0 +1,1 @@
+Fixed: CfgAmmo - obsolete aiRateOfFire definition in Laserbeam (http://dev.withsix.com/issues/23002).

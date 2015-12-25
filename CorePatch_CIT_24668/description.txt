@@ -1,0 +1,1 @@
+Fixed: CfgVehicles - MQ9PredatorB has 'laserScanner = "true";' rather than 'laserScanner = 1;' (http://dev.withsix.com/issues/24668).
