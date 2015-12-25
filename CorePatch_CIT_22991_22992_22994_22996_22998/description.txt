@@ -1,6 +1,0 @@
-Fixed:
-- CfgMagazines - obsolete sound definitions (http://dev.withsix.com/issues/22991);
-- CfgMagazines - obsolete reloadMagazineSound definitions (http://dev.withsix.com/issues/22992);
-- CfgMagazines - obsolete soundFly definitions (http://dev.withsix.com/issues/22994);
-- CfgMagazines - obsolete reloadSound definitions (http://dev.withsix.com/issues/22996);
-- CfgMagazines - obsolete soundHit definitions (http://dev.withsix.com/issues/22998).

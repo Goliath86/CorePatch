@@ -1,0 +1,3 @@
+Fixed:
+- CfgVehicles - Ka60_Base_PMC lacks threat definition (http://dev.withsix.com/issues/24817);
+- CfgVehicles - several threat definitions for helicopters could need improvement (http://dev.withsix.com/issues/24839).

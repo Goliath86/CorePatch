@@ -1,0 +1,1 @@
+Fixed: CfgVehicles - several threat definitions for planes could need improvement (http://dev.withsix.com/issues/24842).

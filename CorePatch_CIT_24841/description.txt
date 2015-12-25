@@ -1,0 +1,1 @@
+Fixed: CfgVehicles - threat definitions of UAV/drones could need some adjustment (http://dev.withsix.com/issues/24841).

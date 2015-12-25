@@ -1,1 +1,0 @@
-Fixed: CfgVehicles - faulty fov definitions (http://dev.withsix.com/issues/24670).

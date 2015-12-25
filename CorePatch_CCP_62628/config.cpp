@@ -171,7 +171,7 @@ class CfgWeapons
 	};
 	class BAF_L85A2_RIS_ACOG : L85A2_base_BAF
 	{
-		delete visionMode;
+		visionMode[] = {};
 
 		class OpticsModes
 		{
@@ -409,6 +409,7 @@ class CfgWeapons
 			{
 				/* discreteDistance[] = {};
 				discreteDistanceInitIndex = 0; */
+				discreteFov[] = {};
 				distanceZoomMax = 100;
 				distanceZoomMin = 100;
 				opticsPPEffects[] = {};
@@ -503,7 +504,7 @@ class CfgWeapons
 	};
 	/* class M110_TWS_EP1 : Rifle
 	{
-		delete weaponInfoType;
+		weaponInfoType = "RscWeaponEmpty";
 
 		class OpticsModes
 		{
