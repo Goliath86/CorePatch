@@ -18,7 +18,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 13;
+			burst = 13; // 0.2 s
 			reloadTime = 0.015385; // 3900 SPM
 		};
 	};
@@ -26,7 +26,7 @@ class CfgWeapons
 	{
 		class manual : CannonCore
 		{
-			burst = 6;
+			burst = 6; // 0.1 s
 			reloadTime = 0.016667; // 3600 SPM
 			sound[] = {
 				"\Ca\Sounds_E\Weapons_E\Gatling\gatling_250ms",
@@ -46,7 +46,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 11;
+			burst = 11; // 0.2 s
 			reloadTime = 0.01875; // 3200 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\A10vulcanIV",
@@ -60,14 +60,14 @@ class CfgWeapons
 	{
 		class manual : CannonCore
 		{
-			burst = 5;
+			burst = 5; // 0.2 s
 		};
 	};
 	class GSh302 : CannonCore
 	{
 		class manual : CannonCore
 		{
-			burst = 10;
+			burst = 10; // 0.2 s
 			reloadTime = 0.02; // 3000 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\A10vulcanIV",
@@ -83,7 +83,7 @@ class CfgWeapons
 		{
 			delete multiplier;
 
-			burst = 20;
+			burst = 20; // 0.2 s
 			reloadTime = 0.01; // 6000 SPM
 			sound[] = {
 				"\Ca\Sounds_E\Weapons_E\Gatling\gatling_burst_1",
@@ -110,26 +110,23 @@ class CfgWeapons
 	class MGun;
 	class M134 : MGun
 	{
-		class LowROF : Mode_FullAuto
-		{
-			reloadTime = 0.03; // 2000 SPM
-		};
+		class LowROF; // 2000 SPM
 		class HighROF : LowROF
 		{
-			reloadTime = 0.015; // 4000 SPM
+			reloadTime = 0.045; // 4000 SPM
 		};
 		class close;
-		class far;
-		class medium;
 		class short;
+		class medium;
+		class far;
 	};
 	class TwinM134 : M134
 	{
-		class HighROF : HighROF
+		class LowROF : LowROF // 4000 SPM
 		{
 			delete reloadTime;
 		};
-		class LowROF : LowROF
+		class HighROF : HighROF // 8000 SPM
 		{
 			delete reloadTime;
 		};
@@ -137,7 +134,7 @@ class CfgWeapons
 		{
 			delete reloadTime;
 		};
-		class far : far
+		class short : short
 		{
 			delete reloadTime;
 		};
@@ -145,18 +142,9 @@ class CfgWeapons
 		{
 			delete reloadTime;
 		};
-		class short : short
+		class far : far
 		{
 			delete reloadTime;
-		};
-	};
-	class M32_heli : MGun
-	{
-		sound[] = {
-			"ca\sounds_e\weapons_e\grenade_launcher\gr_launcher_1",
-			1,
-			1,
-			200
 		};
 	};
 };
