@@ -8,10 +8,51 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+class CfgMagazines
+{
+	class 230Rnd_30mmHE_2A42;
+	class 1904Rnd_30mmAA_2A38M : 230Rnd_30mmHE_2A42
+	{
+		tracersEvery = 3;
+	};
+};
 class Mode_FullAuto;
 class CfgWeapons
 {
 	class CannonCore;
+	class 2A14 : CannonCore
+	{
+		class manual : CannonCore
+		{
+			delete multiplier;
+
+			burst = 4;
+			reloadTime = 0.03; // 2000 SPM
+		};
+	};
+	class 2A38M : CannonCore
+	{
+		multiplier = 1;
+		reloadTime = 0.013333;
+
+		class manual : CannonCore
+		{
+			delete multiplier;
+
+			burst = 4;
+			reloadTime = 0.013333; // 4500 SPM
+		};
+	};
+	class AZP85 : CannonCore
+	{
+		class manual : CannonCore
+		{
+			delete multiplier;
+
+			burst = 4;
+			reloadTime = 0.017647; // 3400 SPM
+		};
+	};
 	class GAU8 : CannonCore
 	{
 		class manual : CannonCore
