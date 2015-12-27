@@ -16,14 +16,12 @@ class CfgWeapons
 	};
 	class AK_74 : AK_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ak_74";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
 	};
 	class AK_74_GL : AK_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ak_74_GL";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
@@ -71,27 +69,12 @@ class CfgWeapons
 	};
 	class AKS_74 : AKS_BASE
 	{
-		model="\CorePatch\CorePatch_CCP_63107\models\aks74.p3d";
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
 	};
-	class AK_47_M: AK_BASE
-	{
-		model="\CorePatch\CorePatch_CCP_63107\models\akm.p3d";
-	};
-	class AK_47_S: AK_47_M
-	{
-		model="\CorePatch\CorePatch_CCP_63107\models\ak47s.p3d";
-	};
-	class AKS_GOLD: AK_47_S
-	{
-		model="\CorePatch\CorePatch_CCP_63107\models\ak47s_gold.p3d";
-	};
 	class AKS_74_GOSHAWK : AKS_BASE
 	{
-		model="\CorePatch\CorePatch_CCP_63107\models\aks74_goshawk.p3d";
-		
 		weaponInfoType = "RscWeaponZeroing";
 
 		class OpticsModes
@@ -110,8 +93,6 @@ class CfgWeapons
 	};
 	class AKS_74_NSPU : AKS_BASE
 	{
-		model="\CorePatch\CorePatch_CCP_63107\models\aks74_nspu.p3d";
-		
 		weaponInfoType = "RscWeaponZeroing";
 
 		class OpticsModes
@@ -715,8 +696,6 @@ class CfgWeapons
 	};
 	class VSS_vintorez : Rifle
 	{
-		model="\CorePatch\CorePatch_CCP_63107\models\VSS_vintorez.p3d";
-		
 		weaponInfoType = "RscWeaponZeroing";
 
 		class OpticsModes
@@ -735,14 +714,9 @@ class CfgWeapons
 	};
 	class bizon : Rifle
 	{
-		model="\CorePatch\CorePatch_CCP_63107\models\bizon.p3d";
 		discreteDistance[] = {50, 100, 150};
 		discreteDistanceInitIndex = 1;
 		weaponInfoType = "RscWeaponZeroing";
-	};
-	class bizon_silenced: bizon 
-	{
-		model="\CorePatch\CorePatch_CCP_63107\models\bizon_silenced.p3d";
 	};
 	class ksvk : Rifle
 	{

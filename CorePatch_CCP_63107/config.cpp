@@ -14,6 +14,26 @@ class CfgWeapons
 	class AK_BASE: Rifle
 	{
 	};
+	class AK_47_M: AK_BASE
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\akm";
+	};
+	class AK_47_S: AK_47_M
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\ak47s";
+	};
+	class AKS_GOLD: AK_47_S
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\ak47s_gold";
+	};
+	class AK_74: AK_BASE
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\ak_74";
+	};
+	class AK_74_GL: AK_BASE
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\ak_74_GL";
+	};
 	class AK_107_BASE: AK_BASE
 	{
 	};
@@ -103,6 +123,10 @@ class CfgWeapons
 	class AKS_BASE: AK_BASE
 	{
 	};
+	class AKS_74: AKS_BASE
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\aks74";
+	};
 	class AKS_74_GOSHAWK: AKS_BASE
 	{
 		model = "\CorePatch\CorePatch_CCP_63107\models\aks74_goshawk";
@@ -140,6 +164,10 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
+	};
+	class AKS_74_NSPU: AKS_BASE
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\aks74_nspu";
 	};
 	class AKS_74_pso: AKS_BASE
 	{
@@ -465,6 +493,14 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
+	};
+	class bizon: Rifle
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\bizon";
+	};
+	class bizon_silenced: bizon 
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\bizon_silenced";
 	};
 	class ksvk: Rifle
 	{
