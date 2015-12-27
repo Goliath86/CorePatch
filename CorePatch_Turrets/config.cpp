@@ -1641,16 +1641,27 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				delete OpticsIn;
+
 				discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600};
 				discreteDistanceInitIndex = 0;
+				gunnerOpticsEffect[] = {
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
 				turretInfoType = "RscWeaponZeroing";
 
-				class OpticsIn
+				class ViewOptics
 				{
-					class ACOG
-					{
-						visionMode[] = {};
-					};
+					initAngleX = 0;
+					initAngleY = 0;
+					initFov = 0.117;
+					maxAngleX = 30;
+					maxAngleY = 100;
+					maxFov = 0.117;
+					minAngleX = -30;
+					minAngleY = -100;
+					minFov = 0.117;
 				};
 			};
 		};
@@ -1696,6 +1707,19 @@ class CfgVehicles
 		class Turrets : Turrets
 		{
 			class MainTurret;
+		};
+	};
+	class BAF_L2A1_ACOG_base : StaticMGWeapon
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				gunnerOpticsEffect[] = {
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+			};
 		};
 	};
 	class DSHKM_base : StaticMGWeapon
