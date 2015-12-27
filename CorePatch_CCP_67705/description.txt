@@ -1,14 +1,1 @@
-//Desc
-BTR90_HQ placed in editor with player as driver, than switched to gunner and cannot switch back to driver.
-BTR90_HQ placed in editor with player as gunner, gunner cannot switch to driver.
-BMP2_HQ_CDF placed in editor with player as driver, than switched to gunner and cannot switch back to driver.
-BMP2_HQ_CDF placed in editor with player as gunner, gunner cannot switch to driver.
-BMP2_HQ_INS placed in editor with player as driver, than switched to gunner and cannot switch back to driver.
-BMP2_HQ_INS placed in editor with player as gunner, gunner cannot switch to driver.
-BMP2_HQ_TK_EP1 placed in editor with player as driver, than switched to gunner and cannot switch back to driver.
-BMP2_HQ_TK_EP1 placed in editor with player as gunner, gunner cannot switch to driver.
-
-//Exp
-Gunner/Commander of all HQ should switch to driver position and back.
-
-http://dev.withsix.com/issues/67705
+Fixed: BMP-2/BTR-90 HQ gunner/commander can not switch to driver seat (http://dev.withsix.com/issues/67705).
