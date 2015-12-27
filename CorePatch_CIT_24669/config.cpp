@@ -16,16 +16,12 @@ class CfgVehicles
 		delete armorGlass;
 		delete armorWheels;
 	};
-	class UAZ_Base : Car
-	{
-	};
+	class UAZ_Base;
 	class UAZ_Unarmed_Base : UAZ_Base
 	{
 		delete armorWheels;
 	};
-	class Wheeled_APC : Car
-	{
-	};
+	class Wheeled_APC;
 	class BRDM2_Base : Wheeled_APC
 	{
 		delete armorBody;
