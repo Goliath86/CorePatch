@@ -1,1 +1,1 @@
-Fixed: CfgVehicles - faulty irScanRangeXXX definition in M113_Base (http://dev.withsix.com/issues/24651).
+Fixed: CfgVehicles - faulty irScanRangeXXX definitions in M113_Base (http://dev.withsix.com/issues/24651).
