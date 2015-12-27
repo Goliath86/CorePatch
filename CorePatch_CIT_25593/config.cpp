@@ -11,13 +11,6 @@ class CfgPatches
 class CfgMagazines
 {
 	class VehicleMagazine;
-	class 230Rnd_30mmHE_2A42 : VehicleMagazine
-	{
-	};
-	class 1904Rnd_30mmAA_2A38M : 230Rnd_30mmHE_2A42
-	{
-		tracersEvery = 3;
-	};
 	class 1470Rnd_127x108_YakB : VehicleMagazine
 	{
 		tracersEvery = 4;
@@ -25,40 +18,6 @@ class CfgMagazines
 };
 class CfgWeapons
 {
-	class CannonCore;
-	class 2A14 : CannonCore
-	{
-		class manual : CannonCore
-		{
-			delete multiplier;
-
-			burst = 4;
-			reloadTime = 0.03; // 2000 SPM
-		};
-	};
-	class 2A38M : CannonCore
-	{
-		multiplier = 1;
-		reloadTime = 0.013333;
-
-		class manual : CannonCore
-		{
-			delete multiplier;
-
-			burst = 4;
-			reloadTime = 0.013333; // 4500 SPM
-		};
-	};
-	class AZP85 : CannonCore
-	{
-		class manual : CannonCore
-		{
-			delete multiplier;
-
-			burst = 4;
-			reloadTime = 0.017647; // 3400 SPM
-		};
-	};
 	class MGun;
 	class YakB : MGun
 	{
