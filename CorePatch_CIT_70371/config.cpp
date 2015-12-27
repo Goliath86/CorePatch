@@ -1,11 +1,3 @@
-class CfgAddons {
-	class PreloadAddons {
-		class CorePatch_CIT_70371 {
-			list[] = {"CorePatch_CIT_70371"};
-		};
-	};
-};
-
 class CfgPatches
 {
 	class CorePatch_CIT_70371
@@ -16,10 +8,18 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_CIT_70371
+		{
+			list[] = {"CorePatch_CIT_70371"};
+		};
+	};
+};
 class CfgMagazines
 {
-	// delete 75Rnd_545x39_RPK;
-
 	class CA_Magazine;
 	class 45Rnd_545x39_RPK: CA_Magazine
 	{
@@ -28,7 +28,7 @@ class CfgMagazines
 		descriptionShort = "$STR_DSS_45RND_RPK_CP";
 		displayName = "$STR_DN_45RND_545X39_RPK_CP";
 		lastRoundsTracer = 4;
-		model = "\CorePatch\CorePatch_CIT_70371\30Rnd_545x39_AK.p3d";
+		model = "\CorePatch\CorePatch_CIT_70371\30Rnd_545x39_AK";
 		nameSound = "mgun";
 		picture = "\CA\weapons\AK\data\equip\m_ak74_ca.paa";
 		scope = 2;
@@ -40,7 +40,7 @@ class CfgMagazines
 		count = 45;
 		descriptionShort = "$STR_DSS_45RND_RPK_CP";
 		displayName = "$STR_DN_45RND_545X39_RPK_CP";
-		model = "\CorePatch\CorePatch_CIT_70371\30Rnd_545x39_AK.p3d";
+		model = "\CorePatch\CorePatch_CIT_70371\30Rnd_545x39_AK";
 		picture = "\CA\weapons\AK\data\equip\m_ak74_ca.paa";
 		type = 256;
 	};
@@ -69,7 +69,7 @@ class CfgWeapons
 			"30Rnd_545x39_AKSD",
 			"75Rnd_545x39_RPK"
 		};
-		model = "\CorePatch\CorePatch_CIT_70371\RPK_74.p3d";
+		model = "\CorePatch\CorePatch_CIT_70371\RPK_74";
 	};
 };
 class CfgVehicles
@@ -183,87 +183,6 @@ class CfgVehicles
 			"45Rnd_545x39_RPK",
 			"HandGrenade_East",
 			"SmokeShell"
-		};
-	};
-	class TK_GUE_Soldier_Base_EP1;
-	class TK_GUE_Soldier_AR_EP1: TK_GUE_Soldier_Base_EP1
-	{
-		magazines[] = {
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK"
-		};
-		respawnMagazines[] = {
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK"
-		};
-	};
-	class TK_INS_Soldier_Base_EP1;
-	class TK_INS_Soldier_AR_EP1: TK_INS_Soldier_Base_EP1
-	{
-		magazines[] = {
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK"
-		};
-		respawnMagazines[] = {
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK"
-		};
-	};
-	class TK_Soldier_base_EP1;
-	class TK_Soldier_AR_EP1: TK_Soldier_base_EP1
-	{
-		magazines[] = {
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"HandGrenade_East",
-			"HandGrenade_East"
-		};
-		respawnMagazines[] = {
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"45Rnd_545x39_RPK",
-			"HandGrenade_East"
-		};
-	};
-	class TK_Assault_Pack_EP1;
-	class TK_Assault_Pack_RPK_EP1: TK_Assault_Pack_EP1
-	{
-		class TransportMagazines
-		{
-			delete _xx_75Rnd_545x39_RPK;
-
-			class _xx_45Rnd_545x39_RPK
-			{
-				count = "2 * 3";
-				magazine = "45Rnd_545x39_RPK";
-			};
 		};
 	};
 	class ReammoBox;
@@ -396,6 +315,87 @@ class CfgVehicles
 				count = "2 * 20";
 				magazine = "45Rnd_545x39_RPK";
 			};
+		};
+	};
+	class TK_Assault_Pack_EP1;
+	class TK_Assault_Pack_RPK_EP1: TK_Assault_Pack_EP1
+	{
+		class TransportMagazines
+		{
+			delete _xx_75Rnd_545x39_RPK;
+
+			class _xx_45Rnd_545x39_RPK
+			{
+				count = "2 * 3";
+				magazine = "45Rnd_545x39_RPK";
+			};
+		};
+	};
+	class TK_GUE_Soldier_Base_EP1;
+	class TK_GUE_Soldier_AR_EP1: TK_GUE_Soldier_Base_EP1
+	{
+		magazines[] = {
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK"
+		};
+		respawnMagazines[] = {
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK"
+		};
+	};
+	class TK_INS_Soldier_Base_EP1;
+	class TK_INS_Soldier_AR_EP1: TK_INS_Soldier_Base_EP1
+	{
+		magazines[] = {
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK"
+		};
+		respawnMagazines[] = {
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK"
+		};
+	};
+	class TK_Soldier_base_EP1;
+	class TK_Soldier_AR_EP1: TK_Soldier_base_EP1
+	{
+		magazines[] = {
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"HandGrenade_East",
+			"HandGrenade_East"
+		};
+		respawnMagazines[] = {
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"45Rnd_545x39_RPK",
+			"HandGrenade_East"
 		};
 	};
 	class UralReammo_Base;
