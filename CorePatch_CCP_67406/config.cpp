@@ -10,24 +10,20 @@ class CfgPatches
 };
 class CfgAmmo
 {
-	class BulletBase;
-	class B_762x51_Ball : BulletBase
-	{
-	};
+	class B_762x51_Ball;
 	class B_762x51_noTracer : B_762x51_Ball
 	{
 		airLock = 0;
 	};
-	class B_86x70_Ball_noTracer : BulletBase
-	{
-		delete airLock;
-	};
-	class B_127x99_Ball : BulletBase
-	{
-	};
+	class B_127x99_Ball;
 	class B_127x99_Ball_noTracer : B_127x99_Ball
 	{
 		airLock = 0;
+	};
+	class BulletBase;
+	class B_86x70_Ball_noTracer : BulletBase
+	{
+		delete airLock;
 	};
 	class B_127x108_Ball : BulletBase
 	{
@@ -40,5 +36,9 @@ class CfgAmmo
 	class Sh_40_HE : BulletBase
 	{
 		airLock = 1;
+	};
+	class Sh_40_SABOT : Sh_40_HE
+	{
+		airLock = 0;
 	};
 };
