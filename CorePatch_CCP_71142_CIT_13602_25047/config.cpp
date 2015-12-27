@@ -20,31 +20,37 @@ class CfgAddons
 };
 class CfgMagazines
 {
-	//delete 200Rnd_762x54_GPMG;
-	//delete 1200Rnd_20mm_M621;
-
+	class 200Rnd_762x54_PKT;
+	class 200Rnd_762x54_GPMG : 200Rnd_762x54_PKT
+	{
+		ammo = "B_762x51_Ball";
+		descriptionShort = "$STR_DSS_200RND_762X51_GPMG_CP";
+	};
+	class 1200Rnd_762x51_M240;
+	class 1200Rnd_20mm_M621 : 1200Rnd_762x51_M240
+	{
+		displayName = "$STR_BAF_M621_MANUAL0";
+		nameSound = "cannon";
+		tracersEvery = 2;
+	};
+	class 2000Rnd_762x51_M134;
+	class 2000Rnd_762x51_L94A1 : 2000Rnd_762x51_M134
+	{
+		ammo = "B_762x51_Ball";
+		tracersEvery = 4;
+	};
 	class VehicleMagazine;
 	class 400Rnd_20mm_M621 : VehicleMagazine
 	{
 		ammo = "B_20mm_AP";
 		count = 400;
 		displayName = "$STR_BAF_M621_MANUAL0";
+		displayNameShort = "HE";
 		initSpeed = 1036;
 		maxLeadSpeed = 200;
 		nameSound = "cannon";
 		scope = 2;
 		tracersEvery = 2;
-	};
-	class 4000Rnd_762x51_M134 : VehicleMagazine
-	{
-	};
-	class 2000Rnd_762x51_M134 : 4000Rnd_762x51_M134
-	{
-	};
-	class 2000Rnd_762x51_L94A1 : 2000Rnd_762x51_M134
-	{
-		ammo = "B_762x51_Ball";
-		tracersEvery = 4;
 	};
 };
 class CfgWeapons
@@ -52,11 +58,16 @@ class CfgWeapons
 	class CannonCore;
 	class BAF_M621 : CannonCore
 	{
-		aiDispersionCoefX = 21;
-		aiDispersionCoefY = 21;
+		autoFire = 1;
 		canLock = 0;
 		cursor = "Air_W_MG";
 		cursorAim = "Air_Dot";
+		displayName = "$STR_BAF_M621_MANUAL0";
+		ffCount = 6;
+		ffFrequency = 11;
+		ffMagnitude = 0.5;
+		flash = "gunfire";
+		flashSize = 0.1;
 		magazines[] = {"400Rnd_20mm_M621"};
 		modes[] = {
 			"manual",
@@ -72,6 +83,9 @@ class CfgWeapons
 		{
 			aiRateOfFire = 0.5;
 			aiRateOfFireDistance = 50;
+			ffCount = 6;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
 			autoFire = 1;
 			dispersion = 0.0012000001;
 			displayName = "$STR_BAF_M621_MANUAL0";
@@ -82,18 +96,18 @@ class CfgWeapons
 			minRangeProbab = 0.0099999998;
 			reloadTime = 0.075000003;
 			sound[] = {
-				"\Ca\sounds\Weapons\cannon\242_single",
+				"\Ca\sounds\Weapons\cannon\a10vulcanVII",
 				10,
 				1,
-				1200
+				1100
 			};
 		};
 		class close : manual
 		{
 			burst = 10;
-			maxRange = 200;
+			maxRange = 500;
 			maxRangeProbab = 0.039999999;
-			midRange = 100;
+			midRange = 200;
 			midRangeProbab = 0.57999998;
 			minRange = 0;
 			minRangeProbab = 0.050000001;
@@ -105,50 +119,39 @@ class CfgWeapons
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 300;
 			burst = 8;
-			maxRange = 400;
-			midRange = 200;
-			minRange = 50;
+			maxRange = 800;
+			midRange = 600;
+			minRange = 300;
 		};
 		class medium : close
 		{
 			aiRateOfFire = 3;
 			aiRateOfFireDistance = 600;
 			burst = 4;
-			maxRange = 600;
-			midRange = 400;
-			minRange = 300;
+			maxRange = 1000;
+			midRange = 800;
+			minRange = 600;
 		};
 		class far : close
 		{
 			aiRateOfFire = 5;
 			aiRateOfFireDistance = 1000;
 			burst = 5;
-			maxRange = 800;
+			maxRange = 1200;
 			maxRangeProbab = 0.0099999998;
-			midRange = 600;
+			midRange = 1000;
 			midRangeProbab = 0.40000001;
-			minRange = 500;
+			minRange = 900;
 		};
 	};
 	class MGun;
 	class BAF_L7A2 : MGun
 	{
-		delete aiRateOfFire;
-		delete aiRateOfFireDistance;
-		delete ballisticsComputer;
-		delete begin1;
-		delete dispersion;
-		delete maxRange;
-		delete maxRangeProbab;
-		delete midRange;
-		delete midRangeProbab;
-		delete minRange;
-		delete minRangeProbab;
-		delete reloadTime;
-		delete soundBegin;
-
 		aiDispersionCoefX = 7;
 		aiDispersionCoefY = 7;
+		aiRateOfFire = 0.5;
+		aiRateOfFireDistance = 400;
+		ballisticsComputer = 0;
 		bullet1[] = {
 			"ca\sounds\weapons\shells\big_shell_metal_01",
 			0.070794582,
@@ -224,14 +227,26 @@ class CfgWeapons
 		canLock = 0;
 		magazines[] = {
 			"200Rnd_762x51_M240",
-			"100Rnd_762x51_M240"
+			"100Rnd_762x51_M240",
+			"200Rnd_762x54_GPMG"
 		};
+		maxRange = 500;
+		maxRangeProbab = 0.039999999;
+		midRange = 150;
+		midRangeProbab = 0.57999998;
+		minRange = 1;
+		minRangeProbab = 0.30000001;
 		modes[] = {
 			"manual",
 			"close",
 			"short",
 			"medium",
 			"far"
+		};
+		reloadTime = 0.075000003;
+		soundBegin[] = {
+			"sound",
+			1
 		};
 		soundBullet[] = {
 			"bullet1",
@@ -262,8 +277,19 @@ class CfgWeapons
 
 		class manual : MGun
 		{
-			aiRateOfFire = 0.5;
 			aiRateOfFireDistance = 50;
+			begin1[] = {
+				"ca\sounds\Weapons\machineguns\M240_single1",
+				1.7782794,
+				1,
+				1000
+			};
+			begin2[] = {
+				"ca\sounds\Weapons\machineguns\M240_single2",
+				1.7782794,
+				1,
+				1000
+			};
 			dispersion = 0.0035000001;
 			displayName = "$STR_BAF_BAF_L7A20";
 			maxRange = 3;
@@ -271,7 +297,13 @@ class CfgWeapons
 			midRange = 2;
 			midRangeProbab = 0.0099999998;
 			minRangeProbab = 0.0099999998;
-			reloadTime = 0.079999998;
+			reloadTime = 0.075000003;
+			soundBegin[] = {
+				"begin1",
+				0.5,
+				"begin2",
+				0.5
+			};
 		};
 		class close : manual
 		{
@@ -317,22 +349,10 @@ class CfgWeapons
 	};
 	class BAF_L94A1 : MGun
 	{
-		delete aiRateOfFire;
-		delete aiRateOfFireDistance;
-		delete begin1;
-		delete dispersion;
-		delete maxRange;
-		delete maxRangeProbab;
-		delete midRange;
-		delete midRangeProbab;
-		delete minRange;
-		delete minRangeProbab;
-		delete reloadTime;
-		delete soundBegin;
-		delete soundContinuous;
-
 		aiDispersionCoefX = 21;
 		aiDispersionCoefY = 21;
+		aiRateOfFire = 0.5;
+		aiRateOfFireDistance = 400;
 		bullet1[] = {
 			"ca\sounds\weapons\shells\big_shell_metal_01",
 			0.070794582,
@@ -407,12 +427,27 @@ class CfgWeapons
 		};
 		canLock = 0;
 		initSpeed = 862;
+		magazines[] = {
+			"2000Rnd_762x51_L94A1",
+			"1200Rnd_762x51_M240"
+		};
+		maxRange = 500;
+		maxRangeProbab = 0.039999999;
+		midRange = 150;
+		midRangeProbab = 0.57999998;
+		minRange = 1;
+		minRangeProbab = 0.30000001;
 		modes[] = {
 			"manual",
 			"close",
 			"short",
 			"medium",
 			"far"
+		};
+		reloadTime = 0.12;
+		soundBegin[] = {
+			"sound",
+			1
 		};
 		soundBullet[] = {
 			"bullet1",
@@ -443,7 +478,6 @@ class CfgWeapons
 
 		class manual : MGun
 		{
-			aiRateOfFire = 0.5;
 			aiRateOfFireDistance = 50;
 			begin1[] = {
 				"ca\sounds_baf\weapons\L7A2",
@@ -506,30 +540,14 @@ class CfgWeapons
 			minRange = 500;
 		};
 	};
-	class BAF_static_GMG : MGun
-	{
-		delete begin1;
-		delete soundBegin;
-
-		sound[] = {
-			"ca\sounds_baf\weapons\GMG",
-			1.7782794,
-			1,
-			1300
-		};
-	};
 	class M2 : MGun
 	{
 	};
 	class BAF_L2A1 : M2
 	{
-		delete begin1;
-		delete sound;
-		delete soundBegin;
-		delete soundContinuous;
-
 		class manual : MGun
 		{
+			aiRateOfFireDistance = 50;
 			begin1[] = {
 				"ca\sounds\weapons\machineguns\m2_single_1",
 				1.4125376,
@@ -542,6 +560,13 @@ class CfgWeapons
 				1,
 				1200
 			};
+			dispersion = 0.001;
+			displayName = "$STR_BAF_BAF_L2A10";
+			maxRange = 3;
+			maxRangeProbab = 0.0099999998;
+			midRange = 2;
+			midRangeProbab = 0.0099999998;
+			minRangeProbab = 0.0099999998;
 			reloadTime = 0.11;
 			soundBegin[] = {
 				"begin1",
@@ -553,15 +578,15 @@ class CfgWeapons
 	};
 	class M621 : MGun
 	{
-		magazines[] = {"400Rnd_20mm_M621"};
+		magazines[] = {
+			"400Rnd_20mm_M621",
+			"1200Rnd_20mm_M621"
+		};
 	};
 };
 class CfgVehicles
 {
-	class AllVehicles;
-	class Air : AllVehicles
-	{
-	};
+	class Air;
 	class Helicopter : Air
 	{
 		class Turrets
@@ -571,8 +596,7 @@ class CfgVehicles
 	};
 	class AW159_Lynx_BAF : Helicopter
 	{
-		delete enableManualFire;
-
+		enableManualFire = 1;
 		magazines[] = {
 			"400Rnd_20mm_M621",
 			"120Rnd_CMFlareMagazine"
@@ -597,23 +621,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class Land : AllVehicles
-	{
-	};
-	class LandVehicle : Land
-	{
-	};
-	class StaticWeapon : LandVehicle
-	{
-		class Turrets;
-	};
-	class StaticMGWeapon : StaticWeapon
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret;
-		};
-	};
+	class StaticMGWeapon;
 	class BAF_L2A1_ACOG_base : StaticMGWeapon
 	{
 		begin1[] = {
@@ -633,21 +641,6 @@ class CfgVehicles
 			0.5,
 			"begin2",
 			0.5
-		};
-	};
-	class BAF_GPMG_Minitripod_D : BAF_L2A1_ACOG_base
-	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				magazines[] = {
-					"200Rnd_762x51_M240",
-					"200Rnd_762x51_M240",
-					"200Rnd_762x51_M240",
-					"200Rnd_762x51_M240"
-				};
-			};
 		};
 	};
 };
