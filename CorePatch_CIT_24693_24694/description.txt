@@ -1,3 +1,3 @@
 Fixed:
-- CfgVehicles - faulty canLock definitions in BRDM2_Base (http://dev.withsix.com/issues/24693);
-- CfgVehicles - faulty viewCargoInExternal definitions in BRDM2_Base (http://dev.withsix.com/issues/24694).
+- CfgVehicles - faulty canLock definition in BRDM2_Base (http://dev.withsix.com/issues/24693);
+- CfgVehicles - faulty viewCargoInExternal definition in BRDM2_Base (http://dev.withsix.com/issues/24694).
