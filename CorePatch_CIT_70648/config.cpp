@@ -14,8 +14,8 @@ class CfgWeapons
 	class M134: MGun
 	{
 		class LowROF;
-		class far;
 		class medium;
+		class far;
 	};
 	class TwinM134: M134
 	{
@@ -23,11 +23,11 @@ class CfgWeapons
 		{
 			delete dispersion;
 		};
-		class far: far
+		class medium: medium
 		{
 			delete dispersion;
 		};
-		class medium: medium
+		class far: far
 		{
 			delete dispersion;
 		};
