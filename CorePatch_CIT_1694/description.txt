@@ -1,0 +1,1 @@
+Fixed: [LAV-25 | LAV-25 (HQ)] driver-view, turned-out, look right back problem (http://dev.withsix.com/issues/1694).
