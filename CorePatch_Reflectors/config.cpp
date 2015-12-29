@@ -110,7 +110,7 @@ class CfgVehicles
 				selection = "L svetlo";
 				size = 0.5;
 			};
-			class commander_light : LeftLight
+			/*class commander_light : LeftLight
 			{
 				ambient[] = {0.1, 0.1, 0.1, 0.1};
 				brightness = 0;
@@ -119,7 +119,7 @@ class CfgVehicles
 				position = "commander light";
 				selection = "commander light";
 				size = 0;
-			};
+			};*/
 			class RightLight : LeftLight
 			{
 				color[] = {0.89999998, 0.80000001, 0.80000001, 0.1};
@@ -279,6 +279,8 @@ class CfgVehicles
 	};
 	class BMP3 : Tracked_APC
 	{
+		model = "\CorePatch\CorePatch_Reflectors\BMP3";
+		
 		aggregateReflectors[] = {{"1", "1"}}; // {{"CommanderLight"}, {"GunnerLight"}, {"1", "1"}};
 
 		class Reflectors
