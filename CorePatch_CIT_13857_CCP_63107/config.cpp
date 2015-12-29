@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class CorePatch_CCP_63107
+	class CorePatch_CIT_13857_CCP_63107
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
@@ -16,23 +16,23 @@ class CfgWeapons
 	};
 	class AK_47_M: AK_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\akm";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\akm";
 	};
 	class AK_47_S: AK_47_M
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ak47s";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\ak47s";
 	};
 	class AKS_GOLD: AK_47_S
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ak47s_gold";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\ak47s_gold";
 	};
 	class AK_74: AK_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ak_74";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\ak_74";
 	};
 	class AK_74_GL: AK_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ak_74_GL";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\ak_74_GL";
 	};
 	class AK_107_BASE: AK_BASE
 	{
@@ -42,7 +42,7 @@ class CfgWeapons
 	};
 	class AK_107_GL_pso: AK_107_GL_kobra
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\AK107_GL_pso";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\AK107_GL_pso";
 
 		class OpticsModes
 		{
@@ -82,7 +82,7 @@ class CfgWeapons
 	};
 	class AK_107_pso: AK_107_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\AK107_pso";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\AK107_pso";
 
 		class OpticsModes
 		{
@@ -125,11 +125,11 @@ class CfgWeapons
 	};
 	class AKS_74: AKS_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\aks74";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\aks74";
 	};
 	class AKS_74_GOSHAWK: AKS_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\aks74_goshawk";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\aks74_goshawk";
 
 		class OpticsModes
 		{
@@ -167,11 +167,11 @@ class CfgWeapons
 	};
 	class AKS_74_NSPU: AKS_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\aks74_nspu";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\aks74_nspu";
 	};
 	class AKS_74_pso: AKS_BASE
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\aks74pso";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\aks74pso";
 
 		class OpticsModes
 		{
@@ -185,7 +185,7 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
-				memoryPointCamera = "eye";
+				// memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
 				opticsID = 2;
@@ -197,18 +197,6 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
-	};
-	class RPK_74: AK_74
-	{
-		model="\CorePatch\CorePatch_CCP_63107\models\RPK_74.p3d";
-	};
-	class PK: Rifle 
-	{
-		model="\CorePatch\CorePatch_CCP_63107\models\PK_MG_proxy.p3d";
-	};
-	class Pecheneg: PK 
-	{		
-		model="\CorePatch\CorePatch_CCP_63107\models\Pecheneg_MG_proxy.p3d";
 	};
 	class M16_base: Rifle
 	{
@@ -224,7 +212,7 @@ class CfgWeapons
 	};
 	class M4A1_HWS_GL_SD_Camo: M4A1_AIM_SD_camo
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_Holo_GL_SD_camo";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\M4A1_Holo_GL_SD_camo";
 
 		class FlashLight
 		{
@@ -241,7 +229,7 @@ class CfgWeapons
 	{
 		displayName = "$STR_DN_M4A1_RCO_GL_CP";
 		irDistance = 100;
-		model = "\CorePatch\CorePatch_CCP_63107\models\m4a1_rco_gl";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m4a1_rco_gl";
 
 		class M4_ACOG_Muzzle: M4A1
 		{
@@ -251,7 +239,7 @@ class CfgWeapons
 	class M4A1_HWS_GL: M4A1_RCO_GL
 	{
 		irDistance = 0;
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_Holo_GL";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\M4A1_Holo_GL";
 
 		class FlashLight
 		{
@@ -266,44 +254,44 @@ class CfgWeapons
 	};
 	class M4A1_HWS_GL_Camo: M4A1_HWS_GL
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_Holo_GL_camo";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\M4A1_Holo_GL_camo";
 	};
 	class M4SPR: M4A1
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m4_spr";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m4_spr";
 	};
 	class M16A2: M16_base
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a2";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m16a2";
 	};
 	class M16A2GL: M16A2
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a2_gl";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m16a2_gl";
 	};
 	class m16a4: M16A2
 	{
 		irDistance = 100;
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m16a4";
 	};
 	class M16A4_GL: m16a4
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_gl";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m16a4_gl";
 	};
 	class M16A4_ACG_GL: M16A4_GL
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_acg_gl";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m16a4_acg_gl";
 	};
 	class m16a4_acg: m16a4
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_acg";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m16a4_acg";
 	};
 	class M24: Rifle
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m24";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m24";
 	};
 	class M24_des_EP1: M24
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m24_desert";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m24_desert";
 	};
 	class M240: Rifle
 	{
@@ -319,12 +307,14 @@ class CfgWeapons
 	{
 		displayName = "$STR_DN_M249_M145_EP1_CP";
 	};
-	/* class PK: Rifle
+	class PK: Rifle
 	{
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\PK_MG_proxy";
 	};
 	class Pecheneg: PK
 	{
-		model = ""; // To do
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\Pecheneg_MG_proxy";
+		optics = 1;
 
 		class OpticsModes
 		{
@@ -333,7 +323,7 @@ class CfgWeapons
 				cameraDir = "";
 				distanceZoomMax = 300;
 				distanceZoomMin = 300;
-				memoryPointCamera = "eye";
+				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
 				opticsID = 1;
@@ -361,10 +351,10 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
-	}; */
+	};
 	class SVD: Rifle
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\svd";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\svd";
 		optics = 1;
 
 		class OpticsModes
@@ -430,7 +420,7 @@ class CfgWeapons
 	};
 	class SVD_des_EP1: SVD
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\svd_desert";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\svd_desert";
 
 		class OpticsModes
 		{
@@ -467,7 +457,7 @@ class CfgWeapons
 	};
 	class VSS_vintorez: Rifle
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\VSS_vintorez";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\VSS_vintorez";
 		optics = 1;
 
 		class OpticsModes
@@ -508,20 +498,20 @@ class CfgWeapons
 	};
 	class bizon: Rifle
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\bizon";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\bizon";
 	};
 	class bizon_silenced: bizon 
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\bizon_silenced";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\bizon_silenced";
 	};
 	class ksvk: Rifle
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\ksvk";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\ksvk";
 		optics = 1;
 	};
 	class m107: Rifle
 	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m107";
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m107";
 		optics = 1;
 	};
 };

@@ -1,0 +1,3 @@
+Added:
+- iron sights for scoped weapons with sidemounted scope (http://dev.withsix.com/issues/13857);
+- upgraded ArmA2 vanilla weapons by using ANZINS mod (http://dev.withsix.com/issues/63107).

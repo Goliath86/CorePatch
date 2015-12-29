@@ -595,42 +595,20 @@ class CfgWeapons
 	};
 	class Pecheneg : PK
 	{
-		/*discreteDistance[] = {400, 500, 600, 700, 800, 900, 1000};
+		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
-		optics = 1;
-		visionMode[] = {"Normal"};*/
 
-		class OpticsModes 
+		class OpticsModes
 		{
-			class 1P78 
-			{	
-				cameradir = "";
-				opticsPPEffects[] = {"OpticsCHAbera2", "OpticsBlur3"};
-				distanceZoomMin = 300;
-				distanceZoomMax = 300;
-				memorypointcamera = "opticView";
-				opticsdisableperipherialvision = 1;
-				opticsflare = 1;
-				opticsid = 1;
-				opticsZoomInit = 0.062300;
-				opticsZoomMin = 0.062300;
-				opticsZoomMax = 0.062300;
-				usemodeloptics = 1;
-				visionmode[] = {"Normal"};	
-				discreteDistance[] = {400, 500, 600, 700, 800, 900, 1000};
-				discreteDistanceInitIndex = 2;								
-			};
-			class Ironsight: 1P78
+			class Scope
 			{
-				memorypointcamera = "eye";
-				opticsdisableperipherialvision = 0;
-				opticsflare = 0;
-				opticsid = 2;
-				opticszoominit = 0.5;
-				opticszoommax = 1.1;
-				opticszoommin = 0.25;
-				usemodeloptics = 0;
-				visionmode[] = {};				
+				discreteDistance[] = {400, 500, 600, 700, 800, 900, 1000};
+				discreteDistanceInitIndex = 0;
+			};
+			class Ironsights : Scope
+			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistanceInitIndex = 2;
 			};
 		};
 	};
