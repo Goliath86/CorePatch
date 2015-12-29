@@ -185,7 +185,7 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
-				memoryPointCamera = "CQB";
+				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
 				opticsID = 2;
@@ -197,6 +197,18 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
+	};
+	class RPK_74: AK_74
+	{
+		model="\CorePatch\CorePatch_CCP_63107\models\RPK_74.p3d";
+	};
+	class PK: Rifle 
+	{
+		model="\CorePatch\CorePatch_CCP_63107\models\PK_MG_proxy.p3d";
+	};
+	class Pecheneg: PK 
+	{		
+		model="\CorePatch\CorePatch_CCP_63107\models\Pecheneg_MG_proxy.p3d";
 	};
 	class M16_base: Rifle
 	{

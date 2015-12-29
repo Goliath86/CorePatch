@@ -8,6 +8,7 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+
 class CfgVehicles
 {
 	class Plane;
@@ -52,16 +53,16 @@ class CfgVehicles
 				gunnerForceOptics = 1;
 				gunnerOpticsModel = "\ca\weapons\2Dscope_UAV.p3d";
 				gunnerUsesPilotView = 0;
-				initElev = -45;
+				initElev = 45;
 				initTurn = 0;
 				magazines[] = {"Laserbatteries"};
 				maxElev = -5;
 				maxHorizontalRotSpeed = 100;
-				maxTurn = 180;
+				maxTurn = 360;
 				maxVerticalRotSpeed = 100;
 				memoryPointGunnerOptics = "gunnerView";
-				minElev = -90;
-				minTurn = -180;
+				minElev = -360;
+				minTurn = -360;
 				outGunnerMayFire = 1;
 				selectionFireAnim = "";
 				soundServo[] = {"", 0.010000, 1.000000};
@@ -69,17 +70,18 @@ class CfgVehicles
 				turretinfotype = "RscUnitInfoUAV_gunner";
 				viewGunnerShadow = 0;
 				weapons[] = {"Laserdesignator_mounted"};
+				stabilizedInAxes = "StabilizedInAxesBoth";
 
 				class ViewOptics
 				{
 					initAngleX = 0;
 					initAngleY = 0;
 					initFov = 0.2;
-					maxAngleX = 30;
-					maxAngleY = 100;
+					maxAngleX = 360;
+					maxAngleY = 360;
 					maxFov = 0.2;
-					minAngleX = -30;
-					minAngleY = -100;
+					minAngleX = -360;
+					minAngleY = -360;
 					minFov = 0.002;
 					thermalMode[] = {0, 1};
 					visionMode[] = {
