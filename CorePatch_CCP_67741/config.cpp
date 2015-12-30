@@ -34,13 +34,11 @@ class CfgVehicles
 			{
 				magazines[] = {
 					"6Rnd_Ch29",
-					"4Rnd_R73",
-					"40Rnd_S8T"
+					"4Rnd_R73"
 				};
 				weapons[] = {
 					"Ch29Launcher_Su34",
-					"R73Launcher",
-					"80mmLauncher"
+					"R73Launcher"
 				};
 			};
 		};
