@@ -69,7 +69,7 @@ class CfgWeapons
 			"30Rnd_545x39_AKSD",
 			"75Rnd_545x39_RPK"
 		};
-		//model = "\CorePatch\CorePatch_CIT_70371\RPK_74";
+		model = "\CorePatch\CorePatch_CIT_70371\RPK_74";
 	};
 };
 class CfgVehicles
