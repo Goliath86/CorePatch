@@ -651,10 +651,10 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 				discreteDistanceInitIndex = 2;
-				maxElev = 10;
+				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
-				minTurn = -15;
+				minTurn = -15; */
 				turretInfoType = "RscWeaponZeroing";
 			};
 		};
@@ -875,10 +875,10 @@ class CfgVehicles
 			class SideTurret : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
-				maxElev = 10;
+				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
-				minTurn = -15;
+				minTurn = -15; */
 				weapons[] = {"M240BC_veh"};
 			};
 		};
@@ -1055,10 +1055,10 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 				discreteDistanceInitIndex = 2;
-				maxElev = 10;
+				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
-				minTurn = -15;
+				minTurn = -15; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"PKTBC"};
 			};
@@ -1120,8 +1120,8 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 				discreteDistanceInitIndex = 2;
-				maxElev = 10;
-				minElev = -10;
+				/* maxElev = 10;
+				minElev = -10; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"PKTBC"};
 			};
@@ -1185,6 +1185,8 @@ class CfgVehicles
 	};
 	class BRDM2_Base : Wheeled_APC
 	{
+		unitInfoType = "RscUnitInfoTank";
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1238,10 +1240,10 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 				discreteDistanceInitIndex = 2;
-				maxElev = 10;
+				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
-				minTurn = -15;
+				minTurn = -15; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"PKTBC"};
 			};
@@ -1283,6 +1285,8 @@ class CfgVehicles
 	};
 	class BTR90_Base : Wheeled_APC
 	{
+		unitInfoType = "RscUnitInfoTank";
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1356,6 +1360,8 @@ class CfgVehicles
 	};
 	class GAZ_Vodnik_HMG : Wheeled_APC
 	{
+		unitInfoType = "RscUnitInfoTank";
+
 		class Turrets
 		{
 			class MainTurret : NewTurret
@@ -1385,6 +1391,8 @@ class CfgVehicles
 	};
 	class GAZ_Vodnik : GAZ_Vodnik_HMG
 	{
+		unitInfoType = "UnitInfoCar";
+
 		class AnimationSources : AnimationSources
 		{
 			class ReloadAnim
@@ -1419,23 +1427,25 @@ class CfgVehicles
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 				discreteDistanceInitIndex = 2;
 				initElev = 0;
-				maxElev = 10;
+				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
-				minTurn = -15;
+				minTurn = -15; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"PKTBC"};
 			};
 			class BackTurret : MainTurret
 			{
-				maxTurn = 195;
-				minTurn = 165;
+				/* maxTurn = 195;
+				minTurn = 165; */
 				weapons[] = {"PKTBC_2"};
 			};
 		};
 	};
 	class LAV25_Base : Wheeled_APC
 	{
+		unitInfoType = "RscUnitInfoTank";
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1475,10 +1485,10 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 				discreteDistanceInitIndex = 2;
-				maxElev = 10;
+				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
-				minTurn = -15;
+				minTurn = -15; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"M240BC_veh"};
 			};
@@ -1486,6 +1496,7 @@ class CfgVehicles
 	};
 	class StrykerBase_EP1 : Wheeled_APC
 	{
+		unitInfoType = "RscUnitInfoTank";
 	};
 	class M1135_ATGMV_EP1 : StrykerBase_EP1
 	{
@@ -2181,7 +2192,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};	
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+				maxElev = 57;
 
 				class Turrets : Turrets
 				{
@@ -2281,8 +2293,14 @@ class CfgVehicles
 			};
 		};
 	};
+	class BMP2_Ambul_Base : BMP2_Base
+	{
+		delete unitInfoType;
+	};
 	class BMP2_HQ_Base : BMP2_Base
 	{
+		delete unitInfoType;
+
 		class Turrets : Turrets
 		{
 			class MainTurret : NewTurret
