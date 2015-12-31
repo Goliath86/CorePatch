@@ -70,11 +70,16 @@ class CfgVehicles
 		class Reflectors
 		{
 			class Left;
-			class commander_light : Left
+ 			class gunner_light:Left
 			{
 				brightness = 0;
 				size = 0;
 			};
+			/*class commander_light : Left
+			{
+				brightness = 0;
+				size = 0;
+			};*/
 		};
 	};
 	class BTR90_HQ : BTR90_Base
