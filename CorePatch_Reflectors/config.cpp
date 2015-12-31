@@ -280,6 +280,13 @@ class CfgVehicles
 				position = "P svetlo";
 				selection = "P svetlo";
 			};
+			class GunnerLight : LeftLight
+			{
+				direction = "konec gunner svetlo";
+				hitpoint = "gunner svetlo";
+				position = "gunner svetlo";
+				selection = "gunner svetlo";
+			};
 		};
 	};
 	class BMP3 : Tracked_APC
