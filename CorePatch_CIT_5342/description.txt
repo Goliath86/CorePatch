@@ -1,0 +1,1 @@
+Fixed: AK-107 Kobra model issue (http://dev.withsix.com/issues/5342).

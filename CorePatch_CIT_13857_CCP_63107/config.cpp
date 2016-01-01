@@ -11,10 +11,6 @@ class CfgPatches
 class CfgWeapons
 {
 	class Rifle;
-	class M1014: Rifle
-	{
-		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\m1014";
-	};
 	class AK_BASE: Rifle
 	{
 	};
@@ -40,10 +36,6 @@ class CfgWeapons
 	};
 	class AK_107_BASE: AK_BASE
 	{
-	};
-	class AK_107_kobra: AK_107_BASE
-	{
-		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\AK107_kobra";		
 	};
 	class AK_107_GL_kobra: AK_107_BASE
 	{
@@ -314,6 +306,10 @@ class CfgWeapons
 	class M249_m145_EP1: M249
 	{
 		displayName = "$STR_DN_M249_M145_EP1_CP";
+	};
+	class M1014: Rifle
+	{
+		model = "\CorePatch\CorePatch_CIT_13857_CCP_63107\models\M1014";
 	};
 	class PK: Rifle
 	{
