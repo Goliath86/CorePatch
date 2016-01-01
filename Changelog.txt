@@ -1,0 +1,44 @@
+18/12/2015
+
+Added:
+	ArmA2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628);
+	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629);
+	ballisticsComputer to more weapons (http://dev.withsix.com/issues/67380);
+	made Library_WeaponHolder able to hold backpacks (http://dev.withsix.com/issues/67652);
+	manual zeroing options for vehicles (http://dev.withsix.com/issues/70594).
+
+Changed:
+	DT magazine ammo;
+	Get in/out actions;
+	Tweaked ROF of some autocannons.
+
+Fixed:
+	vehicle- and tripod-mounted L111A1 (M2HB) and M621 (Lynx 20mm) are using the M240 firing sound (http://dev.withsix.com/issues/13602);
+	pistol dispersion too high (http://dev.withsix.com/issues/16115);
+	GMG Jackal zeroing breaks at 1500m setting (http://dev.withsix.com/issues/19295);
+	CfgMagazines - obsolete sound definitions (http://dev.withsix.com/issues/22991);
+	CfgMagazines - obsolete reloadMagazineSound definitions (http://dev.withsix.com/issues/22992);
+	CfgMagazines - obsolete soundFly definitions (http://dev.withsix.com/issues/22994);
+	CfgMagazines - obsolete reloadSound definitions (http://dev.withsix.com/issues/22996);
+	CfgMagazines - obsolete soundHit definitions (http://dev.withsix.com/issues/22998);
+	CfgMagazines - obsolete cartridge definition in 64Rnd_9x19_SD_Bizon (http://dev.withsix.com/issues/22999);
+	CfgMagazines - various obsolete definition in 2Rnd_Maverick_A10 (http://dev.withsix.com/issues/23000);
+	CfgAmmo - obsolete aiRateOfFire definition in Laserbeam (http://dev.withsix.com/issues/23002);
+	CfgAmmo - obsolete sideAirFricion definition in Sh_82_HE (http://dev.withsix.com/issues/23003);
+	accuracy value issues with chopper units (http://dev.withsix.com/issues/23450);
+	missing accuracy value definition for 'StaticCanon' or 'StaticWeapon' (http://dev.withsix.com/issues/23451);
+	player cannot check gear while prone if equipped with pistol (http://dev.withsix.com/issues/24719);
+	CfgVehicles - xxxCanSee issues (http://dev.withsix.com/issues/24902);
+	CfgAmmo - irLock improvements (http://dev.withsix.com/issues/24957);
+	BAF_L94A1 and BAF_L7A2 lack modes definitions for different distances (http://dev.withsix.com/issues/25047);
+	CfgWeapons - M230 and GAU8 have strange xxxRangeProbab (http://dev.withsix.com/issues/25048);
+	wrong "sound occlude" by some vehicles (http://dev.withsix.com/issues/67122);
+	localization improvements (http://dev.withsix.com/issues/67330);
+	BAF Warriors engaging aircraft with Coaxial and not HE cannon (http://dev.withsix.com/issues/67406);
+	BRDM2 ATGM ROF is too fast (http://dev.withsix.com/issues/67535);
+	removed flares from MH-6J for technical reason (http://dev.withsix.com/issues/67740);
+	CTWS (Warrior main gun) HE rounds effect too big (http://dev.withsix.com/issues/68351);
+	while sidestepping crouched with a pistol, the sound is too quick (http://dev.withsix.com/issues/69138);
+	Arkan and Refleks have wrong reloading time (http://dev.withsix.com/issues/71037);
+	Wildcat missing "manual fire" via action menu + missiles are still guided even if no gunner present (http://dev.withsix.com/issues/71142);
+	.338 Lapua has incorrect damage value (http://dev.withsix.com/issues/71737).
