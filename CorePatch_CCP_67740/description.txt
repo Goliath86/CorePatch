@@ -1,1 +1,1 @@
-Fixed: MH-6J remove flares for technical reason (http://dev.withsix.com/issues/67740).
+Fixed: removed flares from MH-6J for technical reason (http://dev.withsix.com/issues/67740).
