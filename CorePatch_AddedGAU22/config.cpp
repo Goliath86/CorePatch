@@ -63,12 +63,14 @@ class CfgVehicles
 		magazines[] = {
 			"220Rnd_25mm_GAU22",
 			"2Rnd_GBU12",
-			"2Rnd_Sidewinder_F35"
+			"2Rnd_Sidewinder_F35",
+			"120Rnd_CMFlare_Chaff_Magazine"
 		};
 		weapons[] = {
 			"GAU22",
 			"BombLauncherF35",
-			"SidewinderLaucher_F35"
+			"SidewinderLaucher_F35",
+			"CMFlareLauncher"
 		};
 	};
 };
