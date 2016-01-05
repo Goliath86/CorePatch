@@ -10,10 +10,7 @@ class CfgPatches
 };
 class CfgWeapons
 {
-	class Rifle;
-	class AK_BASE : Rifle
-	{
-	};
+	class AK_BASE;
 	class AK_74 : AK_BASE
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
@@ -32,41 +29,7 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
 	};
-	class AK_107_BASE : AK_BASE
-	{
-	};
-	class AK_107_GL_kobra : AK_107_BASE
-	{
-	};
-	class AK_107_GL_pso : AK_107_GL_kobra
-	{
-		weaponInfoType = "RscWeaponZeroing";
-
-		class OpticsModes
-		{
-			class Scope
-			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
-				discreteDistanceInitIndex = 2;
-			};
-		};
-	};
-	class AK_107_pso : AK_107_BASE
-	{
-		weaponInfoType = "RscWeaponZeroing";
-
-		class OpticsModes
-		{
-			class Scope
-			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
-				discreteDistanceInitIndex = 2;
-			};
-		};
-	};
-	class AKS_BASE : AK_BASE
-	{
-	};
+	class AKS_BASE;
 	class AKS_74 : AKS_BASE
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
@@ -122,53 +85,35 @@ class CfgWeapons
 			};
 		};
 	};
-	/* class BAF_AS50_scoped : Rifle
+	class AK_107_BASE;
+	class AK_107_pso : AK_107_BASE
 	{
-	};
-	class BAF_AS50_TWS : BAF_AS50_scoped
-	{
-		discreteDistance[] = {};
-		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";
-	}; */
-	/*class DMR : Rifle
-	{
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
-		discreteDistanceInitIndex = 2;
-		discreteFov[] = {
-			0.071099997,
-			0.024900001
-		};
-		discreteInitIndex = 0;
-		optics = 1;
-		opticsPPEffects[] = {
-			"OpticsCHAbera1",
-			"OpticsBlur1"
-		};
-		visionMode[] = {"Normal"};
 		weaponInfoType = "RscWeaponZeroing";
-	};*/
-	class G36C : Rifle
+
+		class OpticsModes
+		{
+			class Scope
+			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+				discreteDistanceInitIndex = 2;
+			};
+		};
+	};
+	class AK_107_GL_kobra;
+	class AK_107_GL_pso : AK_107_GL_kobra
 	{
-		discreteDistance[] = {100, 200, 300};
-		discreteDistanceInitIndex = 2;
 		weaponInfoType = "RscWeaponZeroing";
+
+		class OpticsModes
+		{
+			class Scope
+			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+				discreteDistanceInitIndex = 2;
+			};
+		};
 	};
-	class G36_C_SD_eotech : G36C
-	{
-		discreteDistance[] = {};
-		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";
-	};
-	class MG36 : G36C
-	{
-		discreteDistance[] = {};
-		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";
-	};
-	class L85A2_base_BAF : Rifle
-	{
-	};
+	class L85A2_base_BAF;
 	class BAF_L85A2_RIS_ACOG : L85A2_base_BAF
 	{
 		visionMode[] = {};
@@ -219,10 +164,9 @@ class CfgWeapons
 			};
 		};
 	};
-	class BAF_L86A2_ACOG : Rifle
+	class M4A3_CCO_EP1;
+	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
 	{
-		visionMode[] = {};
-
 		class OpticsModes
 		{
 			class ACOG
@@ -237,9 +181,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class M16_base : Rifle
-	{
-	};
+	class M16_base;
 	class M4A1 : M16_base
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600};
@@ -258,33 +200,9 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
 	};
-	class M4A3_CCO_EP1 : M16_base
-	{
-	};
-	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
-	{
-		class OpticsModes
-		{
-			class ACOG
-			{
-				visionMode[] = {};
-			};
-			class Kolimator : ACOG
-			{
-				delete visionMode;
-
-				opticsPPEffects[] = {};
-			};
-		};
-	};
 	class M4SPR : M4A1
 	{
-		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
-		discreteFov[] = {
-			0.082999997,
-			0.0277
-		};
-		discreteInitIndex = 0;
+		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		visionMode[] = {"Normal"};
 	};
 	class M16A2 : M16_base
@@ -322,150 +240,20 @@ class CfgWeapons
 	{
 		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
 	};
-	class SCAR_Base : M16_base
+	class Rifle;
+	/* class BAF_AS50_scoped : Rifle
 	{
 	};
-	class SCAR_H_Base : SCAR_Base
-	{
-	};
-	class SCAR_H_CQC_CCO : SCAR_H_Base
-	{
-	};
-	class SCAR_H_STD_EGLM_Spect : SCAR_H_CQC_CCO
-	{
-		class OpticsModes
-		{
-			class Specter
-			{
-				visionMode[] = {};
-			};
-			class Ironsights : Specter
-			{
-				delete visionMode;
-			};
-		};
-	};
-	class SCAR_H_LNG_Sniper : SCAR_H_Base
-	{
-		distanceZoomMax = 120;
-		distanceZoomMin = 400;
-		opticsZoomInit = 0.071944997;
-		opticsZoomMax = 0.071944997;
-
-		class OpticsModes
-		{
-			class StepScope
-			{
-				/* discreteDistance[] = {200, 400, 600, 800, 1000, 1200, 1400};
-				discreteDistanceInitIndex = 0; */
-				discreteFov[] = {
-					0.071944997,
-					0.035971999
-				};
-				discreteInitIndex = 0;
-				distanceZoomMax = 120;
-				distanceZoomMin = 400;
-				opticsZoomInit = 0.071944997;
-				opticsZoomMax = 0.071944997;
-				opticsZoomMin = 0.035971999;
-			};
-		};
-	};
-	class SCAR_H_LNG_Sniper_SD : SCAR_H_Base
-	{
-		distanceZoomMax = 120;
-		distanceZoomMin = 400;
-		opticsZoomInit = 0.087665997;
-		opticsZoomMin = 0.035971999;
-		opticsZoomMax = 0.087665997;
-
-		class OpticsModes
-		{
-			class StepScope
-			{
-				/* discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100};
-				discreteDistanceInitIndex = 2; */
-				discreteFov[] = {
-					0.087665997,
-					0.035971999
-				};
-				discreteInitIndex = 0;
-				distanceZoomMax = 120;
-				distanceZoomMin = 400;
-				opticsZoomMax = 0.087665997;
-				opticsZoomMin = 0.035971999;
-			};
-		};
-	};
-	class SCAR_H_STD_TWS_SD : SCAR_H_LNG_Sniper_SD
-	{
-		// weaponInfoType = "RscWeaponEmpty";
-
-		class OpticsModes : OpticsModes
-		{
-			delete StepScope;
-
-			class LTWS : StepScope
-			{
-				/* discreteDistance[] = {};
-				discreteDistanceInitIndex = 0; */
-				discreteFov[] = {};
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
-				opticsPPEffects[] = {};
-				opticsZoomInit = 0.16060001;
-				opticsZoomMax = 0.16060001;
-				opticsZoomMin = 0.16060001;
-				thermalMode[] = {0, 1};
-				visionMode[] = {"Ti"};
-			};
-		};
-	};
-	class SCAR_L_Base : SCAR_Base
-	{
-	};
-	class SCAR_L_CQC : SCAR_L_Base
-	{
-		discreteDistance[] = {100, 200, 300, 400, 500, 600};
-		discreteDistanceInitIndex = 2;
-		weaponInfoType = "RscWeaponZeroing";
-	};
-	class SCAR_L_CQC_CCO_SD : SCAR_L_CQC
+	class BAF_AS50_TWS : BAF_AS50_scoped
 	{
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
-	};
-	class SCAR_L_CQC_EGLM_Holo : SCAR_L_CQC
+	}; */
+	class BAF_L86A2_ACOG : Rifle
 	{
-		discreteDistance[] = {};
-		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";
-	};
-	class SCAR_L_CQC_Holo : SCAR_L_CQC
-	{
-		discreteDistance[] = {};
-		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";
-	};
-	class SCAR_L_STD_Mk4CQT : SCAR_L_Base
-	{
-		class OpticsModes
-		{
-			class Mk4
-			{
-				visionMode[] = {};
-			};
-			class Kolimator : Mk4
-			{
-				delete visionMode;
+		visionMode[] = {};
 
-				opticsPPEffects[] = {};
-			};
-		};
-	};
-	class SCAR_L_STD_EGLM_RCO : SCAR_L_STD_Mk4CQT
-	{
 		class OpticsModes
 		{
 			class ACOG
@@ -480,17 +268,43 @@ class CfgWeapons
 			};
 		};
 	};
+	class DMR : Rifle
+	{
+		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		discreteDistanceInitIndex = 2;
+		optics = 1;
+		opticsPPEffects[] = {
+			"OpticsCHAbera1",
+			"OpticsBlur1"
+		};
+		visionMode[] = {"Normal"};
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class G36C : Rifle
+	{
+		discreteDistance[] = {100, 200, 300};
+		discreteDistanceInitIndex = 2;
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class G36_C_SD_eotech : G36C
+	{
+		discreteDistance[] = {};
+		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
+	};
+	class MG36 : G36C
+	{
+		discreteDistance[] = {};
+		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
+	};
 	class M24 : Rifle
 	{
 		class OpticsModes
 		{
 			class StepScope
 			{
-				discreteFov[] = {
-					0.071099997,
-					0.024900001
-				};
-				discreteInitIndex = 0;
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 				distanceZoomMax = 120;
 				distanceZoomMin = 400;
 				opticsZoomInit = 0.071099997;
@@ -502,23 +316,34 @@ class CfgWeapons
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100};
 	};
-	/* class M110_TWS_EP1 : Rifle
+	class M110_TWS_EP1 : Rifle
 	{
-		weaponInfoType = "RscWeaponEmpty";
+		// weaponInfoType = "RscWeaponEmpty";
 
 		class OpticsModes
 		{
 			class HTWS
+			{
+				/* delete discreteDistance;
+				delete discreteDistanceInitIndex; */
+
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+			};
+		};
+	};
+	class M110_NVG_EP1 : M110_TWS_EP1
+	{
+		// weaponInfoType = "RscWeaponZeroing";
+
+		class OpticsModes : OpticsModes
+		{
+			class StepScope : HTWS
 			{
 				delete discreteDistance;
 				delete discreteDistanceInitIndex;
 			};
 		};
 	};
-	class M110_NVG_EP1 : M110_TWS_EP1
-	{
-		weaponInfoType = "RscWeaponZeroing";
-	}; */
 	class M240 : Rifle
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -588,6 +413,12 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
+	};
+	class MP5SD : Rifle
+	{
+		discreteDistance[] = {50, 100, 150, 200};
+		discreteDistanceInitIndex = 1;
+		weaponInfoType = "RscWeaponZeroing";
 	};
 	class PK : Rifle
 	{
@@ -665,30 +496,6 @@ class CfgWeapons
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 				discreteDistanceInitIndex = 2;
-			};
-		};
-	};
-	class Sa58P_EP1 : Rifle
-	{
-	};
-	class Sa58V_EP1 : Sa58P_EP1
-	{
-	};
-	class Sa58V_RCO_EP1 : Sa58V_EP1
-	{
-		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
-
-		class OpticsModes
-		{
-			class ACOG
-			{
-				visionMode[] = {};
-			};
-			class Ironsigts : ACOG
-			{
-				delete visionMode;
-
-				opticsPPEffects[] = {};
 			};
 		};
 	};
@@ -775,11 +582,6 @@ class CfgWeapons
 			class StepScope
 			{
 				discreteDistanceInitIndex = 2;
-				discreteFov[] = {
-					0.055300001,
-					0.0178
-				};
-				discreteInitIndex = 0;
 			};
 		};
 	};
@@ -793,10 +595,165 @@ class CfgWeapons
 			{
 				delete discreteDistance;
 				delete discreteDistanceInitIndex;
-				delete discreteInitIndex;
 
 				/* discreteDistance[] = {};
 				discreteDistanceInitIndex = 0; */
+			};
+		};
+	};
+	class SCAR_H_Base;
+	class SCAR_H_LNG_Sniper : SCAR_H_Base
+	{
+		distanceZoomMax = 120;
+		distanceZoomMin = 400;
+		opticsZoomInit = 0.071944997;
+		opticsZoomMax = 0.071944997;
+
+		class OpticsModes
+		{
+			class StepScope
+			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+				distanceZoomMax = 120;
+				distanceZoomMin = 400;
+				opticsZoomInit = 0.071944997;
+				opticsZoomMax = 0.071944997;
+				opticsZoomMin = 0.035971999;
+			};
+		};
+	};
+	class SCAR_H_LNG_Sniper_SD : SCAR_H_Base
+	{
+		distanceZoomMax = 120;
+		distanceZoomMin = 400;
+		opticsZoomInit = 0.087665997;
+		opticsZoomMin = 0.035971999;
+		opticsZoomMax = 0.087665997;
+
+		class OpticsModes
+		{
+			class StepScope
+			{
+				/* discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100};
+				discreteDistanceInitIndex = 2; */
+				distanceZoomMax = 120;
+				distanceZoomMin = 400;
+				opticsZoomMax = 0.087665997;
+				opticsZoomMin = 0.035971999;
+			};
+		};
+	};
+	class SCAR_H_STD_TWS_SD : SCAR_H_LNG_Sniper_SD
+	{
+		// weaponInfoType = "RscWeaponEmpty";
+
+		class OpticsModes : OpticsModes
+		{
+			delete StepScope;
+
+			class LTWS : StepScope
+			{
+				/* discreteDistance[] = {};
+				discreteDistanceInitIndex = 0; */
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				opticsPPEffects[] = {};
+				opticsZoomInit = 0.16060001;
+				opticsZoomMax = 0.16060001;
+				opticsZoomMin = 0.16060001;
+				thermalMode[] = {0, 1};
+				visionMode[] = {"Ti"};
+			};
+		};
+	};
+	class SCAR_H_CQC_CCO;
+	class SCAR_H_STD_EGLM_Spect : SCAR_H_CQC_CCO
+	{
+		class OpticsModes
+		{
+			class Specter
+			{
+				visionMode[] = {};
+			};
+			class Ironsights : Specter
+			{
+				delete visionMode;
+			};
+		};
+	};
+	class SCAR_L_Base;
+	class SCAR_L_CQC : SCAR_L_Base
+	{
+		discreteDistance[] = {100, 200, 300, 400, 500, 600};
+		discreteDistanceInitIndex = 2;
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class SCAR_L_CQC_CCO_SD : SCAR_L_CQC
+	{
+		discreteDistance[] = {};
+		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
+	};
+	class SCAR_L_CQC_EGLM_Holo : SCAR_L_CQC
+	{
+		discreteDistance[] = {};
+		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
+	};
+	class SCAR_L_CQC_Holo : SCAR_L_CQC
+	{
+		discreteDistance[] = {};
+		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
+	};
+	class SCAR_L_STD_Mk4CQT : SCAR_L_Base
+	{
+		class OpticsModes
+		{
+			class Mk4
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : Mk4
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
+	};
+	class SCAR_L_STD_EGLM_RCO : SCAR_L_STD_Mk4CQT
+	{
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
+	};
+	class Sa58V_EP1;
+	class Sa58V_RCO_EP1 : Sa58V_EP1
+	{
+		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
+
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Ironsigts : ACOG
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
 			};
 		};
 	};
