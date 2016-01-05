@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class CorePatch_CCP_71142_CIT_13602_25047
+	class CorePatch_CIT_13602_25047
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
@@ -12,9 +12,9 @@ class CfgAddons
 {
 	class PreloadAddons
 	{
-		class CorePatch_CCP_71142_CIT_13602_25047
+		class CorePatch_CIT_13602_25047
 		{
-			list[] = {"CorePatch_CCP_71142_CIT_13602_25047"};
+			list[] = {"CorePatch_CIT_13602_25047"};
 		};
 	};
 };
@@ -83,12 +83,12 @@ class CfgWeapons
 		{
 			aiRateOfFire = 0.5;
 			aiRateOfFireDistance = 50;
-			ffCount = 6;
-			ffFrequency = 11;
-			ffMagnitude = 0.5;
 			autoFire = 1;
 			dispersion = 0.0012000001;
 			displayName = "$STR_BAF_M621_MANUAL0";
+			ffCount = 6;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
 			maxRange = 3;
 			maxRangeProbab = 0.0099999998;
 			midRange = 2;
@@ -586,39 +586,18 @@ class CfgWeapons
 };
 class CfgVehicles
 {
-	class Air;
-	class Helicopter : Air
-	{
-		class Turrets
-		{
-			class MainTurret;
-		};
-	};
+	class Helicopter;
 	class AW159_Lynx_BAF : Helicopter
 	{
-		enableManualFire = 1;
 		magazines[] = {
 			"400Rnd_20mm_M621",
+			"12Rnd_CRV7",
 			"120Rnd_CMFlareMagazine"
 		};
 		weapons[] = {
 			"BAF_M621",
+			"CRV7_PG",
 			"CMFlareLauncher"
-		};
-
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				magazines[] = {
-					"Laserbatteries",
-					"12Rnd_CRV7"
-				};
-				weapons[] = {
-					"Laserdesignator_mounted",
-					"CRV7_PG"
-				};
-			};
 		};
 	};
 	class StaticMGWeapon;
