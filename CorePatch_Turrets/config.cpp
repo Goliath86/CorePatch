@@ -161,6 +161,11 @@ class CfgVehicles
 			};
 		};
 	};
+	class AH6_Base_EP1 : Helicopter
+	{
+		cargoCompartments[] = {"Compartment1"};
+		driverCompartments = "Compartment1";
+	};
 	class AH64_base_EP1 : Helicopter
 	{
 	};
@@ -200,8 +205,20 @@ class CfgVehicles
 			};
 		};
 	};
+	class AW159_Lynx_BAF : Helicopter
+	{
+		cargoCompartments[] = {"Compartment1"};
+		driverCompartments = "Compartment1";
+	};
+	class BAF_Merlin_HC3_D : Helicopter
+	{
+		cargoCompartments[] = {"Compartment1"};
+		driverCompartments = "Compartment1";
+	};
 	class CH47_base_EP1 : Helicopter
 	{
+		cargoCompartments[] = {"Compartment1"};
+		driverCompartments = "Compartment1";
 	};
 	class CH_47F_EP1 : CH47_base_EP1
 	{
@@ -222,15 +239,16 @@ class CfgVehicles
 		};
 		class Turrets : Turrets
 		{
-			/* class MainTurret : MainTurret
+			class MainTurret : MainTurret
 			{
-				initElev = -10;
+				gunnerCompartments = "Compartment1";
+				/* initElev = -10;
 				initTurn = 80;
 				maxElev = 20;
 				maxTurn = 115;
 				minElev = -15;
-				minTurn = 45;
-			}; */
+				minTurn = 45; */
+			};
 			class BackDoorGun : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -296,6 +314,8 @@ class CfgVehicles
 	};
 	class Ka52 : Kamov_Base
 	{
+		driverCompartments = "Compartment1";
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -306,32 +326,36 @@ class CfgVehicles
 			};
 		};
 	};
-	/* class Mi17_base : Helicopter
+	class Mi17_base : Helicopter
 	{
+		cargoCompartments[] = {"Compartment1"};
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
-				initElev = 5;
+				gunnerCompartments = "Compartment1";
+				/* initElev = 5;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 110;
 				minElev = -20;
-				minTurn = 70;
+				minTurn = 70; */
 			};
 			class BackTurret : MainTurret
 			{
-				delete initElev;
+				delete gunnerCompartments;
+				/* delete initElev;
 				delete maxElev;
 				delete minElev;
 
 				initTurn = -115;
 				maxTurn = -100;
-				minTurn = -130;
+				minTurn = -130; */
 			};
 		};
 	};
-	class Mi17_base_CZ_EP1 : Mi17_base
+	/* class Mi17_base_CZ_EP1 : Mi17_base
 	{
 	};
 	class Mi171Sh_Base_EP1 : Mi17_base_CZ_EP1
@@ -416,21 +440,25 @@ class CfgVehicles
 	};
 	class UH1_Base : Helicopter
 	{
-		//enableManualFire = 0;
+		cargoCompartments[] = {"Compartment1"};
+		// enableManualFire = 0;
 
 		class Turrets : Turrets
 		{
-			/* class MainTurret : MainTurret
+			class MainTurret : MainTurret
 			{
-				initElev = -10;
+				gunnerCompartments = "Compartment1";
+				/* initElev = -10;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 130;
 				minElev = -35;
-				minTurn = 60;
-			}; */
+				minTurn = 60; */
+			};
 			class CoPilotObs : MainTurret
 			{
+				delete gunnerCompartments;
+
 				soundServo[] = {
 					"\ca\sounds\vehicles\servos\turret-1",
 					0.0099999998,
@@ -464,6 +492,9 @@ class CfgVehicles
 	};
 	class UH1H_base : Helicopter
 	{
+		cargoCompartments[] = {"Compartment1"};
+		driverCompartments = "Compartment1";
+
 		class AnimationSources : AnimationSources
 		{
 			class ReloadAnim
@@ -497,35 +528,38 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 				discreteDistanceInitIndex = 2;
-				/*initElev = 5;
+				gunnerCompartments = "Compartment1";
+				/* initElev = 5;
 				initTurn = -80;
 				maxElev = 5;
 				maxTurn = -50;
 				minElev = -35;
-				minTurn = -100;*/
+				minTurn = -100; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"M240BC_veh"};
 			};
 			class LeftDoorGun : MainTurret
 			{
-				/*delete initElev;
+				/* delete initElev;
 				delete maxElev;
 				delete minElev;
 
 				initTurn = 80;
 				maxTurn = 105;
-				minTurn = 50;*/
+				minTurn = 50; */
 				weapons[] = {"M240BC_veh_2"};
 			};
 		};
 	};
 	class UH60_Base : Helicopter
 	{
-		//enableManualFire = 0;
+		// enableManualFire = 0;
 	};
 	class MH60S : UH60_Base
 	{
-		//delete enableManualFire;
+		// delete enableManualFire;
+
+		cargoCompartments[] = {"Compartment1"};
 
 		class AnimationSources : AnimationSources
 		{
@@ -560,25 +594,28 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 				discreteDistanceInitIndex = 2;
-				/*initElev = 5;
+				gunnerCompartments = "Compartment1";
+				/* initElev = 5;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 110;
 				minElev = -15;
-				minTurn = 70;*/
+				minTurn = 70; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"M240BC_veh"};
 			};
 			class RightDoorGun : MainTurret
 			{
-				/*initTurn = -80;
+				delete gunnerCompartments;
+
+				/* initTurn = -80;
 				maxTurn = -70;
-				minTurn = -110;*/
+				minTurn = -110; */
 				weapons[] = {"M240BC_veh_2"};
 			};
 		};
 	};
-	/* class UH60M_base_EP1 : UH60_Base
+	class UH60M_base_EP1 : UH60_Base
 	{
 	};
 	class UH60M_US_base_EP1 : UH60M_base_EP1
@@ -586,7 +623,9 @@ class CfgVehicles
 	};
 	class UH60M_EP1 : UH60M_US_base_EP1
 	{
-		class Turrets : Turrets
+		cargoCompartments[] = {"Compartment2"};
+
+		/* class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
@@ -607,8 +646,27 @@ class CfgVehicles
 				maxTurn = -65;
 				minTurn = -115;
 			};
+		}; */
+	};
+	class Plane : Air
+	{
+	};
+	class MV22 : Plane
+	{
+		cargoCompartments[] = {"Compartment1"};
+	};
+	class Su34 : Plane
+	{
+		driverCompartments = "Compartment1";
+
+		class Turrets
+		{
+			class MainTurret : NewTurret
+			{
+				gunnerCompartments = "Compartment1";
+			};
 		};
-	}; */
+	};
 	class Land : AllVehicles
 	{
 	};
@@ -756,6 +814,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				gunnerCompartments = "Compartment2";
 				stabilizedInAxes = "StabilizedInAxesBoth";
 				turretInfoType = "RscWeaponRangeZeroing";
 
@@ -1264,7 +1323,7 @@ class CfgVehicles
 
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
-				//gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+				// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
 				maxTurn = 45;
 				minTurn = -45;
 				turretInfoType = "RscWeaponEmpty";
@@ -1291,7 +1350,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
 				discreteDistanceInitIndex = 5;
 				turretInfoType = "RscWeaponRangeZeroing";
 				weapons[] = {
@@ -1368,7 +1427,7 @@ class CfgVehicles
 			{
 				delete stabilizedInAxes;
 
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
 				discreteDistanceInitIndex = 5;
 				turretInfoType = "RscWeaponRangeZeroing";
 				weapons[] = {
@@ -1643,6 +1702,13 @@ class CfgVehicles
 	};
 	class GMG_TriPod : StaticGrenadeLauncher
 	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class ViewOptics;
+			};
+		};
 	};
 	class BAF_GMG_Tripod_D : GMG_TriPod
 	{
@@ -1662,16 +1728,10 @@ class CfgVehicles
 				};
 				turretInfoType = "RscWeaponZeroing";
 
-				class ViewOptics
+				class ViewOptics : ViewOptics
 				{
-					initAngleX = 0;
-					initAngleY = 0;
 					initFov = 0.117;
-					maxAngleX = 30;
-					maxAngleY = 100;
 					maxFov = 0.117;
-					minAngleX = -30;
-					minAngleY = -100;
 					minFov = 0.117;
 				};
 			};
@@ -1863,7 +1923,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};	
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
 
 				class Turrets : Turrets
 				{
@@ -1981,9 +2041,7 @@ class CfgVehicles
 					{
 						discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 						discreteDistanceInitIndex = 2;
-						gunnerOpticsModel = "\ca\weapons\2Dscope_com2";
 						gunnerOutOpticsModel = "\ca\Weapons\optika_empty";
-						inGunnerMayFire = 0;
 						soundServo[] = {
 							"\Ca\sounds\Vehicles\Servos\turret-1",
 							0.0099999998,
@@ -1995,9 +2053,15 @@ class CfgVehicles
 
 						class ViewOptics
 						{
+							delete thermalMode;
+
 							initFov = 0.69999999;
 							maxFov = 1.1;
 							minFov = 0.25;
+							visionMode[] = {
+								"Normal",
+								"NVG"
+							};
 						};
 					};
 				};
@@ -2039,7 +2103,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};	
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
 				soundServo[] = {
 					"\ca\sounds\vehicles\servos\turret-2",
 					0.031622775,
@@ -2086,7 +2150,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
-				//gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
+				// gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
 
 				class Turrets : Turrets
 				{
@@ -2095,7 +2159,7 @@ class CfgVehicles
 						delete gunnerOutOpticsModel;
 						delete outGunnerMayFire;
 
-						//gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
 					};
 				};
 			};
@@ -2116,7 +2180,7 @@ class CfgVehicles
 				delete stabilizedInAxes;
 
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
-				//gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
+				// gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
 
 				class Turrets : Turrets
 				{
@@ -2125,7 +2189,7 @@ class CfgVehicles
 						delete gunnerOutOpticsModel;
 						delete outGunnerMayFire;
 
-						//gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
 						stabilizedInAxes = "StabilizedInAxisY";
 					};
 				};
@@ -2140,7 +2204,7 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
 				discreteDistanceInitIndex = 5;
-				//gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
+				// gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
 
 				class Turrets : Turrets
 				{
@@ -2192,7 +2256,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
 				maxElev = 57;
 
 				class Turrets : Turrets
@@ -2264,7 +2328,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
 				discreteDistanceInitIndex = 5;
 				turretInfoType = "RscWeaponRangeZeroing";
 				weapons[] = {
@@ -2279,7 +2343,7 @@ class CfgVehicles
 					{
 						delete outGunnerMayFire;
 
-						//gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
 						stabilizedInAxes = "StabilizedInAxisY";
 
 						class ViewOptics : ViewOptics
@@ -2345,7 +2409,7 @@ class CfgVehicles
 					{
 						delete outGunnerMayFire;
 
-						//gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
 						stabilizedInAxes = "StabilizedInAxisY";
 					};
 				};
