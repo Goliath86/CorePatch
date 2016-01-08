@@ -73,8 +73,8 @@ class CfgVehicles {
 	};
 
 	class Small_items;
-	class CardboardBox:Small_items {
-		scope = 2;
+	class CardboardBoxObject:Small_items {
+		scope = 1;
 		model = "\ca\structures\Furniture\Decoration\box_c\box_c.p3d";
 	};
 
