@@ -23,7 +23,7 @@ class CfgMagazines
 	class VehicleMagazine;
 	class 250Rnd_30mm_GSh302: VehicleMagazine
 	{
-		ammo = "B_30mm_AP";
+		ammo = "B_30mm_HE";
 		count = 250;
 		displayName = "$STR_DN_GSh302";
 		initSpeed = 820;
