@@ -253,12 +253,12 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 				discreteDistanceInitIndex = 2;
-				/*initElev = 0;
+				/* initElev = 0;
 				initTurn = 180;
 				maxElev = 5;
 				maxTurn = 210;
 				minElev = -45;
-				minTurn = 160;*/
+				minTurn = 160; */
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"M240BC_veh"};
 			};
@@ -282,12 +282,12 @@ class CfgVehicles
 			{
 				discreteDistance[] = {50, 100, 150, 200, 250, 300, 325, 350, 375};
 				discreteDistanceInitIndex = 5;
-				/*initElev = 5;
+				/* initElev = 5;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 125;
 				minElev = -50;
-				minTurn = 60;*/
+				minTurn = 60; */
 				turretInfoType = "RscWeaponZeroing";
 			};
 		};
@@ -1297,8 +1297,10 @@ class CfgVehicles
 		{
 			class MainTurret : NewTurret
 			{
+				castGunnerShadow = 1;
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 				discreteDistanceInitIndex = 2;
+				gunnerName = "$STR_POSITION_COMMANDER";
 				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
@@ -1366,7 +1368,7 @@ class CfgVehicles
 					{
 						delete outGunnerMayFire;
 
-						//gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
 						soundServo[] = {
 							"\Ca\sounds\Vehicles\Servos\turret-3",
 							0.0099999998,
@@ -1407,6 +1409,11 @@ class CfgVehicles
 		{
 			class MainTurret : NewTurret
 			{
+				delete commanding;
+
+				gunnerName = "$STR_POSITION_COMMANDER";
+				primaryGunner = 0;
+				primaryObserver = 1;
 				soundServo[] = {
 					"\ca\sounds\vehicles\servos\turret-1",
 					0.1,
@@ -1425,6 +1432,8 @@ class CfgVehicles
 		{
 			class MainTurret : NewTurret
 			{
+				delete commanding;
+				delete primaryObserver;
 				delete stabilizedInAxes;
 
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
@@ -1483,6 +1492,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				delete commanding;
+
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 				discreteDistanceInitIndex = 2;
 				initElev = 0;
@@ -1495,6 +1506,7 @@ class CfgVehicles
 			};
 			class BackTurret : MainTurret
 			{
+				commanding = 2;
 				/* maxTurn = 195;
 				minTurn = 165; */
 				weapons[] = {"PKTBC_2"};
@@ -1509,6 +1521,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				primaryGunner = 1;
 				turretInfoType = "RscWeaponRangeFinder";
 
 				class Turrets
@@ -1542,8 +1555,10 @@ class CfgVehicles
 		{
 			class MainTurret : NewTurret
 			{
+				castGunnerShadow = 1;
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 				discreteDistanceInitIndex = 2;
+				gunnerName = "$STR_POSITION_COMMANDER";
 				/* maxElev = 10;
 				maxTurn = 15;
 				minElev = -10;
@@ -1573,6 +1588,9 @@ class CfgVehicles
 		{
 			class ObsTurret : NewTurret
 			{
+				delete commanding;
+				delete primaryObserver;
+
 				soundServo[] = {
 					"\Ca\sounds\Vehicles\Servos\turret-1",
 					0.0099999998,
@@ -1591,6 +1609,18 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
 				discreteDistanceInitIndex = 2;
+			};
+		};
+	};
+	class M1130_CV_EP1 : M1126_ICV_M2_EP1
+	{
+		class Turrets : Turrets
+		{
+			class ObsTurret : ObsTurret
+			{
+				gunnerName = "$STR_POSITION_COMMANDER";
+				primaryGunner = 0;
+				primaryObserver = 1;
 			};
 		};
 	};
@@ -1614,7 +1644,14 @@ class CfgVehicles
 				delete turretInfoType;
 				delete visionMode;
 
+				commanding = 2;
 				startEngine = 1;
+			};
+			class ObsTurret : ObsTurret
+			{
+				commanding = 1;
+				primaryGunner = 0;
+				primaryObserver = 1;
 			};
 		};
 	};
@@ -1726,6 +1763,7 @@ class CfgVehicles
 					"OpticsCHAbera1",
 					"OpticsBlur1"
 				};
+				gunnerOpticsModel = "\ca\Weapons_baf\nlaw_optic";
 				turretInfoType = "RscWeaponZeroing";
 
 				class ViewOptics : ViewOptics
@@ -2369,14 +2407,28 @@ class CfgVehicles
 		{
 			class MainTurret : NewTurret
 			{
+				delete canHideGunner;
+				delete commanding;
+				delete gunnerOutOpticsModel;
+				delete memoryPointGunnerOutOptics;
+
+				castGunnerShadow = 1;
+				forceHideGunner = 1;
 				gunnerAction = "HMMWV_Gunner01";
+				gunnerForceOptics = 0;
 				gunnerInAction = "HMMWV_Gunner01";
+				gunnerName = "$STR_POSITION_COMMANDER";
+				gunnerOpticsModel = "\ca\Weapons\optika_empty";
+				memoryPointGunnerOptics = "gunnerview";
+				primaryGunner = 0;
+				primaryObserver = 1;
 				soundServo[] = {
 					"\ca\sounds\vehicles\servos\turret-1",
 					0.1,
 					1,
 					15
 				};
+				viewGunnerInExternal = 1;
 			};
 		};
 	};

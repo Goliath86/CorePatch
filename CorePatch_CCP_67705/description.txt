@@ -1,1 +1,0 @@
-Fixed: BMP-2/BTR-90 HQ gunner/commander can not switch to driver seat (http://dev.withsix.com/issues/67705).
