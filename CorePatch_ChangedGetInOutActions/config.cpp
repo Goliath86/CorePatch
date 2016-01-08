@@ -44,6 +44,20 @@ class CfgVehicles
 		cargoGetInAction[] = {"GetInHigh"};
 		cargoGetOutAction[] = {"GetOutHigh"};
 	};
+	class Plane : Air
+	{
+	};
+	class Su34 : Plane
+	{
+		class Turrets
+		{
+			class MainTurret : NewTurret
+			{
+				gunnerGetInAction = "GetInHigh";
+				gunnerGetOutAction = "GetOutHigh";
+			};
+		};
+	};
 	class Land : AllVehicles
 	{
 	};
