@@ -13,9 +13,6 @@ class CfgFactionClasses
 	class BIS_CZ
 	{
 		displayName = "$STR_DN_FN_BIS_CZ_CP";
-		primaryLanguage = "EN";
-		priority = 9;
-		side = 1;
 	};
 };
 class CfgVehicles
@@ -30,13 +27,7 @@ class CfgVehicles
 	{
 		displayName = "$STR_DN_HILUX1_CIVIL_3_OPEN_EP1_CP";
 	};
-	class MTVR;
-	class MtvrRefuel : MTVR
-	{
-	};
-	class MtvrRefuel_base : MtvrRefuel
-	{
-	};
+	class MtvrRefuel_base;
 	class MtvrRefuel_DES_EP1 : MtvrRefuel_base
 	{
 		displayName = "$STR_DN_MTVRREFUEL_DES_EP1_CP";
