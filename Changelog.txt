@@ -2,7 +2,7 @@
 
 Added:
 	GAU-22 cannon to F35B;
-	smoothly adjustable magnification to BLUFOR optical sights;
+	smoothly adjustable magnification to some BLUFOR optical sights;
 	ability to adjust zeroing to MP5;
 	missed get in/out actions to Su-34;
 
@@ -15,7 +15,8 @@ Changed:
 	reverted DMR optical sight tweaks;
 	get in/out sounds of some vehicles to more preferred;
 	GSh-30 magazine ammo from AP to HE;
-	zeroing to PKP Pecheneg.
+	zeroing to PKP Pecheneg;
+	camera memory points of CZ 550, M24, M40A3, M107 and M107 TWS.
 
 Deleted:
 	CCP #71142 bug fix due to it's wrong;
@@ -46,7 +47,8 @@ Tweaked:
 	rocket launcher reload time of BMP-3 and T-90;
 	increased discrete distances range of BLUFOR optical sights to 1000m;
 	decreased discrete distances range of vehicles with AZP-23, 2A38M, 2A42, 2A72 and M242 cannons;
-	zeroing of PKP Pecheneg.
+	zeroing of PKP Pecheneg;
+	optics definitions of CZ 550.
 
 Other:
 	trying to fix the Cardboardbox DayZ bug;

@@ -300,6 +300,11 @@ class CfgWeapons
 	};
 	class M24 : Rifle
 	{
+		distanceZoomMax = 120;
+		distanceZoomMin = 400;
+		opticsZoomInit = 0.071099997;
+		opticsZoomMax = 0.071099997;
+
 		class OpticsModes
 		{
 			class StepScope
@@ -307,8 +312,27 @@ class CfgWeapons
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 				distanceZoomMax = 120;
 				distanceZoomMin = 400;
+				memoryPointCamera = "eye";
 				opticsZoomInit = 0.071099997;
 				opticsZoomMax = 0.071099997;
+			};
+		};
+	};
+	class huntingrifle : M24
+	{
+		class OpticsModes : OpticsModes
+		{
+			class StepScope : StepScope
+			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 300;
+				opticsPPEffects[] = {
+					"OpticsCHAbera2",
+					"OpticsBlur2"
+				};
+				opticsZoomInit = 0.082999997;
+				opticsZoomMax = 0.082999997;
+				opticsZoomMin = 0.0208;
 			};
 		};
 	};
@@ -582,6 +606,7 @@ class CfgWeapons
 			class StepScope
 			{
 				discreteDistanceInitIndex = 2;
+				memoryPointCamera = "eye";
 			};
 		};
 	};
