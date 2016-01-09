@@ -139,8 +139,8 @@ class CfgWeapons
 		discreteFov[] = {};
 		discreteInitIndex = 0;
 		opticsZoomInit = 0.0623;
-		opticsZoomMin = 0.0623;
 		opticsZoomMax = 0.0623;
+		opticsZoomMin = 0.0623;
 		thermalMode[] = {};
 		visionMode[] = {"NVG"};
 		weaponInfoType = "RscWeaponEmpty";
@@ -365,6 +365,8 @@ class CfgWeapons
 			{
 				delete discreteDistance;
 				delete discreteDistanceInitIndex;
+
+				discreteFov[] = {};
 			};
 		};
 	};
@@ -652,8 +654,8 @@ class CfgWeapons
 		distanceZoomMax = 120;
 		distanceZoomMin = 400;
 		opticsZoomInit = 0.087665997;
-		opticsZoomMin = 0.035971999;
 		opticsZoomMax = 0.087665997;
+		opticsZoomMin = 0.035971999;
 
 		class OpticsModes
 		{
