@@ -1,0 +1,1 @@
+Added: automatic fire mode to M14.
