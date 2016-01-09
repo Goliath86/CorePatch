@@ -1,1 +1,1 @@
-Fixed: CfgVehicles - obsolete armorXXX value (http://dev.withsix.com/issues/24669).
+Fixed: CfgVehicles - obsolete armorXXX values (http://dev.withsix.com/issues/24669).
