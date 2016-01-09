@@ -1,0 +1,1 @@
+Added: iron sights for scoped weapons with sidemounted scope (http://dev.withsix.com/issues/13857).

@@ -1,0 +1,1 @@
+Added: upgraded ArmA2 vanilla weapons by using ANZINS mod (http://dev.withsix.com/issues/63107).
