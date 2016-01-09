@@ -1,0 +1,1 @@
+Fixed: Hind distance LOD colour (http://dev.withsix.com/issues/8198).

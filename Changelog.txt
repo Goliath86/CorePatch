@@ -1,3 +1,72 @@
+08/01/2016
+
+Added:
+	GAU-22 cannon to F35B;
+	smoothly adjustable magnification to BLUFOR optical sights;
+	ability to adjust zeroing to MP5;
+	missed get in/out actions to Su-34;
+
+Changed:
+	L85A2 AWS optics definitions to more realistic;
+	optics model of M4A1 M203 ACOG, M16A4 ACOG, M16A4 M203 ACOG and Sa58V ACOG to more realistic;
+	info type of some vehicles;
+	compartments in some vehicles;
+	reverted ability of M1A2 loader to fire when turned in;
+	reverted DMR optical sight tweaks;
+	get in/out sounds of some vehicles to more preferred;
+	GSh-30 magazine ammo from AP to HE;
+	zeroing to PKP Pecheneg.
+
+Deleted:
+	CCP #71142 bug fix due to it's wrong;
+	CIT #22991, #22992, #22994, #22996, #22998, #22999, #24661, #24662, #24663, #24666 and #24670 bug fixes due to causes appearance of "No owner" messages in RPT;
+	light version of pilot unit as it was already present.
+
+Fixed:
+	AK-107 model issue when fire (http://dev.withsix.com/issues/5342);
+	AI can see and shoot through the walls on one side of the long white animal Shed (http://dev.withsix.com/issues/7147);
+	locking guided missiles, AI-fired RPGs, and BMP-2 have trouble hitting LAV-25 HQ (http://dev.withsix.com/issues/62100);
+	appearance of "No owner" messages in RPT;
+	IR searchlights glow on BMP-3 and Tunguska;
+	postprocess optics effects for reflex and iron sights of some weapons;
+	L7A2 regression related to discrete distances;
+	ROF of M134;
+	view through ironsight on AK, PP-19 Bizon and RPK-74;
+	M1014 model issue when empty magazine;
+	forbade air locking for CTWS APDS-T shells;
+	Pchela model issues;
+	Su-34 gunner duplicated weapons and magazines;
+	BMP-2 HQ and BTR-90 HQ searchlights;
+	removed flare launcher from AH-6X;
+	removed rocket launcher reload sound of BMP-3 and T-90;
+	roles of control list when inserting some vehicles in editor;
+	turning out AI driver when player is commander of BMP-2 HQ.
+
+Tweaked:
+	rocket launcher reload time of BMP-3 and T-90;
+	increased discrete distances range of BLUFOR optical sights to 1000m;
+	decreased discrete distances range of vehicles with AZP-23, 2A38M, 2A42, 2A72 and M242 cannons;
+	zeroing of PKP Pecheneg.
+
+Other:
+	trying to fix the Cardboardbox DayZ bug;
+	made simplification and optimization.
+
+
+21/12/2015
+
+- AS50 sound reverted to original
+- DMR zeroing removed due to community requests
+- Burst lengths decreased for aircraft cannons
+- Lee Enfield zeroing reverted to original state
+- NVG is now usable with western scopes again
+- Helicopter side gunners firing angles reverted to original
+- All An-2 variants are now retexturable through hidden selections
+- GMG and AGS-30 zeroings fixed, no longer include unusable values
+- "No Owner" RPT messages should no longer appear
+- All patches are merged into single addon
+
+
 18/12/2015
 
 Added:

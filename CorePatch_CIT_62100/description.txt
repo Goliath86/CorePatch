@@ -1,0 +1,1 @@
+Fixed: locking guided missiles, AI-fired RPGs, and BMP-2 have trouble hitting LAV-25 HQ (http://dev.withsix.com/issues/62100).
