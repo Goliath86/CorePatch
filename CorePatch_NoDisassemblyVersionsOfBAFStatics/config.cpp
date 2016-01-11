@@ -7,6 +7,14 @@ class CfgPatches {
 	};
 };
 
+class CfgAddons {
+	class PreloadAddons {
+		class CorePatch_NoDisassemblyVersionsOfBAFStatics {
+			list[] = {"CorePatch_NoDisassemblyVersionsOfBAFStatics"};
+		};
+	};
+};
+
 class CfgVehicles {
 	class BAF_L2A1_ACOG_base;
 	class BAF_GPMG_Minitripod_D:BAF_L2A1_ACOG_base {
