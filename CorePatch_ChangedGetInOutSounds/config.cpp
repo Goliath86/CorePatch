@@ -125,7 +125,7 @@ class CfgVehicles
 			20
 		};
 	};
-	class HMMWV_M998A2_SOV_DES_EP1 : HMMWV_base
+	class HMMWV_M998A2_SOV_DES_EP1 : HMMWV_Base
 	{
 		soundGetIn[] = {
 			"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\get_in2",
@@ -715,12 +715,6 @@ class CfgVehicles
 	};
 	class StrykerBase_EP1 : Wheeled_APC
 	{
-		soundGetOut[] = {
-			"\ca\Sounds_E\Wheeled_E\stryker\stryker_door",
-			1,
-			1,
-			30
-		};
 		soundGetIn[] = {
 			"\ca\Sounds_E\Wheeled_E\stryker\stryker_door",
 			1,
