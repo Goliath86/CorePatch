@@ -24,6 +24,7 @@ class CfgWeapons
 	};
 	class Laserdesignator : Binocular // AN/PEQ-1A SOFLAM
 	{
+		delete thermalMode;
 		delete visionMode;
 
 		opticsZoomInit = 0.024900001; // 10x
