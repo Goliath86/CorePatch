@@ -138,6 +138,8 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		discreteFov[] = {};
 		discreteInitIndex = 0;
+		opticsDisablePeripherialVision = 1;
+		opticsFlare = 1;
 		opticsZoomInit = 0.0623;
 		opticsZoomMax = 0.0623;
 		opticsZoomMin = 0.0623;
@@ -147,6 +149,9 @@ class CfgWeapons
 	};
 	class BAF_L85A2_RIS_SUSAT : L85A2_base_BAF
 	{
+		opticsZoomInit = 0.0623;
+		opticsZoomMax = 0.0623;
+		opticsZoomMin = 0.0623;
 		visionMode[] = {};
 
 		class OpticsModes
@@ -154,6 +159,9 @@ class CfgWeapons
 			class SUSAT
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600};
+				opticsZoomInit = 0.0623;
+				opticsZoomMax = 0.0623;
+				opticsZoomMin = 0.0623;
 				visionMode[] = {};
 			};
 			class ironsights : SUSAT
@@ -200,9 +208,13 @@ class CfgWeapons
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
 	};
-	class M4SPR : M4A1
+	class M4SPR : M4A1 // Leupold Mark 4 LR/T 3.5-10x40mm LR/T M3 Illum. ret.
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		opticsFlare = 1;
+		opticsZoomInit = 0.071099997;
+		opticsZoomMax = 0.071099997;
+		opticsZoomMin = 0.024900001;
 		visionMode[] = {"Normal"};
 	};
 	class M16A2 : M16_base
@@ -216,6 +228,10 @@ class CfgWeapons
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
 		weaponInfoType = "RscWeaponEmpty";
+	};
+	class FN_FAL_ANPVS4 : FN_FAL
+	{
+		opticsFlare = 1;
 	};
 	class m16a4 : M16A2
 	{
@@ -241,15 +257,24 @@ class CfgWeapons
 		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
 	};
 	class Rifle;
-	/* class BAF_AS50_scoped : Rifle
+	class BAF_AS50_scoped : Rifle // Schmidt & Bender PM II/LP 3-12x50mm
 	{
+		discreteFov[] = {};
+		opticsZoomInit = 0.082999997;
+		opticsZoomMax = 0.082999997;
+		opticsZoomMin = 0.0208;
 	};
 	class BAF_AS50_TWS : BAF_AS50_scoped
 	{
-		discreteDistance[] = {};
-		discreteDistanceInitIndex = 0;
-		weaponInfoType = "RscWeaponEmpty";
-	}; */
+		/* discreteDistance[] = {};
+		discreteDistanceInitIndex = 0; */
+		discreteFov[] = {0.075499997, 0.024900001};
+		opticsPPEffects[] = {};
+		opticsZoomInit = 0.075499997;
+		opticsZoomMax = 0.075499997;
+		opticsZoomMin = 0.024900001;
+		// weaponInfoType = "RscWeaponEmpty";
+	};
 	class BAF_L86A2_ACOG : Rifle
 	{
 		visionMode[] = {};
@@ -268,7 +293,14 @@ class CfgWeapons
 			};
 		};
 	};
-	class DMR : Rifle
+	class BAF_LRR_scoped : Rifle // Schmidt & Bender PM II/LP 3-12x50mm
+	{
+		discreteFov[] = {};
+		opticsZoomInit = 0.082999997;
+		opticsZoomMax = 0.082999997;
+		opticsZoomMin = 0.0208;
+	};
+	class DMR : Rifle // Leupold Mark 4 LR/T 3.5-10x40mm M3
 	{
 		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		discreteDistanceInitIndex = 2;
@@ -307,7 +339,7 @@ class CfgWeapons
 
 		class OpticsModes
 		{
-			class StepScope
+			class StepScope // Leupold Mark 4 LR/T 3.5-10x40mm M3
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 				distanceZoomMax = 120;
@@ -322,7 +354,7 @@ class CfgWeapons
 	{
 		class OpticsModes : OpticsModes
 		{
-			class StepScope : StepScope
+			class StepScope : StepScope // Meopta
 			{
 				distanceZoomMax = 100;
 				distanceZoomMin = 300;
@@ -331,8 +363,8 @@ class CfgWeapons
 					"OpticsBlur2"
 				};
 				opticsZoomInit = 0.082999997;
-				opticsZoomMax = 0.082999997;
-				opticsZoomMin = 0.0208;
+				opticsZoomMax = 0.082999997; // 3x
+				opticsZoomMin = 0.0208; // 12x
 			};
 		};
 	};
@@ -361,9 +393,8 @@ class CfgWeapons
 
 		class OpticsModes : OpticsModes
 		{
-			class StepScope : HTWS
+			class StepScope : HTWS // AN/PVS-10 8.5x
 			{
-				delete discreteDistance;
 				delete discreteDistanceInitIndex;
 
 				discreteFov[] = {};
@@ -457,7 +488,7 @@ class CfgWeapons
 
 		class OpticsModes
 		{
-			class Scope
+			class Scope // 1P77
 			{
 				discreteDistance[] = {400, 500, 600, 700, 800, 900, 1000};
 				discreteDistanceInitIndex = 0;
@@ -559,6 +590,10 @@ class CfgWeapons
 	{
 		delete visionMode;
 	};
+	class m8_carbine : m8_base
+	{
+		opticsFlare = 1;
+	};
 	class m8_sharpshooter : m8_base
 	{
 		class OpticsModes
@@ -569,7 +604,7 @@ class CfgWeapons
 			};
 		};
 	};
-	/* class m8_tws : m8_base
+	class m8_tws : m8_base
 	{
 		delete weaponInfoType;
 
@@ -600,12 +635,12 @@ class CfgWeapons
 				delete discreteDistanceInitIndex;
 			};
 		};
-	}; */
+	};
 	class m107 : Rifle
 	{
 		class OpticsModes
 		{
-			class StepScope
+			class StepScope // Leupold Mark 4 LR/T 4.5-14x40mm Target
 			{
 				discreteDistanceInitIndex = 2;
 				memoryPointCamera = "eye";
@@ -633,46 +668,41 @@ class CfgWeapons
 	{
 		distanceZoomMax = 120;
 		distanceZoomMin = 400;
-		opticsZoomInit = 0.071944997;
-		opticsZoomMax = 0.071944997;
+		opticsZoomInit = 0.1;
+		opticsZoomMax = 0.1;
+		opticsZoomMin = 0.03125;
 
 		class OpticsModes
 		{
-			class StepScope
+			class StepScope // Leupold Mark 4 MR/T 2.5-8x36mm M2
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 				distanceZoomMax = 120;
 				distanceZoomMin = 400;
-				opticsZoomInit = 0.071944997;
-				opticsZoomMax = 0.071944997;
-				opticsZoomMin = 0.035971999;
+				opticsZoomInit = 0.1;
+				opticsZoomMax = 0.1;
+				opticsZoomMin = 0.03125;
 			};
 		};
 	};
 	class SCAR_H_LNG_Sniper_SD : SCAR_H_Base
 	{
-		distanceZoomMax = 120;
-		distanceZoomMin = 400;
-		opticsZoomInit = 0.087665997;
-		opticsZoomMax = 0.087665997;
-		opticsZoomMin = 0.035971999;
+		opticsZoomInit = 0.227272727;
+		opticsZoomMax = 0.227272727;
+		opticsZoomMin = 0.0623;
 
 		class OpticsModes
 		{
-			class StepScope
+			class StepScope // Zeiss Victory HT 1.1-4x24mm
 			{
-				/* discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100};
-				discreteDistanceInitIndex = 2; */
-				distanceZoomMax = 120;
-				distanceZoomMin = 400;
-				opticsZoomMax = 0.087665997;
-				opticsZoomMin = 0.035971999;
+				opticsZoomInit = 0.227272727;
+				opticsZoomMax = 0.227272727;
+				opticsZoomMin = 0.0623;
 			};
 		};
 	};
 	class SCAR_H_STD_TWS_SD : SCAR_H_LNG_Sniper_SD
 	{
-		// weaponInfoType = "RscWeaponEmpty";
+		weaponInfoType = "RscWeaponEmpty";
 
 		class OpticsModes : OpticsModes
 		{
@@ -680,10 +710,8 @@ class CfgWeapons
 
 			class LTWS : StepScope
 			{
-				/* discreteDistance[] = {};
-				discreteDistanceInitIndex = 0; */
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
+				discreteDistance[] = {};
+				discreteDistanceInitIndex = 0;
 				opticsPPEffects[] = {};
 				opticsZoomInit = 0.16060001;
 				opticsZoomMax = 0.16060001;
@@ -698,8 +726,13 @@ class CfgWeapons
 	{
 		class OpticsModes
 		{
-			class Specter
+			class Specter // Elcan SpecterDR 1-4x
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				opticsZoomInit = 0.0623;
+				opticsZoomMax = 0.0623;
+				opticsZoomMin = 0.0623;
 				visionMode[] = {};
 			};
 			class Ironsights : Specter
@@ -737,7 +770,7 @@ class CfgWeapons
 	{
 		class OpticsModes
 		{
-			class Mk4
+			class Mk4 // Leupold Mark 4 CQ/T 1-3x14mm
 			{
 				visionMode[] = {};
 			};
