@@ -74,7 +74,6 @@ class CfgWeapons
 	{
 		class MuzzleFar: G36C
 		{
-			displayName = "$STR_DN_G36";
 			modes[] = {
 				"Single",
 				"FullAuto"
@@ -141,7 +140,6 @@ class CfgWeapons
 	{
 		class MuzzleFar: MuzzleFar
 		{
-			displayName = "$STR_DN_G36K";
 			modes[] = {
 				"Single",
 				"FullAuto"

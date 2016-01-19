@@ -13,14 +13,8 @@ class CfgWeapons
 	class M4A1;
 	class M4A1_RCO_GL: M4A1
 	{
-		displayName = "$STR_DN_M4A1_RCO_GL_CP";
 		irDistance = 100;
 		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_RCO_GL";
-
-		class M4_ACOG_Muzzle: M4A1
-		{
-			displayName = "$STR_DN_M4A1_RCO_GL_CP";
-		};
 	};
 	class M4A1_HWS_GL: M4A1_RCO_GL
 	{
@@ -87,21 +81,6 @@ class CfgWeapons
 	class m16a4_acg: m16a4
 	{
 		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_acg";
-	};
-	class M240;
-	class m240_scoped_EP1: M240
-	{
-		displayName = "$STR_DN_M240_SCOPED_EP1_CP";
-	};
-	class M249;
-	class M249_m145_EP1: M249
-	{
-		displayName = "$STR_DN_M249_M145_EP1_CP";
-	};
-	class Sa58V_EP1;
-	class Sa58V_CCO_EP1: Sa58V_EP1
-	{
-		displayName = "$STR_DN_SA58V_CCO_EP1_CP";
 	};
 	class Rifle;
 	class M24: Rifle
