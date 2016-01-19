@@ -15,6 +15,8 @@ class CfgWeapons
 	{
 		class M4_ACOG_Muzzle: M4A1
 		{
+			distanceZoomMax = 300;
+			distanceZoomMin = 300;
 			modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
 
 			class OpticsModes
@@ -22,8 +24,8 @@ class CfgWeapons
 				class ACOG
 				{
 					cameraDir = "";
-					distanceZoomMax = 100;
-					distanceZoomMin = 100;
+					distanceZoomMax = 300;
+					distanceZoomMin = 300;
 					memoryPointCamera = "opticView";
 					opticsDisablePeripherialVision = 1;
 					opticsFlare = 1;
@@ -40,8 +42,8 @@ class CfgWeapons
 				};
 				class Ironsights: ACOG
 				{
-					distanceZoomMax = 300;
-					distanceZoomMin = 300;
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 					memoryPointCamera = "eye";
 					opticsDisablePeripherialVision = 0;
 					opticsFlare = 0;
@@ -102,8 +104,6 @@ class CfgWeapons
 				};
 				class Kolimator: Scope
 				{
-					distanceZoomMax = 300;
-					distanceZoomMin = 300;
 					memoryPointCamera = "eye";
 					opticsDisablePeripherialVision = 0;
 					opticsFlare = 0;
@@ -129,6 +129,8 @@ class CfgWeapons
 				};
 				class Kolimator: Scope
 				{
+					delete distanceZoomMax;
+					delete distanceZoomMin;
 					delete visionMode;
 
 					opticsPPEffects[] = {};
@@ -158,6 +160,8 @@ class CfgWeapons
 				};
 				class Kolimator: Scope
 				{
+					delete distanceZoomMax;
+					delete distanceZoomMin;
 					delete visionMode;
 
 					opticsPPEffects[] = {};
