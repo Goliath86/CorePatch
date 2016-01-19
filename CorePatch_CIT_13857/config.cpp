@@ -61,6 +61,8 @@ class CfgWeapons
 			};
 			class Ironsights: Goshawk
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
@@ -84,12 +86,16 @@ class CfgWeapons
 	};
 	class AKS_74_pso: AKS_BASE
 	{
+		distanceZoomMax = 300;
+		distanceZoomMin = 300;
 		model = "\CorePatch\CorePatch_CIT_13857\models\AKS_74_pso";
 
 		class OpticsModes
 		{
 			class Scope
 			{
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
 				memoryPointCamera = "eye";
 				opticsPPEffects[] = {
 					"OpticsCHAbera3",
@@ -98,6 +104,8 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				// memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
@@ -114,6 +122,8 @@ class CfgWeapons
 	class AK_107_BASE;
 	class AK_107_pso: AK_107_BASE
 	{
+		distanceZoomMax = 300;
+		distanceZoomMin = 300;
 		model = "\CorePatch\CorePatch_CIT_13857\models\AK_107_pso";
 
 		class OpticsModes
@@ -121,8 +131,8 @@ class CfgWeapons
 			class Scope
 			{
 				cameraDir = "";
-				distanceZoomMax = 200;
-				distanceZoomMin = 200;
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
 				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
@@ -139,6 +149,8 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
@@ -155,6 +167,8 @@ class CfgWeapons
 	class AK_107_GL_kobra;
 	class AK_107_GL_pso: AK_107_GL_kobra
 	{
+		distanceZoomMax = 300;
+		distanceZoomMin = 300;
 		model = "\CorePatch\CorePatch_CIT_13857\models\AK_107_GL_pso";
 
 		class OpticsModes
@@ -162,8 +176,8 @@ class CfgWeapons
 			class Scope
 			{
 				cameraDir = "";
-				distanceZoomMax = 200;
-				distanceZoomMin = 200;
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
 				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
@@ -180,6 +194,8 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
@@ -205,11 +221,11 @@ class CfgWeapons
 
 		class OpticsModes
 		{
-			class Scope
+			class Scope // 1P77
 			{
 				cameraDir = "";
-				distanceZoomMax = 300;
-				distanceZoomMin = 300;
+				distanceZoomMax = 400;
+				distanceZoomMin = 400;
 				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
@@ -226,6 +242,8 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
@@ -267,6 +285,8 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
