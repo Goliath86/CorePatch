@@ -97,6 +97,8 @@ class CfgWeapons
 	};
 	class SVD: Rifle
 	{
+		distanceZoomMax = 300;
+		distanceZoomMin = 300;
 		model = "\CorePatch\CorePatch_CCP_63107\models\SVD";
 		optics = 1;
 
@@ -105,8 +107,8 @@ class CfgWeapons
 			class Scope
 			{
 				cameraDir = "";
-				distanceZoomMax = 200;
-				distanceZoomMin = 200;
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
 				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
@@ -123,6 +125,8 @@ class CfgWeapons
 			};
 			class Ironsights: Scope
 			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
 				memoryPointCamera = "eye";
 				opticsDisablePeripherialVision = 0;
 				opticsFlare = 0;
@@ -143,8 +147,8 @@ class CfgWeapons
 			class Scope
 			{
 				cameraDir = "";
-				distanceZoomMax = 200;
-				distanceZoomMin = 200;
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
 				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
@@ -170,8 +174,8 @@ class CfgWeapons
 			class Scope
 			{
 				cameraDir = "";
-				distanceZoomMax = 200;
-				distanceZoomMin = 200;
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
 				memoryPointCamera = "opticView";
 				opticsDisablePeripherialVision = 1;
 				opticsFlare = 1;
