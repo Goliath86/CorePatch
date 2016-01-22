@@ -16,17 +16,11 @@ class CfgVehicles
 		transportMaxMagazines = 50;
 		transportMaxWeapons = 10;
 	};
-	
 	class SUV_Base_EP1;
 	class SUV_PMC : SUV_Base_EP1
 	{
-		transportMaxMagazines = 50;
-		transportMaxWeapons = 10;
-	};
-	
-	class SUV_PMC_BAF : SUV_Base_EP1
-	{
-		transportMaxMagazines = 50;
-		transportMaxWeapons = 10;
+		delete transportMaxBackpacks;
+		delete transportMaxMagazines;
+		delete transportMaxWeapons;
 	};
 };
