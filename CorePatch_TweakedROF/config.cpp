@@ -80,6 +80,10 @@ class CfgWeapons
 		{
 			soundBurst = 1;
 		};
+		class medium : close
+		{
+			aiRateOfFireDistance = 900;
+		};
 	};
 	class GSh23L : CannonCore
 	{
