@@ -20,6 +20,11 @@ class CfgVehicles
 	};
 	class Pchela1T: UAV
 	{
+		scope = 1;
+	};
+	class Pchela1T_Fixed: Pchela1T
+	{
+		scope = 2;
 		driverForceOptics = 1;
 		ejectDamageLimit = 1;
 		ejectSpeed[] = {0, 0, 0};
