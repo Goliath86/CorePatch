@@ -38,6 +38,10 @@ class CfgVehicles {
 	class SUV_Base_EP1 : Car {
 		terrainCoef = 2;
 	};
+
+	class ArmoredSUV_Base_PMC : Car {
+		terrainCoef = 2;
+	};
 	
 	class Truck : Car {
 		terrainCoef = 2;
@@ -51,9 +55,9 @@ class CfgVehicles {
 		terrainCoef = 2;
 	};
 	
-	class WheeledAPC : Car {
+/*	class WheeledAPC : Car {
 		terrainCoef = 2;
-	};
+	};*/
 	
 	class BRDM2_Base : Wheeled_APC {
 		terrainCoef = 2;
