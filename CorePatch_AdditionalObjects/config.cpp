@@ -26,7 +26,7 @@ class CfgVehicles {
 	};
 
 	class NonStrategic;
-	class CorePatchNonStrategic:NonStrategic {
+	class CorePatch_NonStrategic:NonStrategic {
 		animated = 0;
 		typicalCargo[] = {};
 		transportAmmo = 0;
@@ -40,101 +40,101 @@ class CfgVehicles {
 		cost = 0;
 	};
 
-	class Lightning1:CorePatchNonStrategic {
+	class CorePatch_Lightning1:CorePatch_NonStrategic {
 		scope = 1;
 		model = "\ca\data\blesk1.p3d";
 	};
 
-	class Lightning2:Lightning1 {
+	class CorePatch_Lightning2:CorePatch_Lightning1 {
 		scope = 1;
 		model = "\ca\data\blesk2.p3d";
 	};
 
-	class CraterFlat:CorePatchNonStrategic {
+	class CorePatch_CraterFlat:CorePatch_NonStrategic {
 		scope = 1;
 		model = "\ca\data\krater.p3d";
 	};
 
-	class BrokenGlass:CorePatchNonStrategic {
+	class CorePatch_BrokenGlass:CorePatch_NonStrategic {
 		scope = 1;
 		model = "\ca\structures\Ruins\Glass_Cullet_01.p3d";
 	};
 
-	class BloodSplat:CorePatchNonStrategic {
+	class CorePatch_BloodSplat:CorePatch_NonStrategic {
 		scope = 1;
 		model = "\ca\characters\krvava_skvrna.p3d";
 	};
 
 	class Small_items_NoInteractive;
-	class RadioOld:Small_items_NoInteractive {
+	class CorePatch_RadioOld:Small_items_NoInteractive {
 		scope = 1;
 		model = "\ca\misc\mutt_vysilacka.p3d";
 		displayName = "$STR_DN_RADIO";
 	};
 
 	class Small_items;
-	class CardboardBoxObject:Small_items {
+	class CorePatch_CardboardBox:Small_items {
 		scope = 1;
 		model = "\ca\structures\Furniture\Decoration\box_c\box_c.p3d";
 	};
 
 	class AmmoCrate_NoInteractive_Base_EP1;
-	class SmallAmmoSack:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_SmallAmmoSack:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_RUAmmosmall.p3d";
 		accuracy = 1000;
 		scope = 1;
 	};
 
-	class SmallMetalAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_SmallMetalAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_RUBasicAmmoBox.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
-	class LongMetalAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_LongMetalAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBoxBig.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
-	class ShortMetalAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_ShortMetalAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_UsBasicAmmoBoxSmall.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
-	class EastWoodenAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_EastWoodenAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_RUWeaponBox.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
-	class EastSmallWoodenAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_EastSmallWoodenAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_RUWeaponBoxlow.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
-	class WestLongWoodenAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_WestLongWoodenAmmoBox:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\AmmoBoxes\Proxy_UsLouncherBox.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
-	class MagazineBag:AmmoCrate_NoInteractive_Base_EP1 {
+	class CorePatch_MagazineBag:AmmoCrate_NoInteractive_Base_EP1 {
 		model = "\ca\weapons\mag_univ.p3d";
 		displayName = "$STR_EP1_DN_AmmoCrate_NoInteractive_";
 		scope = 1;
 	};
 
 	class Misc_thing_NoInteractive;
-	class MineCart:Misc_thing_NoInteractive {
+	class CorePatch_MineCart:Misc_thing_NoInteractive {
 		scope = 1;
 		model = "\ca\structures_e\Ind\Ind_Coltan_Mine\Misc_Tram_EP1.p3d";
 	};
 
 	class Misc_thing;
-	class MissileSCUD:Misc_thing {
+	class CorePatch_MissileSCUD:Misc_thing {
 		scope = 1;
 		model = "\ca\wheeled_e\SCUD\data\scud_rocket.p3d";
 	};
@@ -149,7 +149,7 @@ class CfgVehicles {
 	};
 
 	class Wreck_Base;
-	class UAZHull:Wreck_Base {
+	class CorePatch_UAZHull:Wreck_Base {
 		scope = 1;
 		model = "\ca\wheeled\uaz_wreck.p3d";
 	};
