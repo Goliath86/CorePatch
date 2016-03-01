@@ -17,5 +17,5 @@ class CfgAddons {
 };
 
 class DefaultEventhandlers {
-	init = "if(isNil 'BIS_Effects_Init') then {[] call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}";
+	init = "if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then {[] call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}";
 };

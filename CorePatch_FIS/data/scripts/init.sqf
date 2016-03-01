@@ -1,5 +1,5 @@
 //_v=_this select 0;
-if(isNil 'BIS_Effects_Init') then
+if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then
 {
 	BIS_Effects_Init=true;
 	BIS_Effects_EH_Fired=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\fired.sqf";
@@ -23,6 +23,8 @@ if(isNil 'BIS_Effects_Init') then
 	//BIS_Effects_RocketTrail=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\rockettrail.sqf";
 
 	[] call compile preprocessFileLineNumbers "\CorePatch\CorePatch_FIS\data\scripts\fnc_fis_functions.sqf";
+
+	Corepatch_Effects_Init=true;
 };
 
 /*
