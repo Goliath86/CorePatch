@@ -1,3 +1,1 @@
-Fixed:
-- vision modes of binoculars and laserdesignator;
-- zoom values of binoculars, laserdesignator and rangefinder.
+Fixed: zoom values of binoculars, laserdesignator, NV goggles and rangefinder.
