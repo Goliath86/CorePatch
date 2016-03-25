@@ -14,7 +14,6 @@ class CfgWeapons
 	class Binocular : Default
 	{
 		opticsZoomInit = 0.046999998;
-		visionMode[] = {"Normal"};
 	};
 	class Binocular_Vector : Binocular // Vector 21
 	{
@@ -24,11 +23,12 @@ class CfgWeapons
 	};
 	class Laserdesignator : Binocular // AN/PEQ-1A SOFLAM
 	{
-		delete thermalMode;
-		delete visionMode;
-
 		opticsZoomInit = 0.024900001; // 10x
 		opticsZoomMax = 0.024900001;
 		opticsZoomMin = 0.024900001;
+	};
+	class NVGoggles : Binocular
+	{
+		opticsZoomInit = 1;
 	};
 };
