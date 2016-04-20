@@ -156,27 +156,39 @@ class CfgVehicles {
 
 	class Land_ConcreteRamp;
 	class Land_ConcreteRamp_Destructible:Land_ConcreteRamp {
+		scope = 1;
 		armor = 700;
 		destrType = "DestructBuilding";
 	};
 
 	class Land_ConcreteRamp2_Destructible:Land_ConcreteRamp_Destructible {
+		scope = 1;
+		displayName = $STR_DN_RAMPCONCRETE;
 		model = "\ca\data\library\ramp_concrete.p3d";
 	};
 
 	class Land_ConcreteBlock;
 	class Land_ConcreteBlock_Destructible:Land_ConcreteBlock {
+		scope = 1;
 		armor = 750;
 		destrType = "DestructBuilding";
 	};
 
 	class WarfareBDepot;
 	class WarfareBDepot_Destructible:WarfareBDepot {
-		armor = 1000;
+		scope = 1;
+		armor = 1500;
 	};
 
 	class Wall_L_2m5_EP1;
 	class Wall_L_5m5_EP1:Wall_L_2m5_EP1 {
+		scope = 1;
 		model = "\ca\structures_e\Wall\Wall_L\Wall_L_5m_EP1.p3d";
+	};
+
+	class Land_fort_rampart;
+	class Land_fort_rampart_Destructible:Land_fort_rampart {
+		scope = 1;
+		destrType = "DestructBuilding";
 	};
 };
