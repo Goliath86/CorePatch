@@ -29,29 +29,35 @@ _tv=11;
 //Remove weapons/ammo to prevent explosion. Script will create its own explosions (doesnt work?)
 removeallweapons _v;
 
-if (local _v) then {_expl="HelicopterExploSmall" createvehicle (getpos _v);};
+if (local _v) then { // Sa-Matra: Small explosion regardless of where vehicle landed
+	_trig = "EmptyDetector" createVehicleLocal [0,0,0];
+	_trig setTriggerArea [0,0,0,false];
+	_trig setVariable ["obj", _v];
+	_trig setTriggerStatements ["
+		_v = thisTrigger getVariable [""obj"", objNull];
+		createVehicle [""HelicopterExploSmall"", getPos _v, [], 0, ""CAN_COLLIDE""] setPosATL getPosATL _v;
+		deleteVehicle thisTrigger;
+	", "", ""];
+};
 
-if !(isDedicated) then { //dw, particle stuff don't need run on dedicated
-	while {_i <1200 && ((velocity _v select 2)<-20 || (getpos _v select 2)>8) && !(alive _v) && !(isnull _v) && (getpos _v select 2)>1} do
-	{
+while {_i <1200 && ((velocity _v select 2)<-20 || (getpos _v select 2)>8) && !(alive _v) && !(isnull _v) && (getpos _v select 2)>1} do {
+	if(!isDedicated) then { // particle stuff is not needed on dedicated
 		_tv=abs(velocity _v select 0)+abs(velocity _v select 1)+abs(velocity _v select 2);
 		if (_tv>2) then {_dr=1/_tv} else {_dr=1};
 		_fl setDropInterval _dr;
 		_sm setDropInterval _dr;
-		_i=_i+1;
-		sleep 0.2;
 	};
-}; // end of dedicated check
-
-_pos=getpos _v;
-clearVehicleInit _v;
+	_i=_i+1;
+	sleep 0.2;
+};
 
 if !(isDedicated) then { //dw, particle stuff don't need run on dedicated
-	deletevehicle _fl;deletevehicle _sm;
+	deletevehicle _fl;
+	deletevehicle _sm;
 }; // end of dedicated check
 
-if (surfaceiswater(_pos) && (_pos select 2)<9 ) then
-{
+//if (surfaceiswater(_pos) && (_pos select 2)<9 ) then
+if((getTerrainHeightASL getPosASL _v < -1) && (getPosASL _v select 2 < 1)) then {
 	if !(isDedicated) then { //dw, particle stuff don't need run on dedicated
 		_wave = "#particlesource" createVehicleLocal getpos _v;
 		_wave attachto [_v,[0,0,0],"destructionEffect1"];
@@ -72,72 +78,31 @@ if (surfaceiswater(_pos) && (_pos select 2)<9 ) then
 		_splash setDropInterval 0.002;
 
 		sleep 0.2;
-		deletevehicle _wave;deletevehicle _splash;
+
+		deletevehicle _wave;
+		deletevehicle _splash;
 	}; // end of dedicated check
-    
-	/*
-	if (local _v) then
-	{
-		_wreck=GetText (configFile >> "CfgVehicles" >> (typeof _v) >> "wreck");
-		if (_wreck!="") then
-		{
-			_pos = getpos _v;
-			_dir = vectordir _v;
-			_vecUp = vectorup _v;
-			_vel = velocity _v;
-
-			clearvehicleinit _v;
-			_crw= crew _v;
-			clearvehicleinit _v;
-			deleteVehicle _v;
-			_v =(_wreck) createvehicle _pos;
-			{_x moveincargo _v} foreach _crw;
-			_v setVectorDirAndUp [_dir,_vecUp];
-			_v setFuel 0;
-			_v setdamage 0;
-			_v setvelocity _vel;
-			//Send to garbage collecter so wreck can be deleted later
-			[_v] call BIS_GC_trashItFunc;
-
-		};
-	};*/
-}
-else
-{
-	if (local _v) then
-	{
+} else {
+	if (local _v) then {
 		//_velx = velocity _v select 0; _velx = _velx / 4;
 		//_vely = velocity _v select 1; _vely = _vely / 4;
 		_velz=velocity _v select 2;
 		if (_velz>1) then (_v setvelocity [velocity _v select 0,velocity _v select 1,0]);
-		_expl="HelicopterExploBig" createvehicle [_pos select 0,_pos select 1,(_pos select 2) + 1];
+		//_expl="HelicopterExploBig" createvehicle [_pos select 0,_pos select 1,(_pos select 2) + 1];
+
+		// Sa-Matra: Big explosion only if landed on solid ground
+		_trig = "EmptyDetector" createVehicleLocal [0,0,0];
+		_trig setTriggerArea [0,0,0,false];
+		_trig setVariable ["obj", _v];
+		_trig setTriggerStatements ["
+			_v = thisTrigger getVariable [""obj"", objNull];
+			_atl = getPosATL _v; _atl set [2, (_atl select 2) + 1];
+			createVehicle [""HelicopterExploBig"", getPos _v, [], 0, ""CAN_COLLIDE""] setPosATL _atl;
+			deleteVehicle thisTrigger;
+		", "", ""];
+
 		sleep 0.05;
-                /*
-		_wreck=GetText (configFile >> "CfgVehicles" >> (typeof _v) >> "wreck");
-		if (_wreck!="") then
-			{
-				_pos = getpos _v;
-				_dir = vectordir _v;
-				_vecUp = vectorup _v;
-				_vel = velocity _v;
 
-				_crw= crew _v;
-				clearvehicleinit _v;
-				deleteVehicle _v;
-				_v =(_wreck) createvehicle _pos;
-				{_x moveincargo _v} foreach _crw;
-				//sleep 0.05;
-				_v setvelocity _vel;
-				//_v setPos _pos;
-				_v setvectordir (_dir);
-				_v setvectorup _vecUp;
-				_v setFuel 0;
-				_v setdamage 0;
-
-
-			};    */
-		//_v setVehicleInit format ["[this, %1, %2]spawn BIS_Effects_AirDestructionStage2",_int, _t];
-		//processInitCommands; //ClearvehicleInit done at end of burn script
 		["AirDestructionStage2", _v, _int, _t] call BIS_Effects_globalEvent;
 	};
 };
