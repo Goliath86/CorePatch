@@ -1,0 +1,1 @@
+Changed side of LaserTargetC to opfor since it was civilian before which rendered use of laser markers impossible for civilian and independent sides.
