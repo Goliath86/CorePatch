@@ -120,7 +120,8 @@ class CfgPatches {
 			"CorePatch_Zargabad_Intro_Fix",
 			"CorePatch_LaserTargetCSide",
 			"CorePatch_FixedOG7Icon",
-			"CorePatch_PistolsBuffed"
+			"CorePatch_PistolsBuffed",
+			"CorePatch_UralTransportMagazines"
 		};
 	};
 };

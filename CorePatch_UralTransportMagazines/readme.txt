@@ -1,0 +1,1 @@
+Removed huge ammo cargo from civilian and service Urals
