@@ -20,11 +20,11 @@ class CfgVehicles {
 	class Man;
 
 	class CAManBase:Man {
-		fsmDanger = "\CorePatch\CorePatch_AntiProne\formationCDanger.fsm";
+		fsmDanger = "CorePatch\CorePatch_AntiProne\fsm\formationCDanger.fsm";
 	};
 	
 	class Civilian:CAManBase {
-		fsmDanger = "\CorePatch\CorePatch_AntiProne\formationCDanger.fsm";
+		fsmDanger = "CorePatch\CorePatch_AntiProne\fsm\formationCDanger.fsm";
 	};
 };
 
