@@ -1,0 +1,1 @@
+Fixed: CfgWeapons - config references missing sound files (https://dev.withsix.com/issues/22990).
