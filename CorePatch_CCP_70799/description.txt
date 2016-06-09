@@ -1,0 +1,1 @@
+Added: some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799).
