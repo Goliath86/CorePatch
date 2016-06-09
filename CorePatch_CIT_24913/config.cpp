@@ -18,45 +18,35 @@ class CfgVehicles
 	};
 	class A10 : Plane
 	{
-		irScanRangeMax = 5000;
-		irScanRangeMin = 2000;
+		irScanRangeMax = 8000;
+		irScanRangeMin = 3000;
 	};
 	class AV8B2 : Plane
 	{
-		irScanRangeMax = 5000;
-		irScanRangeMin = 2000;
+		irScanRangeMax = 8000;
+		irScanRangeMin = 3000;
 	};
 	class An2_Base_EP1 : Plane
 	{
+		delete irScanRangeMin;
 		delete irScanToEyeFactor;
-
-		irScanRangeMin = 500;
 	};
 	class C130J : Plane
 	{
 		delete irScanToEyeFactor;
 
-		irScanRangeMax = 5000;
-		irScanRangeMin = 2000;
+		irScanRangeMax = 3000;
+		irScanRangeMin = 1500;
 	};
 	class F35_base : Plane
 	{
 		delete irScanRangeMax;
-		delete irScanToEyeFactor;
-
-		irScanRangeMin = 2000;
-	};
-	class F35B : F35_base
-	{
-		irScanRangeMin = 2000;
-		irScanToEyeFactor = 2;
 	};
 	class L39_base : Plane
 	{
 		delete irScanToEyeFactor;
 
-		irScanRangeMax = 2000;
-		irScanRangeMin = 1000;
+		irScanRangeMin = 1500;
 	};
 	class MV22 : Plane
 	{
@@ -66,23 +56,28 @@ class CfgVehicles
 	{
 		delete irScanToEyeFactor;
 
-		irScanRangeMin = 2000;
+		irScanRangeMax = 8000;
+		irScanRangeMin = 3000;
 	};
 	class Su34 : Plane
 	{
-		irScanRangeMin = 2000;
-		irScanToEyeFactor = 2;
+		irScanRangeMin = 3500;
 	};
 	class Helicopter;
 	class AH1_Base : Helicopter
 	{
-		irScanRangeMax = 5000;
-		irScanRangeMin = 2000;
+		irScanRangeMax = 6500;
+		irScanRangeMin = 2500;
+	};
+	class AH64_base_EP1 : Helicopter
+	{
+		irScanRangeMax = 6500;
+		irScanRangeMin = 2500;
 	};
 	class AW159_Lynx_BAF : Helicopter
 	{
-		irScanRangeMax = 2000;
-		irScanRangeMin = 1000;
+		irScanRangeMax = 3000;
+		irScanRangeMin = 1500;
 	};
 	class BAF_Merlin_HC3_D : Helicopter
 	{
@@ -105,11 +100,13 @@ class CfgVehicles
 	{
 		delete irScanToEyeFactor;
 
-		irScanRangeMin = 500;
+		irScanRangeMax = 2000;
+		irScanRangeMin = 1000;
 	};
 	class Kamov_Base : Helicopter
 	{
-		irScanRangeMin = 2000;
+		irScanRangeMin = 3500;
+		irScanToEyeFactor = 3;
 	};
 	class Mi17_base : Helicopter
 	{
@@ -126,15 +123,13 @@ class CfgVehicles
 	};
 	class UH1_Base : Helicopter
 	{
-		irScanRangeMax = 2000;
-		irScanRangeMin = 1000;
+		irScanRangeMax = 3000;
+		irScanRangeMin = 1500;
 	};
 	class UH1H_base : Helicopter
 	{
+		delete irScanRangeMin;
 		delete irScanToEyeFactor;
-
-		irScanRangeMax = 2000;
-		irScanRangeMin = 1000;
 	};
 	class UH60_Base : Helicopter
 	{
@@ -147,25 +142,24 @@ class CfgVehicles
 	{
 		delete irScanToEyeFactor;
 	};
-	class AH6_Base_EP1;
-	class AH6X_EP1 : AH6_Base_EP1
-	{
-		irScanRangeMax = 1000;
-	};
 	class UAV;
 	class Chukar : UAV
 	{
 		irScanRangeMax = 1000;
-		irScanRangeMin = 500;
 	};
 	class MQ9PredatorB : UAV
+	{
+		irScanRangeMax = 3000;
+		irScanRangeMin = 1500;
+	};
+	class Pchela1T : UAV
 	{
 		irScanRangeMax = 2000;
 		irScanRangeMin = 1000;
 	};
-	class Pchela1T : UAV
+	class AH6_Base_EP1;
+	class AH6X_EP1 : AH6_Base_EP1
 	{
-		irScanRangeMax = 1000;
-		irScanRangeMin = 500;
+		irScanRangeMin = 1000;
 	};
 };
