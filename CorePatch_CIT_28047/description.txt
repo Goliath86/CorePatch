@@ -1,0 +1,1 @@
+Fixed: aircraft guns OPFOR ineffective (http://dev.withsix.com/issues/28047).
