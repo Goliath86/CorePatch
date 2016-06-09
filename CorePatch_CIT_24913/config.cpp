@@ -33,8 +33,6 @@ class CfgVehicles
 	};
 	class C130J : Plane
 	{
-		delete irScanToEyeFactor;
-
 		irScanRangeMax = 3000;
 		irScanRangeMin = 1500;
 	};
