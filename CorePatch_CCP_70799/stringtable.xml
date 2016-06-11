@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DN_SPECNAZ_MEDIC_CP">
+		<Original>Spetsnaz Medic</Original>
+		<Chinese>Spetsnaz Medic</Chinese>
+		<Czech>Zdravotník Specnaz</Czech>
+		<English>Spetsnaz Medic</English>
+		<French>Infirmier Spetsnaz</French>
+		<German>Speznas Sanitäter</German>
+		<Hungarian>Specnaz Felcser</Hungarian>
+		<Italian>Medico Spetsnaz</Italian>
+		<Japanese>Spetsnaz Medic</Japanese>
+		<Polish>Sanitariusz specnazu</Polish>
+		<Russian>Санинструктор-коммандос</Russian>
+		<Spanish>Paramédico spetsnaz</Spanish>
+	</Key>
+	<Key ID="STR_DN_TK_SPECIAL_FORCES_MEDIC_CP">
+		<Original>Special Medic</Original>
+		<Chinese>Special Medic</Chinese>
+		<Czech>Zdravotník speciálních jednotek</Czech>
+		<English>Special Medic</English>
+		<French>Infirmier FS</French>
+		<German>Spezial-Sanitäter</German>
+		<Hungarian>Special Felcser</Hungarian>
+		<Italian>Medico speciale</Italian>
+		<Japanese>Special Medic</Japanese>
+		<Polish>Sanitariusz sił specjalnych</Polish>
+		<Russian>Разведчик-санинструктор</Russian>
+		<Spanish>Paramédico especial</Spanish>
+	</Key>
+</Project>
