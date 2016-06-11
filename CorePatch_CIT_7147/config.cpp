@@ -8,15 +8,9 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-
 class CfgVehicles
 {
-	class HouseBase;
-	
-	class House: HouseBase
-	{
-	};
-	
+	class House;
 	class Land_Farm_Cowshed_b: House
 	{
 		model = "\CorePatch\CorePatch_CIT_7147\Farm_Cowshed_b";

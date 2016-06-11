@@ -1,3 +1,3 @@
 Fixed:
-- vehicle- and tripod-mounted L111A1 (M2HB) and M621 (Lynx 20mm) are using the M240 firing sound (http://dev.withsix.com/issues/13602);
-- BAF_L94A1 and BAF_L7A2 lack modes definitions for different distances (http://dev.withsix.com/issues/25047).
+	vehicle- and tripod-mounted L111A1 (M2HB) and M621 (Lynx 20mm) are using the M240 firing sound (http://dev.withsix.com/issues/13602);
+	BAF_L94A1 and BAF_L7A2 lack modes definitions for different distances (http://dev.withsix.com/issues/25047).

@@ -1,0 +1,1 @@
+Fixed: CRV-7 HEDP / FAT indirectHitRange values reversed (http://dev.withsix.com/issues/70490).

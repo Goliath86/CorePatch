@@ -1,2 +1,1 @@
-﻿Fixed: CIT bug #7147 (https://dev.withsix.com/issues/7147)
- - AI can't see and shoot anymore through the walls on one side of the long white animal Shed
+﻿Fixed: AI can see and shoot through the walls on one side of the long white animal Shed (http://dev.withsix.com/issues/7147).

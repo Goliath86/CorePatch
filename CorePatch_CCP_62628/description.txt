@@ -1,10 +1,11 @@
 Added:
-- ArmA2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628);
-- ability to use NVG with some optical sights (ACOG, M145, SUSAT, etc.).
+	ArmA2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628);
+	ability to use NVG with some optical sights (ACOG, M145, SUSAT, etc.).
 
 Changed:
-- L85A2 AWS optics definitions to more realistic;
-- forbade to use NVG with M14 DMR and Mk 12 SPR daylight optical sights;
-- optics model of M16A4 ACOG, M16A4 M203 ACOG and Sa-58V ACOG to more realistic.
+	L85A2 AWS optics definitions to more realistic;
+	forbade to use NVG with M14 DMR and Mk 12 SPR daylight optical sights;
+	optics model of M16A4 ACOG, M16A4 M203 ACOG and Sa-58V ACOG to more realistic.
 
-Fixed: disabled postprocess optics effects for reflex and iron sights of some weapons.
+Fixed:
+	disabled postprocess optics effects for reflex and iron sights of some weapons.

@@ -1,4 +1,4 @@
 Fixed:
-- the cargo proxy position n°1 of BRDM2_HQ. Now this vehicle can transport 2 more soldiers on his back other than driver and commander;
-- rearlights of BRDM2, BRDM2_ATGM and BRDM2_HQ;
-- IR searchlight of T55. Now it can't light on like IRL.
+	the cargo proxy position n°1 of BRDM2_HQ. Now this vehicle can transport 2 more soldiers on his back other than driver and commander;
+	rearlights of BRDM2, BRDM2_ATGM and BRDM2_HQ;
+	IR searchlight of T55. Now it can't light on like IRL.

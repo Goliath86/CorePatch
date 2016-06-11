@@ -29,8 +29,6 @@ class CfgVehicles
 	class CH47_base_EP1 : Helicopter
 	{
 		delete threat;
-
-		// threat[] = {0.3, 0.1, 0.1};
 	};
 	class Ka60_Base_PMC : Helicopter
 	{
@@ -46,8 +44,6 @@ class CfgVehicles
 	class Mi17_base : Helicopter
 	{
 		delete threat;
-
-		// threat[] = {0.3, 0.1, 0.1};
 	};
 	class Mi17_base_CZ_EP1 : Mi17_base
 	{

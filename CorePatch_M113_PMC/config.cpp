@@ -11,15 +11,16 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-
-class CfgAddons {
-    class PreloadAddons {
-       class CorePatch_M113_PMC {
-          list[] = {"CorePatch_M113_PMC"};
-       };
-    };
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_M113_PMC
+		{
+			list[] = {"CorePatch_M113_PMC"};
+		};
+	};
 };
-
 class CfgVehicles
 {
 	class M113_Base;

@@ -1,0 +1,1 @@
+Fixed: 14.5x114mm hit and caliber values are too low (http://dev.withsix.com/issues/70400).

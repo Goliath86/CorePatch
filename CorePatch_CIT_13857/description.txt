@@ -1,2 +1,2 @@
-Added: iron sights for scoped weapons with sidemounted scope (http://dev.withsix.com/issues/13857)
-Fixed: view through ironsight on AK, PP-19 Bizon and RPK-74.
+Added: iron sights for scoped weapons with sidemounted scope (http://dev.withsix.com/issues/13857).
+Fixed: view through ironsight on AK and PP-19 Bizon.

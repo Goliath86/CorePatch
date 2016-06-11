@@ -38,7 +38,7 @@ class CfgVehicles
 		landingSpeed = 125;
 		laserScanner = 1;
 		memoryPointDriverOptics = "pilotView";
-		model = "\CorePatch\CorePatch_CIT_22551\Pchela1T.p3d";
+		model = "\CorePatch\CorePatch_CIT_22551\Pchela1T";
 		noseDownCoef = 0.025;
 		unitInfoType = "RscUnitInfoUAV";
 		wheelSteeringSensitivity = 0.5;
@@ -56,7 +56,7 @@ class CfgVehicles
 				gunBeg = "laser_start";
 				gunEnd = "laser_end";
 				gunnerForceOptics = 1;
-				gunnerOpticsModel = "\ca\weapons\2Dscope_UAV.p3d";
+				gunnerOpticsModel = "\ca\weapons\2Dscope_UAV";
 				gunnerUsesPilotView = 0;
 				initElev = 45;
 				initTurn = 0;

@@ -1,1 +1,1 @@
-Added: implement proper Igla sight view (http://dev.withsix.com/issues/14162).
+Added: proper Igla sight view (http://dev.withsix.com/issues/14162).

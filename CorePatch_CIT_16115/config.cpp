@@ -8,10 +8,8 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+class Mode_FullAuto;
 class Mode_SemiAuto;
-class Mode_FullAuto : Mode_SemiAuto
-{
-};
 class CfgWeapons
 {
 	class Pistol;

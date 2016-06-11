@@ -17,6 +17,6 @@ class CfgVehicles
 	};
 	class US_Soldier_Officer_EP1 : US_Soldier_Base_EP1
 	{
-		model = "\CorePatch\CorePatch_CIT_26237\US_officer.p3d";
+		model = "\CorePatch\CorePatch_CIT_26237\US_officer";
 	};
 };
