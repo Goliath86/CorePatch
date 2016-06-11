@@ -1,1 +1,0 @@
-Fixed OG7 UI icon

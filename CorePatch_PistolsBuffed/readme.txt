@@ -1,1 +1,0 @@
-Pistols are unreasonable underpowered, this patch buffs their damage a little

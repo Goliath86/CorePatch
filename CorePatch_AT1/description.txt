@@ -1,1 +1,0 @@
-Fixed: RPT warning message (Warnings in corepatch\corepatch_at1\p3d\ccp_at1.p3d:shadow(1000)).

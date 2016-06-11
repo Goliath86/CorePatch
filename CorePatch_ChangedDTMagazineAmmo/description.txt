@@ -1,1 +1,0 @@
-Changed DT magazine ammo from B_762x54_noTracer to B_762x54_Ball.

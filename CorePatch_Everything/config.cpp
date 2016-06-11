@@ -1,18 +1,17 @@
-class CfgPatches {
-	class CorePatch_Everything {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.100000;
+class CfgPatches
+{
+	class CorePatch_Everything
+	{
 		requiredAddons[] = {
 			"CorePatch",
 			"CorePatch_AddedAutoFireModeToM14",
 			"CorePatch_AddedGAU22",
 			"CorePatch_AdditionalMarkers",
 			"CorePatch_AdditionalObjects",
+			"CorePatch_Ammo",
 			"CorePatch_An2HiddenSelections",
 			"CorePatch_AntiProne",
 			"CorePatch_Armory_Fix",
-			"CorePatch_AT1",
 			"CorePatch_Binoculars",
 			"CorePatch_CCP_62628",
 			"CorePatch_CCP_63107",
@@ -45,7 +44,6 @@ class CfgPatches {
 			"CorePatch_CCP_71037",
 			"CorePatch_CCP_71144_Fix",
 			"CorePatch_Change3rdPersonViewWheeledAPC_Fix",
-			"CorePatch_ChangedDTMagazineAmmo",
 			"CorePatch_ChangedGetInOutActions",
 			"CorePatch_ChangedGetInOutSounds",
 			"CorePatch_ChangedM32ShotSound",
@@ -107,27 +105,28 @@ class CfgPatches {
 			"CorePatch_DeletedBTR40DriverOpticsModel",
 			"CorePatch_Dubbing_Fix",
 			"CorePatch_FIS_Fix",
-			"CorePatch_FixedOG7Icon",
 			"CorePatch_GC_Fix",
 			"CorePatch_HouseBlockRuins",
 			"CorePatch_Javelin_Fix",
 			"CorePatch_LaserTargetCSide",
 			"CorePatch_LightVersionsOfUSSoldiers",
 			"CorePatch_M113_PMC",
+			"CorePatch_Magazines",
 			"CorePatch_MotorcycleTransportMaxWeapons",
 			"CorePatch_NoDisassemblyVersionsOfBAFStatics",
 			"CorePatch_NoPierDestruction",
-			"CorePatch_PistolsBuffed",
 			"CorePatch_Reflectors",
 			"CorePatch_RU_Soldier_AT",
 			"CorePatch_Shapur_Intro_Fix",
 			"CorePatch_SUV",
 			"CorePatch_Turrets",
-			"CorePatch_TweakedHitsOfAmmo",
 			"CorePatch_TweakedROF",
 			"CorePatch_UI",
 			"CorePatch_UralTransportMagazines",
 			"CorePatch_Zargabad_Intro_Fix"
 		};
+		requiredVersion = 1.00;
+		units[] = {};
+		weapons[] = {};
 	};
 };

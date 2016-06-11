@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class CorePatch_ChangedDTMagazineAmmo
+	class CorePatch_Magazines
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
@@ -10,6 +10,11 @@ class CfgPatches
 };
 class CfgMagazines
 {
+	class CA_LauncherMagazine;
+	class OG7 : CA_LauncherMagazine
+	{
+		picture = "\CorePatch\CorePatch_Magazines\M_OG7V_ca.paa";
+	};
 	class 100Rnd_762x54_PK;
 	class 60Rnd_762x54_DT : 100Rnd_762x54_PK
 	{
