@@ -25,73 +25,8 @@ class CfgVehicles
 	{
 		class HitPoints;
 	};
-	class MVD_Soldier_Base : SoldierEB
-	{
-		canDeactivateMines = 1;
-		canHideBodies = 1;
-	};
-	class MVD_Soldier_Medic : MVD_Soldier_Base
-	{
-		accuracy = 3.9000001;
-		attendant = 1;
-		canCarryBackpack = 0;
-		cost = 500000;
-		displayName = "$STR_DN_MEDIC";
-		icon = "\Ca\characters2\data\icon\i_medic_CA.paa";
-		picture = "\Ca\characters\data\Ico\i_Med_CA.paa";
-		magazines[] = {
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"SmokeShell",
-			"SmokeShellOrange"
-		};
-		respawnMagazines[] = {
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"SmokeShell",
-			"SmokeShellOrange"
-		};
-		respawnWeapons[] = {
-			"AKS_74_U",
-			"ItemGPS",
-			"NVGoggles",
-			"Throw",
-			"Put",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		scope = 2;
-		weapons[] = {
-			"AKS_74_U",
-			"ItemGPS",
-			"NVGoggles",
-			"Throw",
-			"Put",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-	};
 	class RUS_Soldier_Base : SoldierEB
 	{
-		canDeactivateMines = 1;
-		canHideBodies = 1;
-
 		class HitPoints : HitPoints
 		{
 			class HitHead;
@@ -161,48 +96,63 @@ class CfgVehicles
 			};
 		};
 	};
-	class SoldierWB;
-	class GER_Soldier_base_EP1 : SoldierWB
+	class MVD_Soldier_Base;
+	class MVD_Soldier_Medic : MVD_Soldier_Base
 	{
-		canDeactivateMines = 1;
-	};
-	class CZ_Soldier_base_EP1;
-	class CZ_Special_Forces_DES_EP1 : CZ_Soldier_base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class CZ_Special_Forces_GL_DES_EP1 : CZ_Soldier_base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class CZ_Special_Forces_MG_DES_EP1 : CZ_Soldier_base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class CZ_Special_Forces_Scout_DES_EP1 : CZ_Soldier_base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class CZ_Special_Forces_TL_DES_EP1 : CZ_Soldier_base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class GUE_Soldier_Base;
-	class GUE_Soldier_Sab : GUE_Soldier_Base
-	{
-		canHideBodies = 1;
-		engineer = 0;
-	};
-	class Ins_Soldier_Base;
-	class Ins_Soldier_Sab : Ins_Soldier_Base
-	{
-		canDeactivateMines = 1;
-		canHideBodies = 1;
-		engineer = 0;
-	};
-	class Ins_Soldier_Sapper : Ins_Soldier_Base
-	{
-		engineer = 0;
+		accuracy = 3.9000001;
+		attendant = 1;
+		canCarryBackpack = 0;
+		cost = 500000;
+		displayName = "$STR_DN_MEDIC";
+		icon = "\Ca\characters2\data\icon\i_medic_CA.paa";
+		picture = "\Ca\characters\data\Ico\i_Med_CA.paa";
+		magazines[] = {
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"HandGrenade_East",
+			"HandGrenade_East",
+			"HandGrenade_East",
+			"HandGrenade_East",
+			"SmokeShell",
+			"SmokeShellOrange"
+		};
+		respawnMagazines[] = {
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"30Rnd_545x39_AK",
+			"HandGrenade_East",
+			"HandGrenade_East",
+			"SmokeShell",
+			"SmokeShellOrange"
+		};
+		respawnWeapons[] = {
+			"AKS_74_U",
+			"ItemGPS",
+			"NVGoggles",
+			"Throw",
+			"Put",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		scope = 2;
+		weapons[] = {
+			"AKS_74_U",
+			"ItemGPS",
+			"NVGoggles",
+			"Throw",
+			"Put",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
 	};
 	class RU_Soldier_Base;
 	class RU_Soldier_Engineer : RU_Soldier_Base
@@ -255,18 +205,7 @@ class CfgVehicles
 			"ItemRadio"
 		};
 	};
-	class TK_GUE_Soldier_Base_EP1;
-	class US_Delta_Force_Undercover_Takistani_Base_EP1 : TK_GUE_Soldier_Base_EP1
-	{
-		canDeactivateMines = 1;
-		canHideBodies = 1;
-	};
-	class TK_Soldier_base_EP1;
-	class TK_Special_Forces_EP1 : TK_Soldier_base_EP1
-	{
-		canDeactivateMines = 1;
-		canHideBodies = 1;
-	};
+	class TK_Special_Forces_EP1;
 	class TK_Special_Forces_Medic_EP1 : TK_Special_Forces_EP1
 	{
 		attendant = 1;
@@ -454,28 +393,5 @@ class CfgVehicles
 				speechPlural[] = {"veh_Medics_RU"};
 			};
 		};
-	};
-	class US_Soldier_Base_EP1;
-	class Drake : US_Soldier_Base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class US_Delta_Force_EP1 : US_Soldier_Base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class US_Delta_Force_TL_EP1 : US_Soldier_Base_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class US_Soldier_Crew_EP1;
-	class Herrera : US_Soldier_Crew_EP1
-	{
-		canDeactivateMines = 1;
-	};
-	class US_Soldier_Pilot_EP1;
-	class Pierce : US_Soldier_Pilot_EP1
-	{
-		canDeactivateMines = 1;
 	};
 };

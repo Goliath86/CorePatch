@@ -27,12 +27,6 @@ class CfgWeapons
 
 			burst = 7; // 0.1 s
 			reloadTime = 0.014118; // 4250 SPM
-			sound[] = {
-				"\Ca\sounds\Weapons\cannon\gsh301",
-				3.1622777,
-				1,
-				1200
-			};
 		};
 	};
 };

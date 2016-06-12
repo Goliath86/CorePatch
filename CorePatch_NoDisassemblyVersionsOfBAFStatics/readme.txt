@@ -1,1 +1,0 @@
-Adds non-disassemblable versions of BAF static weapons so these can be used in missions where you cannot relocate static weapons

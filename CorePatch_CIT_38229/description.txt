@@ -1,0 +1,1 @@
+Fixed: entering the gunner position of the BAF Jackal HMG breaks the display of rifle zero range (http://dev.withsix.com/issues/38229).

@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"CorePatch", "CorePatch_Turrets"};
+		requiredAddons[] = {"CorePatch"};
 	};
 };
 

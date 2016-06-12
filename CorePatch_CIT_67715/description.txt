@@ -1,0 +1,1 @@
+Fixed: AH-64D M230 gun exaggerated rotation possibility (http://dev.withsix.com/issues/67715).

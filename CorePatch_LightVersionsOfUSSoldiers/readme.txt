@@ -1,1 +1,0 @@
-Adds versions of 3 OA US soldiers with no helmet that were used as light versions of OA story characters

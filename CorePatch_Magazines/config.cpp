@@ -20,4 +20,9 @@ class CfgMagazines
 	{
 		delete ammo;
 	};
+	class 230Rnd_30mmHE_2A42;
+	class 1904Rnd_30mmAA_2A38M : 230Rnd_30mmHE_2A42
+	{
+		tracersEvery = 3;
+	};
 };

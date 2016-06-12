@@ -1,0 +1,1 @@
+Fixed: GMG Jackal zeroing breaks at 1500m setting (http://dev.withsix.com/issues/19295).

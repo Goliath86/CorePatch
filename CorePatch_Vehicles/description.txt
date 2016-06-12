@@ -1,0 +1,11 @@
+Added:
+	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629);
+	manual zeroing options for vehicles (http://dev.withsix.com/issues/70594).
+
+Fixed:
+	the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383);
+	Mi24 variants are lacking zeroing for YaK-B 12.7 and GSh-30-2 (http://dev.withsix.com/issues/67638);
+	Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640);
+	Stryker MGS has no M68 zeroing (http://dev.withsix.com/issues/68347);
+	Incorrect practical range for AH1Z, AH64D, AH64D_EP1 and BAF_Apache_AH1_D;
+	Ka-52 (Ka52, Ka52Black) are missing zeroing possibility (1200 meters) and laser rangefinder.

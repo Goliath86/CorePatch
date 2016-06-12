@@ -1,1 +1,0 @@
-Fixed: zoom values of binoculars, laserdesignator, NV goggles and rangefinder.
