@@ -27,7 +27,6 @@ class CfgPatches
 			"CorePatch_CCP_67740",
 			"CorePatch_CCP_67741",
 			"CorePatch_CCP_67747",
-			"CorePatch_CCP_67951_OA",
 			"CorePatch_CCP_68103",
 			"CorePatch_CCP_68114",
 			"CorePatch_CCP_68220",
