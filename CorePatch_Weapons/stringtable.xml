@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DN_2A42_MODE_LOW_CP">
+		<Original>250 rpm</Original>
+		<Chinese>250 rpm</Chinese>
+		<Czech>250 ran/min</Czech>
+		<English>250 rpm</English>
+		<French>250 c./min</French>
+		<German>250 U/min</German>
+		<Hungarian>250 rpm</Hungarian>
+		<Italian>250 muniz./min</Italian>
+		<Japanese>250 rpm</Japanese>
+		<Polish>250 st./min.</Polish>
+		<Russian>250 в/м</Russian>
+		<Spanish>250 rpm</Spanish>
+	</Key>
+	<Key ID="STR_DN_2A42_MODE_HIGH_CP">
+		<Original>550 rpm</Original>
+		<Chinese>550 rpm</Chinese>
+		<Czech>550 ran/min</Czech>
+		<English>550 rpm</English>
+		<French>550 c./min</French>
+		<German>550 U/min</German>
+		<Hungarian>550 rpm</Hungarian>
+		<Italian>550 muniz./min</Italian>
+		<Japanese>550 rpm</Japanese>
+		<Polish>550 st./min.</Polish>
+		<Russian>550 в/м</Russian>
+		<Spanish>550 rpm</Spanish>
+	</Key>
+</Project>

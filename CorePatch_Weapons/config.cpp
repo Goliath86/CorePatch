@@ -72,6 +72,26 @@ class CfgWeapons
 			reloadTime = 0.013333; // 4500 SPM
 		};
 	};
+	class 2A42 : CannonCore
+	{
+		class LowROF : Mode_FullAuto
+		{
+			displayName = "$STR_DN_2A42_MODE_LOW_CP";
+			reloadTime = 0.24; // 250 SPM
+		};
+		class HighROF : LowROF
+		{
+			displayName = "$STR_DN_2A42_MODE_HIGH_CP";
+			reloadTime = 0.109091; // 550 SPM
+		};
+	};
+	class 2A72 : CannonCore
+	{
+		class manual : CannonCore
+		{
+			reloadTime = 0.181818; // 330 SPM
+		};
+	};
 	class AZP85 : CannonCore
 	{
 		class manual : CannonCore
@@ -241,6 +261,11 @@ class CfgWeapons
 				1200
 			};
 		};
+	};
+	class MissileLauncher;
+	class Igla_twice : MissileLauncher
+	{
+		magazineReloadTime = 5;
 	};
 	class Rifle;
 	class M14_EP1 : Rifle

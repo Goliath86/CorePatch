@@ -1,0 +1,1 @@
+Fixed: HMMWV windshield is practically unbreakable (http://dev.withsix.com/issues/66995).

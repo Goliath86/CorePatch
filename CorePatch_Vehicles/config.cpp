@@ -749,6 +749,20 @@ class CfgVehicles
 			20
 		};
 
+		class MFD
+		{
+			class HUD
+			{
+				class Bones
+				{
+					class HorizonBankMGun
+					{
+						maxAngle = -360;
+						minAngle = 360;
+					};
+				};
+			};
+		};
 		class Turrets
 		{
 			class MainTurret : NewTurret
@@ -936,6 +950,7 @@ class CfgVehicles
 				gunnerCompartments = "Compartment2";
 				stabilizedInAxes = "StabilizedInAxesBoth";
 				turretInfoType = "RscWeaponRangeZeroing";
+				viewGunnerInExternal = 0;
 
 				class ViewOptics
 				{
@@ -1190,9 +1205,38 @@ class CfgVehicles
 			1,
 			30
 		};
+
+		class SoundEvents
+		{
+			class AccelerationIn;
+		};
+		class Sounds
+		{
+			class EngineHighIn;
+			class EngineLowIn;
+			class IdleIn;
+			class NoiseIn;
+			class TiresAsphaltIn;
+			class TiresGrassIn;
+			class TiresGravelIn;
+			class TiresMudIn;
+			class TiresRockIn;
+			class TiresSandIn;
+		};
 	};
 	class LandRover_MG_Base_EP1 : LandRover_Base
 	{
+		soundEngineOffInt[] = {
+			"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_stop",
+			1,
+			1
+		};
+		soundEngineOnInt[] = {
+			"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_start",
+			1,
+			1
+		};
+
 		class AnimationSources : AnimationSources
 		{
 			class ReloadAnim
@@ -1206,6 +1250,100 @@ class CfgVehicles
 			class Revolving
 			{
 				weapon = "M2BC";
+			};
+		};
+		class SoundEvents : SoundEvents
+		{
+			class AccelerationIn : AccelerationIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_acceleration",
+					0.56234133,
+					1
+				};
+			};
+		};
+		class Sounds : Sounds
+		{
+			class EngineHighIn : EngineHighIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_high",
+					1.4125376,
+					0.60000002
+				};
+			};
+			class EngineLowIn : EngineLowIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_low",
+					1.4125376,
+					0.60000002
+				};
+			};
+			class IdleIn : IdleIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_idle",
+					0.79432821,
+					1
+				};
+			};
+			class NoiseIn : NoiseIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise4",
+					0.31622776,
+					1
+				};
+			};
+			class TiresAsphaltIn : TiresAsphaltIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",
+					0.1,
+					1
+				};
+			};
+			class TiresGrassIn : TiresGrassIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",
+					0.1,
+					1
+				};
+			};
+			class TiresGravelIn : TiresGravelIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",
+					0.1,
+					1
+				};
+			};
+			class TiresMudIn : TiresMudIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",
+					0.1,
+					1
+				};
+			};
+			class TiresRockIn : TiresRockIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",
+					0.1,
+					1
+				};
+			};
+			class TiresSandIn : TiresSandIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",
+					0.1,
+					1
+				};
 			};
 		};
 		class Turrets : Turrets
@@ -1227,6 +1365,111 @@ class CfgVehicles
 	};
 	class LandRover_SPG9_Base_EP1 : LandRover_Base
 	{
+		soundEngineOffInt[] = {
+			"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_stop",
+			1,
+			1
+		};
+		soundEngineOnInt[] = {
+			"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_start",
+			1,
+			1
+		};
+
+		class SoundEvents : SoundEvents
+		{
+			class AccelerationIn : AccelerationIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_acceleration",
+					0.56234133,
+					1
+				};
+			};
+		};
+		class Sounds : Sounds
+		{
+			class EngineHighIn : EngineHighIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_high",
+					1.4125376,
+					0.60000002
+				};
+			};
+			class EngineLowIn : EngineLowIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_low",
+					1.4125376,
+					0.60000002
+				};
+			};
+			class IdleIn : IdleIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_idle",
+					0.79432821,
+					1
+				};
+			};
+			class NoiseIn : NoiseIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise4",
+					0.31622776,
+					1
+				};
+			};
+			class TiresAsphaltIn : TiresAsphaltIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",
+					0.1,
+					1
+				};
+			};
+			class TiresGrassIn : TiresGrassIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",
+					0.1,
+					1
+				};
+			};
+			class TiresGravelIn : TiresGravelIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",
+					0.1,
+					1
+				};
+			};
+			class TiresMudIn : TiresMudIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",
+					0.1,
+					1
+				};
+			};
+			class TiresRockIn : TiresRockIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",
+					0.1,
+					1
+				};
+			};
+			class TiresSandIn : TiresSandIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",
+					0.1,
+					1
+				};
+			};
+		};
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1237,6 +1480,17 @@ class CfgVehicles
 	};
 	class LandRover_Special_CZ_EP1 : LandRover_Base
 	{
+		soundEngineOffInt[] = {
+			"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_stop",
+			1,
+			1
+		};
+		soundEngineOnInt[] = {
+			"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_start",
+			1,
+			1
+		};
+
 		class AnimationSources : AnimationSources
 		{
 			class ReloadAnim_2
@@ -1250,6 +1504,100 @@ class CfgVehicles
 			class Revolving_2
 			{
 				weapon = "PKTBC";
+			};
+		};
+		class SoundEvents : SoundEvents
+		{
+			class AccelerationIn : AccelerationIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_acceleration",
+					0.56234133,
+					1
+				};
+			};
+		};
+		class Sounds : Sounds
+		{
+			class EngineHighIn : EngineHighIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_high",
+					1.4125376,
+					0.60000002
+				};
+			};
+			class EngineLowIn : EngineLowIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_low",
+					1.4125376,
+					0.60000002
+				};
+			};
+			class IdleIn : IdleIn
+			{
+				sound[] = {
+					"\ca\Sounds_E\Wheeled_E\LandRover\LRover_ext_idle",
+					0.79432821,
+					1
+				};
+			};
+			class NoiseIn : NoiseIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise4",
+					0.31622776,
+					1
+				};
+			};
+			class TiresAsphaltIn : TiresAsphaltIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",
+					0.1,
+					1
+				};
+			};
+			class TiresGrassIn : TiresGrassIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass3",
+					0.1,
+					1
+				};
+			};
+			class TiresGravelIn : TiresGravelIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",
+					0.1,
+					1
+				};
+			};
+			class TiresMudIn : TiresMudIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",
+					0.1,
+					1
+				};
+			};
+			class TiresRockIn : TiresRockIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",
+					0.1,
+					1
+				};
+			};
+			class TiresSandIn : TiresSandIn
+			{
+				sound[] = {
+					"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",
+					0.1,
+					1
+				};
 			};
 		};
 		class Turrets : Turrets
@@ -1520,6 +1868,16 @@ class CfgVehicles
 	};
 	class UAZ_AGS30_Base : UAZ_Base
 	{
+		soundEngineOffInt[] = {
+			"ca\Sounds_E\Wheeled_E\UAZ\uaz_ext_stop1",
+			0.17782794,
+			1
+		};
+		soundEngineOnInt[] = {
+			"ca\Sounds_E\Wheeled_E\UAZ\uaz_ext_start1",
+			0.17782794,
+			1
+		};
 		soundGetIn[] = {
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
@@ -1537,6 +1895,16 @@ class CfgVehicles
 	};
 	class UAZ_MG_Base : UAZ_Base
 	{
+		soundEngineOffInt[] = {
+			"ca\Sounds_E\Wheeled_E\UAZ\uaz_ext_stop1",
+			0.17782794,
+			1
+		};
+		soundEngineOnInt[] = {
+			"ca\Sounds_E\Wheeled_E\UAZ\uaz_ext_start1",
+			0.17782794,
+			1
+		};
 		soundGetIn[] = {
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
@@ -1546,6 +1914,16 @@ class CfgVehicles
 	};
 	class UAZ_SPG9_Base : UAZ_Base
 	{
+		soundEngineOffInt[] = {
+			"ca\Sounds_E\Wheeled_E\UAZ\uaz_ext_stop1",
+			0.17782794,
+			1
+		};
+		soundEngineOnInt[] = {
+			"ca\Sounds_E\Wheeled_E\UAZ\uaz_ext_start1",
+			0.17782794,
+			1
+		};
 		soundGetIn[] = {
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,

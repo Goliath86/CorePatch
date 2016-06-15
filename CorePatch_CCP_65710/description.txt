@@ -1,0 +1,1 @@
+Fixed: long magazine reload times on Tunguska (http://dev.withsix.com/issues/65710).

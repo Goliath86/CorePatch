@@ -24,7 +24,6 @@ class CfgVehicles
 	};
 	class Pchela1T_Fixed: Pchela1T
 	{
-		scope = 2;
 		driverForceOptics = 1;
 		ejectDamageLimit = 1;
 		ejectSpeed[] = {0, 0, 0};
@@ -40,6 +39,7 @@ class CfgVehicles
 		memoryPointDriverOptics = "pilotView";
 		model = "\CorePatch\CorePatch_CIT_22551\Pchela1T";
 		noseDownCoef = 0.025;
+		scope = 2;
 		unitInfoType = "RscUnitInfoUAV";
 		wheelSteeringSensitivity = 0.5;
 

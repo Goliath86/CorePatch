@@ -28,21 +28,4 @@ class CfgVehicles
 			};
 		};
 	};
-	class Su34 : Plane
-	{
-		class MFD
-		{
-			class HUD
-			{
-				class Bones
-				{
-					class HorizonBankMGun
-					{
-						maxAngle = -360;
-						minAngle = 360;
-					};
-				};
-			};
-		};
-	};
 };

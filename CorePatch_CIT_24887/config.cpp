@@ -10,13 +10,18 @@ class CfgPatches
 };
 class CfgAmmo
 {
-	class BombCore;
-	class Bo_FAB_250 : BombCore
+	class Default;
+	class MissileCore : Default
 	{
 		delete maneuvrability;
 	};
-	class Default;
-	class MissileCore : Default
+	class MissileBase;
+	class M_Ch29_AT : MissileBase
+	{
+		trackOversteer = 0.94999999;
+	};
+	class BombCore;
+	class Bo_FAB_250 : BombCore
 	{
 		delete maneuvrability;
 	};
@@ -24,11 +29,6 @@ class CfgAmmo
 	class Bo_GBU12_LGB : LaserBombCore
 	{
 		delete trackOversteer;
-	};
-	class MissileBase;
-	class M_Ch29_AT : MissileBase
-	{
-		trackOversteer = 0.94999999;
 	};
 	class R_Hydra_HE;
 	class M_CRV7_HEPD : R_Hydra_HE
