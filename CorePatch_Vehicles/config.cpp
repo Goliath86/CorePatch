@@ -158,8 +158,6 @@ class CfgVehicles
 	};
 	class CH47_base_EP1 : Helicopter
 	{
-		cargoCompartments[] = {"Compartment1"};
-		driverCompartments = "Compartment1";
 		soundGetIn[] = {
 			"Ca\Sounds_E\Air_E\CH47\close",
 			0.31622776,
@@ -186,16 +184,15 @@ class CfgVehicles
 		};
 		class Turrets : Turrets
 		{
-			class MainTurret : MainTurret
+			/* class MainTurret : MainTurret
 			{
-				gunnerCompartments = "Compartment1";
-				/* initElev = -10;
+				initElev = -10;
 				initTurn = 80;
 				maxElev = 20;
 				maxTurn = 115;
 				minElev = -15;
-				minTurn = 45; */
-			};
+				minTurn = 45;
+			}; */
 			class BackDoorGun : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -314,24 +311,24 @@ class CfgVehicles
 				initElev = 5;
 				initTurn = 80;
 				/* maxElev = 5;
-				maxTurn = 110;
-				minElev = -20;
-				minTurn = 70; */
+				maxTurn = 110; */
+				minElev = -24;
+				// minTurn = 70;
 			};
 			class BackTurret : MainTurret
 			{
 				delete gunnerCompartments;
 				delete initElev;
-				/* delete maxElev;
-				delete minElev; */
+				// delete maxElev;
 
 				initTurn = -115;
-				/* maxTurn = -100;
-				minTurn = -130; */
+				// maxTurn = -100;
+				minElev = -22;
+				// minTurn = -130;
 			};
 		};
 	};
-	/* class Mi17_base_CZ_EP1 : Mi17_base
+	class Mi17_base_CZ_EP1 : Mi17_base
 	{
 	};
 	class Mi171Sh_Base_EP1 : Mi17_base_CZ_EP1
@@ -340,35 +337,35 @@ class CfgVehicles
 		{
 			class BackTurret : BackTurret
 			{
-				delete initElev;
+				/* delete initElev;
 				delete maxElev;
 
 				initTurn = 180;
-				maxTurn = 195;
-				minElev = -25;
-				minTurn = 165;
+				maxTurn = 195; */
+				minElev = -34;
+				// minTurn = 165;
 			};
 			class LeftTurret : MainTurret
 			{
-				delete initElev;
+				/* delete initElev;
 				delete initTurn;
 				delete maxElev;
-				delete maxTurn;
+				delete maxTurn; */
 				delete minElev;
-				delete minTurn;
+				// delete minTurn;
 			};
 			class RightTurret : MainTurret
 			{
-				delete initElev;
+				/* delete initElev;
 				delete maxElev;
 
 				initTurn = -80;
-				maxTurn = -50;
-				minElev = -25;
-				minTurn = -110;
+				maxTurn = -50; */
+				minElev = -49;
+				// minTurn = -110;
 			};
 		};
-	}; */
+	};
 	class Mi17_base_RU : Mi17_base
 	{
 	};

@@ -1,0 +1,1 @@
+Fixed: PMC armored SUV's wheels are too strong (http://dev.withsix.com/issues/23501).

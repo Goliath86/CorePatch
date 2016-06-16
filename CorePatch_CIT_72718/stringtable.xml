@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DSS_SCAR_L_STD_MK4CQT_CP">
+		<Original>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Original>
+		<Chinese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Chinese>
+		<Czech>Útočná puška&lt;br/&gt;Kalibr: 5,56x45mm NATO</Czech>
+		<English>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</English>
+		<French>Fusil d'assaut&lt;br/&gt;Calibre: 5,56x45 mm OTAN</French>
+		<German>Sturmgewehr&lt;br/&gt;Kaliber: 5,56x45mm NATO</German>
+		<Hungarian>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Hungarian>
+		<Italian>Fucile d'assalto&lt;br/&gt;Calibro: 5,56x45 mm NATO</Italian>
+		<Japanese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Japanese>
+		<Polish>Karabin szturmowy&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
+		<Russian>Штурмовая винтовка&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
+		<Spanish>Rifle de asalto&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+	</Key>
+</Project>

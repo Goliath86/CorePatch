@@ -115,11 +115,6 @@ class CfgWeapons
 	{
 		descriptionShort = "$STR_DSS_SCAR_H_STD_EGLM_SPECT_CP";
 	};
-	class SCAR_L_Base;
-	class SCAR_L_STD_Mk4CQT : SCAR_L_Base
-	{
-		descriptionShort = "$STR_DSS_SCAR_L_STD_MK4CQT_CP";
-	};
 	class SCAR_L_STD_EGLM_RCO;
 	class SCAR_L_STD_EGLM_TWS : SCAR_L_STD_EGLM_RCO
 	{

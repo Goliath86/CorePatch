@@ -1,0 +1,1 @@
+Fixed: SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718).
