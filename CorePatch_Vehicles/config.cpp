@@ -2196,7 +2196,14 @@ class CfgVehicles
 		};
 		class ViewPilot
 		{
+			initAngleX = 10;
+			initAngleY = 0;
+			initFov = 0.69999999;
+			maxAngleX = 85;
+			maxAngleY = 150;
 			maxFov = 0.85000002;
+			minAngleX = -65;
+			minAngleY = -150;
 			minFov = 0.41999999;
 		};
 	};

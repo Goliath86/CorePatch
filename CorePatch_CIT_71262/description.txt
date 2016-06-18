@@ -1,0 +1,1 @@
+Fixed: 7.62mm muzzle velocities are incorrect - too fast (http://dev.withsix.com/issues/71262).

@@ -1,0 +1,1 @@
+Fixed: Kamaz Ammunition and Kamaz Covered are represented by left bottom picture from Kamaz Open for both (http://dev.withsix.com/issues/67542).

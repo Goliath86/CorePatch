@@ -15,9 +15,7 @@ class CfgVehicles
 	{
 		class ViewPilot
 		{
-			initAngleX = 15;
 			initAngleY = 0;
-			minAngleX = -85;
 		};
 	};
 };

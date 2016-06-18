@@ -47,33 +47,89 @@
 			<Russian>Внедорожник</Russian>
 			<Spanish>Todoterreno</Spanish>
 		</Key>
-		<Key ID="STR_DN_MTVRREFUEL_DES_EP1_CP">
+		<Key ID="STR_DN_LADA_CP">
+			<Original>Lada</Original>
+			<Chinese>Lada</Chinese>
+			<Czech>Lada</Czech>
+			<English>Lada</English>
+			<French>Lada</French>
+			<German>Lada</German>
+			<Hungarian>Lada</Hungarian>
+			<Italian>Lada</Italian>
+			<Japanese>Lada</Japanese>
+			<Polish>Lada</Polish>
+			<Russian>Лада</Russian>
+			<Spanish>Lada</Spanish>
+		</Key>
+		<Key ID="STR_DN_LADA_RED_CP">
+			<Original>Lada (Red)</Original>
+			<Chinese>Lada (Red)</Chinese>
+			<Czech>Lada (červený)</Czech>
+			<English>Lada (Red)</English>
+			<French>Lada (rouge)</French>
+			<German>Lada rot</German>
+			<Hungarian>Lada (piros)</Hungarian>
+			<Italian>Lada (rosso)</Italian>
+			<Japanese>Lada (Red)</Japanese>
+			<Polish>Lada (Czerwony)</Polish>
+			<Russian>Лада (красная)</Russian>
+			<Spanish>Lada (rojo)</Spanish>
+		</Key>
+		<Key ID="STR_DN_LADA_WHITE_CP">
+			<Original>Lada (White)</Original>
+			<Chinese>Lada (White)</Chinese>
+			<Czech>Lada (bílý)</Czech>
+			<English>Lada (White)</English>
+			<French>Lada (blanc)</French>
+			<German>Lada weiß</German>
+			<Hungarian>Lada (fehér)</Hungarian>
+			<Italian>Lada (bianco)</Italian>
+			<Japanese>Lada (White)</Japanese>
+			<Polish>Lada (Biały)</Polish>
+			<Russian>Лада (белая)</Russian>
+			<Spanish>Lada (blanco)</Spanish>
+		</Key>
+		<Key ID="STR_DN_LADALM_CP">
+			<Original>Lada (Militia)</Original>
+			<Chinese>Lada (Militia)</Chinese>
+			<Czech>Lada (policejní)</Czech>
+			<English>Lada (Militia)</English>
+			<French>Lada (milice)</French>
+			<German>Lada (Milizen)</German>
+			<Hungarian>Lada (milícia)</Hungarian>
+			<Italian>Lada (milizie)</Italian>
+			<Japanese>Lada (Militia)</Japanese>
+			<Polish>Lada (Milicja)</Polish>
+			<Russian>Лада (милиция)</Russian>
+			<Spanish>Lada (milicia)</Spanish>
+		</Key>
+		<Key ID="STR_DN_MTVR_REFUEL_CP">
 			<Original>MTVR (Fuel)</Original>
 			<Chinese>MTVR (Fuel)</Chinese>
-			<Czech>MTVR (cisterna)</Czech>
+			<Czech>MTVR (palivo)</Czech>
 			<English>MTVR (Fuel)</English>
-			<French>MTVR (ravitaillement)</French>
-			<German>MTVR (Auftanken)</German>
-			<Hungarian>MTVR (Fuel)</Hungarian>
+			<French>MTVR (carburant)</French>
+			<German>MTVR (Treibstoff)</German>
+			<Hungarian>MTRV (üzemanyag)</Hungarian>
 			<Italian>MTVR (carburante)</Italian>
 			<Japanese>MTVR (Fuel)</Japanese>
-			<Polish>MTVR (cysterna)</Polish>
+			<Polish>MTVR (Paliwo)</Polish>
 			<Russian>MTVR (автозаправщик)</Russian>
-			<Spanish>MTVR (Combustible)</Spanish>
+			<Spanish>MTVR (combustible)</Spanish>
 		</Key>
-		<Key ID="STR_DN_V3S_REFUEL_TK_GUE_EP1_CP">
-			<Original>V3S Refuel</Original>
-			<Chinese>V3S Refuel</Chinese>
-			<Czech>Cisterna V3S</Czech>
-			<English>V3S Refuel</English>
-			<French>V3S (ravitaillement)</French>
-			<German>V3S Auftanken</German>
-			<Hungarian>V3S Refuel</Hungarian>
-			<Italian>V3S carburante</Italian>
-			<Japanese>V3S Refuel</Japanese>
-			<Polish>Cysterna V3S</Polish>
-			<Russian>V3S (автозаправщик)</Russian>
-			<Spanish>V3S repostaje</Spanish>
+		<Key ID="STR_DN_URAL_REFUEL_CP">
+			<Original>Ural (Fuel)</Original>
+			<Chinese>Ural (Fuel)</Chinese>
+			<Czech>Ural (palivo)</Czech>
+			<English>Ural (Fuel)</English>
+			<French>Ural (carburant)</French>
+			<German>Ural (Treibstoff)</German>
+			<Hungarian>Ural (üzemanyag)</Hungarian>
+			<Italian>Ural (carburante)</Italian>
+			<Japanese>Ural (Fuel)</Japanese>
+			<Polish>Ural (Paliwo)</Polish>
+			<Russian>Урал-4320 (автозаправщик)</Russian>
+			<Spanish>Ural (combustible)</Spanish>
 		</Key>
 	</Container>
 	<Container name="Weapons">
@@ -272,6 +328,48 @@
 			<Polish>Karabin szturmowy z granatnikiem&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
 			<Russian>Штурмовая винтовка с подствольным гранатометом&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
 			<Spanish>Rifle de asalto con lanzagranadas&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+		</Key>
+		<Key ID="STR_DN_USBASICWEAPONSBOX_CP">
+			<Original>US Basic Weapons</Original>
+			<Chinese>US Basic Weapons</Chinese>
+			<Czech>Základní zbraně US</Czech>
+			<English>US Basic Weapons</English>
+			<French>Armes basiques US</French>
+			<German>USA: Standardwaffen</German>
+			<Hungarian>Amerikai alapfegyverek</Hungarian>
+			<Italian>Armi di base USA</Italian>
+			<Japanese>US Basic Weapons</Japanese>
+			<Polish>US broń podstawowa</Polish>
+			<Russian>Основное оружие [КМП США]</Russian>
+			<Spanish>Armas básicas EE.UU.</Spanish>
+		</Key>
+		<Key ID="STR_DN_USLAUNCHERSBOX_CP">
+			<Original>US Launchers</Original>
+			<Chinese>US Launchers</Chinese>
+			<Czech>Raketomety US</Czech>
+			<English>US Launchers</English>
+			<French>Lanceurs US</French>
+			<German>USA: Raketen-/Granatwerfer</German>
+			<Hungarian>Amerikai vetőcsövek</Hungarian>
+			<Italian>Lanciarazzi USA</Italian>
+			<Japanese>US Launchers</Japanese>
+			<Polish>US wyrzutnie</Polish>
+			<Russian>Гранатометы [КМП США]</Russian>
+			<Spanish>Lanzadores EE.UU.</Spanish>
+		</Key>
+		<Key ID="STR_DN_USORDNANCEBOX_CP">
+			<Original>US Ordnance</Original>
+			<Chinese>US Ordnance</Chinese>
+			<Czech>Výzbroj US</Czech>
+			<English>US Ordnance</English>
+			<French>Munitions US</French>
+			<German>USA: Minen/Sprenglad.</German>
+			<Hungarian>Amerikai ellátmány</Hungarian>
+			<Italian>Artiglieria USA</Italian>
+			<Japanese>US Ordnance</Japanese>
+			<Polish>US uzbrojenie</Polish>
+			<Russian>Взрывчатка [КМП США]</Russian>
+			<Spanish>Artillería EE.UU.</Spanish>
 		</Key>
 	</Container>
 </Project>
