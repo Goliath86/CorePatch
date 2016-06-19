@@ -1,0 +1,1 @@
+Fixed: accuracy value issues with civilian units (http://dev.withsix.com/issues/27790).
