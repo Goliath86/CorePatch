@@ -34,7 +34,7 @@ class CfgVehicles
 	};
 	class RUS_Soldier_Medic : RUS_Soldier_Base
 	{
-		accuracy = 3.9000001;
+		accuracy = 3.7;
 		attendant = 1;
 		canCarryBackpack = 0;
 		cost = 200000;
@@ -99,7 +99,7 @@ class CfgVehicles
 	class MVD_Soldier_Base;
 	class MVD_Soldier_Medic : MVD_Soldier_Base
 	{
-		accuracy = 3.9000001;
+		accuracy = 3.7;
 		attendant = 1;
 		canCarryBackpack = 0;
 		cost = 500000;
