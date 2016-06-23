@@ -71,7 +71,6 @@ class CfgPatches
 			"CorePatch_CIT_23450",
 			"CorePatch_CIT_23451",
 			"CorePatch_CIT_23501",
-			"CorePatch_CIT_24649",
 			"CorePatch_CIT_24651",
 			"CorePatch_CIT_24657",
 			"CorePatch_CIT_24659",

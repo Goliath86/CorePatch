@@ -1,1 +1,0 @@
-Fixed: CfgVehicles - obsolete/faulty HeadAimDown definitions (http://dev.withsix.com/issues/24649).
