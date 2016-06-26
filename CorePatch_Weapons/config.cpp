@@ -62,14 +62,14 @@ class CfgWeapons
 	class 2A38M : CannonCore
 	{
 		multiplier = 1;
-		reloadTime = 0.013333;
+		reloadTime = 0.015384615; // 3900 SPM
 
 		class manual : CannonCore
 		{
 			delete multiplier;
 
 			burst = 4;
-			reloadTime = 0.013333; // 4500 SPM
+			reloadTime = 0.015384615; // 3900 SPM
 		};
 	};
 	class 2A42 : CannonCore
@@ -77,19 +77,19 @@ class CfgWeapons
 		class LowROF : Mode_FullAuto
 		{
 			displayName = "$STR_DN_2A42_MODE_LOW_CP";
-			reloadTime = 0.24; // 250 SPM
+			reloadTime = 0.3; // 200 SPM
 		};
 		class HighROF : LowROF
 		{
 			displayName = "$STR_DN_2A42_MODE_HIGH_CP";
-			reloadTime = 0.109091; // 550 SPM
+			reloadTime = 0.109090909; // 550 SPM
 		};
 	};
 	class 2A72 : CannonCore
 	{
 		class manual : CannonCore
 		{
-			reloadTime = 0.181818; // 330 SPM
+			reloadTime = 0.171428571; // 350 SPM
 		};
 	};
 	class AZP85 : CannonCore
@@ -99,7 +99,7 @@ class CfgWeapons
 			delete multiplier;
 
 			burst = 4;
-			reloadTime = 0.017647; // 3400 SPM
+			reloadTime = 0.017647058; // 3400 SPM
 		};
 	};
 	class GAU8 : CannonCore
@@ -109,7 +109,7 @@ class CfgWeapons
 			delete multiplier;
 
 			burst = 13; // 0.2 s
-			reloadTime = 0.015385; // 3900 SPM
+			reloadTime = 0.015384615; // 3900 SPM
 		};
 	};
 	class GAU12 : CannonCore
@@ -117,7 +117,7 @@ class CfgWeapons
 		class manual : CannonCore
 		{
 			burst = 6; // 0.1 s
-			reloadTime = 0.016667; // 3600 SPM
+			reloadTime = 0.016666666; // 3600 SPM
 			sound[] = {
 				"\Ca\Sounds_E\Weapons_E\Gatling\gatling_250ms",
 				3.1622777,
@@ -275,34 +275,19 @@ class CfgWeapons
 			"FullAuto"
 		};
 
-		class FullAuto : Mode_FullAuto
-		{
-			begin1[] = {
-				"ca\sounds\weapons\rifles\sniper_single_05",
-				1.7782794,
-				1,
-				1000
-			};
-			dispersion = 0.00050000002;
-			maxRange = 200;
-			maxRangeProbab = 0.050000001;
-			midRange = 80;
-			midRangeProbab = 0.69999999;
-			minRange = 0;
-			minRangeProbab = 0.30000001;
-			recoil = "recoil_auto_primary_5outof10";
-			recoilProne = "recoil_auto_primary_prone_5outof10";
-			reloadTime = 0.085714286;
-			soundBegin[] = {
-				"begin1",
-				1
-			};
-		};
 		class Single : Mode_SemiAuto
 		{
 			delete displayName;
-
-			reloadTime = 0.085714286;
+		};
+		class FullAuto : Single
+		{
+			autoFire = 1;
+			dispersion = 0.00050000002;
+			displayName = "$STR_DN_MODE_FULLAUTO";
+			maxRange = 200;
+			midRange = 80;
+			recoil = "recoil_auto_primary_5outof10";
+			recoilProne = "recoil_auto_primary_prone_5outof10";
 		};
 	};
 };
