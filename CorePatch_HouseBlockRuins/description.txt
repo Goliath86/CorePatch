@@ -1,1 +1,0 @@
-Fixed: the walls of the ruins of houses now non-penetrable ones (thanks to Argument545).
