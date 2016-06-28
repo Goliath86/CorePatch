@@ -54,7 +54,6 @@ class CfgWeapons
 		};
 		modes[] = {
 			"LowROF",
-			"MidROF",
 			"HighROF",
 			"close",
 			"short",
@@ -66,8 +65,8 @@ class CfgWeapons
 
 		class LowROF: Mode_FullAuto // 300 SPM
 		{
-			aiDispersionCoefX = 6;
-			aiDispersionCoefY = 6;
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
 			dispersion = 0.00060000003;
 			displayName = "$STR_DN_GSH302K_MODE_LOW";
 			ffCount = 6;
@@ -85,10 +84,10 @@ class CfgWeapons
 				1400
 			};
 		};
-		class MidROF: LowROF // 2000 SPM
+		class HighROF: LowROF // 2000 SPM
 		{
-			burst = 7;
-			displayName = "$STR_DN_GSH302K_MODE_MID";
+			burst = 7; // 0.2 s
+			displayName = "$STR_DN_GSH302K_MODE_HIGH";
 			maxRangeProbab = 0.0099999998;
 			midRangeProbab = 0.0099999998;
 			minRangeProbab = 0.0099999998;
@@ -99,12 +98,6 @@ class CfgWeapons
 				1,
 				1200
 			};
-		};
-		class HighROF: MidROF // 2600 SPM
-		{
-			burst = 9;
-			displayName = "$STR_DN_GSH302K_MODE_HIGH";
-			reloadTime = 0.023077;
 		};
 		class close: HighROF
 		{
@@ -120,30 +113,30 @@ class CfgWeapons
 			showToPlayer = 0;
 			soundBurst = 0;
 		};
-		class short: MidROF
+		class short: close
 		{
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 300;
 			burst = 10;
 			maxRange = 800;
-			maxRangeProbab = 0.039999999;
 			midRange = 500;
-			midRangeProbab = 0.57999998;
 			minRange = 200;
-			minRangeProbab = 0.050000001;
-			showToPlayer = 0;
-			soundBurst = 0;
 		};
-		class medium: short
+		class medium: LowROF
 		{
 			aiRateOfFire = 3;
 			aiRateOfFireDistance = 600;
 			burst = 7;
 			maxRange = 1000;
+			maxRangeProbab = 0.039999999;
 			midRange = 800;
+			midRangeProbab = 0.57999998;
 			minRange = 600;
+			minRangeProbab = 0.050000001;
+			showToPlayer = 0;
+			soundBurst = 0;
 		};
-		class far: LowROF
+		class far: medium
 		{
 			aiRateOfFire = 5;
 			aiRateOfFireDistance = 1000;
@@ -153,9 +146,6 @@ class CfgWeapons
 			midRange = 1050;
 			midRangeProbab = 0.40000001;
 			minRange = 850;
-			minRangeProbab = 0.050000001;
-			showToPlayer = 0;
-			soundBurst = 0;
 		};
 	};
 };

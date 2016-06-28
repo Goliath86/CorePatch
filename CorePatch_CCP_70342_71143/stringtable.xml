@@ -28,7 +28,7 @@
 		<Russian>300 в/м</Russian>
 		<Spanish>300 rpm</Spanish>
 	</Key>
-	<Key ID="STR_DN_GSH302K_MODE_MID">
+	<Key ID="STR_DN_GSH302K_MODE_HIGH">
 		<Original>2000 rpm</Original>
 		<Chinese>2000 rpm</Chinese>
 		<Czech>2000 ran/min</Czech>
@@ -41,19 +41,5 @@
 		<Polish>2000 st./min.</Polish>
 		<Russian>2000 в/м</Russian>
 		<Spanish>2000 rpm</Spanish>
-	</Key>
-	<Key ID="STR_DN_GSH302K_MODE_HIGH">
-		<Original>2600 rpm</Original>
-		<Chinese>2600 rpm</Chinese>
-		<Czech>2600 ran/min</Czech>
-		<English>2600 rpm</English>
-		<French>2600 c./min</French>
-		<German>2600 U/min</German>
-		<Hungarian>2600 rpm</Hungarian>
-		<Italian>2600 muniz./min</Italian>
-		<Japanese>2600 rpm</Japanese>
-		<Polish>2600 st./min.</Polish>
-		<Russian>2600 в/м</Russian>
-		<Spanish>2600 rpm</Spanish>
 	</Key>
 </Project>
