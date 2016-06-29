@@ -4,7 +4,7 @@ Added:
 
 Fixed:
 	the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383);
-	Mi24 variants are lacking zeroing for YaK-B 12.7 and GSh-30-2 (http://dev.withsix.com/issues/67638);
+	Mi24 variants are lacking zeroing for YaK-B 12.7 (http://dev.withsix.com/issues/67638);
 	Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640);
 	Stryker MGS has no M68 zeroing (http://dev.withsix.com/issues/68347);
 	Incorrect practical range for AH1Z, AH64D, AH64D_EP1 and BAF_Apache_AH1_D;

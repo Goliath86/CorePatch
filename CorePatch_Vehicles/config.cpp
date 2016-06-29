@@ -3326,12 +3326,6 @@ class CfgVehicles
 		};
 		class Turrets : Turrets
 		{
-			class LeftTurret : NewTurret
-			{
-				maxElev = 5;
-				stabilizedInAxes = "StabilizedInAxesNone";
-				weapons[] = {"PKTBC"};
-			};
 			class MainTurret : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
@@ -3349,12 +3343,17 @@ class CfgVehicles
 				{
 					class CommanderOptics : CommanderOptics
 					{
-						delete outGunnerMayFire;
-
 						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						outGunnerMayFire = 0;
 						stabilizedInAxes = "StabilizedInAxisY";
 					};
 				};
+			};
+			class LeftTurret : NewTurret
+			{
+				maxElev = 5;
+				stabilizedInAxes = "StabilizedInAxesNone";
+				weapons[] = {"PKTBC"};
 			};
 		};
 	};

@@ -1,3 +1,1 @@
-Added:
-	upgraded ArmA2 vanilla weapons by using ANZINS mod (http://dev.withsix.com/issues/63107);
-	missed IR laser to some weapons.
+Added: upgraded ArmA 2 vanilla weapons by using ANZINS mod (http://dev.withsix.com/issues/63107).

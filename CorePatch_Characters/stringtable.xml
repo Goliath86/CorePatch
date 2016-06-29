@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DN_FN_BIS_CZ_CP">
+		<Original>ACR</Original>
+		<Chinese>ACR</Chinese>
+		<Czech>ACR</Czech>
+		<English>ACR</English>
+		<French>ACR</French>
+		<German>ACR</German>
+		<Hungarian>ACR</Hungarian>
+		<Italian>ACR</Italian>
+		<Japanese>ACR</Japanese>
+		<Polish>ACR</Polish>
+		<Russian>АЧР</Russian>
+		<Spanish>ACR</Spanish>
+	</Key>
+	<Key ID="STR_DN_SOLDIER_GL_CP">
+		<Original>Grenadier</Original>
+		<Chinese>Grenadier</Chinese>
+		<Czech>Granátometník</Czech>
+		<English>Grenadier</English>
+		<French>Grenadier</French>
+		<German>Grenadier</German>
+		<Hungarian>Grenadier</Hungarian>
+		<Italian>Granatiere</Italian>
+		<Japanese>Grenadier</Japanese>
+		<Polish>Grenadier</Polish>
+		<Russian>Стрелок-гранатометчик</Russian>
+		<Spanish>Granadero</Spanish>
+	</Key>
+</Project>

@@ -10,32 +10,51 @@ class CfgPatches
 };
 class CfgWeapons
 {
-	class AK_BASE;
-	class AK_47_M: AK_BASE
+	class Rifle;
+	class VSS_vintorez: Rifle
 	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AK_47_M";
-	};
-	class AK_47_S: AK_47_M
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AK_47_S";
-	};
-	class AKS_GOLD: AK_47_S
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AKS_GOLD";
-	};
-	class AK_74: AK_BASE
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AK_74";
-	};
-	class AK_74_GL: AK_BASE
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AK_74_GL";
+		model = "\CorePatch\CorePatch_CIT_13857\models\VSS_vintorez";
+		optics = 1;
+
+		class OpticsModes
+		{
+			class Scope
+			{
+				cameraDir = "";
+				distanceZoomMax = 200;
+				distanceZoomMin = 200;
+				memoryPointCamera = "opticView";
+				opticsDisablePeripherialVision = 1;
+				opticsFlare = 1;
+				opticsID = 1;
+				opticsPPEffects[] = {
+					"OpticsCHAbera2",
+					"OpticsBlur3"
+				};
+				opticsZoomInit = 0.0623;
+				opticsZoomMax = 0.0623;
+				opticsZoomMin = 0.0623;
+				useModelOptics = 1;
+				visionMode[] = {"Normal"};
+			};
+			class Ironsights: Scope
+			{
+				distanceZoomMax = 100;
+				distanceZoomMin = 100;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 2;
+				opticsPPEffects[] = {};
+				opticsZoomInit = 0.5;
+				opticsZoomMax = 1.1;
+				opticsZoomMin = 0.25;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
 	};
 	class AKS_BASE;
-	class AKS_74: AKS_BASE
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AKS_74";
-	};
 	class AKS_74_GOSHAWK: AKS_BASE
 	{
 		model = "\CorePatch\CorePatch_CIT_13857\models\AKS_74_GOSHAWK";
@@ -75,14 +94,6 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
-	};
-	class AKS_74_NSPU: AKS_BASE
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AKS_74_NSPU";
-	};
-	class AKS_74_U: AKS_BASE
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\AKS_74_U";
 	};
 	class AKS_74_pso: AKS_BASE
 	{
@@ -209,11 +220,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Rifle;
-	class PK: Rifle
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\PK";
-	};
+	class PK;
 	class Pecheneg: PK
 	{
 		model = "\CorePatch\CorePatch_CIT_13857\models\Pecheneg";
@@ -256,56 +263,5 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 		};
-	};
-	class VSS_vintorez: Rifle
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\VSS_vintorez";
-		optics = 1;
-
-		class OpticsModes
-		{
-			class Scope
-			{
-				cameraDir = "";
-				distanceZoomMax = 200;
-				distanceZoomMin = 200;
-				memoryPointCamera = "opticView";
-				opticsDisablePeripherialVision = 1;
-				opticsFlare = 1;
-				opticsID = 1;
-				opticsPPEffects[] = {
-					"OpticsCHAbera2",
-					"OpticsBlur3"
-				};
-				opticsZoomInit = 0.0623;
-				opticsZoomMax = 0.0623;
-				opticsZoomMin = 0.0623;
-				useModelOptics = 1;
-				visionMode[] = {"Normal"};
-			};
-			class Ironsights: Scope
-			{
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
-				memoryPointCamera = "eye";
-				opticsDisablePeripherialVision = 0;
-				opticsFlare = 0;
-				opticsID = 2;
-				opticsPPEffects[] = {};
-				opticsZoomInit = 0.5;
-				opticsZoomMax = 1.1;
-				opticsZoomMin = 0.25;
-				useModelOptics = 0;
-				visionMode[] = {};
-			};
-		};
-	};
-	class bizon: Rifle
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\bizon";
-	};
-	class bizon_silenced: bizon
-	{
-		model = "\CorePatch\CorePatch_CIT_13857\models\bizon_silenced";
 	};
 };

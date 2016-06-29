@@ -10,78 +10,6 @@ class CfgPatches
 };
 class CfgWeapons
 {
-	class M4A1;
-	class M4A1_RCO_GL: M4A1
-	{
-		irDistance = 100;
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_RCO_GL";
-	};
-	class M4A1_HWS_GL: M4A1_RCO_GL
-	{
-		irDistance = 0;
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_HWS_GL";
-
-		class FlashLight
-		{
-			ambient[] = {0.1, 0.1, 0.1, 1};
-			angle = 30;
-			brightness = 0.1;
-			color[] = {0.89999998, 0.89999998, 0.69999999, 0.89999998};
-			direction = "flash dir";
-			position = "flash";
-			scale[] = {1, 1, 0.5};
-		};
-	};
-	class M4A1_HWS_GL_Camo: M4A1_HWS_GL
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_HWS_GL_Camo";
-	};
-	class M4SPR: M4A1
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4SPR";
-	};
-	class M4A1_AIM_SD_camo;
-	class M4A1_HWS_GL_SD_Camo: M4A1_AIM_SD_camo
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_HWS_GL_SD_Camo";
-
-		class FlashLight
-		{
-			ambient[] = {0.1, 0.1, 0.1, 1};
-			angle = 30;
-			brightness = 0.1;
-			color[] = {0.89999998, 0.89999998, 0.69999999, 0.89999998};
-			direction = "flash dir";
-			position = "flash";
-			scale[] = {1, 1, 0.5};
-		};
-	};
-	class M16_base;
-	class M16A2: M16_base
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M16A2";
-	};
-	class M16A2GL: M16A2
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M16A2GL";
-	};
-	class m16a4: M16A2
-	{
-		irDistance = 100;
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4";
-	};
-	class M16A4_GL: m16a4
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M16A4_GL";
-	};
-	class M16A4_ACG_GL: M16A4_GL
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M16A4_ACG_GL";
-	};
-	class m16a4_acg: m16a4
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_acg";
-	};
 	class Rifle;
 	class M24: Rifle
 	{
@@ -90,10 +18,6 @@ class CfgWeapons
 	class M24_des_EP1: M24
 	{
 		model = "\CorePatch\CorePatch_CCP_63107\models\M24_des_EP1";
-	};
-	class M1014: Rifle
-	{
-		model = "\CorePatch\CorePatch_CCP_63107\models\M1014";
 	};
 	class SVD: Rifle
 	{
@@ -201,5 +125,45 @@ class CfgWeapons
 	{
 		model = "\CorePatch\CorePatch_CCP_63107\models\m107";
 		optics = 1;
+	};
+	class M16_base;
+	class M16A2: M16_base
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\M16A2";
+	};
+	class M16A2GL: M16A2
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\M16A2GL";
+	};
+	class m16a4: M16A2
+	{
+		irDistance = 100;
+		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4";
+	};
+	class M16A4_GL: m16a4
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\M16A4_GL";
+	};
+	class M16A4_ACG_GL: M16A4_GL
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\M16A4_ACG_GL";
+	};
+	class m16a4_acg: m16a4
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_acg";
+	};
+	class M4A1;
+	class M4A1_RCO_GL: M4A1
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\M4A1_RCO_GL";
+
+		class M4_ACOG_Muzzle: M4A1
+		{
+			irDistance = 100;
+		};
+	};
+	class M4SPR: M4A1
+	{
+		model = "\CorePatch\CorePatch_CCP_63107\models\M4SPR";
 	};
 };

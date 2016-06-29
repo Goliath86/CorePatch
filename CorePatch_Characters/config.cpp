@@ -22,6 +22,13 @@ class CfgAddons
 		};
 	};
 };
+class CfgFactionClasses
+{
+	class BIS_CZ
+	{
+		displayName = "$STR_DN_FN_BIS_CZ_CP";
+	};
+};
 class CfgVehicles
 {
 	class CAManBase;
@@ -89,6 +96,10 @@ class CfgVehicles
 	{
 		cost = 100000;
 	};
+	class US_Soldier_GL_EP1 : US_Soldier_Base_EP1
+	{
+		displayName = "$STR_DN_SOLDIER_GL_CP";
+	};
 	class US_Soldier_MG_EP1 : US_Soldier_Base_EP1
 	{
 	};
@@ -124,6 +135,7 @@ class CfgVehicles
 	class CZ_Special_Forces_GL_DES_EP1 : CZ_Soldier_base_EP1
 	{
 		canDeactivateMines = 1;
+		displayName = "$STR_DN_SOLDIER_GL_CP";
 	};
 	class CZ_Special_Forces_MG_DES_EP1 : CZ_Soldier_base_EP1
 	{

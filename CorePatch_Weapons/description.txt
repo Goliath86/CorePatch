@@ -1,1 +1,25 @@
-Fixed: various issues.
+Added:
+	"auto" fire mode to M14_EP1
+	missed postprocess effects to some optical sights
+	"no disassembly" versions of some BAF static weapons
+	possibility to use NV goggles with some optical sights (ACOG, M145, SUSAT, etc.)
+	zeroing function to some static weapons
+
+Changed:
+	camera memory point of some sniper rifles
+	definitions of some optical sights
+	forbade to use NV goggles with (daylight) optical sights of DMR and M4SPR
+	made G36A, G36K and G36C semi/full auto weapon only
+	magazine reload time of Igla_twice missile launcher
+	magnification of rangefinder and laserdesignator
+	optics model of M4A1_RCO_GL, M16A4_ACG_GL, m16a4_acg and Sa58V_RCO_EP1
+	rate of fire of M134 machine gun and some cannons
+	shot sound of M32 grenade launcher, YakB machine gun and some cannons
+
+Fixed:
+	M1014 model issue when magazine is empty
+	disabled postprocess optics effects of some iron, collimator, NV and TI sights
+	flashlight memory point of M4A1_AIM_SD_camo, M4A1_HWS_GL and M4A1_HWS_GL_camo
+	localization errors
+	view through ironsight of AK, PKM and PP-19 Bizon
+	other various issues

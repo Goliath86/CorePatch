@@ -13,27 +13,11 @@ class CfgWeapons
 	class Rifle;
 	class G36C: Rifle
 	{
-		modes[] = {
-			"Single",
-			"FullAuto"
-		};
-	};
-	class G36_C_SD_eotech: G36C
-	{
-		modes[] = {
-			"Single",
-			"FullAuto"
-		};
 	};
 	class G36a: Rifle
 	{
 		class MuzzleFar: G36C
 		{
-			modes[] = {
-				"Single",
-				"FullAuto"
-			};
-
 			class OpticsModes
 			{
 				class Scope
@@ -70,58 +54,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class G36A_camo: G36a
-	{
-		class MuzzleFar: MuzzleFar
-		{
-			class OpticsModes
-			{
-				class Scope
-				{
-					visionMode[] = {};
-				};
-				class Kolimator: Scope
-				{
-					delete distanceZoomMax;
-					delete distanceZoomMin;
-					delete visionMode;
-
-					opticsPPEffects[] = {};
-				};
-			};
-		};
-	};
-	class G36K: G36a
-	{
-		class MuzzleFar: MuzzleFar
-		{
-			modes[] = {
-				"Single",
-				"FullAuto"
-			};
-		};
-	};
-	class G36K_camo: G36K
-	{
-		class MuzzleFar: MuzzleFar
-		{
-			class OpticsModes
-			{
-				class Scope
-				{
-					visionMode[] = {};
-				};
-				class Kolimator: Scope
-				{
-					delete distanceZoomMax;
-					delete distanceZoomMin;
-					delete visionMode;
-
-					opticsPPEffects[] = {};
-				};
-			};
-		};
-	};
 	class M4A1;
 	class M4A1_RCO_GL: M4A1
 	{
@@ -129,7 +61,6 @@ class CfgWeapons
 		{
 			distanceZoomMax = 300;
 			distanceZoomMin = 300;
-			modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
 
 			class OpticsModes
 			{
