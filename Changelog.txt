@@ -1,115 +1,661 @@
-08/01/2016
+01/07/2016
 
 Added:
-	GAU-22 cannon to F35B;
-	smoothly adjustable magnification to some BLUFOR optical sights;
-	ability to adjust zeroing to MP5;
-	missed get in/out actions to Su-34;
+	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
+	possibility to deactivate mines and hide corpses (missed) to saboteurs and some soldiers of special forces
+	possibility to switch seat between all seats of UH60M helicopter
 
 Changed:
-	L85A2 AWS optics definitions to more realistic;
-	optics model of M4A1 M203 ACOG, M16A4 ACOG, M16A4 M203 ACOG and Sa58V ACOG to more realistic;
-	info type of some vehicles;
-	compartments in some vehicles;
-	reverted ability of M1A2 loader to fire when turned in;
-	reverted DMR optical sight tweaks;
-	get in/out sounds of some vehicles to more preferred;
-	GSh-30 magazine ammo from AP to HE;
-	zeroing to PKP Pecheneg;
-	camera memory points of CZ 550, M24, M40A3, M107 and M107 TWS.
-
-Deleted:
-	CCP #71142 bug fix due to it's wrong;
-	CIT #22991, #22992, #22994, #22996, #22998, #22999, #24661, #24662, #24663, #24666 and #24670 bug fixes due to causes appearance of "No owner" messages in RPT;
-	light version of pilot unit as it was already present.
+	reverted and updated CIT #28047 bug fix
+	reverted CCP #71037 bug fix to original state
+	deleted CCP #71142 bug fix due to it's faulty
+	deleted unnecessary fire mode (@ 2600 SPM) of GSh302K cannon
+	forbade to repair vehicles by saboteurs and sappers
+	hit value of pistol and some cannon bullets
+	inventory picture of OG7 launcher magazine
+	rate of fire of some cannons
+	reverted vision modes of Laserdesignator to original
 
 Fixed:
-	AK-107 model issue when fire (http://dev.withsix.com/issues/5342);
-	AI can see and shoot through the walls on one side of the long white animal Shed (http://dev.withsix.com/issues/7147);
-	locking guided missiles, AI-fired RPGs, and BMP-2 have trouble hitting LAV-25 HQ (http://dev.withsix.com/issues/62100);
-	appearance of "No owner" messages in RPT;
-	IR searchlights glow on BMP-3 and Tunguska;
-	postprocess optics effects for reflex and iron sights of some weapons;
-	L7A2 regression related to discrete distances;
-	ROF of M134;
-	view through ironsight on AK, PP-19 Bizon and RPK-74;
-	M1014 model issue when empty magazine;
-	forbade air locking for CTWS APDS-T shells;
-	Pchela model issues;
-	Su-34 gunner duplicated weapons and magazines;
-	BMP-2 HQ and BTR-90 HQ searchlights;
-	removed flare launcher from AH-6X;
-	removed rocket launcher reload sound of BMP-3 and T-90;
-	roles of control list when inserting some vehicles in editor;
-	turning out AI driver when player is commander of BMP-2 HQ.
+	CfgWeapons - config references missing sound files (http://dev.withsix.com/issues/22990)
+	PMC armored SUV's wheels are too strong (http://dev.withsix.com/issues/23501)
+	CfgVehicles - irScanXXX issues (http://dev.withsix.com/issues/24913)
+	unable to switch seats in Chinook (http://dev.withsix.com/issues/25026)
+	accuracy value issues with civilian units (http://dev.withsix.com/issues/27790)
+	accuracy value issues with military infantry units (http://dev.withsix.com/issues/27791)
+	accuracy value issues with military special infantry units (http://dev.withsix.com/issues/27792)
+	accuracy value issues with Wheeled_APC units (http://dev.withsix.com/issues/27793)
+	accuracy value issues with tank units (http://dev.withsix.com/issues/27794)
+	long magazine reload times on Tunguska (http://dev.withsix.com/issues/65710)
+	HMMWV windshield is practically unbreakable (http://dev.withsix.com/issues/66995)
+	7.62mm muzzle velocities are incorrect - too fast (http://dev.withsix.com/issues/71262)
+	SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718)
+	broken IR laser of M4A1_RCO_GL rifle
+	cost of some engineers
+	incompatibility of FN_FAL and M14_EP1 rifles with JSRS mod
+	some localization mistakes
+	some other issues
 
-Tweaked:
-	rocket launcher reload time of BMP-3 and T-90;
-	increased discrete distances range of BLUFOR optical sights to 1000m;
-	decreased discrete distances range of vehicles with AZP-23, 2A38M, 2A42, 2A72 and M242 cannons;
-	zeroing of PKP Pecheneg;
-	optics definitions of CZ 550.
 
-Other:
-	trying to fix the Cardboardbox DayZ bug;
-	made simplification and optimization.
+01/03/2016
+
+Added:
+	iron sights for scoped weapons with sidemounted scope (http://dev.withsix.com/issues/13857)
+	GAU22 cannon to F35B plane
+	missed postprocess effects to some optical sights
+	possibility to switch seat between some seats in some vehicles
+	possibility to use NV goggles with some optical sights (ACOG, M145, SUSAT, etc.)
+	zeroing function to MP5 submachine gun
+
+Changed:
+	deleted CIT #22991, #22992, #22994, #22996, #22998, #22999, #24661, #24662, #24663, #24666 and #24670 bug fixes due to causes appearance of "No owner" messages in RPT file
+	ammo of 250Rnd_30mm_GSh302 magazine to HE
+	HUD of some vehicles
+	camera memory point of some sniper rifles
+	decreased discrete distances range of M110_TWS_EP1 rifle and turrets with some cannons
+	decreased max transportable amount of backpacks of SUV_PMC car
+	definitions of Binocular, Binocular_Vector and Laserdesignator to more realistic
+	definitions of some optical sights to more realistic
+	deleted M1A2 tank loader TI optics vision mode
+	forbade air locking of AP and "no tracer" (uses in sniper rifles) bullets
+	"get in" / "get out" actions of some vehicles
+	"get in" / "get out" sounds of some vehicles
+	increased discrete distances range of some sniper rifles
+	main turret max elevation angle of ZSU_Shilka vehicle
+	optics model of M4A1_RCO_GL, m16a4_acg, M16A4_ACG_GL and Sa58V_RCO_EP1 rifles
+	rate of fire of M134 machine gun and some cannons
+	removed light version of pilot unit as it was already present
+	reverted possibility of M1A2 loader to fire when turned in tank
+	reverted zeroing function to DMR rifle, Pecheneg machine gun and some weapons with TI sights
+	removed flare launcher from AH6X helicopter
+	removed rocket launcher reload sound of BMP3 IFV and T90 tank
+	rocket launcher reload time of BMP3 IFV and T90 tank
+	shot sound of M32_heli grenade launcher
+
+Fixed:
+	[LAV-25 | LAV-25 (HQ)] driver-view, turned-out, look right back problem (http://dev.withsix.com/issues/1694)
+	AK-107 model issue when fire (http://dev.withsix.com/issues/5342)
+	AI can see and shoot through the walls on one side of the long white animal Shed (http://dev.withsix.com/issues/7147)
+	Hind distance LOD colour (http://dev.withsix.com/issues/8198)
+	locking guided missiles, AI-fired RPGs, and BMP-2 have trouble hitting LAV-25 HQ (http://dev.withsix.com/issues/62100)
+	2S6M_Tunguska vehicle and BMP3 IFV IR searchlights now not glowing anymore
+	AI rate of fire distance at medium range of GAU12 cannon
+	BMP2_HQ, BTR90 and BTR90_HQ APCs searchlights
+	BMP3 IFV rearlights position
+	M1014 shotgun model issue when magazine is empty
+	Pchela1T UAV model issues
+	appearance of "No owner" messages in RPT file
+	deleted weapons and magazines of Su34 plane gunner what pilot already has
+	disabled postprocess optics effects of some iron, collimator, NV and TI sights
+	"get in" vehicle sound attenuation relative to distance
+	IR searchlight of T55 - now it can't light on like IRL
+	rearlights of BRDM2, BRDM2_ATGM and BRDM2_HQ
+	roles of control list when inserting some vehicles in editor
+	turning out AI driver when player is commander of BMP2_HQ tracked APC
+	the Cardboardbox DayZ bug
+	some localization mistakes
+	some other issues
 
 
 21/12/2015
 
-- AS50 sound reverted to original
-- DMR zeroing removed due to community requests
-- Burst lengths decreased for aircraft cannons
-- Lee Enfield zeroing reverted to original state
-- NVG is now usable with western scopes again
-- Helicopter side gunners firing angles reverted to original
-- All An-2 variants are now retexturable through hidden selections
-- GMG and AGS-30 zeroings fixed, no longer include unusable values
-- "No Owner" RPT messages should no longer appear
-- All patches are merged into single addon
+Added:
+	hidden selections to An2 plane
+	zeroing function to static GMG grenade launcher
+
+Changed:
+	decreased burst length of some cannons
+	decreased rate of fire of GAU12 cannon
+	deleted unusable discrete distances of turrets with AGS30 grenade launcher
+	deleted zeroing function from LeeEnfield rifle
+	reverted definitions of DMR and M4SPR rifles optical sights to original
+	reverted firing angles of helicopter side gunners to original
+	reverted shot sound of AS50 rifle and GAU8 cannon to original
+	reverted zeroing function to Jackal 2 car turret with GMG grenade launcher
+	shot sound of BAF_L2A1 machine gun and GSh302K cannon
+	all patches are merged into single patch
+
+Fixed:
+	SVD rifle optics modes bug related to ACE mod
+	appearance of "No owner" messages in RPT file
+	some other issues
 
 
 18/12/2015
 
 Added:
-	ArmA2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628);
-	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629);
-	ballisticsComputer to more weapons (http://dev.withsix.com/issues/67380);
-	made Library_WeaponHolder able to hold backpacks (http://dev.withsix.com/issues/67652);
-	manual zeroing options for vehicles (http://dev.withsix.com/issues/70594).
+	ArmA 2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628)
+	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629)
+	ballisticsComputer to more weapons (http://dev.withsix.com/issues/67380)
+	made Library_WeaponHolder able to hold backpacks (http://dev.withsix.com/issues/67652)
+	manual zeroing options for vehicles (http://dev.withsix.com/issues/70594)
+	"auto" fire mode to M14_EP1 rifle
 
 Changed:
-	DT magazine ammo;
-	Get in/out actions;
-	Tweaked ROF of some autocannons.
+	deleted CIT #14888 bug fix due to impossibility to complete mission from PMC campaign
+	ammo of 60Rnd_762x54_DT magazine to one with tracers
+	"get in" / "get out" actions of some vehicles
+	number of every tracers in a belt of 1904Rnd_30mmAA_2A38M magazine
+	rate of fire of M134 machine gun and some cannons
 
 Fixed:
-	vehicle- and tripod-mounted L111A1 (M2HB) and M621 (Lynx 20mm) are using the M240 firing sound (http://dev.withsix.com/issues/13602);
-	pistol dispersion too high (http://dev.withsix.com/issues/16115);
-	GMG Jackal zeroing breaks at 1500m setting (http://dev.withsix.com/issues/19295);
-	CfgMagazines - obsolete sound definitions (http://dev.withsix.com/issues/22991);
-	CfgMagazines - obsolete reloadMagazineSound definitions (http://dev.withsix.com/issues/22992);
-	CfgMagazines - obsolete soundFly definitions (http://dev.withsix.com/issues/22994);
-	CfgMagazines - obsolete reloadSound definitions (http://dev.withsix.com/issues/22996);
-	CfgMagazines - obsolete soundHit definitions (http://dev.withsix.com/issues/22998);
-	CfgMagazines - obsolete cartridge definition in 64Rnd_9x19_SD_Bizon (http://dev.withsix.com/issues/22999);
-	CfgMagazines - various obsolete definition in 2Rnd_Maverick_A10 (http://dev.withsix.com/issues/23000);
-	CfgAmmo - obsolete aiRateOfFire definition in Laserbeam (http://dev.withsix.com/issues/23002);
-	CfgAmmo - obsolete sideAirFricion definition in Sh_82_HE (http://dev.withsix.com/issues/23003);
-	accuracy value issues with chopper units (http://dev.withsix.com/issues/23450);
-	missing accuracy value definition for 'StaticCanon' or 'StaticWeapon' (http://dev.withsix.com/issues/23451);
-	player cannot check gear while prone if equipped with pistol (http://dev.withsix.com/issues/24719);
-	CfgVehicles - xxxCanSee issues (http://dev.withsix.com/issues/24902);
-	CfgAmmo - irLock improvements (http://dev.withsix.com/issues/24957);
-	BAF_L94A1 and BAF_L7A2 lack modes definitions for different distances (http://dev.withsix.com/issues/25047);
-	CfgWeapons - M230 and GAU8 have strange xxxRangeProbab (http://dev.withsix.com/issues/25048);
-	wrong "sound occlude" by some vehicles (http://dev.withsix.com/issues/67122);
-	localization improvements (http://dev.withsix.com/issues/67330);
-	BAF Warriors engaging aircraft with Coaxial and not HE cannon (http://dev.withsix.com/issues/67406);
-	BRDM2 ATGM ROF is too fast (http://dev.withsix.com/issues/67535);
-	removed flares from MH-6J for technical reason (http://dev.withsix.com/issues/67740);
-	CTWS (Warrior main gun) HE rounds effect too big (http://dev.withsix.com/issues/68351);
-	while sidestepping crouched with a pistol, the sound is too quick (http://dev.withsix.com/issues/69138);
-	Arkan and Refleks have wrong reloading time (http://dev.withsix.com/issues/71037);
-	Wildcat missing "manual fire" via action menu + missiles are still guided even if no gunner present (http://dev.withsix.com/issues/71142);
-	.338 Lapua has incorrect damage value (http://dev.withsix.com/issues/71737).
+	vehicle- and tripod-mounted L111A1 (M2HB) and M621 (Lynx 20mm) are using the M240 firing sound (http://dev.withsix.com/issues/13602)
+	pistol dispersion too high (http://dev.withsix.com/issues/16115)
+	GMG Jackal zeroing breaks at 1500m setting (http://dev.withsix.com/issues/19295)
+	CfgMagazines - obsolete sound definitions (http://dev.withsix.com/issues/22991)
+	CfgMagazines - obsolete reloadMagazineSound definitions (http://dev.withsix.com/issues/22992)
+	CfgMagazines - obsolete soundFly definitions (http://dev.withsix.com/issues/22994)
+	CfgMagazines - obsolete reloadSound definitions (http://dev.withsix.com/issues/22996)
+	CfgMagazines - obsolete soundHit definitions (http://dev.withsix.com/issues/22998)
+	CfgMagazines - obsolete cartridge definition in 64Rnd_9x19_SD_Bizon (http://dev.withsix.com/issues/22999)
+	CfgMagazines - various obsolete definition in 2Rnd_Maverick_A10 (http://dev.withsix.com/issues/23000)
+	CfgAmmo - obsolete aiRateOfFire definition in Laserbeam (http://dev.withsix.com/issues/23002)
+	CfgAmmo - obsolete sideAirFricion definition in Sh_82_HE (http://dev.withsix.com/issues/23003)
+	accuracy value issues with chopper units (http://dev.withsix.com/issues/23450)
+	missing accuracy value definition for 'StaticCanon' or 'StaticWeapon' (http://dev.withsix.com/issues/23451)
+	player cannot check gear while prone if equipped with pistol (http://dev.withsix.com/issues/24719)
+	CfgVehicles - xxxCanSee issues (http://dev.withsix.com/issues/24902)
+	CfgAmmo - irLock improvements (http://dev.withsix.com/issues/24957)
+	BAF_L94A1 and BAF_L7A2 lack modes definitions for different distances (http://dev.withsix.com/issues/25047)
+	CfgWeapons - M230 and GAU8 have strange xxxRangeProbab (http://dev.withsix.com/issues/25048)
+	wrong "sound occlude" by some vehicles (http://dev.withsix.com/issues/67122)
+	localization improvements (http://dev.withsix.com/issues/67330)
+	BAF Warriors engaging aircraft with Coaxial and not HE cannon (http://dev.withsix.com/issues/67406)
+	BRDM2 ATGM ROF is too fast (http://dev.withsix.com/issues/67535)
+	removed flares from MH-6J for technical reason (http://dev.withsix.com/issues/67740)
+	CTWS (Warrior main gun) HE rounds effect too big (http://dev.withsix.com/issues/68351)
+	while sidestepping crouched with a pistol, the sound is too quick (http://dev.withsix.com/issues/69138)
+	Arkan and Refleks have wrong reloading time (http://dev.withsix.com/issues/71037)
+	Wildcat missing "manual fire" via action menu + missiles are still guided even if no gunner present (http://dev.withsix.com/issues/71142)
+	.338 Lapua has incorrect damage value (http://dev.withsix.com/issues/71737)
+	some localization mistakes
+	some other issues
+
+
+13/10/2015
+
+Changed:
+	VSS_vintorez zeroing range to a more realistic one
+
+Fixed:
+	wrong direction of Su-25 gun funnel (http://dev.withsix.com/issues/19347)
+	ACU Officer LOD bug (http://dev.withsix.com/issues/26237)
+	AS50 sound (http://dev.withsix.com/issues/71270)
+	some regressions on AKS opticsPPEffect config
+	wrong direction of Su-34 gun funnel
+	SOM Trap mission - a big thanks to OpusFmSPol
+
+
+29/09/2015
+
+Added:
+	memory points of AKS74_GOSHAWK, AK107_GL_PSO and AK107_PSO that now have ironsights
+
+Fixed:
+	co-pilot jumps ejects from plane when it's heavily damaged (http://dev.withsix.com/issues/23378)
+	DMR animation (http://dev.withsix.com/issues/30970)
+	and improved BIS Warfare and SOM module - a big thanks to OpusFmSPol
+	proxy positions of commander and gunner of BTR90
+	now BTR90_HQ can transport 7 men
+	now BMP2_HQ can transport 6 men
+	rearlights and proxies of BRDM2, BRDM2_ATGM and BRDM2_HQ
+	some flashlights on some vehicles that IRL are IR searchlights
+	VSS_vintorez damage
+	Su25 and Mi24 250 rounds magazine damage
+	Igla and VSS_vintorez ironsights
+	a MP bug that was causing damaged helicopters and planes to fall on ground "like a stone" when hitted
+
+
+22/09/2015
+
+Changed:
+	BAF_L7A2_GPMG zeroing from max 1400m to max 800m
+	BAF_L85A2_RIS_SUSAT zeroing from max 800m to max 600m
+	decremented value of transportMaxWeapons from 20000 to 10 and transportMaxMagazines from 5000 to 50 of Armored_SUV_PMC, SUV_PMC and SUV_PMC_BAF
+	values to most realistic one of most vehicle's turrets
+
+Fixed:
+	[BAF] AS50 incorrect damage (http://dev.withsix.com/issues/14888)
+	CfgVehicles - faulty irScanRangeXXX definitions in M113_Base (http://dev.withsix.com/issues/24651)
+	CfgVehicles - faulty ejectDeadCommander definition in BAF_Jackal2_BASE_D (http://dev.withsix.com/issues/24657)
+	CfgVehicles - faulty hasCommander definition in M113_Base (http://dev.withsix.com/issues/24659)
+	CfgVehicles - faulty UiPicture definitions (http://dev.withsix.com/issues/24661)
+	CfgVehicles - faulty descriptionShort definitions (http://dev.withsix.com/issues/24662)
+	CfgVehicles - faulty definitions in BAF_GMG_Tripod_D (http://dev.withsix.com/issues/24663)
+	CfgVehicles - faulty wreck definitions (http://dev.withsix.com/issues/24666)
+	CfgVehicles - obsolete armorXXX values (http://dev.withsix.com/issues/24669)
+	CfgVehicles - faulty fov definitions (http://dev.withsix.com/issues/24670)
+	CfgVehicles - faulty definitions in StrykerBase_EP1 (http://dev.withsix.com/issues/24671)
+	CfgVehicles - faulty definitions in BTR40_MG_base_EP1 (http://dev.withsix.com/issues/24672)
+	CfgVehicles - faulty canLock definition in BRDM2_Base (http://dev.withsix.com/issues/24693)
+	CfgVehicles - faulty viewCargoInExternal definition in BRDM2_Base (http://dev.withsix.com/issues/24694)
+	Mk16 EGLM RCO has ACOG optics model (http://dev.withsix.com/issues/24764)
+	CfgVehicles - Ka60_Base_PMC lacks threat definition (http://dev.withsix.com/issues/24817)
+	CfgAmmo - maneuvrability/trackOversteer issue (http://dev.withsix.com/issues/24887)
+	entering the gunner position of the BAF Jackal HMG breaks the display of rifle zero range (http://dev.withsix.com/issues/38229)
+	some regressions of previous version of CorePatch
+	stringtable of BIS_CZ faction
+	stringtable of CZ_Special_Forces_GL_Des_EP1 and US_Soldier_GL_EP1
+	loadout of RU_Soldier_AT
+	stringtable of Lada
+	stringtable of Hilux
+
+
+24/08/2015
+
+Added:
+	M113 to PMC faction
+	possibility to look through ironsight of SVD
+	zeroing to ironsight of SVD
+	zeroing to ironsights of AK74
+
+Fixed:
+	[OA] Czech units outfitted with Sa-58 have AKM mags by default (http://dev.withsix.com/issues/13131)
+	CfgVehicles - faulty GhostView definition in Land_fort_artillery_nest (http://dev.withsix.com/issues/24664)
+	CfgVehicles - MQ9PredatorB has 'laserScanner = "true";' rather than 'laserScanner = 1;' (http://dev.withsix.com/issues/24668)
+	CfgWeapons - aiDispersionCoef faulty for BAF_L110A1_Aim (http://dev.withsix.com/issues/24780)
+	CfgVehicles - several threat definitions for helicopters could need improvement (http://dev.withsix.com/issues/24839)
+	CfgVehicles - threat definitions of UAV/drones could need some adjustment (http://dev.withsix.com/issues/24841)
+	CfgVehicles - several threat definitions for planes could need improvement (http://dev.withsix.com/issues/24842)
+	"VSS_Vintorez" ammunition is too powerful (http://dev.withsix.com/issues/25488)
+	aircraft guns OPFOR ineffective (http://dev.withsix.com/issues/28047)
+	the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383)
+	stringtable of Sa58
+	field of view of BTR40
+
+
+29/07/2015
+
+Changed:
+	neared Wheeled_APC 3rd person view
+
+Fixed:
+	Falanga missile in Mi-24 doesn't hit targets (http://dev.withsix.com/issues/11850)
+	an error on Warfare2.pbo - thanks to OpusFmSPol
+	IR laser memory point of M4A1_HWS_GL and M4A1_HWS_GL_camo
+	commander light of BTR60
+
+
+20/07/2015
+
+Added:
+	commander light to 2S6M_Tunguska
+	commander light to BMP2
+	gunner light to T90
+
+Changed:
+	made G36A, G36K and G36C semi/full-auto weapon only
+
+Fixed:
+	M4A3 ACOG GL IR laser missing (http://dev.withsix.com/issues/11696)
+	selectWeapon with G36A_camo & G36K_camo doesn't work (http://dev.withsix.com/issues/29472)
+	Kamaz Ammunition and Kamaz Covered are represented by left bottom picture from Kamaz Open for both (http://dev.withsix.com/issues/67542)
+	Stryker MEV can carry 6 troops (http://dev.withsix.com/issues/67587)
+	[LAV-25, LAV-25 (HQ), BTR-90, BTR-90 (HQ)] driver-view, turned-out, look right back problem (http://dev.withsix.com/issues/68115)
+	rear and stop lights of BTR90 and BTR90_HQ
+	IR laser memory point of M4A1_RCO_GL
+	flashlight memory point on M4A1_HWS_GL, M4A1_HWS_GL_camo and M4A1_HWS_GL_SD_camo
+
+
+13/07/2015
+
+Added:
+	increased the slow-down effect of off-road surfaces to vehicles (http://dev.withsix.com/issues/67951)
+
+Changed:
+	M16A4_ACG and M16A4_ACG_GL ACOG optics can not be anymore used with NVG, like other OA weapons with optics
+	RPK-74's 45 rounds magazines now occupy only one slot of gear inventory
+
+Fixed:
+	RHIB Mk19 effects (http://dev.withsix.com/issues/2793)
+	the RU UAV vehicle "Pchela-1T" is broken (http://dev.withsix.com/issues/22551)
+	AH-6J M134 @ 4000 rpm issue (http://dev.withsix.com/issues/70648)
+
+
+04/07/2015
+
+Added:
+	two light cones to BMP2, BMP3, Mi17 and T72
+	100m steps for zeroing on all vehicles modified by CorePatch
+
+Fixed:
+	A2 Warfare mission JIP issue - thanks to OpusFmSPol
+
+
+26/06/2015
+
+Fixed:
+	extended the fix for the CIT #27550 bug to all the static weapons
+
+
+23/06/2015
+
+Added:
+	zeroing to BMP2, LAV25, M1128_MGS_EP1, BTR60_TK_EP1 and BRDM2
+
+Changed:
+	zeroing to 3000m of M1, T72 and T90 tanks
+	zeroing to 2000m to 2S6M_Tunguska, ZSU_Shilka, M2A2_EP1, M2A3_EP1 and M6_EP1
+
+Fixed:
+	AI is deaf and have poor detection range when using static search lights (http://dev.withsix.com/issues/27550)
+	RPT warnings of ArmA2OAServer.exe relative to AK_107_kobra
+
+
+15/06/2015
+
+Added:
+	flashlight to M4A1_HWS_GL, M4A1_HWS_GL_camo and M4A1_HWS_GL_SD_Camo
+	rangefinder and zeroing to BMP3
+
+Fixed:
+	BMP-2/BTR-90 HQ gunner/commander can not switch to driver seat (http://dev.withsix.com/issues/67705)
+	Mi-8/17 Medevacs are lacking flare countermeasures (http://dev.withsix.com/issues/67739)
+	AH64_Sidewinders zeroing and turret rotation
+	toned down brightness of vehicles' lights
+
+
+05/06/2015
+
+Added:
+	two lights beam for all vehicles (http://dev.withsix.com/issues/69249)
+	NVG optics mode to Javelin
+	zeroing and rangefinder to BTR90 cannon
+	zeroing, rangefinder and zoom to gunner of GAZ_Vodnik_HMG
+
+Fixed:
+	MP Framework: private["_variable", ...] needed in scriptCommands functions (http://dev.withsix.com/issues/7117)
+	missing night vision view for gunner of Vodnik BPPU (http://dev.withsix.com/issues/68103)
+	14.5x114mm hit and caliber values are too low (http://dev.withsix.com/issues/70400)
+	CRV-7 HEDP / FAT indirectHitRange values reversed (http://dev.withsix.com/issues/70490)
+	ascending selectable ROF order of Mi24_P
+
+
+01/06/2015
+
+Fixed:
+	A2 UAV Module searching for OA content
+	A2 campaign mission depending on ca_modules_e
+
+
+27/05/2015
+
+Added:
+	middle (2000 rpm) rate of fire mode to Mi24_P GSh302K weapon
+
+Fixed:
+	typo in \ui\scripts\UIeditmod.sqf (http://dev.withsix.com/issues/10675)
+	can't run a user script from the mission config parameter onMinimapScript (http://dev.withsix.com/issues/16375)
+	rate of fire Mk-19 and AGS-30 grenade launcher is too low (http://dev.withsix.com/issues/27347)
+	Mi24 variants are lacking zeroing for YaK-B 12.7 (http://dev.withsix.com/issues/67638)
+	Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640)
+	AH-64D M230 gun exaggerated rotation possibility (http://dev.withsix.com/issues/67715)
+	RPK fires wrong caliber (http://dev.withsix.com/issues/70371)
+	corrected practical range of M197 and M230 weapons of AH1Z and AH64D to 1500m
+	two regressions of previous version of CorePatch (Mi24 pilot has lost the ability to fire 40 unguided missile and Mi24 double ammo) - thanks to Groove_C
+	a typo error on Alice2 Module's script - thanks to OpusFmSPol
+
+
+21/05/2015
+
+Fixed:
+	a Warfare Module's bug (thanks to OpusFmSPol)
+	a Garbage Collector Module's bug (thanks to OpusFmSPol)
+
+
+20/05/2015
+
+Fixed:
+	Su-34's GSh301 should be controlled by pilot rather than gunner (http://dev.withsix.com/issues/67741)
+	GSh-30-2K should have 250 rounds mag instead of 750 currently (http://dev.withsix.com/issues/71143)
+
+
+15/05/2015
+
+Changed:
+	All fixed script of CorePatch are now included on their original A2/OA .pbo file. CorePatch.pbo now include only config changes and few fixed scripts.
+
+Fixed:
+	missing semicolon in ui\config.cpp (http://dev.withsix.com/issues/14421)
+	class CA_UpTitle contains a quoted macro (http://dev.withsix.com/issues/14483)
+	some missions of original A2 campaign (First To Fight, Into the Storm, Harvest Red, Razor Two, Manhattan) and more coming soon!
+
+
+13/03/2015
+
+Changed:
+	Now Garbage Collector Module doesn't automatically collect not alive objects when it starts, for default. If you want to activate the "auto-collect" feature you have to set the "auto" variable of the module itself (ex. BIS_GC setVariable ["auto", true, true]).
+
+Fixed:
+	few "Undefined variable ..." remaining bugs
+	"Bitter Chill" mission lag
+
+
+24/02/2015
+
+Added:
+	upgraded ArmA 2 vanilla weapons by using ANZINS mod (http://dev.withsix.com/issues/63107) - thanks to defunkt for permission to use his ANZINS mod
+
+Fixed:
+	BIS_MENU_GroupCommunication error on MP environment (thanks to Dimon)
+	BIS Garbage Collector Module error introduced with CorePatch (thanks to OpsuFmSPol)
+	some errors of MP Framework initialization with CorePatch
+
+
+14/02/2015
+
+Added:
+	additional small versions of heavy weapons that allow to carry a launcher/backpack alongside (http://dev.withsix.com/issues/67651)
+	changeable textures for BTR-60 (http://dev.withsix.com/issues/67747)
+
+Fixed:
+	inconsistency with M249 variants accepting magazines (http://dev.withsix.com/issues/66695)
+	FN FAL wrong fire rate (http://dev.withsix.com/issues/68114)
+	CfgVehicles - threat of MTVR faulty (http://dev.withsix.com/issues/69133)
+	CfgWeapons - wrong config value naming in M60A4_EP1 (http://dev.withsix.com/issues/69186)
+	"Bitter Chill" campaign mission bug (http://forums.bistudio.com/showthread.php?170392-Bitter-Chill-Mystery&p=2870710&viewfull=1#post2870710)
+	two "Undefined variable ..." errors on Shapur_BAF and Zargabad intro scenes
+
+
+09/02/2015
+
+Fixed:
+	CorePatch error on accessing campaigns
+
+
+07/02/2015
+
+Fixed:
+	Javelin FLIR view (http://dev.withsix.com/issues/69143)
+	BMP-2 HQ Taki with only 2 smoke shells compared to 6 smoke shells like on BMP-2 HQ CDF/Ins (http://dev.withsix.com/issues/71144)
+	"Bitter Chill" campaign mission bug (http://forums.bistudio.com/showthread.php?170392-Bitter-Chill-Mystery&p=2870710&viewfull=1#post2870710)
+	some more "Undefined variable ..." errors of BIS Warfare Module
+	BIS SP Mission "Bear Rising"
+	main menu slow loading (thanks to OMAC)
+
+Improved:
+	Javelin CLU with improvements from Anzins mod with permissions by Defunkt
+	now M249 can use the "200Rnd_556x45_L110A1" magazine from BAF
+
+
+20/01/2015
+
+Fixed:
+	few bugs of BIS SP Mission "Eye For Eye"
+	error "Cannot load sound 'ca\dubbing\global\radio\male01\ru\hesdowne.wss'"
+	RPT warnings in ca\communityconfigurationproject_e\gameplay_fixedat1model\p3d\ccp_at1.p3d:shadow(1000)
+	BIS SP Mission "Littlebird"
+	optics modes of M4A1_HWS_GL and M4A1_HWS_GL_camo
+
+
+07/01/2015
+
+Fixed:
+	several choppers and planes are missing lockDetectionSystem and incommingMissileDetectionSystem (http://dev.withsix.com/issues/67317)
+	two regressions from previous version of CorePatch (thanks to OpusFmSPol for feedback)
+
+
+19/12/2014
+
+Fixed:
+	rifles from A2 lacking the scope/reflex switch that the OA variants feature (http://dev.withsix.com/issues/68220)
+	GSh-30 mistakes (http://dev.withsix.com/issues/70342)
+	BIS SP Mission "Eye For Eye"
+	BIS SP Mission "Trial By Fire"
+
+
+12/12/2014
+
+Fixed:
+	BIS Warfare Module
+	BIS SP Mission "War Welcome"
+
+
+05/12/2014
+
+Added:
+	correct dialogs for "Transport" and "Supply Drop" support mission of BIS SOM Module (dialogs were deactivated!)
+
+Fixed:
+	many "Undefined variable ..." of BIS SOM Module
+	dialog error of BIS SOM Module
+
+Improved:
+	CAS support mission of SOM Module
+
+
+28/11/2014
+
+Fixed:
+	many "Undefined variable ..." of ACM module
+	many "Undefined variable ..." and other errors of Gita Module (Town Generator)
+	ArmA 2 Bootcamp missions: Parachute Jump Training, Armor Training, Helicopter Training and FixedWing VTOL Training
+
+
+23/11/2014
+
+Fixed:
+	BIS Silvie Module so no more heavy damage vehicle are spawned
+	"Duplicate item ..." of first training mission of ArmA 2
+
+Merged:
+	BIS Silvie Module from BIS Module Improvements Projects by Wolffy.au and zGuba
+
+
+15/11/2014
+
+Changed:
+	BIS Ambient Animals Module from BIS Module Improvements Projects by Wolffy.au
+	BIS Jukebox Module from BIS Module Improvements Projects by Wolffy.au
+	BIS_fnc_locations fixes from BIS Module Improvements Projects by Wolffy.au
+	BIS Ambient Civilian (Expansion) Module from BIS Module Improvements Projects by Wolffy.au
+
+Fixed:
+	BIS Zora Module (removed "official" bug reported even on BI Wiki)
+
+
+11/11/2014
+
+Changed:
+	now with MARTA Module you can define a custom icon color for a group icon by setting the desired colour in the setGroupIconParams settings and then setting the MARTA_custom_color variable to true (group this setVariable ["MARTA_custom_color", true];)
+
+Fixed:
+	BIS UAV Module
+	BIS ULB Module
+	BIS UAV Training mission
+	BIS "MARTA" Module (Military Symbols)
+
+
+05/11/2014
+
+Fixed:
+	BIS_fnc_halo
+	some more challenges and meta challenges on MP Armory mission
+	the Advanced hints System
+	OA Shooting Range training mission
+	OA Armor Training mission
+	OA Attack Helicopter mission
+	SSM Module (Simple Support Module)
+
+Improved:
+	OA Armor Training mission
+	SSM Module (Simple Support Module)
+
+
+29/10/2014
+
+Fixed:
+	BIS_OO_Debug_Debug error
+	some more errors of the SP Armory mission
+	some errors of the MP Armory mission (need more patching!)
+	some errors on creating Dynamic Objects compositions: "Cannot create non-ai vehicle WarfareBMGNest_PK_Ins" and "Cannot create non-ai vehicle WireFence"
+
+
+27/10/2014
+
+Fixed:
+	many errors of the armory missions
+	RPT errors (many >> Addon XYZ (entry ABC) not found in the list of active addons) of armory mission
+
+
+24/10/2014
+
+Added:
+	now the Garbage Collector Module has all the improvements that Wolffy.au and zGuba have made in their BIS Module Improvment Project (http://dev.withsix.com/projects/mip)
+
+Changed:
+	Now the Garbage Collector Module start automatically collecting not alive units. It scan every 300 secs (default) for not alive units and delete them if the player and/or his units are over 500 meters (default) distant from the "dead" unit (this was introduced by Wolffy.au in his project). Now the mission maker can modify the time for the scan by settings a global variable (BIS_GC setVariable ["waitTime", timeInSecs, true];). He can already set the distance from the player and his units at which the module delete the not alive units (BIS_GC setVariable ["distanceObject", metersFromThePlayers, true];) and last, he can set if a unit doesn't have to be deleted by the Garbage Collector Module by putting this "BIS_GC setVariable ["dontDelete", true, true]" inside the init box of the unit to not be deleted.
+
+Fixed:
+	2 warning in the RPT about looped animation (http://dev.withsix.com/issues/67310)
+	3 errors of the fn_hints_functions_navigation.sqf (most of them visibile during the first training mission of OA)
+	many errors of the Garbage Collector Module (introduced the fixes that Wolffy.au and zGuba have made in their BIS Module Improvement Project relative to the Garbage Collector and fixed some more errors)
+
+
+23/10/2014
+
+Fixed:
+	1 error on BIS SRRS Module (Surrendering Module)
+	3 errors on BIS Functions Module relative at BIS_fnc_UnitPlay function
+	error "Cannot load sound 'ca\dubbing\global\radio\dan\damn.wss'" of the SRRS Module
+
+
+22/10/2014
+
+Fixed:
+	the Sky is on Fire (http://dev.withsix.com/issues/2341) - thanks to eggbeast that provided me the Dwarden's script fix!
+	some errors in the Dwarden's script fix of the Fire-In-The-Sky bug (http://forums.bistudio.com/showthread.php?95880-Fire-in-sky-needs-to-be-Fixed)
+
+
+21/10/2014
+
+Fixed:
+	5 script errors on BIS First Aid and Battlefield Clearance modules
+
+
+18/10/2014
+
+Fixed:
+	13 script errors on ARTY module
+
+Other:
+	reorganized script files inside folders to reflect BIS original script folder format
+
+
+16/10/2014
+
+Fixed:
+	three errors of the HC module
+
+
+16/10/2014
+
+Fixed:
+	BIS_FXsand error of BIS Environment - Effects Module relative to an uninitialized _center variable causing to not spawn sand particle effects near the center object selected (default the player)
+
+
+15/10/2014
+
+Fixed:
+	error "Undefined variable in expression: bis_mpf_initdone" (http://dev.withsix.com/issues/72422)
+	handleGear.sqf (line 521) error of Player Gear Menu

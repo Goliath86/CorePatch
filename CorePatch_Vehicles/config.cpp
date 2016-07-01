@@ -148,6 +148,12 @@ class CfgVehicles
 	};
 	class CH47_base_EP1 : Helicopter
 	{
+		memoryPointsGetInCargo[] = {"pos cargo"};
+		memoryPointsGetInCargoDir[] = {"pos cargo dir"};
+		memoryPointsGetInCoDriver = "pos cargo";
+		memoryPointsGetInCoDriverDir = "pos cargo dir";
+		memoryPointsGetInDriver = "pos cargo";
+		memoryPointsGetInDriverDir = "pos cargo dir";
 		soundGetIn[] = {
 			"Ca\Sounds_E\Air_E\CH47\close",
 			0.31622776,
@@ -424,12 +430,6 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				gunnerCompartments = "Compartment1";
-				/* initElev = -10;
-				initTurn = 80;
-				maxElev = 5;
-				maxTurn = 130;
-				minElev = -35;
-				minTurn = 60; */
 			};
 			class CoPilotObs : MainTurret
 			{
@@ -442,12 +442,13 @@ class CfgVehicles
 					30
 				};
 			};
-			class RightDoorGun; /* : MainTurret
+			class RightDoorGun : MainTurret
 			{
-				initTurn = -80;
-				maxTurn = -60;
-				minTurn = -130;
-			}; */
+				delete initTurn;
+
+				maxTurn = 5;
+				minTurn = -185;
+			};
 		};
 	};
 	class UH1Y : UH1_Base
@@ -605,6 +606,8 @@ class CfgVehicles
 	};
 	class UH60M_base_EP1 : UH60_Base
 	{
+		cargoCompartments[] = {"Compartment1"};
+		driverCompartments = "Compartment1";
 		soundGetIn[] = {
 			"Ca\Sounds_E\Air_E\UH1H\open_close",
 			0.31622776,
@@ -617,20 +620,19 @@ class CfgVehicles
 	};
 	class UH60M_EP1 : UH60M_US_base_EP1
 	{
-		cargoCompartments[] = {"Compartment2"};
-
-		/* class Turrets : Turrets
+		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
-				initElev = -10;
+				gunnerCompartments = "Compartment1";
+				/* initElev = -10;
 				initTurn = 80;
 				maxElev = 5;
 				maxTurn = 115;
 				minElev = -15;
-				minTurn = 65;
+				minTurn = 65; */
 			};
-			class RightDoorGun : MainTurret
+			/* class RightDoorGun : MainTurret
 			{
 				delete initElev;
 				delete maxElev;
@@ -639,8 +641,8 @@ class CfgVehicles
 				initTurn = -80;
 				maxTurn = -65;
 				minTurn = -115;
-			};
-		}; */
+			}; */
+		};
 	};
 	class Plane : Air
 	{
@@ -2093,8 +2095,6 @@ class CfgVehicles
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
 				// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
-				maxTurn = 45;
-				minTurn = -45;
 				turretInfoType = "RscWeaponEmpty";
 			};
 		};
@@ -3351,9 +3351,15 @@ class CfgVehicles
 			};
 			class LeftTurret : NewTurret
 			{
+				commanding = -1;
 				maxElev = 5;
+				primaryGunner = 0;
 				stabilizedInAxes = "StabilizedInAxesNone";
 				weapons[] = {"PKTBC"};
+			};
+			class RightTurret : LeftTurret
+			{
+				commanding = -2;
 			};
 		};
 	};

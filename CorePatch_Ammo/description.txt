@@ -1,1 +1,7 @@
-Fixed: various issues.
+Changed:
+	forbade air locking of AP and "no tracer" (uses in sniper rifles) bullets
+	hit value of pistol and some cannon bullets
+
+Fixed:
+	RPT warnings in ca\communityconfigurationproject_e\gameplay_fixedat1model\p3d\ccp_at1.p3d:shadow(1000)
+	some other issues

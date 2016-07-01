@@ -28,7 +28,7 @@ class CfgMagazines
 		descriptionShort = "$STR_DSS_45RND_RPK_CP";
 		displayName = "$STR_DN_45RND_545X39_RPK_CP";
 		lastRoundsTracer = 4;
-		model = "\CorePatch\CorePatch_CIT_70371\30Rnd_545x39_AK";
+		model = "\CorePatch\CorePatch_CIT_70371\models\30Rnd_545x39_AK";
 		nameSound = "mgun";
 		picture = "\CA\weapons\AK\data\equip\m_ak74_ca.paa";
 		scope = 2;
@@ -40,7 +40,7 @@ class CfgMagazines
 		count = 45;
 		descriptionShort = "$STR_DSS_45RND_RPK_CP";
 		displayName = "$STR_DN_45RND_545X39_RPK_CP";
-		model = "\CorePatch\CorePatch_CIT_70371\30Rnd_545x39_AK";
+		model = "\CorePatch\CorePatch_CIT_70371\models\30Rnd_545x39_AK";
 		picture = "\CA\weapons\AK\data\equip\m_ak74_ca.paa";
 		type = 256;
 	};
@@ -57,9 +57,7 @@ class CfgWeapons
 			"75Rnd_545x39_RPK"
 		};
 	};
-	class AK_74: AK_BASE
-	{
-	};
+	class AK_74;
 	class RPK_74: AK_74
 	{
 		displayName = "$STR_DN_RPK_74_CP";
@@ -69,7 +67,7 @@ class CfgWeapons
 			"30Rnd_545x39_AKSD",
 			"75Rnd_545x39_RPK"
 		};
-		model = "\CorePatch\CorePatch_CIT_70371\RPK_74";
+		model = "\CorePatch\CorePatch_CIT_70371\models\RPK_74";
 	};
 };
 class CfgVehicles

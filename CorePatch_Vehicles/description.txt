@@ -1,11 +1,35 @@
 Added:
-	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629);
-	manual zeroing options for vehicles (http://dev.withsix.com/issues/70594).
+	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629)
+	manual zeroing options for vehicles (http://dev.withsix.com/issues/70594)
+	hidden selections to An2
+	missed postprocess optics effects to HMMWV_TOW
+	missed zeroing possibility (1200 meters) and laser rangefinder to Ka52
+	possibility to switch seat between some seats
+	possibility to transport weapon to motorcycle
+	possibility to zoom to commander's optics of BMP2, T72 and ZSU_Shilka and gunner's optics of GAZ_Vodnik_HMG
+	TI optics vision mode to HMMWV_Avenger and HMMWV_TOW
+
+Changed:
+	HUD of some vehicles
+	decreased max transportable amount of weapons, magazines and backpacks of ArmoredSUV_PMC and SUV_PMC
+	deleted M1A2 loader TI optics vision mode
+	field of view of BTR90 and LAV25
+	"get in" / "get out" actions of some vehicles
+	"get in" / "get out" sounds of some vehicles
+	main turret max elevation angle of ZSU_Shilka
+	neared Wheeled_APC 3rd person view
+	optics model of HMMWV_TOW gunner and T72 commander
+	turret servo sound of some vehicles
 
 Fixed:
-	the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383);
-	Mi24 variants are lacking zeroing for YaK-B 12.7 (http://dev.withsix.com/issues/67638);
-	Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640);
-	Stryker MGS has no M68 zeroing (http://dev.withsix.com/issues/68347);
-	Incorrect practical range for AH1Z, AH64D, AH64D_EP1 and BAF_Apache_AH1_D;
-	Ka-52 (Ka52, Ka52Black) are missing zeroing possibility (1200 meters) and laser rangefinder.
+	the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383)
+	Mi24 variants are lacking zeroing for YaK-B 12.7 (http://dev.withsix.com/issues/67638)
+	Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640)
+	Stryker MGS has no M68 zeroing (http://dev.withsix.com/issues/68347)
+	"get in" sound attenuation relative to distance
+	impossibility to carry men by BMP2_HQ, BRDM2_HQ and BTR90_HQ
+	incorrect practical range of AH1Z and AH64D
+	IR searchlight of T55 - now it can't light on like IRL
+	rearlights of BRDM2, BRDM2_ATGM and BRDM2_HQ
+	wrong direction of Su34 cannon funnel
+	some other issues

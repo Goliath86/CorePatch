@@ -13,7 +13,7 @@ class CfgMagazines
 	class Strela;
 	class Igla : Strela
 	{
-		modelSpecial = "\CorePatch\CorePatch_CIT_14162\Igla_loaded";
+		modelSpecial = "\CorePatch\CorePatch_CIT_14162\models\Igla_loaded";
 	};
 };
 class CfgWeapons
@@ -21,6 +21,6 @@ class CfgWeapons
 	class Strela;
 	class Igla : Strela
 	{
-		model = "\CorePatch\CorePatch_CIT_14162\Igla";
+		model = "\CorePatch\CorePatch_CIT_14162\models\Igla";
 	};
 };
