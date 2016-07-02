@@ -14,18 +14,32 @@
 		<Russian>АЧР</Russian>
 		<Spanish>ACR</Spanish>
 	</Key>
-	<Key ID="STR_DN_SOLDIER_GL_CP">
-		<Original>Grenadier</Original>
-		<Chinese>Grenadier</Chinese>
-		<Czech>Granátometník</Czech>
-		<English>Grenadier</English>
-		<French>Grenadier</French>
-		<German>Grenadier</German>
-		<Hungarian>Grenadier</Hungarian>
-		<Italian>Granatiere</Italian>
-		<Japanese>Grenadier</Japanese>
-		<Polish>Grenadier</Polish>
-		<Russian>Стрелок-гранатометчик</Russian>
-		<Spanish>Granadero</Spanish>
+	<Key ID="STR_DN_FIELD_TECHNICIAN_CP">
+		<Original>Field Technician</Original>
+		<Chinese>Field Technician</Chinese>
+		<Czech>Polní technik</Czech>
+		<English>Field Technician</English>
+		<French>Technicien de terrain</French>
+		<German>Feldingenieur</German>
+		<Hungarian>Field Technician</Hungarian>
+		<Italian>Campo Tecnico</Italian>
+		<Japanese>Field Technician</Japanese>
+		<Polish>Pole Technik</Polish>
+		<Russian>Техник</Russian>
+		<Spanish>Técnico de campo</Spanish>
+	</Key>
+	<Key ID="STR_DN_SOLDIER_ENGINEER_CP">
+		<Original>Engineer</Original>
+		<Chinese>Engineer</Chinese>
+		<Czech>Ženista</Czech>
+		<English>Engineer</English>
+		<French>Ingénieur</French>
+		<German>Ingenieur</German>
+		<Hungarian>Mérnök</Hungarian>
+		<Italian>Ingegnere</Italian>
+		<Japanese>Engineer</Japanese>
+		<Polish>Inżynier</Polish>
+		<Russian>Инженер</Russian>
+		<Spanish>Ingeniero</Spanish>
 	</Key>
 </Project>

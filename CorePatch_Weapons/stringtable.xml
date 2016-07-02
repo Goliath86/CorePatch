@@ -28,6 +28,48 @@
 		<Russian>550 в/м</Russian>
 		<Spanish>550 rpm</Spanish>
 	</Key>
+	<Key ID="STR_DN_AK107_KOBRA_CP">
+		<Original>AK-107 Kobra</Original>
+		<Chinese>AK-107 Kobra</Chinese>
+		<Czech>AK-107 Kobra</Czech>
+		<English>AK-107 Kobra</English>
+		<French>AK-107 Kobra</French>
+		<German>AK-107 Kobra</German>
+		<Hungarian>AK-107 Kobra</Hungarian>
+		<Italian>AK-107 Kobra</Italian>
+		<Japanese>AK-107 Kobra</Japanese>
+		<Polish>AK-107 Kobra</Polish>
+		<Russian>АК-107 ЭКП 'Кобра'</Russian>
+		<Spanish>AK-107 Kobra</Spanish>
+	</Key>
+	<Key ID="STR_DN_AK107_GL_KOBRA_CP">
+		<Original>AK-107 GL Kobra</Original>
+		<Chinese>AK-107 GL Kobra</Chinese>
+		<Czech>AK-107 GL Kobra</Czech>
+		<English>AK-107 GL Kobra</English>
+		<French>AK-107 LG Kobra</French>
+		<German>AK-107 GL Kobra</German>
+		<Hungarian>AK-107/GP-25 Kobra</Hungarian>
+		<Italian>AK-107 GL Kobra</Italian>
+		<Japanese>AK-107 GL Kobra</Japanese>
+		<Polish>AK-107 GL Kobra</Polish>
+		<Russian>АК-107 ГП-25 ЭКП 'Кобра'</Russian>
+		<Spanish>AK-107 GL Kobra</Spanish>
+	</Key>
+	<Key ID="STR_DN_AK107_PSO_CP">
+		<Original>AK-107 PSO</Original>
+		<Chinese>AK-107 PSO</Chinese>
+		<Czech>AK-107 PSO</Czech>
+		<English>AK-107 PSO</English>
+		<French>AK-107 PSO</French>
+		<German>AK-107 PSO</German>
+		<Hungarian>AK-107 PSzO</Hungarian>
+		<Italian>AK-107 PSO</Italian>
+		<Japanese>AK-107 PSO</Japanese>
+		<Polish>AK-107 PSO</Polish>
+		<Russian>АК-107 ПСО-1</Russian>
+		<Spanish>AK-107 PSO</Spanish>
+	</Key>
 	<Key ID="STR_DN_AK107_GL_PSO_CP">
 		<Original>AK-107 GL PSO</Original>
 		<Chinese>AK-107 GL PSO</Chinese>
@@ -99,18 +141,18 @@
 		<Spanish>G36K</Spanish>
 	</Key>
 	<Key ID="STR_DN_M4A1_RCO_GL_CP">
-		<Original>M4A1 ACOG GL</Original>
-		<Chinese>M4A1 ACOG GL</Chinese>
-		<Czech>M4A1 ACOG GL</Czech>
-		<English>M4A1 ACOG GL</English>
-		<French>M4A1 ACOG GL</French>
-		<German>M4A1 ACOG GL</German>
-		<Hungarian>M4A1 ACOG GL</Hungarian>
-		<Italian>M4A1 ACOG GL</Italian>
-		<Japanese>M4A1 ACOG GL</Japanese>
-		<Polish>M4A1 ACOG GL</Polish>
-		<Russian>M4A1 ACOG GL</Russian>
-		<Spanish>M4A1 ACOG GL</Spanish>
+		<Original>M4A1 M203 ACOG</Original>
+		<Chinese>M4A1 M203 ACOG</Chinese>
+		<Czech>M4A1 M203 ACOG</Czech>
+		<English>M4A1 M203 ACOG</English>
+		<French>M4A1 M203 ACOG</French>
+		<German>M4A1 M203 ACOG</German>
+		<Hungarian>M4A1 M203 ACOG</Hungarian>
+		<Italian>M4A1 M203 ACOG</Italian>
+		<Japanese>M4A1 M203 ACOG</Japanese>
+		<Polish>M4A1 M203 ACOG</Polish>
+		<Russian>M4A1 M203 ACOG</Russian>
+		<Spanish>M4A1 M203 ACOG</Spanish>
 	</Key>
 	<Key ID="STR_DN_M240_SCOPED_CP">
 		<Original>M240 M145</Original>
@@ -153,6 +195,20 @@
 		<Polish>Sa-58V CCO</Polish>
 		<Russian>Sa-58V CCO</Russian>
 		<Spanish>Sa-58V CCO</Spanish>
+	</Key>
+	<Key ID="STR_DN_XM8_GL_CP">
+		<Original>M8 M320</Original>
+		<Chinese>M8 M320</Chinese>
+		<Czech>M8 M320</Czech>
+		<English>M8 M320</English>
+		<French>M8 M320</French>
+		<German>M8 M320</German>
+		<Hungarian>M8/M320</Hungarian>
+		<Italian>M8 M320</Italian>
+		<Japanese>M8 M320</Japanese>
+		<Polish>M8 M320</Polish>
+		<Russian>M8 M320</Russian>
+		<Spanish>M8 M320</Spanish>
 	</Key>
 	<Key ID="STR_DSS_AA12_CP">
 		<Original>Automatic shotgun&lt;br/&gt;Caliber: 12 gauge</Original>

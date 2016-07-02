@@ -278,6 +278,11 @@ class CfgWeapons
 		opticsZoomInit = 0.082999997;
 		opticsZoomMax = 0.082999997;
 		opticsZoomMin = 0.0208;
+
+		class Single : Mode_SemiAuto
+		{
+			displayName = "";
+		};
 	};
 	class BAF_AS50_TWS : BAF_AS50_scoped
 	{
@@ -311,6 +316,11 @@ class CfgWeapons
 		opticsZoomInit = 0.082999997;
 		opticsZoomMax = 0.082999997;
 		opticsZoomMin = 0.0208;
+
+		class Single : Mode_SemiAuto
+		{
+			displayName = "";
+		};
 	};
 	class DMR : Rifle // Leupold Mark 4 LR/T 3.5-10x40mm M3
 	{
@@ -320,6 +330,11 @@ class CfgWeapons
 			"OpticsBlur1"
 		};
 		visionMode[] = {"Normal"};
+
+		class Single : Mode_SemiAuto
+		{
+			displayName = "";
+		};
 	};
 	class G36C : Rifle
 	{
@@ -397,6 +412,13 @@ class CfgWeapons
 					opticsPPEffects[] = {};
 				};
 			};
+		};
+	};
+	class BAF_L110A1_Aim : Rifle
+	{
+		class manual : Mode_FullAuto
+		{
+			displayName = "";
 		};
 	};
 	class M14_EP1 : Rifle
@@ -480,10 +502,22 @@ class CfgWeapons
 	class M1014 : Rifle
 	{
 		model = "\CorePatch\CorePatch_Weapons\models\M1014";
+
+		class Single : Mode_SemiAuto
+		{
+			displayName = "";
+		};
 	};
 	class PK : Rifle
 	{
 		model = "\CorePatch\CorePatch_Weapons\models\PK";
+	};
+	class Saiga12K : Rifle
+	{
+		class Single : Mode_SemiAuto
+		{
+			displayName = "";
+		};
 	};
 	class bizon : Rifle
 	{
@@ -502,6 +536,10 @@ class CfgWeapons
 		opticsZoomMax = 0.070821531;
 		opticsZoomMin = 0.070821531;
 	};
+	class m8_carbineGL : m8_base
+	{
+		displayName = "$STR_DN_XM8_GL_CP";
+	};
 	class m8_sharpshooter : m8_base
 	{
 		class OpticsModes
@@ -510,6 +548,13 @@ class CfgWeapons
 			{
 				visionMode[] = {};
 			};
+		};
+	};
+	class m8_SAW : m8_sharpshooter
+	{
+		class Manual : Mode_FullAuto
+		{
+			displayName = "";
 		};
 	};
 	class m107 : Rifle
@@ -539,6 +584,13 @@ class CfgWeapons
 	{
 		model = "\CorePatch\CorePatch_Weapons\models\AK_74";
 	};
+	class RPK_74 : AK_74
+	{
+		class manual : Mode_FullAuto
+		{
+			delete displayName;
+		};
+	};
 	class AK_74_GL : AK_BASE
 	{
 		model = "\CorePatch\CorePatch_Weapons\models\AK_74_GL";
@@ -556,15 +608,22 @@ class CfgWeapons
 	{
 		model = "\CorePatch\CorePatch_Weapons\models\AKS_74_U";
 	};
-	class AK_107_GL_kobra;
+	class AK_107_BASE;
+	class AK_107_kobra : AK_107_BASE
+	{
+		displayName = "$STR_DN_AK107_KOBRA_CP";
+	};
+	class AK_107_GL_kobra : AK_107_BASE
+	{
+		displayName = "$STR_DN_AK107_GL_KOBRA_CP";
+	};
 	class AK_107_GL_pso : AK_107_GL_kobra
 	{
 		displayName = "$STR_DN_AK107_GL_PSO_CP";
 	};
-	class FN_FAL;
-	class FN_FAL_ANPVS4 : FN_FAL
+	class AK_107_pso : AK_107_BASE
 	{
-		opticsFlare = 1;
+		displayName = "$STR_DN_AK107_PSO_CP";
 	};
 	class L85A2_base_BAF;
 	class BAF_L85A2_RIS_ACOG : L85A2_base_BAF
@@ -621,7 +680,11 @@ class CfgWeapons
 			};
 		};
 	};
-	class M4A1;
+	class M16_base;
+	class M4A1 : M16_base
+	{
+		class Single;
+	};
 	class M4A1_RCO_GL : M4A1
 	{
 		displayName = "$STR_DN_M4A1_RCO_GL_CP";
@@ -657,84 +720,10 @@ class CfgWeapons
 		opticsZoomMax = 0.071099997;
 		opticsZoomMin = 0.024900001;
 		visionMode[] = {"Normal"};
-	};
-	class M4A1_AIM_SD_camo;
-	class M4A1_HWS_GL_SD_Camo : M4A1_AIM_SD_camo
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\M4A1_HWS_GL_SD_Camo";
 
-		class FlashLight
+		class Single : Single
 		{
-			ambient[] = {0.1, 0.1, 0.1, 1};
-			angle = 30;
-			brightness = 0.1;
-			color[] = {0.89999998, 0.89999998, 0.69999999, 0.89999998};
-			direction = "flash dir";
-			position = "flash";
-			scale[] = {1, 1, 0.5};
-		};
-	};
-	class M4A3_CCO_EP1;
-	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
-	{
-		opticsZoomInit = 0.0623; // 4x
-
-		class OpticsModes
-		{
-			class ACOG
-			{
-				visionMode[] = {};
-			};
-			class Kolimator : ACOG
-			{
-				delete visionMode;
-
-				opticsPPEffects[] = {};
-			};
-		};
-	};
-	class M16A4_GL;
-	class M16A4_ACG_GL : M16A4_GL
-	{
-		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
-	};
-	class m16a4;
-	class m16a4_acg : m16a4
-	{
-		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
-	};
-	class M240;
-	class m240_scoped_EP1 : M240
-	{
-		displayName = "$STR_DN_M240_SCOPED_CP";
-		optics = 1;
-		visionMode[] = {};
-
-		class OpticsModes
-		{
-			class M145
-			{
-				visionMode[] = {};
-			};
-		};
-	};
-	class M249;
-	class M249_TWS_EP1 : M249
-	{
-		optics = 1;
-	};
-	class M249_m145_EP1 : M249
-	{
-		displayName = "$STR_DN_M249_M145_CP";
-		optics = 1;
-		visionMode[] = {};
-
-		class OpticsModes
-		{
-			class M145
-			{
-				visionMode[] = {};
-			};
+			displayName = "";
 		};
 	};
 	class SCAR_H_Base;
@@ -767,26 +756,6 @@ class CfgWeapons
 				opticsZoomInit = 0.227272727;
 				opticsZoomMax = 0.227272727;
 				opticsZoomMin = 0.0623;
-			};
-		};
-	};
-	class SCAR_H_CQC_CCO;
-	class SCAR_H_STD_EGLM_Spect : SCAR_H_CQC_CCO
-	{
-		descriptionShort = "$STR_DSS_SCAR_H_STD_EGLM_SPECT_CP";
-
-		class OpticsModes
-		{
-			class Specter // Elcan SpecterDR 1-4x
-			{
-				opticsZoomInit = 0.0623;
-				opticsZoomMax = 0.0623;
-				opticsZoomMin = 0.0623;
-				visionMode[] = {};
-			};
-			class Ironsights : Specter
-			{
-				delete visionMode;
 			};
 		};
 	};
@@ -826,6 +795,110 @@ class CfgWeapons
 	class SCAR_L_STD_EGLM_TWS : SCAR_L_STD_EGLM_RCO
 	{
 		descriptionShort = "$STR_DSS_SCAR_L_STD_EGLM_TWS_CP";
+	};
+	class FN_FAL;
+	class FN_FAL_ANPVS4 : FN_FAL
+	{
+		opticsFlare = 1;
+	};
+	class M4A1_AIM_SD_camo;
+	class M4A1_HWS_GL_SD_Camo : M4A1_AIM_SD_camo
+	{
+		model = "\CorePatch\CorePatch_Weapons\models\M4A1_HWS_GL_SD_Camo";
+
+		class FlashLight
+		{
+			ambient[] = {0.1, 0.1, 0.1, 1};
+			angle = 30;
+			brightness = 0.1;
+			color[] = {0.89999998, 0.89999998, 0.69999999, 0.89999998};
+			direction = "flash dir";
+			position = "flash";
+			scale[] = {1, 1, 0.5};
+		};
+	};
+	class M4A3_CCO_EP1;
+	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
+	{
+		opticsZoomInit = 0.0623; // 4x
+
+		class OpticsModes
+		{
+			class ACOG
+			{
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
+	};
+	class m16a4;
+	class m16a4_acg : m16a4
+	{
+		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
+	};
+	class M16A4_GL;
+	class M16A4_ACG_GL : M16A4_GL
+	{
+		modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x";
+	};
+	class M240;
+	class m240_scoped_EP1 : M240
+	{
+		displayName = "$STR_DN_M240_SCOPED_CP";
+		optics = 1;
+		visionMode[] = {};
+
+		class OpticsModes
+		{
+			class M145
+			{
+				visionMode[] = {};
+			};
+		};
+	};
+	class M249;
+	class M249_TWS_EP1 : M249
+	{
+		optics = 1;
+	};
+	class M249_m145_EP1 : M249
+	{
+		displayName = "$STR_DN_M249_M145_CP";
+		optics = 1;
+		visionMode[] = {};
+
+		class OpticsModes
+		{
+			class M145
+			{
+				visionMode[] = {};
+			};
+		};
+	};
+	class SCAR_H_CQC_CCO;
+	class SCAR_H_STD_EGLM_Spect : SCAR_H_CQC_CCO
+	{
+		descriptionShort = "$STR_DSS_SCAR_H_STD_EGLM_SPECT_CP";
+
+		class OpticsModes
+		{
+			class Specter // Elcan SpecterDR 1-4x
+			{
+				opticsZoomInit = 0.0623;
+				opticsZoomMax = 0.0623;
+				opticsZoomMin = 0.0623;
+				visionMode[] = {};
+			};
+			class Ironsights : Specter
+			{
+				delete visionMode;
+			};
+		};
 	};
 	class Sa58V_EP1;
 	class Sa58V_CCO_EP1 : Sa58V_EP1
@@ -936,9 +1009,9 @@ class CfgVehicles
 
 				class ViewOptics : ViewOptics
 				{
-					initFov = 0.117;
-					maxFov = 0.117;
-					minFov = 0.117;
+					initFov = 0.0623; // 4x
+					maxFov = 0.0623;
+					minFov = 0.0623;
 				};
 			};
 		};
@@ -1008,12 +1081,31 @@ class CfgVehicles
 					"OpticsCHAbera1",
 					"OpticsBlur1"
 				};
+
+				class ViewOptics
+				{
+					initFov = 0.0623; // 4x
+					maxFov = 0.0623;
+					minFov = 0.0623;
+				};
 			};
 		};
 	};
 	class BAF_GPMG_Minitripod_D : BAF_L2A1_ACOG_base
 	{
 		class assembleInfo;
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class ViewOptics : ViewOptics
+				{
+					initFov = 0.073200002; // 3.4x
+					maxFov = 0.073200002;
+					minFov = 0.073200002;
+				};
+			};
+		};
 	};
 	class BAF_GPMG_Minitripod_W : BAF_GPMG_Minitripod_D
 	{

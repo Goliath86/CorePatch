@@ -3,14 +3,16 @@
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
 	possibility to deactivate mines and hide corpses (missed) to saboteurs and some soldiers of special forces
+	possibility to repair vehicles to soldiers of special forces
 	possibility to switch seat between all seats of UH60M helicopter
 
 Changed:
 	reverted and updated CIT #28047 bug fix
 	reverted CCP #71037 bug fix to original state
 	deleted CCP #71142 bug fix due to it's faulty
+	definitions of some optical sights to more realistic
 	deleted unnecessary fire mode (@ 2600 SPM) of GSh302K cannon
-	forbade to repair vehicles by saboteurs and sappers
+	forbade to repair vehicles by Ins_Soldier_Sapper
 	hit value of pistol and some cannon bullets
 	inventory picture of OG7 launcher magazine
 	rate of fire of some cannons

@@ -161,7 +161,7 @@ class CfgVehicles
 		canCarryBackpack = 0;
 		canDeactivateMines = 1;
 		cost = 100000;
-		displayName = "$STR_DN_ENGINEER";
+		displayName = "$STR_DN_SOLDIER_ENGINEER_CP";
 		engineer = 1;
 		magazines[] = {
 			"30Rnd_545x39_AK",
@@ -272,7 +272,7 @@ class CfgVehicles
 		accuracy = 3.9000001;
 		canDeactivateMines = 1;
 		cost = 60000;
-		displayName = "$STR_DN_ENGINEER";
+		displayName = "$STR_DN_SOLDIER_ENGINEER_CP";
 		engineer = 1;
 		magazines[] = {
 			"30Rnd_545x39_AK",
