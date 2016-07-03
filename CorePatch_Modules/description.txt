@@ -1,0 +1,1 @@
+Fixed: BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)

@@ -1596,6 +1596,13 @@ class CfgVehicles
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
 				discreteDistanceInitIndex = 2;
 				turretInfoType = "RscWeaponZeroing";
+
+				class ViewOptics : ViewOptics
+				{
+					initFov = 0.1; // 2.5x
+					maxFov = 0.1;
+					minFov = 0.1;
+				};
 			};
 			class PK_Turret : MainTurret
 			{
@@ -1879,6 +1886,13 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
+
+				class ViewOptics : ViewOptics
+				{
+					initFov = 0.1; // 2.5x
+					maxFov = 0.1;
+					minFov = 0.1;
+				};
 			};
 		};
 	};

@@ -119,6 +119,7 @@ class CfgPatches
 			"CorePatch_LaserTargetCSide",
 			"CorePatch_M113_PMC",
 			"CorePatch_Magazines",
+			"CorePatch_Modules",
 			"CorePatch_NoPierDestruction",
 			"CorePatch_Shapur_Intro_Fix",
 			"CorePatch_UI",

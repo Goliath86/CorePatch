@@ -1,4 +1,4 @@
-01/07/2016
+03/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
@@ -30,6 +30,7 @@ Fixed:
 	accuracy value issues with tank units (http://dev.withsix.com/issues/27794)
 	long magazine reload times on Tunguska (http://dev.withsix.com/issues/65710)
 	HMMWV windshield is practically unbreakable (http://dev.withsix.com/issues/66995)
+	BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)
 	7.62mm muzzle velocities are incorrect - too fast (http://dev.withsix.com/issues/71262)
 	SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718)
 	broken IR laser of M4A1_RCO_GL rifle
