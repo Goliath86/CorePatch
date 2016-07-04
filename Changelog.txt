@@ -1,4 +1,4 @@
-03/07/2016
+04/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
@@ -33,6 +33,7 @@ Fixed:
 	BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)
 	7.62mm muzzle velocities are incorrect - too fast (http://dev.withsix.com/issues/71262)
 	SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718)
+	SILVIE module (http://forums.bistudio.com/topic/181435-a2a2oa-beta-patches-pre-final-patch/page-5#entry2935621)
 	broken IR laser of M4A1_RCO_GL rifle
 	cost of some engineers
 	incompatibility of FN_FAL and M14_EP1 rifles with JSRS mod

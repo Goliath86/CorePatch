@@ -1,1 +1,3 @@
-Fixed: BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)
+Fixed:
+	BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)
+	SILVIE module (http://forums.bistudio.com/topic/181435-a2a2oa-beta-patches-pre-final-patch/page-5#entry2935621)
