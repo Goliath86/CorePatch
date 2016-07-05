@@ -1,4 +1,4 @@
-scriptName "\CorePatch\CorePatch_GC\data\scripts\init.sqf";
+scriptName "GarbageCollector\data\scripts\init.sqf";
 /*
 	File: init.sqf
 	Author: Joris-Jan van 't Land
@@ -19,7 +19,7 @@ if (isServer) then
 		BIS_GC = _this;		
 		
 		private ["_fsm"];
-		_fsm = _this execFSM "\CorePatch\CorePatch_GC\data\fsms\garbagecollector.fsm";
+		_fsm = _this execFSM "\CorePatch\CorePatch_Modules\GarbageCollector\data\fsms\garbagecollector.fsm";
 		
 		//private ["_hello", "_hello2"];
 		//_hello = _this setPos (position _this); if (isnil "_hello") then {_hello = false};

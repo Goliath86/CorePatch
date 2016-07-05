@@ -1,4 +1,4 @@
-scriptName "\CorePatch\CorePatch_GC\data\scripts\trashIt.sqf";
+scriptName "GarbageCollector\data\scripts\trashIt.sqf";
 /*
 	File: trashIt.sqf
 	Author: Joris-Jan van 't Land

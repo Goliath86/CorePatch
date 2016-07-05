@@ -1,4 +1,4 @@
-scriptName "\CorePatch\CorePatch_GC\data\scripts\process_queue.sqf";
+scriptName "GarbageCollector\data\scripts\process_queue.sqf";
 /*
 	File: process_queue.sqf
 	Related: garbagecollector.fsm

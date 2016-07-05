@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class CorePatch_CIT_24817_24839
+	class CorePatch_CIT_24839
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;

@@ -15,6 +15,15 @@ class CfgMagazines
 	{
 		picture = "\CorePatch\CorePatch_Magazines\M_OG7V_ca.paa";
 	};
+	class VehicleMagazine;
+	class 180Rnd_30mm_GSh301 : VehicleMagazine
+	{
+		displayName = "$STR_DN_GSH301_CP";
+	};
+	class 750Rnd_30mm_GSh301 : 180Rnd_30mm_GSh301
+	{
+		delete displayName;
+	};
 	class 100Rnd_762x54_PK;
 	class 60Rnd_762x54_DT : 100Rnd_762x54_PK
 	{
