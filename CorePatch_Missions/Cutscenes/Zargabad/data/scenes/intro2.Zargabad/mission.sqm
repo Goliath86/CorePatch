@@ -72,7 +72,7 @@ class Intro
 					leader=1;
 					skill=0.60000002;
 					text="player";
-					init="0 fadeSound 0; cuttext ["""",""black in"",9999999]; sqf = this execvm ""\CorePatch\CorePatch_Zargabad_Intro\scenes\intro2.Zargabad\intro.sqf""";
+					init="0 fadeSound 0; cuttext ["""",""black in"",9999999]; sqf = this execvm ""intro.sqf""";
 				};
 			};
 		};

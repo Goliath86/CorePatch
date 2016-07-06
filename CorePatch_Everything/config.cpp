@@ -118,14 +118,13 @@ class CfgPatches
 			"CorePatch_LaserTargetCSide",
 			"CorePatch_M113_PMC",
 			"CorePatch_Magazines",
+			"CorePatch_Missions",
 			"CorePatch_Modules",
 			"CorePatch_NoPierDestruction",
-			"CorePatch_Shapur_Intro_Fix",
 			"CorePatch_UI",
 			"CorePatch_UralTransportMagazines",
 			"CorePatch_Vehicles",
-			"CorePatch_Weapons",
-			"CorePatch_Zargabad_Intro_Fix"
+			"CorePatch_Weapons"
 		};
 		requiredVersion = 1.00;
 		units[] = {};
