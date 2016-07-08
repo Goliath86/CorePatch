@@ -26,7 +26,7 @@
 			<Italian>Lada</Italian>
 			<Japanese>Lada</Japanese>
 			<Polish>Lada</Polish>
-			<Russian>Лада</Russian>
+			<Russian>ВАЗ-2103 'Лада'</Russian>
 			<Spanish>Lada</Spanish>
 		</Key>
 		<Key ID="STR_DN_LADA_RED_CP">
@@ -40,7 +40,7 @@
 			<Italian>Lada (rosso)</Italian>
 			<Japanese>Lada (Red)</Japanese>
 			<Polish>Lada (Czerwony)</Polish>
-			<Russian>Лада (красная)</Russian>
+			<Russian>ВАЗ-2103 'Лада' (красная)</Russian>
 			<Spanish>Lada (rojo)</Spanish>
 		</Key>
 		<Key ID="STR_DN_LADA_WHITE_CP">
@@ -54,7 +54,7 @@
 			<Italian>Lada (bianco)</Italian>
 			<Japanese>Lada (White)</Japanese>
 			<Polish>Lada (Biały)</Polish>
-			<Russian>Лада (белая)</Russian>
+			<Russian>ВАЗ-2103 'Лада' (белая)</Russian>
 			<Spanish>Lada (blanco)</Spanish>
 		</Key>
 		<Key ID="STR_DN_LADALM_CP">
@@ -68,7 +68,7 @@
 			<Italian>Lada (milizie)</Italian>
 			<Japanese>Lada (Militia)</Japanese>
 			<Polish>Lada (Milicja)</Polish>
-			<Russian>Лада (милиция)</Russian>
+			<Russian>ВАЗ-2103 'Лада' (милиция)</Russian>
 			<Spanish>Lada (milicia)</Spanish>
 		</Key>
 		<Key ID="STR_DN_MTVR_REFUEL_CP">

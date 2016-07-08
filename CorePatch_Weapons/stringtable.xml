@@ -140,6 +140,34 @@
 		<Russian>G36K</Russian>
 		<Spanish>G36K</Spanish>
 	</Key>
+	<Key ID="STR_DN_GSH301_CP">
+		<Original>GSh-301</Original>
+		<Chinese>GSh-301</Chinese>
+		<Czech>GŠ-301</Czech>
+		<English>GSh-301</English>
+		<French>GSh-301</French>
+		<German>GSh-301</German>
+		<Hungarian>GS-301</Hungarian>
+		<Italian>GSh-301</Italian>
+		<Japanese>GSh-301</Japanese>
+		<Polish>GSz-301</Polish>
+		<Russian>ГШ-301</Russian>
+		<Spanish>GSh-301</Spanish>
+	</Key>
+	<Key ID="STR_DN_GSH302_CP">
+		<Original>GSh-30</Original>
+		<Chinese>GSh-30</Chinese>
+		<Czech>GŠ-30</Czech>
+		<English>GSh-30</English>
+		<French>GSh-30</French>
+		<German>GSh-30</German>
+		<Hungarian>GS-30</Hungarian>
+		<Italian>GSh-30</Italian>
+		<Japanese>GSh-30</Japanese>
+		<Polish>GSh-30</Polish>
+		<Russian>ГШ-30</Russian>
+		<Spanish>GSh-30</Spanish>
+	</Key>
 	<Key ID="STR_DN_M4A1_RCO_GL_CP">
 		<Original>M4A1 M203 ACOG</Original>
 		<Chinese>M4A1 M203 ACOG</Chinese>

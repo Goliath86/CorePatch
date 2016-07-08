@@ -152,16 +152,24 @@ class CfgWeapons
 	};
 	class GSh301 : CannonCore // 1500 SPM
 	{
+		displayName = "$STR_DN_GSH301_CP";
+
 		class manual : CannonCore
 		{
 			burst = 5; // 0.2 s
+			displayName = "$STR_DN_GSH301_CP";
+			initSpeed = 860;
 		};
 	};
 	class GSh302 : CannonCore
 	{
+		displayName = "$STR_DN_GSH302_CP";
+
 		class manual : CannonCore
 		{
 			burst = 10; // 0.2 s
+			displayName = "$STR_DN_GSH302_CP";
+			initSpeed = 870;
 			reloadTime = 0.02; // 3000 SPM
 			sound[] = {
 				"\Ca\sounds\Weapons\cannon\A10vulcanIV",
@@ -930,7 +938,10 @@ class CfgVehicles
 	class StaticWeapon : LandVehicle
 	{
 		class AnimationSources;
-		class Turrets;
+		class Turrets
+		{
+			class MainTurret;
+		};
 	};
 	class StaticCanon : StaticWeapon
 	{
@@ -951,9 +962,9 @@ class CfgVehicles
 
 				class ViewOptics
 				{
-					initFov = 0.2;
-					maxFov = 0.2;
-					minFov = 0.057999998;
+					initFov = 0.070821531; // 3.5x
+					maxFov = 0.070821531;
+					minFov = 0.070821531;
 				};
 			};
 		};
@@ -962,7 +973,10 @@ class CfgVehicles
 	{
 		class Turrets : Turrets
 		{
-			class MainTurret;
+			class MainTurret : MainTurret
+			{
+				class ViewOptics;
+			};
 		};
 	};
 	class AGS_base : StaticGrenadeLauncher
@@ -974,18 +988,18 @@ class CfgVehicles
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
 				discreteDistanceInitIndex = 2;
 				turretInfoType = "RscWeaponZeroing";
+
+				class ViewOptics : ViewOptics
+				{
+					initFov = 0.1; // 2.5x
+					maxFov = 0.1;
+					minFov = 0.1;
+				};
 			};
 		};
 	};
 	class GMG_TriPod : StaticGrenadeLauncher
 	{
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				class ViewOptics;
-			};
-		};
 	};
 	class BAF_GMG_Tripod_D : GMG_TriPod
 	{

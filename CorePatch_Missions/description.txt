@@ -1,0 +1,1 @@
+Fixed: two "Undefined variable ..." errors on Shapur_BAF and Zargabad intro scenes

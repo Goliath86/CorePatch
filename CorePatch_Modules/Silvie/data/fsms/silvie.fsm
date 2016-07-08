@@ -1,0 +1,454 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, System for Including Land Vehicles Into Environment">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"SILVIE",0,4346,100.000000,125.000000,200.000000,175.000000,0.000000,"SILVIE"};
+item1[] = {"Players_near",4,218,250.000000,175.000000,350.000000,225.000000,0.000000,"Players near"};
+item2[] = {"Select_Position",2,250,100.000000,425.000000,200.000000,475.000000,0.000000,"Select Position"};
+item3[] = {"Reset_values",2,250,400.000000,625.000000,500.000000,675.000000,0.000000,"Reset values"};
+item4[] = {"Add_Vehicle",4,218,325.000000,525.000000,425.000000,575.000000,1.000000,"Add Vehicle"};
+item5[] = {"All_spawned",4,218,250.000000,475.000000,350.000000,525.000000,0.000000,"All spawned"};
+item6[] = {"Vehicle",4,218,175.000000,525.000000,275.000000,575.000000,2.000000,"Vehicle"};
+item7[] = {"Create_Vehicle",2,250,100.000000,625.000000,200.000000,675.000000,0.000000,"Create Vehicle"};
+item8[] = {"Return",4,218,25.000000,525.000000,125.000000,575.000000,0.000000,"Return"};
+item9[] = {"Mission_Loop",2,250,400.000000,425.000000,500.000000,475.000000,0.000000,"Mission Loop"};
+item10[] = {"Reset",8,218,250.000000,575.000000,350.000000,625.000000,0.000000,"Reset"};
+item11[] = {"Get_houses",2,250,100.000000,325.000000,200.000000,375.000000,0.000000,"Get houses"};
+item12[] = {"Always",8,218,250.000000,375.000000,350.000000,425.000000,0.000000,"Always"};
+item13[] = {"Load_houses",2,250,100.000000,225.000000,200.000000,275.000000,0.000000,"Load houses"};
+item14[] = {"Houses_loaded",4,218,250.000000,275.000000,350.000000,325.000000,0.000000,"Houses loaded"};
+item15[] = {"Always",8,218,500.000000,75.000000,600.000000,125.000000,0.000000,"Always"};
+item16[] = {"Wait_2s",2,250,625.000000,125.000000,725.000000,175.000000,0.000000,"Wait 2s"};
+item17[] = {"Wait",4,218,500.000000,175.000000,600.000000,225.000000,0.000000,"Wait"};
+item18[] = {"Always",8,218,250.000000,75.000000,350.000000,125.000000,0.000000,"Always"};
+item19[] = {"Delay",2,250,375.000000,125.000000,475.000000,175.000000,0.000000,"Delay"};
+link0[] = {0,18};
+link1[] = {1,13};
+link2[] = {2,5};
+link3[] = {2,6};
+link4[] = {3,10};
+link5[] = {4,3};
+link6[] = {5,9};
+link7[] = {6,7};
+link8[] = {7,8};
+link9[] = {8,2};
+link10[] = {9,4};
+link11[] = {10,7};
+link12[] = {11,12};
+link13[] = {12,2};
+link14[] = {13,14};
+link15[] = {14,11};
+link16[] = {15,16};
+link17[] = {16,17};
+link18[] = {17,19};
+link19[] = {18,19};
+link20[] = {19,1};
+link21[] = {19,15};
+globals[] = {25.000000,1,0,0,0,640,480,1,21,6316128,1,-4.587929,769.505249,769.968689,-160.849136,733,855,1};
+window[] = {2,-1,-1,-1,-1,617,75,1035,75,3,751};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "System for Including Land Vehicles Into Environment";
+  class States
+  {
+    /*%FSM<STATE "SILVIE">*/
+    class SILVIE
+    {
+      name = "SILVIE";
+      init = /*%FSM<STATEINIT""">*/"_twn = _this select 0;" \n
+       "_classlist = _this select 1;" \n
+       "_logic = BIS_silvie_mainscope;" \n
+       "" \n
+       "_twnpos = position _twn;" \n
+       "_twntype = _twn getvariable ""type"";" \n
+       "_twnclass = _twn getvariable ""class"";" \n
+       "_twnname = _twn getvariable ""name"";" \n
+       "" \n
+       "_BIS_Silvie_path = ""\CorePatch\CorePatch_Modules\Silvie\data\"";" \n
+       "_BIS_Silvie_spawnVehicle = compile (preprocessFileLineNumbers (""\CorePatch\CorePatch_Modules\Silvie\data\scripts\spawnVehicle.sqf""));" \n
+       "" \n
+       "_init = true;" \n
+       "" \n
+       "//--- Get custom params ---------------------------" \n
+       "//--- Debug" \n
+       "_debug = if (format [""%1"",_logic getvariable ""debug""] == ""<null>"") then {false} else {true};" \n
+       "" \n
+       "//---Vehicle count" \n
+       "_vehicleCountFormula = _logic getvariable ""vehicleCount"";" \n
+       "" \n
+       "//--- Road distance" \n
+       "_roaddis =_logic getvariable ""roadDistance"";" \n
+       "" \n
+       "//--- Attempts to create car" \n
+       "_attemptsTotal =_logic getvariable ""attempts"";" \n
+       "" \n
+       "//--- Object blacklist" \n
+       "_blacklist = _logic getvariable ""blacklist"";" \n
+       "" \n
+       "//--- Vehicle blacklist" \n
+       "_vehiclerarity = _logic getvariable ""vehicleRarity"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Delay";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Select_Position">*/
+    class Select_Position
+    {
+      name = "Select_Position";
+      init = /*%FSM<STATEINIT""">*/"_houselist = _houselist - _objlistused;" \n
+       "_housecount = count _houselist;" \n
+       "" \n
+       "//hint format [""%1\n%2"",];" \n
+       "" \n
+       "if (_debug) then {hint format [""%1\n%2/%3/%4\n%5\n\n%6"",_twnclass,_vn,_vehiclecount,_id,_attempts,_roaddis]};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Vehicle">*/
+        class Vehicle
+        {
+          priority = 2.000000;
+          to="Create_Vehicle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_vn < _vehiclecount" \n
+           "&&" \n
+           "_attempts < _attemptsTotal;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "All_spawned">*/
+        class All_spawned
+        {
+          priority = 0.000000;
+          to="Mission_Loop";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reset_values">*/
+    class Reset_values
+    {
+      name = "Reset_values";
+      init = /*%FSM<STATEINIT""">*/"_twn = _logic getvariable ""currentTown"";" \n
+       "_houselist = _twnpos nearobjects [""House"",500];" \n
+       "" \n
+       "//--- Reset optional params" \n
+       "_roaddis = _logic getvariable ""roadDistance"";" \n
+       "_attemptsTotal =_logic getvariable ""attempts"";" \n
+       "_blacklist = _logic getvariable ""blacklist"";" \n
+       "" \n
+       "//--- Remove small objects and objects on blacklist" \n
+       "{" \n
+       "	_bbox = abs((boundingbox _x select 1) select 0) min abs((boundingbox _x select 1) select 1);" \n
+       "	if (_bbox < 3 || typeof _x in _blacklist) then {_houselist = _houselist - [_x]};" \n
+       "} foreach _houselist;" \n
+       "_housecount = count _houselist;" \n
+       "" \n
+       "_id = _logic getvariable ""id"";" \n
+       "" \n
+       "if (_id < 0) then {_id = -_id};" \n
+       "_attempts = 0;" \n
+       "_vn = 0;" \n
+       "_vehiclecount = 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Reset">*/
+        class Reset
+        {
+          priority = 0.000000;
+          to="Create_Vehicle";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Create_Vehicle">*/
+    class Create_Vehicle
+    {
+      name = "Create_Vehicle";
+      init = /*%FSM<STATEINIT""">*/"//_pos = position _twn;" \n
+       "" \n
+       "if (_housecount > 0) then {" \n
+       "" \n
+       "	//--- Get list of possible houses or roads" \n
+       "	_objlist = _houselist - _objlistused;" \n
+       "	_objlisttemp = [];" \n
+       "" \n
+       "	//--- Filter duplicates" \n
+       "	{" \n
+       "		if !(_x in _objlist) then {_objlist = _objlist + [_x]};" \n
+       "	} foreach _objlistTemp;" \n
+       "" \n
+       "	//--- Available locations" \n
+       "	if (count _objlist != 0) then {" \n
+       "		_obj = _objlist call BIS_fnc_selectRandom;" \n
+       "		_defobj = _obj;" \n
+       "		_pos = _obj modeltoworld [0,0,0];" \n
+       "		_dir = direction _obj + (floor random 4)*90;" \n
+       "		_radius = 1;" \n
+       "		_mcolor = ""colorgreen"";" \n
+       "		_text = """";" \n
+       "		_nocar = false;" \n
+       "" \n
+       "		_roads =  (_pos nearroads _roaddis) - _objlistused;" \n
+       "		if (count _roads > 0) then {" \n
+       "				//--- Filter (no crossroads, used roads and short ones too) --------------------------" \n
+       "				{" \n
+       "					_road = _x;" \n
+       "" \n
+       "					//---  Straight road" \n
+       "					if (count (roadsconnectedto _road) <= 2) then {" \n
+       "						_dir = direction _road;" \n
+       "						_bbox = boundingbox _road;" \n
+       "						_bboxA = (_bbox select 0);" \n
+       "						_bboxB = (_bbox select 1);" \n
+       "						_bboxX = abs(_bboxA select 0) + abs(_bboxB select 0);" \n
+       "						_bboxY = abs(_bboxA select 1) + abs(_bboxB select 1);" \n
+       "						_difmin = (_bboxX min _bboxY);" \n
+       "						_difmax = (_bboxX max _bboxY);" \n
+       "						_dif = _difmin/2 + sqrt(_difmin)*0.3;" \n
+       "" \n
+       "						//--- Long enough" \n
+       "						if (_difmax < 15) then {" \n
+       "							_obj = _road;" \n
+       "							_objpos = position _obj; //_obj modeltoworld [0,0,0];" \n
+       "							_pos = [" \n
+       "								(_objpos select 0)+(sin (_dir + 90) * _dif)," \n
+       "								(_objpos select 1)+(cos (_dir + 90) * _dif)," \n
+       "								0" \n
+       "							];" \n
+       "							_radius = 0;" \n
+       "							_mcolor = ""colorred"";" \n
+       "							_obj = _road;" \n
+       "							_text = format [""%1"",_difmax];" \n
+       "" \n
+       "						} else {	_roads = _roads - [_road]};" \n
+       "					} else {	_roads = _roads - [_road]};" \n
+       "				} foreach _roads;" \n
+       "				if (count _roads == 0) then {_nocar = true};" \n
+       "		};" \n
+       "		//--- /Filter ---------------------------------------------------------------" \n
+       "" \n
+       "		//--- Place found - create vehicle" \n
+       "		if !(_nocar) then {" \n
+       "" \n
+       "			if (_debug) then {" \n
+       "				_markerx = createmarker [format [""xxx_%1"",_id + 1000],position _defobj];" \n
+       "				_markerx setmarkershapelocal ""ellipse"";" \n
+       "				_markerx setmarkersizelocal [_roaddis,_roaddis];" \n
+       "				_markerx setmarkercolor ""colorblack"";" \n
+       "			};" \n
+       "" \n
+       "			//--- IDs" \n
+       "			_vn = _vn + 1;" \n
+       "			_id = _logic getvariable ""id"";" \n
+       "			if (_id < 0) then {_id = -_id};" \n
+       "			_id = _id + 1;" \n
+       "			_logic setvariable [""id"",_id];" \n
+       "" \n
+       "			if !(_init) then {_mcolor = ""colorblue""};" \n
+       "			//--- Vehicle itself ---------------------------------------------------------------------//" \n
+       "			_class = _twnclasslist call BIS_fnc_selectRandom;" \n
+       "			_car = [_id,_twn,_class,_obj,_pos,_radius,_dir,_init,_debug,_mcolor] spawn _bis_silvie_spawnvehicle;" \n
+       "			//----------------------------------------------------------------------------------------//" \n
+       "			_attempts = 0;" \n
+       "" \n
+       "		} else {_attempts = _attempts + 1;};" \n
+       "" \n
+       "		//--- Add used object to temp blacklist" \n
+       "		_objlistused = _objlistused + [_obj,_defobj];// + (_obj nearroads _vehspacing);" \n
+       "" \n
+       "" \n
+       "	} else {_attempts = _attempts + 1;};" \n
+       "" \n
+       "} else {_attempts = _attempts + 1;};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Return">*/
+        class Return
+        {
+          priority = 0.000000;
+          to="Select_Position";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Mission_Loop">*/
+    class Mission_Loop
+    {
+      name = "Mission_Loop";
+      init = /*%FSM<STATEINIT""">*/"_init = false;" \n
+       "_objlistused = [];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Add_Vehicle">*/
+        class Add_Vehicle
+        {
+          priority = 1.000000;
+          to="Reset_values";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_logic getvariable ""id"") < 0 && (str(_logic getvariable ""currentTown"") == str(_twn));"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Get_houses">*/
+    class Get_houses
+    {
+      name = "Get_houses";
+      init = /*%FSM<STATEINIT""">*/"_houselistAll = _twnpos nearobjects [""House"",500];" \n
+       "_houselist = [];" \n
+       "//--- Remove small objects and objects on blacklist" \n
+       "{" \n
+       "	_house = _x;" \n
+       "	_bbox = abs((boundingbox _house select 1) select 0) min abs((boundingbox _house select 1) select 1);" \n
+       "	if (_bbox >= 3 && {typeof _house == _x} count _blacklist == 0) then {_houselist = _houselist + [_house]};" \n
+       "} foreach _houselistAll;" \n
+       "_housecount = count _houselist;" \n
+       "_vehiclecount = call compile format [_vehicleCountFormula,_housecount];" \n
+       "_id = _logic getvariable ""id"";" \n
+       "_vn = 0;" \n
+       "_objlistused = [];" \n
+       "_attempts = 0;" \n
+       "" \n
+       "" \n
+       "" \n
+       "//--- Filter vehicle classes through urban rarity ---------------------------" \n
+       "_twnRarityUrban = _logic getvariable ""rarityurban"";" \n
+       "if (isnil ""_twnRarityUrban"") then {_twnRarityUrban = [_twn,[""RARITY""]] call bis_fnc_locations};" \n
+       "//if (_twntype == ""nameCity"") then {0.75} else {0.25};" \n
+       "_twnClasslist = [];" \n
+       "_rarityRange = 0.3 + (0.3 * _twnRarityUrban);" \n
+       "{" \n
+       "	_class = _x select 0;" \n
+       "	_rarityUrban = _x select 1;" \n
+       "	if (_rarityUrban >= 0 && abs(_twnRarityUrban - _rarityUrban) < _rarityRange) then {_twnClasslist = _twnClasslist + [_class]};" \n
+       "} foreach _classlist;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Select_Position";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Load_houses">*/
+    class Load_houses
+    {
+      name = "Load_houses";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Houses_loaded">*/
+        class Houses_loaded
+        {
+          priority = 0.000000;
+          to="Get_houses";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_twnpos nearObjectsReady 500;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Wait_2s">*/
+    class Wait_2s
+    {
+      name = "Wait_2s";
+      init = /*%FSM<STATEINIT""">*/"private[""_timeNow"",""_delay""];" \n
+       "" \n
+       "_timeNow = time;" \n
+       "_delay = 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Wait">*/
+        class Wait
+        {
+          priority = 0.000000;
+          to="Delay";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeNow) >= _delay"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Delay">*/
+    class Delay
+    {
+      name = "Delay";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Wait_2s";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Players_near">*/
+        class Players_near
+        {
+          priority = 0.000000;
+          to="Load_houses";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"{vehicle _x distance _twnpos < 1000} count ([] call BIS_fnc_listPlayers) > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="SILVIE";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/

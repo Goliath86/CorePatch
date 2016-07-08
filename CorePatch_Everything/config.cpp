@@ -82,7 +82,7 @@ class CfgPatches
 			"CorePatch_CIT_24719",
 			"CorePatch_CIT_24764",
 			"CorePatch_CIT_24780",
-			"CorePatch_CIT_24817_24839",
+			"CorePatch_CIT_24839",
 			"CorePatch_CIT_24841",
 			"CorePatch_CIT_24842",
 			"CorePatch_CIT_24887",
@@ -114,18 +114,17 @@ class CfgPatches
 			"CorePatch_Dubbing_Fix",
 			"CorePatch_FIS_Fix",
 			"CorePatch_GAU22",
-			"CorePatch_GC_Fix",
 			"CorePatch_Javelin_Fix",
 			"CorePatch_LaserTargetCSide",
 			"CorePatch_M113_PMC",
 			"CorePatch_Magazines",
+			"CorePatch_Missions",
+			"CorePatch_Modules",
 			"CorePatch_NoPierDestruction",
-			"CorePatch_Shapur_Intro_Fix",
 			"CorePatch_UI",
 			"CorePatch_UralTransportMagazines",
 			"CorePatch_Vehicles",
-			"CorePatch_Weapons",
-			"CorePatch_Zargabad_Intro_Fix"
+			"CorePatch_Weapons"
 		};
 		requiredVersion = 1.00;
 		units[] = {};

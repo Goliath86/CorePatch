@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CorePatch">
 	<Key ID="STR_DN_GSH302K">
-		<Original>GSh-30-2K</Original>
-		<Chinese>GSh-30-2K</Chinese>
-		<Czech>GŠ-30-2K</Czech>
-		<English>GSh-30-2K</English>
-		<French>GSh-30-2K</French>
-		<German>GSh-30-2K</German>
-		<Hungarian>GSh-30-2K</Hungarian>
-		<Italian>GSh-30-2K</Italian>
-		<Japanese>GSh-30-2K</Japanese>
-		<Polish>GSh-30-2K</Polish>
-		<Russian>ГШ-30-2К</Russian>
-		<Spanish>GSh-30-2K</Spanish>
+		<Original>GSh-30K</Original>
+		<Chinese>GSh-30K</Chinese>
+		<Czech>GŠ-30K</Czech>
+		<English>GSh-30K</English>
+		<French>GSh-30K</French>
+		<German>GSh-30K</German>
+		<Hungarian>GSh-30K</Hungarian>
+		<Italian>GSh-30K</Italian>
+		<Japanese>GSh-30K</Japanese>
+		<Polish>GSh-30K</Polish>
+		<Russian>ГШ-30К</Russian>
+		<Spanish>GSh-30K</Spanish>
 	</Key>
 	<Key ID="STR_DN_GSH302K_MODE_LOW">
 		<Original>300 rpm</Original>

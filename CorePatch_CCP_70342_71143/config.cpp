@@ -20,26 +20,30 @@ class CfgAddons
 };
 class CfgMagazines
 {
-	class VehicleMagazine;
-	class 250Rnd_30mm_GSh302: VehicleMagazine
+	class 180Rnd_30mm_GSh301;
+	class 250Rnd_30mm_GSh302: 180Rnd_30mm_GSh301
 	{
-		ammo = "B_30mm_HE";
 		count = 250;
-		displayName = "$STR_DN_GSh302";
-		initSpeed = 820;
-		nameSound = "cannon";
-		scope = 2;
-		tracersEvery = 2;
+		displayName = "$STR_DN_GSH302_CP";
 	};
 };
 class Mode_FullAuto;
 class CfgWeapons
 {
 	class CannonCore;
+	class GSh301: CannonCore
+	{
+		magazines[] = {
+			"180Rnd_30mm_GSh301",
+			"250Rnd_30mm_GSh302",
+			"750Rnd_30mm_GSh301"
+		};
+	};
 	class GSh302: CannonCore
 	{
 		magazines[] = {
 			"250Rnd_30mm_GSh302",
+			"180Rnd_30mm_GSh301",
 			"750Rnd_30mm_GSh301"
 		};
 	};
@@ -50,6 +54,7 @@ class CfgWeapons
 		displayName = "$STR_DN_GSH302K";
 		magazines[] = {
 			"250Rnd_30mm_GSh302",
+			"180Rnd_30mm_GSh301",
 			"750Rnd_30mm_GSh301"
 		};
 		modes[] = {
