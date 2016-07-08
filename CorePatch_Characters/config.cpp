@@ -40,11 +40,11 @@ class CfgVehicles
 	{
 		engineer = 1;
 	};*/
-/*	class GER_Soldier_base_EP1 : SoldierWB
+	class GER_Soldier_base_EP1 : SoldierWB
 	{
 		canDeactivateMines = 1;
-		engineer = 1;
-	};*/
+		// engineer = 1;
+	};
 	class US_Soldier_Base_EP1 : SoldierWB
 	{
 		class HitPoints : HitPoints
@@ -52,11 +52,11 @@ class CfgVehicles
 			class HitHead;
 		};
 	};
-	/*class Drake : US_Soldier_Base_EP1
+	class Drake : US_Soldier_Base_EP1
 	{
 		canDeactivateMines = 1;
-		engineer = 1;
-	};*/
+		// engineer = 1;
+	};
 	class US_Delta_Force_EP1 : US_Soldier_Base_EP1
 	{
 		canDeactivateMines = 1;
@@ -83,11 +83,11 @@ class CfgVehicles
 	class US_Soldier_Crew_EP1 : US_Soldier_Base_EP1
 	{
 	};
-	/*class Herrera : US_Soldier_Crew_EP1
+	class Herrera : US_Soldier_Crew_EP1
 	{
 		canDeactivateMines = 1;
-		engineer = 1;
-	};*/
+		// engineer = 1;
+	};
 	class US_Soldier_Crew_Light_EP1 : US_Soldier_Crew_EP1
 	{
 		model = "\ca\characters_E\US\US_crewman_Light";
@@ -186,10 +186,10 @@ class CfgVehicles
 		canDeactivateMines = 1;
 		canHideBodies = 1;
 	};
-	class Ins_Soldier_Sapper : Ins_Soldier_Base
+	/* class Ins_Soldier_Sapper : Ins_Soldier_Base
 	{
-		//engineer = 0;
-	};
+		engineer = 0;
+	}; */
 	class RU_Soldier_Base;
 	class RU_Soldier_AT : RU_Soldier_Base
 	{

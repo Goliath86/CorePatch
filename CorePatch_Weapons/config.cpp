@@ -153,6 +153,10 @@ class CfgWeapons
 	class GSh301 : CannonCore // 1500 SPM
 	{
 		displayName = "$STR_DN_GSH301_CP";
+		magazines[] = {
+			"180Rnd_30mm_GSh301",
+			"750Rnd_30mm_GSh301"
+		};
 
 		class manual : CannonCore
 		{
@@ -164,6 +168,10 @@ class CfgWeapons
 	class GSh302 : CannonCore
 	{
 		displayName = "$STR_DN_GSH302_CP";
+		magazines[] = {
+			"750Rnd_30mm_GSh301",
+			"180Rnd_30mm_GSh301"
+		};
 
 		class manual : CannonCore
 		{
