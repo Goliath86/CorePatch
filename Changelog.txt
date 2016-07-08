@@ -31,7 +31,7 @@ Fixed:
 	Aircraft explosions now always appear at correct height
 	broken IR laser of M4A1_RCO_GL rifle
 	incompatibility of FN_FAL and M14_EP1 rifles with JSRS mod
-	RPK74 new magazine causing issues in ACE and CWR2
+	incompatibility of RPK_74 machine gun and GSh30x cannons with ACE and CWR2 mods
 	cost of some engineers
 	some localization mistakes
 	some other issues

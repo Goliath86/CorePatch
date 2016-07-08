@@ -21,7 +21,7 @@ class CfgAddons
 class CfgMagazines
 {
 	class 180Rnd_30mm_GSh301;
-	class 250Rnd_30mm_GSh302: 180Rnd_30mm_GSh301
+	class 750Rnd_30mm_GSh301: 180Rnd_30mm_GSh301
 	{
 		count = 250;
 		displayName = "$STR_DN_GSH302_CP";
@@ -31,31 +31,14 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 	class CannonCore;
-	class GSh301: CannonCore
-	{
-		magazines[] = {
-			"180Rnd_30mm_GSh301",
-			"250Rnd_30mm_GSh302",
-			"750Rnd_30mm_GSh301"
-		};
-	};
-	class GSh302: CannonCore
-	{
-		magazines[] = {
-			"250Rnd_30mm_GSh302",
-			"180Rnd_30mm_GSh301",
-			"750Rnd_30mm_GSh301"
-		};
-	};
 	class GSh302K: CannonCore
 	{
 		cursor = "Air_E_MG";
 		cursorAim = "Air_Dot";
 		displayName = "$STR_DN_GSH302K";
 		magazines[] = {
-			"250Rnd_30mm_GSh302",
-			"180Rnd_30mm_GSh301",
-			"750Rnd_30mm_GSh301"
+			"750Rnd_30mm_GSh301",
+			"180Rnd_30mm_GSh301"
 		};
 		modes[] = {
 			"LowROF",
@@ -173,7 +156,7 @@ class CfgVehicles
 	class Mi24_P: Mi24_Base_RU
 	{
 		magazines[] = {
-			"250Rnd_30mm_GSh302",
+			"750Rnd_30mm_GSh301",
 			"40Rnd_80mm",
 			"120Rnd_CMFlareMagazine"
 		};
@@ -204,7 +187,7 @@ class CfgVehicles
 	class Su25_base: Plane
 	{
 		magazines[] = {
-			"250Rnd_30mm_GSh302",
+			"750Rnd_30mm_GSh301",
 			"4Rnd_FAB_250",
 			"2Rnd_R73",
 			"80Rnd_S8T",
@@ -221,7 +204,7 @@ class CfgVehicles
 	class Su39: Su25_base
 	{
 		magazines[] = {
-			"250Rnd_30mm_GSh302",
+			"750Rnd_30mm_GSh301",
 			"4Rnd_Ch29",
 			"2Rnd_R73",
 			"80Rnd_S8T",
