@@ -21,6 +21,18 @@ class CfgAddons
 class CfgMagazines
 {
 	class CA_Magazine;
+	class 75Rnd_545x39_RPK: CA_Magazine
+	{
+		count = 45;
+		descriptionShort = "$STR_DSS_45RND_RPK_CP";
+		displayName = "$STR_DN_45RND_545X39_RPK_CP";
+		model = "\CorePatch\CorePatch_CIT_70371\models\30Rnd_545x39_AK";
+		picture = "\CA\weapons\AK\data\equip\m_ak74_ca.paa";
+		type = 256;
+	};
+
+
+/*	class CA_Magazine;
 	class 45Rnd_545x39_RPK: CA_Magazine
 	{
 		ammo = "B_545x39_Ball";
@@ -43,11 +55,18 @@ class CfgMagazines
 		model = "\CorePatch\CorePatch_CIT_70371\models\30Rnd_545x39_AK";
 		picture = "\CA\weapons\AK\data\equip\m_ak74_ca.paa";
 		type = 256;
-	};
+	};*/
 };
 class CfgWeapons
 {
-	class Rifle;
+	class AK_74;
+	class RPK_74: AK_74
+	{
+		displayName = "$STR_DN_RPK_74_CP";
+		model = "\CorePatch\CorePatch_CIT_70371\models\RPK_74";
+	};
+
+/*	class Rifle;
 	class AK_BASE: Rifle
 	{
 		magazines[] = {
@@ -68,11 +87,11 @@ class CfgWeapons
 			"75Rnd_545x39_RPK"
 		};
 		model = "\CorePatch\CorePatch_CIT_70371\models\RPK_74";
-	};
+	};*/
 };
 class CfgVehicles
 {
-	class CDF_Soldier_Base;
+/*	class CDF_Soldier_Base;
 	class CDF_Soldier_AR: CDF_Soldier_Base
 	{
 		magazines[] = {
@@ -423,5 +442,5 @@ class CfgVehicles
 				magazine = "45Rnd_545x39_RPK";
 			};
 		};
-	};
+	};*/
 };

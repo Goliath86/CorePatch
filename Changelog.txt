@@ -3,38 +3,36 @@
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
 	possibility to deactivate mines and hide corpses (missed) to saboteurs and some soldiers of special forces
-	possibility to repair vehicles to soldiers of special forces
 	possibility to switch seat between all seats of UH60M helicopter
 
 Changed:
 	reverted and updated CIT #28047 bug fix
 	reverted CCP #71037 bug fix to original state
 	deleted CCP #71142 bug fix due to it's faulty
-	definitions of some optical sights to more realistic
 	deleted unnecessary fire mode (@ 2600 SPM) of GSh302K cannon
-	forbade to repair vehicles by Ins_Soldier_Sapper
-	hit value of pistol and some cannon bullets
+	hit value of pistol and some cannon projectiles
 	inventory picture of OG7 launcher magazine
 	rate of fire of some cannons
 	reverted vision modes of Laserdesignator to original
+	civilian and non-transport Urals no longer have huge ammo caches in them
+	AI should no longer go prone indoors as much
 
 Fixed:
 	CfgWeapons - config references missing sound files (http://dev.withsix.com/issues/22990)
 	PMC armored SUV's wheels are too strong (http://dev.withsix.com/issues/23501)
 	CfgVehicles - irScanXXX issues (http://dev.withsix.com/issues/24913)
 	unable to switch seats in Chinook (http://dev.withsix.com/issues/25026)
-	accuracy value issues with civilian units (http://dev.withsix.com/issues/27790)
-	accuracy value issues with military infantry units (http://dev.withsix.com/issues/27791)
-	accuracy value issues with military special infantry units (http://dev.withsix.com/issues/27792)
-	accuracy value issues with Wheeled_APC units (http://dev.withsix.com/issues/27793)
-	accuracy value issues with tank units (http://dev.withsix.com/issues/27794)
+	accuracy value issues for different units (CIT #27790, #27791, #27792, #27793, #27794)
 	long magazine reload times on Tunguska (http://dev.withsix.com/issues/65710)
 	HMMWV windshield is practically unbreakable (http://dev.withsix.com/issues/66995)
 	7.62mm muzzle velocities are incorrect - too fast (http://dev.withsix.com/issues/71262)
 	SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718)
+	Aircraft crash destruction effects no longer starts mid-air on dedicated server
+	Aircraft explosions now always appear at correct height
 	broken IR laser of M4A1_RCO_GL rifle
-	cost of some engineers
 	incompatibility of FN_FAL and M14_EP1 rifles with JSRS mod
+	RPK74 new magazine causing issues in ACE and CWR2
+	cost of some engineers
 	some localization mistakes
 	some other issues
 

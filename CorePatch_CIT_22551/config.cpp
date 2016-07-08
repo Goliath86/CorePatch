@@ -9,6 +9,14 @@ class CfgPatches
 	};
 };
 
+class CfgAddons {
+	class PreloadAddons {
+		class CorePatch_CIT_22551 {
+			list[] = {"CorePatch_CIT_22551"};
+		};
+	};
+};
+
 class CfgVehicles
 {
 	class Plane;

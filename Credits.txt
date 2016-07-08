@@ -11,6 +11,7 @@ Xeno426 (Xenomorph) for his suggestions, improvements and bug fixing in the Comm
 Sa-Matra for his support and help on bug fixing
 Schatten for his support and help on bug fixing
 groove_c for his support and help on bug fixing
+PiZZADOX for his support and help on bug fixing
 All the contributors of the Community Configuration Project (http://dev.withsix.com/projects/arma-2-ccp)
 All the contributors of the Community Issue Tracker (http://dev.withsix.com/projects/cis)
 BI for making ArmA series
