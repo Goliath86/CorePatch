@@ -140,6 +140,8 @@ Fixed:
 18/12/2015
 
 Added:
+	zeroing and rangefinders to some weapons and vehicles (http://dev.withsix.com/issues/14485)
+	zeroing to DMR & SVD in OA and CO (http://dev.withsix.com/issues/31267)
 	ArmA 2 weapons in Combined Arms need the zeroing function (http://dev.withsix.com/issues/62628)
 	zeroing for A2 vehicles (http://dev.withsix.com/issues/62629)
 	ballisticsComputer to more weapons (http://dev.withsix.com/issues/67380)
@@ -247,7 +249,6 @@ Fixed:
 	CfgVehicles - faulty canLock definition in BRDM2_Base (http://dev.withsix.com/issues/24693)
 	CfgVehicles - faulty viewCargoInExternal definition in BRDM2_Base (http://dev.withsix.com/issues/24694)
 	Mk16 EGLM RCO has ACOG optics model (http://dev.withsix.com/issues/24764)
-	CfgVehicles - Ka60_Base_PMC lacks threat definition (http://dev.withsix.com/issues/24817)
 	CfgAmmo - maneuvrability/trackOversteer issue (http://dev.withsix.com/issues/24887)
 	entering the gunner position of the BAF Jackal HMG breaks the display of rifle zero range (http://dev.withsix.com/issues/38229)
 	some regressions of previous version of CorePatch
@@ -271,6 +272,7 @@ Fixed:
 	CfgVehicles - faulty GhostView definition in Land_fort_artillery_nest (http://dev.withsix.com/issues/24664)
 	CfgVehicles - MQ9PredatorB has 'laserScanner = "true";' rather than 'laserScanner = 1;' (http://dev.withsix.com/issues/24668)
 	CfgWeapons - aiDispersionCoef faulty for BAF_L110A1_Aim (http://dev.withsix.com/issues/24780)
+	CfgVehicles - Ka60_Base_PMC lacks threat definition (http://dev.withsix.com/issues/24817)
 	CfgVehicles - several threat definitions for helicopters could need improvement (http://dev.withsix.com/issues/24839)
 	CfgVehicles - threat definitions of UAV/drones could need some adjustment (http://dev.withsix.com/issues/24841)
 	CfgVehicles - several threat definitions for planes could need improvement (http://dev.withsix.com/issues/24842)
