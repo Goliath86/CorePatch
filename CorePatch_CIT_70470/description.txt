@@ -1,0 +1,1 @@
+Fixed: [ACR] BVP-1 - the 'remaining' bugs (http://dev.withsix.com/issues/70470)

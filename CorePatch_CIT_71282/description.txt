@@ -1,0 +1,1 @@
+Fixed: [ACR] CZ 805 BREN optics (http://dev.withsix.com/issues/71282)

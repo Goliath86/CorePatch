@@ -882,6 +882,15 @@ class CfgVehicles
 			};
 		};
 	};
+	class Dingo_Base_ACR : Car
+	{
+		soundGetIn[] = {
+			"ca\Sounds_ACR\wheeled\Dingo\door",
+			0.56234133,
+			1,
+			40
+		};
+	};
 	class HMMWV_Base : Car
 	{
 		soundGetIn[] = {
@@ -1096,6 +1105,23 @@ class CfgVehicles
 				delete magazines;
 				delete stabilizedInAxes;
 				delete weapons;
+			};
+		};
+	};
+	class M1114_AGS_ACR : HMMWV_M1151_M2_DES_Base_EP1
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
+
+				class ViewOptics : ViewOptics
+				{
+					initFov = 0.1; // 2.5x
+					maxFov = 0.1;
+					minFov = 0.1;
+				};
 			};
 		};
 	};
@@ -1724,6 +1750,58 @@ class CfgVehicles
 			50
 		};
 	};
+	class T810_Turrets_Base_ACR : Truck
+	{
+		soundGetIn[] = {
+			"ca\sounds\vehicles\Wheeled\MTVR\ext\ext-truck-getin",
+			0.70794576,
+			1,
+			50
+		};
+
+		class Turrets : Turrets
+		{
+			class PKBTurret : MainTurret
+			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistanceInitIndex = 2;
+				soundServo[] = {
+					"\ca\sounds\vehicles\servos\turret-1",
+					0.1,
+					1,
+					15
+				};
+				turretInfoType = "RscWeaponZeroing";
+				weapons[] = {"PKTBC"};
+			};
+		};
+	};
+	class T810A_MG_ACR : T810_Turrets_Base_ACR
+	{
+		class AnimationSources : AnimationSources
+		{
+			class ReloadMagazine
+			{
+				weapon = "PKTBC";
+			};
+			class Revolving
+			{
+				weapon = "PKTBC";
+			};
+			class belt_rotation
+			{
+				weapon = "PKTBC";
+			};
+			class bolt
+			{
+				weapon = "PKTBC";
+			};
+			class recoil
+			{
+				weapon = "PKTBC";
+			};
+		};
+	};
 	class Ural_Base_withTurret : Truck
 	{
 		soundGetIn[] = {
@@ -1744,6 +1822,24 @@ class CfgVehicles
 			};
 		};
 	};
+	/* class RM70_ACR : GRAD_Base
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class Turrets
+				{
+					class UkTurret : NewTurret
+					{
+						discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+						discreteDistanceInitIndex = 2;
+						turretInfoType = "RscWeaponZeroing";
+					};
+				};
+			};
+		};
+	}; */
 	class Ural_ZU23_Base : Ural_Base_withTurret
 	{
 		class Turrets : Turrets
@@ -3010,6 +3106,53 @@ class CfgVehicles
 							initFov = 0.69999999;
 							maxFov = 1.1;
 							minFov = 0.25;
+						};
+					};
+				};
+			};
+		};
+	};
+	class T72_ACR : T72_Base
+	{
+		soundGetIn[] = {
+			"ca\Sounds_ACR\tracked\T72_inside_door1",
+			0.56234133,
+			1,
+			60
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class recoil_source
+			{
+				source = "reload";
+				weapon = "D81CZ";
+			};
+		};
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {
+					"D81CZ",
+					"PKTBC"
+				};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						discreteDistance[] = {50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+						discreteDistanceInitIndex = 5;
+						gunnerOutOpticsModel = "";
+						outGunnerMayFire = 0;
+						turretInfoType = "RscWeaponRangeZeroing";
+
+						class ViewOptics : ViewOptics
+						{
+							initFov = 0.30000001;
+							maxFov = 0.30000001;
+							minFov = 0.015;
 						};
 					};
 				};

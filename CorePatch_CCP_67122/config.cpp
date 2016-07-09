@@ -58,6 +58,16 @@ class CfgVehicles
 	class Truck : Car
 	{
 	};
+	class T810_Turrets_Base_ACR : Truck
+	{
+		class Turrets : Turrets
+		{
+			class PKBTurret : MainTurret
+			{
+				viewGunnerInExternal = 1;
+			};
+		};
+	};
 	class Ural_Base_withTurret : Truck
 	{
 	};

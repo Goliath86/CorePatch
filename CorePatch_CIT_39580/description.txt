@@ -1,0 +1,1 @@
+Fixed: [ACR] several units uses only default face (http://dev.withsix.com/issues/39580)

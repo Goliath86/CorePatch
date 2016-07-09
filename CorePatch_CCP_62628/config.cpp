@@ -285,6 +285,11 @@ class CfgWeapons
 	{
 		discreteDistanceInitIndex = 0;
 	};
+	class UK59_ACR : Rifle
+	{
+		discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+		discreteDistanceInitIndex = 0;
+	};
 	class VSS_vintorez : Rifle
 	{
 		weaponInfoType = "RscWeaponZeroing";
@@ -734,8 +739,8 @@ class CfgWeapons
 		{
 			class Specter
 			{
-				distanceZoomMax = 100;
-				distanceZoomMin = 100;
+				distanceZoomMax = 200;
+				distanceZoomMin = 200;
 			};
 			class Ironsights : Specter
 			{

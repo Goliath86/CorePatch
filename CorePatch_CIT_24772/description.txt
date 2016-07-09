@@ -1,0 +1,1 @@
+Fixed: CfgAmmo - obsolete definitions in M_CRV7_HEPD (http://dev.withsix.com/issues/24772)

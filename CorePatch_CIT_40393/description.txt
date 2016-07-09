@@ -1,0 +1,1 @@
+Fixed: [ACR] BVP-1 Takistani Army is crewed by Riflemen not Crewmen (http://dev.withsix.com/issues/40393)

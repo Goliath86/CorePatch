@@ -1,0 +1,1 @@
+Fixed: ACR Pandur II 8x8 CZ should be amphibious - it is not (http://dev.withsix.com/issues/39786)

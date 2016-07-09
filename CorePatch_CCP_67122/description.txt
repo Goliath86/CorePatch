@@ -1,1 +1,1 @@
-Fixed: wrong "sound occlude" by some vehicles (http://dev.withsix.com/issues/67122).
+Fixed: wrong "sound occlude" by some vehicles (http://dev.withsix.com/issues/67122)

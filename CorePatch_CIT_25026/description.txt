@@ -1,1 +1,1 @@
-Fixed: unable to switch seats in Chinook (http://dev.withsix.com/issues/25026).
+Fixed: [BAF] unable to switch seats in Chinook (http://dev.withsix.com/issues/25026)

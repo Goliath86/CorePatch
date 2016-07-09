@@ -17,6 +17,21 @@ class CfgWeapons
 	{
 		dispersion = 0.004;
 	};
+	class CZ_75_D_COMPACT : M9
+	{
+		dispersion = 0.004;
+	};
+	class CZ_75_SP_01_PHANTOM : M9
+	{
+		dispersion = 0.004;
+	};
+	class M9SD : M9
+	{
+	};
+	class CZ_75_SP_01_PHANTOM_SD : M9SD
+	{
+		dispersion = 0.004;
+	};
 	class Makarov : Pistol
 	{
 		dispersion = 0.004;

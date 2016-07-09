@@ -1,1 +1,1 @@
-Fixed: pistol dispersion too high (http://dev.withsix.com/issues/16115).
+Fixed: pistol dispersion too high (http://dev.withsix.com/issues/16115)

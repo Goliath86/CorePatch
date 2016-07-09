@@ -1,4 +1,4 @@
-08/07/2016
+09/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
@@ -21,17 +21,26 @@ Changed:
 Fixed:
 	CfgWeapons - config references missing sound files (http://dev.withsix.com/issues/22990)
 	PMC armored SUV's wheels are too strong (http://dev.withsix.com/issues/23501)
+	CfgAmmo - obsolete definitions in M_CRV7_HEPD (http://dev.withsix.com/issues/24772)
 	CfgVehicles - irScanXXX issues (http://dev.withsix.com/issues/24913)
-	unable to switch seats in Chinook (http://dev.withsix.com/issues/25026)
+	[BAF] unable to switch seats in Chinook (http://dev.withsix.com/issues/25026)
 	accuracy value issues with civilian units (http://dev.withsix.com/issues/27790)
 	accuracy value issues with military infantry units (http://dev.withsix.com/issues/27791)
 	accuracy value issues with military special infantry units (http://dev.withsix.com/issues/27792)
 	accuracy value issues with Wheeled_APC units (http://dev.withsix.com/issues/27793)
 	accuracy value issues with tank units (http://dev.withsix.com/issues/27794)
+	ACR DLC vehicle weapon and ammunition cargo bugs (http://dev.withsix.com/issues/39474)
+	[ACR] several units uses only default face (http://dev.withsix.com/issues/39580)
+	desert crew in Cars (Woodland) RM-70 (http://dev.withsix.com/issues/39785)
+	ACR Pandur II 8x8 CZ should be amphibious - it is not (http://dev.withsix.com/issues/39786)
+	[ACR] BVP-1 Takistani Army is crewed by Riflemen not Crewmen (http://dev.withsix.com/issues/40393)
+	[ACR] missing define/include for M_Bolide_AA (http://dev.withsix.com/issues/43148)
 	long magazine reload times on Tunguska (http://dev.withsix.com/issues/65710)
 	HMMWV windshield is practically unbreakable (http://dev.withsix.com/issues/66995)
 	BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)
+	[ACR] BVP-1 - the 'remaining' bugs (http://dev.withsix.com/issues/70470)
 	7.62mm muzzle velocities are incorrect - too fast (http://dev.withsix.com/issues/71262)
+	[ACR] CZ 805 BREN optics (http://dev.withsix.com/issues/71282)
 	SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718)
 	SILVIE module (http://forums.bistudio.com/topic/181435-a2a2oa-beta-patches-pre-final-patch/page-5#entry2935621)
 	Aircraft crash destruction effects no longer starts mid-air on dedicated server
@@ -160,6 +169,7 @@ Fixed:
 	CfgAmmo - obsolete sideAirFricion definition in Sh_82_HE (http://dev.withsix.com/issues/23003)
 	accuracy value issues with chopper units (http://dev.withsix.com/issues/23450)
 	missing accuracy value definition for 'StaticCanon' or 'StaticWeapon' (http://dev.withsix.com/issues/23451)
+	Mk17 RCO sight mis-aligned (http://dev.withsix.com/issues/23560)
 	player cannot check gear while prone if equipped with pistol (http://dev.withsix.com/issues/24719)
 	CfgVehicles - xxxCanSee issues (http://dev.withsix.com/issues/24902)
 	CfgAmmo - irLock improvements (http://dev.withsix.com/issues/24957)

@@ -278,6 +278,21 @@ class CfgVehicles
 			"CMFlareLauncher"
 		};
 	};
+	class L159_base: Plane
+	{
+		incommingMisslieDetectionSystem = 16;
+		lockDetectionSystem = "4 + 8";
+		soundIncommingMissile[] = {
+			"\ca\Tracked\Data\Sound\alarm_loop1",
+			0.00031622776,
+			4
+		};
+		soundLocked[] = {
+			"\ca\Tracked\Data\Sound\alarm_loop1",
+			0.00031622776,
+			2
+		};
+	};
 	class MV22: Plane
 	{
 		incommingMisslieDetectionSystem = 16;

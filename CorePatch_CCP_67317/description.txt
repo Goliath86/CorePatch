@@ -1,1 +1,1 @@
-Fixed: several choppers and planes are missing lockDetectionSystem and incommingMisslieDetectionSystem (http://dev.withsix.com/issues/67317).
+Fixed: several choppers and planes are missing lockDetectionSystem and incommingMisslieDetectionSystem (http://dev.withsix.com/issues/67317)

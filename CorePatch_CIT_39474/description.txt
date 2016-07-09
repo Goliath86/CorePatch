@@ -1,0 +1,1 @@
+Fixed: ACR DLC vehicle weapon and ammunition cargo bugs (http://dev.withsix.com/issues/39474)

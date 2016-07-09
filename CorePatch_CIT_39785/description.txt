@@ -1,0 +1,1 @@
+Fixed: desert crew in Cars (Woodland) RM-70 (http://dev.withsix.com/issues/39785)
