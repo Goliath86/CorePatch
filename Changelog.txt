@@ -14,6 +14,7 @@ Changed:
 	hit value of pistol and some cannon projectiles
 	inventory picture of OG7 launcher magazine
 	max transportable amount of weapons, magazines and backpacks of some vehicles
+	portrait picture of TK_Soldier_Crew_EP1 character
 	rate of fire of some cannons
 	reverted vision modes of Laserdesignator to original
 	civilian and non-transport Urals no longer have huge ammo caches in them
@@ -47,7 +48,6 @@ Fixed:
 	Aircraft crash destruction effects no longer starts mid-air on dedicated server
 	Aircraft explosions now always appear at correct height
 	broken IR laser of M4A1_RCO_GL rifle
-	cost of some engineers
 	incompatibility of FN_FAL and M14_EP1 rifles with JSRS mod
 	incompatibility of RPK_74 machine gun and GSh30x cannons with ACE and CWR2 mods
 	some localization mistakes

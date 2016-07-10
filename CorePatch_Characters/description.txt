@@ -2,7 +2,10 @@ Added:
 	light versions of US_Delta_Force_TL_EP1, US_Soldier_Crew_EP1 and US_Soldier_MG_EP1
 	possibility to deactivate mines and hide corpses (missed) to saboteurs and some soldiers of special forces
 
+Changed:
+	portrait picture of TK_Soldier_Crew_EP1
+
 Fixed:
-	cost of some engineers
 	loadout of RU_Soldier_AT
 	some localization mistakes
+	some other issues

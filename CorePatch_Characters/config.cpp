@@ -218,6 +218,10 @@ class CfgVehicles
 		//engineer = 1;
 	};
 	class TK_Soldier_base_EP1;
+	class TK_Soldier_Crew_EP1 : TK_Soldier_base_EP1
+	{
+		portrait = "\Ca\characters\data\portraits\comBarHead_common_crew_ca";
+	};
 	class TK_Soldier_Engineer_EP1 : TK_Soldier_base_EP1
 	{
 		displayName = "$STR_DN_SOLDIER_ENGINEER_CP";
