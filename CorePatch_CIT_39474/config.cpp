@@ -162,6 +162,7 @@ class CfgVehicles
 			class _xx_30Rnd_762x39_SA58
 			{
 				count = 10;
+				magazine = "30Rnd_762x39_SA58";
 			};
 			class _xx_100Rnd_762x54_PK
 			{
@@ -199,6 +200,7 @@ class CfgVehicles
 			class _xx_30Rnd_762x39_SA58
 			{
 				count = 10;
+				magazine = "30Rnd_762x39_SA58";
 			};
 			class _xx_100Rnd_762x54_PK
 			{
@@ -271,6 +273,7 @@ class CfgVehicles
 			class _xx_30Rnd_762x39_SA58
 			{
 				count = 10;
+				magazine = "30Rnd_762x39_SA58";
 			};
 			class _xx_100Rnd_762x54_PK
 			{
@@ -308,6 +311,7 @@ class CfgVehicles
 			class _xx_30Rnd_762x39_SA58
 			{
 				count = 10;
+				magazine = "30Rnd_762x39_SA58";
 			};
 			class _xx_100Rnd_762x54_PK
 			{
@@ -346,6 +350,7 @@ class CfgVehicles
 			class _xx_30Rnd_762x39_SA58
 			{
 				count = 10;
+				magazine = "30Rnd_762x39_SA58";
 			};
 			class _xx_100Rnd_762x54_PK
 			{
@@ -439,6 +444,7 @@ class CfgVehicles
 			class _xx_30Rnd_762x39_SA58
 			{
 				count = 10;
+				magazine = "30Rnd_762x39_SA58";
 			};
 			class _xx_100Rnd_762x54_PK
 			{
