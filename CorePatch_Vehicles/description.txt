@@ -10,13 +10,13 @@ Added:
 	TI optics vision mode to HMMWV_Avenger and HMMWV_TOW
 
 Changed:
-	HUD of some vehicles
-	decreased max transportable amount of weapons, magazines and backpacks of ArmoredSUV_PMC and SUV_PMC
 	deleted M1A2 loader TI optics vision mode
 	field of view of BTR90 and LAV25
 	"get in" / "get out" actions of some vehicles
 	"get in" / "get out" sounds of some vehicles
+	HUD of some vehicles
 	main turret max elevation angle of ZSU_Shilka
+	max transportable amount of weapons, magazines and backpacks of some vehicles
 	neared Wheeled_APC 3rd person view
 	optics model of HMMWV_TOW gunner and T72 commander
 	turret servo sound of some vehicles

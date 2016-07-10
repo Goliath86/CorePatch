@@ -8,16 +8,6 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-class CfgAddons
-{
-	class PreloadAddons
-	{
-		class CorePatch_CIT_70371
-		{
-			list[] = {"CorePatch_CIT_70371"};
-		};
-	};
-};
 class CfgMagazines
 {
 	class CA_Magazine;
@@ -50,7 +40,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 20";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -61,7 +50,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 30";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -72,7 +60,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 20";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -83,7 +70,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 100";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -94,7 +80,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 40";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -106,7 +91,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 20";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -117,7 +101,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 100";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -128,7 +111,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 100";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -139,7 +121,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 30";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -150,7 +131,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 20";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -162,7 +142,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 3";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -352,7 +331,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 10";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};
@@ -364,7 +342,6 @@ class CfgVehicles
 			class _xx_75Rnd_545x39_RPK
 			{
 				count = "2 * 10";
-				magazine = "75Rnd_545x39_RPK";
 			};
 		};
 	};

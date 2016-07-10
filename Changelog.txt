@@ -1,4 +1,4 @@
-09/07/2016
+10/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
@@ -13,6 +13,7 @@ Changed:
 	deleted unnecessary fire mode (@ 2600 SPM) of GSh302K cannon
 	hit value of pistol and some cannon projectiles
 	inventory picture of OG7 launcher magazine
+	max transportable amount of weapons, magazines and backpacks of some vehicles
 	rate of fire of some cannons
 	reverted vision modes of Laserdesignator to original
 	civilian and non-transport Urals no longer have huge ammo caches in them

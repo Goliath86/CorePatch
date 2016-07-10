@@ -1732,6 +1732,16 @@ class CfgVehicles
 			50
 		};
 	};
+	class KamazRefuel : Kamaz_Base
+	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+	};
+	class KamazRepair : Kamaz_Base
+	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+	};
 	class MAZ_543_SCUD_Base_EP1 : Truck
 	{
 		soundGetIn[] = {
@@ -1749,6 +1759,11 @@ class CfgVehicles
 			1,
 			50
 		};
+	};
+	class MtvrRefuel : MTVR
+	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
 	};
 	class T810_Turrets_Base_ACR : Truck
 	{
@@ -1813,6 +1828,9 @@ class CfgVehicles
 	};
 	class GRAD_Base : Ural_Base_withTurret
 	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1840,8 +1858,24 @@ class CfgVehicles
 			};
 		};
 	}; */
+	class Ural_Base : Ural_Base_withTurret
+	{
+	};
+	class UralRefuel_Base : Ural_Base
+	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+	};
+	class UralRepair_Base : Ural_Base
+	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+	};
 	class Ural_ZU23_Base : Ural_Base_withTurret
 	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1867,6 +1901,14 @@ class CfgVehicles
 			1,
 			40
 		};
+	};
+	class V3S_Base_EP1 : V3S_Base
+	{
+	};
+	class V3S_Refuel_TK_GUE_EP1 : V3S_Base_EP1
+	{
+		transportMaxMagazines = 50;
+		transportMaxWeapons = 10;
 	};
 	class S1203_TK_CIV_EP1 : Car
 	{
@@ -2980,6 +3022,8 @@ class CfgVehicles
 			1,
 			60
 		};
+		transportMaxBackpacks = 8;
+		transportMaxMagazines = 50;
 	};
 	class T34 : Tank
 	{
