@@ -248,18 +248,18 @@
 		<Hungarian>Automata sörétes puska&lt;br/&gt;Kaliber: 12-es sörét</Hungarian>
 		<Italian>Fucile automatico&lt;br/&gt;Calibro: .12</Italian>
 		<Japanese>Automatic shotgun&lt;br/&gt;Caliber: 12 gauge</Japanese>
-		<Polish>Strzelba automatyczna&lt;br/&gt;Kaliber: 12 </Polish>
+		<Polish>Strzelba automatyczna&lt;br/&gt;Kaliber: 12</Polish>
 		<Russian>Автоматический дробовик&lt;br/&gt;Калибр: 12-й</Russian>
 		<Spanish>Escopeta automática&lt;br/&gt;Calibre: calibre 12</Spanish>
 	</Key>
 	<Key ID="STR_DSS_M40A3_CP">
 		<Original>Sniper rifle&lt;br/&gt;Caliber: 7.62x51mm NATO</Original>
 		<Chinese>Sniper rifle&lt;br/&gt;Caliber: 7.62x51mm NATO</Chinese>
-		<Czech>Odstřelovací puška&lt;br/&gt;Kalibr: 7,62x51mm NATO</Czech>
+		<Czech>Odstřelovací puška&lt;br/&gt;Kalibr: 7,62x51 mm NATO</Czech>
 		<English>Sniper rifle&lt;br/&gt;Caliber: 7.62x51mm NATO</English>
-		<French>Fusil sniper&lt;br/&gt;Calibre : 7,62x51 mm OTAN</French>
-		<German>Scharfschützengewehr&lt;br/&gt;Kaliber: 7,62x51mm NATO</German>
-		<Hungarian>Mesterlövész puska&lt;br/&gt;Caliber: 7.62x51mm NATO</Hungarian>
+		<French>Fusil sniper&lt;br/&gt;Calibre: 7,62x51 mm OTAN</French>
+		<German>Scharfschützengewehr&lt;br/&gt;Kaliber: 7,62x51 mm NATO</German>
+		<Hungarian>Mesterlövész puska&lt;br/&gt;Caliber: 7,62x51 mm NATO</Hungarian>
 		<Italian>Fucile da cecchino&lt;br/&gt;Calibro: 7,62x51 mm NATO</Italian>
 		<Japanese>Sniper rifle&lt;br/&gt;Caliber: 7.62x51mm NATO</Japanese>
 		<Polish>Karabin snajperski&lt;br/&gt;Kaliber: 7,62x51 mm NATO</Polish>
@@ -269,10 +269,10 @@
 	<Key ID="STR_DSS_M60A4_CP">
 		<Original>Medium machine gun&lt;br/&gt;Caliber: 7.62x51mm NATO</Original>
 		<Chinese>Medium machine gun&lt;br/&gt;Caliber: 7.62x51mm NATO</Chinese>
-		<Czech>Střední kulomet&lt;br/&gt;Kalibr: 7,62x51mm NATO</Czech>
+		<Czech>Střední kulomet&lt;br/&gt;Kalibr: 7,62x51 mm NATO</Czech>
 		<English>Medium machine gun&lt;br/&gt;Caliber: 7.62x51mm NATO</English>
 		<French>Mitrailleuse moyenne&lt;br/&gt;Calibre: 7,62x51 mm OTAN</French>
-		<German>Mittleres Maschinengewehr&lt;br/&gt;Kaliber: 7,62x51mm NATO</German>
+		<German>Mittleres Maschinengewehr&lt;br/&gt;Kaliber: 7,62x51 mm NATO</German>
 		<Hungarian>Medium machine gun&lt;br/&gt;Caliber: 7.62x51mm NATO</Hungarian>
 		<Italian>Mitragliatrice media&lt;br/&gt;Calibro: 7,62x51 mm NATO</Italian>
 		<Japanese>Medium machine gun&lt;br/&gt;Caliber: 7.62x51mm NATO</Japanese>
@@ -283,10 +283,10 @@
 	<Key ID="STR_DSS_SCAR_H_STD_EGLM_SPECT_CP">
 		<Original>Battle rifle with grenade launcher&lt;br/&gt;Caliber: 7.62x51mm NATO</Original>
 		<Chinese>Battle rifle with grenade launcher&lt;br/&gt;Caliber: 7.62x51mm NATO</Chinese>
-		<Czech>Útočná puška s granátometem&lt;br/&gt;Kalibr: 7,62x51mm NATO</Czech>
+		<Czech>Útočná puška s granátometem&lt;br/&gt;Kalibr: 7,62x51 mm NATO</Czech>
 		<English>Battle rifle with grenade launcher&lt;br/&gt;Caliber: 7.62x51mm NATO</English>
 		<French>Fusil de combat avec lance-grenades&lt;br/&gt;Calibre: 7,62x51 mm OTAN</French>
-		<German>Kampfgewehr mit Granatenwerfer&lt;br/&gt;Kaliber: 7,62x51mm NATO</German>
+		<German>Kampfgewehr mit Granatenwerfer&lt;br/&gt;Kaliber: 7,62x51 mm NATO</German>
 		<Hungarian>Battle rifle with grenade launcher&lt;br/&gt;Caliber: 7.62x51mm NATO</Hungarian>
 		<Italian>Fucile da combattimento con lanciagranate&lt;br/&gt;Calibro: 7,62x51 mm NATO</Italian>
 		<Japanese>Battle rifle with grenade launcher&lt;br/&gt;Caliber: 7.62x51mm NATO</Japanese>
@@ -297,10 +297,10 @@
 	<Key ID="STR_DSS_SCAR_L_STD_EGLM_TWS_CP">
 		<Original>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Original>
 		<Chinese>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Chinese>
-		<Czech>Útočná puška s granátometem&lt;br/&gt;Kalibr: 5,56x45mm NATO</Czech>
+		<Czech>Útočná puška s granátometem&lt;br/&gt;Kalibr: 5,56x45 mm NATO</Czech>
 		<English>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</English>
 		<French>Fusil d'assaut avec lance-grenades&lt;br/&gt;Calibre: 5,56x45 mm OTAN</French>
-		<German>Sturmgewehr mit Granatenwerfer&lt;br/&gt;Kaliber: 5,56x45mm NATO</German>
+		<German>Sturmgewehr mit Granatenwerfer&lt;br/&gt;Kaliber: 5,56x45 mm NATO</German>
 		<Hungarian>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Hungarian>
 		<Italian>Fucile d'assalto con lanciagranate&lt;br/&gt;Calibro: 5,56x45 mm NATO</Italian>
 		<Japanese>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Japanese>

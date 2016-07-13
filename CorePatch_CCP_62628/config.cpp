@@ -715,20 +715,12 @@ class CfgWeapons
 
 		class OpticsModes : OpticsModes
 		{
-			delete StepScope;
-
-			class LTWS : StepScope
+			class StepScope : StepScope // LTWS
 			{
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
 				distanceZoomMax = 300;
 				distanceZoomMin = 300;
-				opticsPPEffects[] = {};
-				opticsZoomInit = 0.16060001; // 1.55x
-				opticsZoomMax = 0.16060001;
-				opticsZoomMin = 0.16060001;
-				thermalMode[] = {0, 1};
-				visionMode[] = {"Ti"};
 			};
 		};
 	};

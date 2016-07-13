@@ -473,6 +473,7 @@ Fixed:
 	FN FAL wrong fire rate (http://dev.withsix.com/issues/68114)
 	CfgVehicles - threat of MTVR faulty (http://dev.withsix.com/issues/69133)
 	CfgWeapons - wrong config value naming in M60A4_EP1 (http://dev.withsix.com/issues/69186)
+	the broken ammo config for the M249 (http://dev.withsix.com/issues/72440)
 	"Bitter Chill" campaign mission bug (http://forums.bistudio.com/showthread.php?170392-Bitter-Chill-Mystery&p=2870710&viewfull=1#post2870710)
 	two "Undefined variable ..." errors on Shapur_BAF and Zargabad intro scenes
 

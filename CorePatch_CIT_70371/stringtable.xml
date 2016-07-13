@@ -29,17 +29,17 @@
 		<Spanish>RPK-74 45 crg.</Spanish>
     </Key>
 	<Key ID="STR_DSS_45RND_RPK_CP">
-		<Original>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: RPK-74</Original>
-		<Chinese>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: RPK-74</Chinese>
-		<Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 45 &lt;br/&gt;Pro: RPK-74</Czech>
-		<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: RPK-74</English>
-		<French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 45 &lt;br/&gt;Utilisé avec : RPK-74</French>
-		<German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 45 &lt;br/&gt;Eingesetzt in: RPK-74</German>
-		<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 45 &lt;br/&gt; Hozzá tartozó fegyver: RPK-74</Hungarian>
-		<Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 45 &lt;br/&gt;Si usa in: RPK-74</Italian>
-		<Japanese>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 45 &lt;br/&gt;Used in: RPK-74</Japanese>
-		<Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 45 &lt;br/&gt;Używane w: RPK-74</Polish>
-		<Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 45 &lt;br/&gt;Используется в: РПК-74</Russian>
-		<Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 45 &lt;br/&gt;Uso: RPK-74</Spanish>
+		<Original>Caliber: 5.45x39mm&lt;br/&gt;Rounds: 45&lt;br/&gt;Used in: RPK-74</Original>
+		<Chinese>Caliber: 5.45x39mm&lt;br/&gt;Rounds: 45&lt;br/&gt;Used in: RPK-74</Chinese>
+		<Czech>Kalibr: 5,45x39 mm&lt;br/&gt;Nábojů: 45&lt;br/&gt;Pro: RPK-74</Czech>
+		<English>Caliber: 5.45x39mm&lt;br/&gt;Rounds: 45&lt;br/&gt;Used in: RPK-74</English>
+		<French>Calibre: 5,45x39 mm&lt;br/&gt;Munitions: 45&lt;br/&gt;Utilisé avec: RPK-74</French>
+		<German>Kaliber: 5,45x39 mm&lt;br/&gt;Schuss: 45&lt;br/&gt;Eingesetzt in: RPK-74</German>
+		<Hungarian>Kaliber: 5,45x39 mm&lt;br/&gt; Töltények: 45&lt;br/&gt; Hozzá tartozó fegyver: RPK-74</Hungarian>
+		<Italian>Calibro: 5,45x39 mm&lt;br/&gt;Munizioni: 45&lt;br/&gt;Si usa in: RPK-74</Italian>
+		<Japanese>Caliber: 5.45x39mm&lt;br/&gt;Rounds: 45&lt;br/&gt;Used in: RPK-74</Japanese>
+		<Polish>Kaliber: 5,45x39 mm&lt;br/&gt;Naboje: 45&lt;br/&gt;Używane w: RPK-74</Polish>
+		<Russian>Патрон: 5,45x39 мм&lt;br/&gt;Количество: 45&lt;br/&gt;Используется в: РПК-74</Russian>
+		<Spanish>Calibre: 5,45x39 mm&lt;br/&gt;Cargas: 45&lt;br/&gt;Uso: RPK-74</Spanish>
 	</Key>
 </Project>
