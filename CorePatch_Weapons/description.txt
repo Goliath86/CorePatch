@@ -2,6 +2,7 @@ Added:
 	"auto" fire mode to M14_EP1
 	flashlight to M4A1_AIM_SD_camo, M4A1_HWS_GL and M4A1_HWS_GL_camo
 	missed postprocess effects to some optical sights
+	new weapons - M4A3_EP1 and M4A3_RCO_EP1 rifles
 	"no disassembly" versions of some BAF static weapons
 	possibility to use NV goggles with some optical sights (ACOG, M145, SUSAT, etc.)
 	zeroing function to some static weapons

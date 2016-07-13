@@ -182,6 +182,20 @@
 		<Russian>M4A1 M203 ACOG</Russian>
 		<Spanish>M4A1 M203 ACOG</Spanish>
 	</Key>
+	<Key ID="STR_DN_M4A3_RCO_CP">
+		<Original>M4A3 ACOG</Original>
+		<Chinese>M4A3 ACOG</Chinese>
+		<Czech>M4A3 ACOG</Czech>
+		<English>M4A3 ACOG</English>
+		<French>M4A3 ACOG</French>
+		<German>M4A3 ACOG</German>
+		<Hungarian>M4A3 ACOG</Hungarian>
+		<Italian>M4A3 ACOG</Italian>
+		<Japanese>M4A3 ACOG</Japanese>
+		<Polish>M4A3 ACOG</Polish>
+		<Russian>M4A3 ACOG</Russian>
+		<Spanish>M4A3 ACOG</Spanish>
+	</Key>
 	<Key ID="STR_DN_M240_SCOPED_CP">
 		<Original>M240 M145</Original>
 		<Chinese>M240 M145</Chinese>
@@ -252,6 +266,62 @@
 		<Russian>Автоматический дробовик&lt;br/&gt;Калибр: 12-й</Russian>
 		<Spanish>Escopeta automática&lt;br/&gt;Calibre: calibre 12</Spanish>
 	</Key>
+	<Key ID="STR_DSS_M4A3_CP">
+		<Original>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Original>
+		<Chinese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Chinese>
+		<Czech>Útočná puška&lt;br/&gt;Kalibr: 5,56x45 mm NATO</Czech>
+		<English>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</English>
+		<French>Fusil d'assaut&lt;br/&gt;Calibre: 5,56x45 mm OTAN</French>
+		<German>Sturmgewehr&lt;br/&gt;Kaliber: 5,56x45 mm NATO</German>
+		<Hungarian>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Hungarian>
+		<Italian>Fucile d'assalto&lt;br/&gt;Calibro: 5,56x45 mm NATO</Italian>
+		<Japanese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Japanese>
+		<Polish>Karabin szturmowy&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
+		<Russian>Штурмовая винтовка&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
+		<Spanish>Rifle de asalto&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+	</Key>
+	<Key ID="STR_DSS_M4A3_CCO_CP">
+		<Original>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Original>
+		<Chinese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Chinese>
+		<Czech>Útočná puška&lt;br/&gt;Kalibr: 5,56x45 mm NATO</Czech>
+		<English>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</English>
+		<French>Fusil d'assaut&lt;br/&gt;Calibre: 5,56x45 mm OTAN</French>
+		<German>Sturmgewehr&lt;br/&gt;Kaliber: 5,56x45 mm NATO</German>
+		<Hungarian>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Hungarian>
+		<Italian>Fucile d'assalto&lt;br/&gt;Calibro: 5,56x45 mm NATO</Italian>
+		<Japanese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Japanese>
+		<Polish>Karabin szturmowy&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
+		<Russian>Штурмовая винтовка&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
+		<Spanish>Rifle de asalto&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+	</Key>
+	<Key ID="STR_DSS_M4A3_RCO_CP">
+		<Original>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Original>
+		<Chinese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Chinese>
+		<Czech>Útočná puška&lt;br/&gt;Kalibr: 5,56x45 mm NATO</Czech>
+		<English>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</English>
+		<French>Fusil d'assaut&lt;br/&gt;Calibre: 5,56x45 mm OTAN</French>
+		<German>Sturmgewehr&lt;br/&gt;Kaliber: 5,56x45 mm NATO</German>
+		<Hungarian>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Hungarian>
+		<Italian>Fucile d'assalto&lt;br/&gt;Calibro: 5,56x45 mm NATO</Italian>
+		<Japanese>Assault rifle&lt;br/&gt;Caliber: 5.56x45mm NATO</Japanese>
+		<Polish>Karabin szturmowy&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
+		<Russian>Штурмовая винтовка&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
+		<Spanish>Rifle de asalto&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+	</Key>
+	<Key ID="STR_DSS_M4A3_RCO_GL_CP">
+		<Original>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Original>
+		<Chinese>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Chinese>
+		<Czech>Útočná puška s granátometem&lt;br/&gt;Kalibr: 5,56x45 mm NATO</Czech>
+		<English>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</English>
+		<French>Fusil d'assaut avec lance-grenades&lt;br/&gt;Calibre: 5,56x45 mm OTAN</French>
+		<German>Sturmgewehr mit Granatenwerfer&lt;br/&gt;Kaliber: 5,56x45 mm NATO</German>
+		<Hungarian>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Hungarian>
+		<Italian>Fucile d'assalto con lanciagranate&lt;br/&gt;Calibro: 5,56x45 mm NATO</Italian>
+		<Japanese>Assault rifle with grenade launcher&lt;br/&gt;Caliber: 5.56x45mm NATO</Japanese>
+		<Polish>Karabin szturmowy z granatnikiem&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
+		<Russian>Штурмовая винтовка с подствольным гранатометом&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
+		<Spanish>Rifle de asalto con lanzagranadas&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+	</Key>
 	<Key ID="STR_DSS_M40A3_CP">
 		<Original>Sniper rifle&lt;br/&gt;Caliber: 7.62x51mm NATO</Original>
 		<Chinese>Sniper rifle&lt;br/&gt;Caliber: 7.62x51mm NATO</Chinese>
@@ -307,5 +377,33 @@
 		<Polish>Karabin szturmowy z granatnikiem&lt;br/&gt;Kaliber: 5,56x45 mm NATO</Polish>
 		<Russian>Штурмовая винтовка с подствольным гранатометом&lt;br/&gt;Патрон: 5,56x45 мм НАТО</Russian>
 		<Spanish>Rifle de asalto con lanzagranadas&lt;br/&gt;Calibre: 5,56x45 mm OTAN</Spanish>
+	</Key>
+	<Key ID="STR_LIB_M4A3_CP">
+		<Original>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.</Original>
+		<Chinese>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.</Chinese>
+		<Czech>M4A3 je vylepšenou verzí karabiny M4A1. Hlavní výhodou M4A3 je předpažbí doplněné o montážní lištu pro uchycení speciálního příslušenství.</Czech>
+		<English>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.</English>
+		<French>La M4A3 est la nouvelle version de la carabine M4A1. La M4A3 est équipée d'une poignée de transport amovible donnant accès à un système sur rail qui permet de fixer des accessoires.</French>
+		<German>Das M4A3 ist die neuere Version des Karabiners M4A1. Der Unterschied besteht darin, dass das M4A3 einen abnehmbaren Tragegriff hat, was den Zugriff auf eine Picatinny-Schiene zur Montage von Zubehör ermöglicht.</German>
+		<Hungarian>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.</Hungarian>
+		<Italian>L'M4A3, nuova versione della carabina M4A1, si differenzia per il maniglione da trasporto amovibile che permette di accedere alla slitta Picatinny per il montaggio di accessori.</Italian>
+		<Japanese>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.</Japanese>
+		<Polish>M4A3 to nowsza wersja karabinu M4A1. M4A3 różni się od starszej wersji tym, że po zdjęciu uchwytu uzyskuje się dostęp do szyny Picatinny, służącej do montowania akcesoriów.</Polish>
+		<Russian>M4A3 - новая версия штурмовой винтовики M4A1. В этом варианте используется съемная рукоятка для переноски, что обеспечивает доступ к направляющей планке 'Picatinny' для установки дополнительного снаряжения.</Russian>
+		<Spanish>La M4A3 es la versión más reciente de la carabina M4A1. La diferencia es que la M4A3 tiene una manija de transporte desmontable, que permite acceder a un riel Picatinny para montar accesorios.</Spanish>
+	</Key>
+	<Key ID="STR_LIB_M4A3_RCO_CP">
+		<Original>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.&lt;br/&gt;This one features additional the ACOG.</Original>
+		<Chinese>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.&lt;br/&gt;This one features additional the ACOG.</Chinese>
+		<Czech>M4A3 je vylepšenou verzí karabiny M4A1. Hlavní výhodou M4A3 je předpažbí doplněné o  montážní lištu pro uchycení speciálního příslušenství.&lt;br/&gt;Tato zbraň je vybavena a zaměřovačem ACOG.</Czech>
+		<English>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.&lt;br/&gt;This one features additional the ACOG.</English>
+		<French>La M4A3 est la nouvelle version de la carabine M4A1. La M4A3 est équipée d'une poignée de transport amovible donnant accès à un système sur rail qui permet de fixer des accessoires.&lt;br/&gt;Ce modèle comprend un viseur ACOG.</French>
+		<German>Das M4A3 ist die neuere Version des Karabiners M4A1. Der Unterschied besteht darin, dass das M4A3 einen abnehmbaren Tragegriff hat, was den Zugriff auf eine Picatinny-Schiene zur Montage von Zubehör ermöglicht.&lt;br/&gt;Diese Waffe ist mit einem zusätzlichen ACOG ausgestattet.</German>
+		<Hungarian>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.&lt;br/&gt;This one features additional the ACOG.</Hungarian>
+		<Italian>L'M4A3, nuova versione della carabina M4A1, si differenzia per il maniglione da trasporto amovibile che permette di accedere alla slitta Picatinny per il montaggio di accessori.&lt;br/&gt;Questo modello è dotato di mirino ACOG.</Italian>
+		<Japanese>The M4A3 is the newer version of the M4A1 carabine. The difference is that the M4A3 has a removable carry handle allowing access to a Picatinny rail for mounting accessories.&lt;br/&gt;This one features additional the ACOG.</Japanese>
+		<Polish>M4A3 to nowsza wersja karabinu M4A1. M4A3 różni się od starszej wersji tym, że po zdjęciu uchwytu uzyskuje się dostęp do szyny Picatinny, służącej do montowania akcesoriów.&lt;br/&gt;Ta wersja ma zamontowany bojowy celownik optyczny ACOG.</Polish>
+		<Russian>M4A3 - новая версия штурмовой винтовики M4A1. В этом варианте используется съемная рукоятка для переноски, что обеспечивает доступ к направляющей планке 'Picatinny' для установки дополнительного снаряжения.&lt;br/&gt;Этот образец оснащен прицелом ACOG.</Russian>
+		<Spanish>La M4A3 es la versión más reciente de la carabina M4A1. La diferencia es que la M4A3 tiene una manija de transporte desmontable, que permite acceder a un riel Picatinny para montar accesorios.&lt;br/&gt;Esta incluye el ACOG adicional.</Spanish>
 	</Key>
 </Project>

@@ -634,6 +634,12 @@ class CfgWeapons
 		distanceZoomMax = 100;
 		distanceZoomMin = 100;
 	};
+	class M4A3_EP1 : M4A3_CCO_EP1
+	{
+		discreteDistance[] = {100, 200, 300, 400, 500, 600};
+		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponZeroing";
+	};
 	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
 	{
 		class OpticsModes

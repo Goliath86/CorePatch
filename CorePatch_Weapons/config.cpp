@@ -10,7 +10,10 @@ class CfgPatches
 			"BAF_L2A1_Minitripod_W_NoDisassembly",
 			"BAF_L2A1_Tripod_W_NoDisassembly"
 		};
-		weapons[] = {};
+		weapons[] = {
+			"M4A3_EP1",
+			"M4A3_RCO_EP1"
+		};
 	};
 };
 class CfgAddons
@@ -742,6 +745,64 @@ class CfgWeapons
 			displayName = "";
 		};
 	};
+	class M4A3_CCO_EP1 : M16_base
+	{
+		descriptionShort = "$STR_DSS_M4A3_CCO_CP";
+		opticsDisablePeripherialVision = 0.67000002;
+	};
+	class M4A3_EP1 : M4A3_CCO_EP1
+	{
+		descriptionShort = "$STR_DSS_M4A3_CP";
+		displayName = "$STR_EP1_DN_M4A3_EP1";
+		handAnim[] = {};
+		model = "\ca\weapons_E\m4a3\m4a3";
+		picture = "\ca\weapons_E\Data\icons\m4a3_CA.paa";
+
+		class Library
+		{
+			libTextDesc = "$STR_LIB_M4A3_CP";
+		};
+	};
+	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
+	{
+		descriptionShort = "$STR_DSS_M4A3_RCO_GL_CP";
+		opticsZoomInit = 0.0623; // 4x
+
+		class OpticsModes
+		{
+			class ACOG
+			{
+				opticsPPEffects[] = {
+					"OpticsCHAbera2",
+					"OpticsBlur2"
+				};
+				visionMode[] = {};
+			};
+			class Kolimator : ACOG
+			{
+				delete visionMode;
+
+				opticsPPEffects[] = {};
+			};
+		};
+	};
+	class M4A3_RCO_EP1 : M4A3_RCO_GL_EP1
+	{
+		descriptionShort = "$STR_DSS_M4A3_RCO_CP";
+		displayName = "$STR_DN_M4A3_RCO_CP";
+		handAnim[] = {
+			"OFP2_ManSkeleton",
+			"\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"
+		};
+		model = "\ca\weapons_E\m4a3\m4a3acog";
+		muzzles[] = {"this"};
+		picture = "\ca\weapons_E\Data\icons\m4a3acog_CA.paa";
+
+		class Library
+		{
+			libTextDesc = "$STR_LIB_M4A3_RCO_CP";
+		};
+	};
 	class SCAR_H_Base;
 	class SCAR_H_LNG_Sniper : SCAR_H_Base
 	{
@@ -831,25 +892,6 @@ class CfgWeapons
 			direction = "flash dir";
 			position = "flash";
 			scale[] = {1, 1, 0.5};
-		};
-	};
-	class M4A3_CCO_EP1;
-	class M4A3_RCO_GL_EP1 : M4A3_CCO_EP1
-	{
-		opticsZoomInit = 0.0623; // 4x
-
-		class OpticsModes
-		{
-			class ACOG
-			{
-				visionMode[] = {};
-			};
-			class Kolimator : ACOG
-			{
-				delete visionMode;
-
-				opticsPPEffects[] = {};
-			};
 		};
 	};
 	class m16a4;

@@ -1,7 +1,8 @@
-10/07/2016
+13/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
+	new weapons - M4A3_EP1 and M4A3_RCO_EP1 rifles
 	possibility to deactivate mines and hide corpses (missed) to saboteurs and some soldiers of special forces
 	possibility to switch seat between all seats of UH60M helicopter
 
