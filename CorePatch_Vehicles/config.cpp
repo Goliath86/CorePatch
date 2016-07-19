@@ -767,6 +767,7 @@ class CfgVehicles
 	};
 	class LandVehicle : Land
 	{
+		class ViewPilot;
 	};
 	class Car : LandVehicle
 	{
@@ -777,7 +778,6 @@ class CfgVehicles
 				class ViewOptics;
 			};
 		};
-		class ViewPilot;
 	};
 	class ATV_Base_EP1 : Car
 	{
@@ -2718,6 +2718,13 @@ class CfgVehicles
 					};
 				};
 			};
+		};
+		class ViewPilot : ViewPilot
+		{
+			maxAngleX = 85;
+			maxAngleY = 150;
+			minAngleX = -65;
+			minAngleY = -150;
 		};
 	};
 	class 2S6M_Tunguska : Tank

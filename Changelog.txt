@@ -1,4 +1,4 @@
-13/07/2016
+19/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
@@ -12,6 +12,7 @@ Changed:
 	deleted CCP #71142 bug fix due to it's faulty
 	definitions of some optical sights to more realistic
 	deleted unnecessary fire mode (@ 2600 SPM) of GSh302K cannon
+	external camera rotation angles of tracked vehicles
 	hit value of pistol and some cannon projectiles
 	inventory picture of OG7 launcher magazine
 	max transportable amount of weapons, magazines and backpacks of some vehicles
@@ -38,6 +39,7 @@ Fixed:
 	ACR Pandur II 8x8 CZ should be amphibious - it is not (http://dev.withsix.com/issues/39786)
 	[ACR] BVP-1 Takistani Army is crewed by Riflemen not Crewmen (http://dev.withsix.com/issues/40393)
 	[ACR] missing define/include for M_Bolide_AA (http://dev.withsix.com/issues/43148)
+	bombs are "homing" onto the target (http://dev.withsix.com/issues/46056)
 	long magazine reload times on Tunguska (http://dev.withsix.com/issues/65710)
 	HMMWV windshield is practically unbreakable (http://dev.withsix.com/issues/66995)
 	BIS_fnc_selectRandom biased towards inner elements (http://dev.withsix.com/issues/69439)

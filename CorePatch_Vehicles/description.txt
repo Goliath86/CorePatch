@@ -11,6 +11,7 @@ Added:
 
 Changed:
 	deleted M1A2 loader TI optics vision mode
+	external camera rotation angles of tracked vehicles
 	field of view of BTR90 and LAV25
 	"get in" / "get out" actions of some vehicles
 	"get in" / "get out" sounds of some vehicles

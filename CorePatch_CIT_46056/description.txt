@@ -1,0 +1,1 @@
+Fixed: bombs are "homing" onto the target (http://dev.withsix.com/issues/46056)
