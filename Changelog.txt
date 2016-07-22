@@ -1,4 +1,4 @@
-19/07/2016
+21/07/2016
 
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
@@ -37,6 +37,7 @@ Fixed:
 	[ACR] several units uses only default face (http://dev.withsix.com/issues/39580)
 	desert crew in Cars (Woodland) RM-70 (http://dev.withsix.com/issues/39785)
 	ACR Pandur II 8x8 CZ should be amphibious - it is not (http://dev.withsix.com/issues/39786)
+	[ACR] model and magazine capacity for Scorpion Evo III do not match (http://dev.withsix.com/issues/39865)
 	[ACR] BVP-1 Takistani Army is crewed by Riflemen not Crewmen (http://dev.withsix.com/issues/40393)
 	[ACR] missing define/include for M_Bolide_AA (http://dev.withsix.com/issues/43148)
 	bombs are "homing" onto the target (http://dev.withsix.com/issues/46056)

@@ -1,0 +1,1 @@
+Fixed: [ACR] model and magazine capacity for Scorpion Evo III do not match (http://dev.withsix.com/issues/39865)

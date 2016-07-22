@@ -109,6 +109,7 @@ class CfgPatches
 			"CorePatch_CIT_39580",
 			"CorePatch_CIT_39785",
 			"CorePatch_CIT_39786",
+			"CorePatch_CIT_39865",
 			"CorePatch_CIT_40393",
 			"CorePatch_CIT_43148",
 			"CorePatch_CIT_46056",

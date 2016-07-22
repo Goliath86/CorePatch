@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Key ID="STR_DN_30RND_9X19_EVO_CP">
+		<Original>EVO 3 mag.</Original>
+		<Chinese>EVO 3 mag.</Chinese>
+		<Czech>EVO 3 zás.</Czech>
+		<English>EVO 3 mag.</English>
+		<French>EVO 3 mag.</French>
+		<German>EVO 3 mag.</German>
+		<Hungarian>EVO 3 mag.</Hungarian>
+		<Italian>EVO 3 mag.</Italian>
+		<Japanese>EVO 3 mag.</Japanese>
+		<Polish>EVO 3 mag.</Polish>
+		<Russian>EVO 3 mag.</Russian>
+		<Spanish>EVO 3 mag.</Spanish>
+	</Key>
+	<Key ID="STR_DN_30RND_9X19_EVOSD_CP">
+		<Original>EVO 3 SD mag.</Original>
+		<Chinese>EVO 3 SD mag.</Chinese>
+		<Czech>EVO 3 SD zás.</Czech>
+		<English>EVO 3 SD mag.</English>
+		<French>EVO 3 SD mag.</French>
+		<German>EVO 3 SD mag.</German>
+		<Hungarian>EVO 3 SD mag.</Hungarian>
+		<Italian>EVO 3 SD mag.</Italian>
+		<Japanese>EVO 3 SD mag.</Japanese>
+		<Polish>EVO 3 SD mag.</Polish>
+		<Russian>EVO 3 SD mag.</Russian>
+		<Spanish>EVO 3 SD mag.</Spanish>
+	</Key>
+	<Key ID="STR_DSS_30RND_9X19_EVO_CP">
+		<Original>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Original>
+		<Chinese>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Chinese>
+		<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: EVO 3</Czech>
+		<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</English>
+		<French>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</French>
+		<German>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</German>
+		<Hungarian>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Hungarian>
+		<Italian>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Italian>
+		<Japanese>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Japanese>
+		<Polish>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Polish>
+		<Russian>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Russian>
+		<Spanish>Caliber: 9x19mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3</Spanish>
+	</Key>
+	<Key ID="STR_DSS_30RND_9X19_EVOSD_CP">
+		<Original>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Original>
+		<Chinese>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Chinese>
+		<Czech>Kalibr: 9x19mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: EVO 3 SD</Czech>
+		<English>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</English>
+		<French>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</French>
+		<German>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</German>
+		<Hungarian>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Hungarian>
+		<Italian>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Italian>
+		<Japanese>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Japanese>
+		<Polish>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Polish>
+		<Russian>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Russian>
+		<Spanish>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: EVO 3 SD</Spanish>
+	</Key>
+</Project>
