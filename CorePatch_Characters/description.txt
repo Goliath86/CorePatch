@@ -6,6 +6,5 @@ Changed:
 	portrait picture of TK_Soldier_Crew_EP1
 
 Fixed:
-	loadout of RU_Soldier_AT
 	some localization mistakes
 	some other issues

@@ -1,0 +1,1 @@
+Fixed: [ACR] wrong inventory setup for some units, RPG ammo (http://dev.withsix.com/issues/70197)

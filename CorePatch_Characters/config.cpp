@@ -190,21 +190,6 @@ class CfgVehicles
 	{
 		engineer = 0;
 	}; */
-	class RU_Soldier_Base;
-	class RU_Soldier_AT : RU_Soldier_Base
-	{
-		magazines[] = {
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"PG7VL",
-			"PG7VL",
-			"PG7VL"
-		};
-	};
 	class Soldier_Base_PMC;
 	class Soldier_Engineer_PMC : Soldier_Base_PMC
 	{

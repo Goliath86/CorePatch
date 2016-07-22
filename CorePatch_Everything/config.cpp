@@ -115,6 +115,7 @@ class CfgPatches
 			"CorePatch_CIT_46056",
 			"CorePatch_CIT_62100",
 			"CorePatch_CIT_67715",
+			"CorePatch_CIT_70197",
 			"CorePatch_CIT_70371",
 			"CorePatch_CIT_70470",
 			"CorePatch_CIT_70648",
