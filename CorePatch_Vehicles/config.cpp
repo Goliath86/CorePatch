@@ -2149,10 +2149,20 @@ class CfgVehicles
 
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
 				discreteDistanceInitIndex = 2;
+				gunnerOpticsEffect[] = {
+					"TankGunnerOptics1",
+					"OpticsBlur2",
+					"OpticsCHAbera2"
+				};
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {
 					"KPVT",
 					"PKTBC"
+				};
+
+				class ViewOptics
+				{
+					delete gunnerOpticsEffect;
 				};
 			};
 		};
@@ -2246,6 +2256,8 @@ class CfgVehicles
 			{
 				delete magazines;
 				delete weapons;
+
+				commanding = 2;
 			};
 			class CommanderTurret : MainTurret
 			{

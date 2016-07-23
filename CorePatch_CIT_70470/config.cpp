@@ -74,8 +74,12 @@ class CfgVehicles
 				{
 					initAngleX = 5;
 					initFov = 0.69999999;
-					maxFov = 0.85000002;
-					minFov = 0.41999999;
+					maxAngleX = 85;
+					maxAngleY = 150;
+					maxFov = 1.1;
+					minAngleX = -65;
+					minAngleY = -150;
+					minFov = 0.25;
 				};
 				class ViewOptics
 				{
@@ -99,8 +103,13 @@ class CfgVehicles
 				class ViewGunner
 				{
 					initAngleX = 5;
+					initAngleY = 0;
 					initFov = 0.69999999;
+					maxAngleX = 85;
+					maxAngleY = 150;
 					maxFov = 0.85000002;
+					minAngleX = -85;
+					minAngleY = -150;
 					minFov = 0.41999999;
 				};
 				class ViewOptics
@@ -118,11 +127,11 @@ class CfgVehicles
 			initAngleX = 7;
 			initAngleY = 0;
 			initFov = 0.69999999;
-			maxAngleX = 30;
-			maxAngleY = 100;
+			maxAngleX = 85;
+			maxAngleY = 150;
 			maxFov = 1.2;
-			minAngleX = -30;
-			minAngleY = -100;
+			minAngleX = -65;
+			minAngleY = -150;
 			minFov = 0.41999999;
 		};
 	};
