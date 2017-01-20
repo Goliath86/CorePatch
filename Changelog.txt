@@ -1,3 +1,9 @@
+21/01/2017
+
+Fixed:
+	smoke launcher on GAZ_Vodnik_HMG was removed by mistake
+
+
 22/07/2016
 
 Added:

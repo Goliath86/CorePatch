@@ -2442,7 +2442,8 @@ class CfgVehicles
 				turretInfoType = "RscWeaponRangeZeroing";
 				weapons[] = {
 					"2A42",
-					"PKTBC"
+					"PKTBC",
+					"SmokeLauncher"
 				};
 
 				class ViewOptics
