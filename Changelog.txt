@@ -1,6 +1,7 @@
 21/01/2017
 
 Fixed:
+	smoke launchers to BMP2_Ambul were not added
 	smoke launcher on GAZ_Vodnik_HMG was removed by mistake
 
 

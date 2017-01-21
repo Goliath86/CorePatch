@@ -3436,6 +3436,13 @@ class CfgVehicles
 	{
 		delete unitInfoType;
 
+		magazines[] = {
+			"SmokeLauncherMag",
+			"SmokeLauncherMag",
+			"SmokeLauncherMag"
+		};
+		weapons[] = {"SmokeLauncher"};
+
 		class Reflectors
 		{
 			class LeftLight
