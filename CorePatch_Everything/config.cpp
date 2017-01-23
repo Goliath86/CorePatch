@@ -42,6 +42,7 @@ class CfgPatches
 			"CorePatch_CCP_70400",
 			"CorePatch_CCP_70490",
 			"CorePatch_CCP_70799",
+			"CorePatch_CCP_70991",
 			"CorePatch_CCP_71037",
 			"CorePatch_CCP_71144",
 			"CorePatch_Characters",
