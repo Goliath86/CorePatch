@@ -1,3 +1,9 @@
+29/01/2017
+
+Fixed:
+	appearance of "No owner" messages in RPT file
+
+
 23/01/2017
 
 Fixed:

@@ -384,10 +384,9 @@ class CfgWeapons
 	};
 	class m8_tws : m8_base
 	{
-		delete weaponInfoType;
-
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
 
 		class OpticsModes
 		{
@@ -400,10 +399,9 @@ class CfgWeapons
 	};
 	class m8_tws_sd : m8_base
 	{
-		delete weaponInfoType;
-
 		discreteDistance[] = {};
 		discreteDistanceInitIndex = 0;
+		weaponInfoType = "RscWeaponEmpty";
 
 		class OpticsModes
 		{
