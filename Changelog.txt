@@ -2,6 +2,8 @@
 
 Fixed:
 	appearance of "No owner" messages in RPT file
+	armor of body parts of some characters
+	portrait picture of some characters
 
 
 23/01/2017
