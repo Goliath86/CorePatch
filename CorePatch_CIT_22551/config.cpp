@@ -31,7 +31,7 @@ class CfgVehicles {
 		ejectSpeed[] = {0, 0, 0};
 		elevatorSensitivity = 0.1;
 		envelope[] = {0, 0.1, 0.65, 2.2, 3.7, 5.3, 6, 5.5, 5.6, 4.8, 3.6, 1.8, 1};
-		extCameraPosition[] = {0, 2, -30};
+		extCameraPosition[] = {0, 2, -10};
 		forceHideDriver = 1;
 		fuelCapacity = 500;
 		gearAnimations[] = {};
@@ -46,6 +46,7 @@ class CfgVehicles {
 		driverForceOptics = 1;
 		driverOpticsModel = "\ca\weapons\optika_empty";
 		memoryPointDriverOptics = "pilotview";
+		armor = 6;
 
 		class Turrets {
 			class MainTurret: NewTurret {
