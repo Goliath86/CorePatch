@@ -137,7 +137,8 @@ class CfgPatches
 			"CorePatch_UI",
 			"CorePatch_UralTransportMagazines",
 			"CorePatch_Vehicles",
-			"CorePatch_Weapons"
+			"CorePatch_Weapons",
+			"Corepatch_ATV"
 		};
 		requiredVersion = 1.00;
 		units[] = {};
