@@ -20,84 +20,14 @@ class CfgAddons
 };
 class CfgVehicles 
 {
-	class CAManBase;
-	class SoldierEB : CAManBase
+	class SoldierEB;
+	class MVD_Soldier_Base : SoldierEB
 	{
-		class HitPoints;
 	};
-	class RUS_Soldier_Base : SoldierEB
+	class MVD_Soldier : MVD_Soldier_Base
 	{
-		class HitPoints : HitPoints
-		{
-			class HitHead;
-		};
 	};
-	class RUS_Soldier_Medic : RUS_Soldier_Base
-	{
-		accuracy = 3.7;
-		attendant = 1;
-		canCarryBackpack = 0;
-		cost = 200000;
-		displayName = "$STR_DN_SPECNAZ_MEDIC_CP";
-		icon = "\Ca\characters2\data\icon\i_medic_CA.paa";
-		magazines[] = {
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"SmokeShell",
-			"SmokeShellOrange"
-		};
-		model = "\ca\characters2\Rus\Specnaz_Back";
-		picture = "\Ca\characters\data\Ico\i_Med_CA.paa";
-		respawnMagazines[] = {
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"64Rnd_9x19_Bizon",
-			"HandGrenade_East",
-			"SmokeShell"
-		};
-		respawnWeapons[] = {
-			"Bizon",
-			"ItemGPS",
-			"NVGoggles",
-			"Binocular",
-			"Throw",
-			"Put",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		scope = 2;
-		weapons[] = {
-			"Bizon",
-			"ItemGPS",
-			"NVGoggles",
-			"Binocular",
-			"Throw",
-			"Put",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-
-		class HitPoints : HitPoints
-		{
-			class HitHead : HitHead
-			{
-				armor = 0.60000002;
-			};
-		};
-	};
-	class MVD_Soldier_Base;
-	class MVD_Soldier_Medic : MVD_Soldier_Base
+	class MVD_Soldier_Medic : MVD_Soldier
 	{
 		accuracy = 3.7;
 		attendant = 1;
@@ -105,31 +35,8 @@ class CfgVehicles
 		cost = 500000;
 		displayName = "$STR_DN_MEDIC";
 		icon = "\Ca\characters2\data\icon\i_medic_CA.paa";
+		model = "\ca\characters2\Rus\Vityaz_2";
 		picture = "\Ca\characters\data\Ico\i_Med_CA.paa";
-		magazines[] = {
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"SmokeShell",
-			"SmokeShellOrange"
-		};
-		respawnMagazines[] = {
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"30Rnd_545x39_AK",
-			"HandGrenade_East",
-			"HandGrenade_East",
-			"SmokeShell",
-			"SmokeShellOrange"
-		};
 		respawnWeapons[] = {
 			"AKS_74_U",
 			"ItemGPS",
@@ -141,7 +48,6 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		scope = 2;
 		weapons[] = {
 			"AKS_74_U",
 			"ItemGPS",
@@ -154,10 +60,14 @@ class CfgVehicles
 			"ItemRadio"
 		};
 	};
-	class RU_Soldier_Base;
-	class RU_Soldier_Engineer : RU_Soldier_Base
+	class RU_Soldier_Base : SoldierEB
 	{
-		accuracy = 3.9000001;
+	};
+	class RU_Soldier : RU_Soldier_Base
+	{
+	};
+	class RU_Soldier_Engineer : RU_Soldier
+	{
 		canCarryBackpack = 0;
 		canDeactivateMines = 1;
 		cost = 100000;
@@ -184,25 +94,42 @@ class CfgVehicles
 			"MineE",
 			"SmokeShell"
 		};
-		respawnWeapons[] = {
-			"AK_107_kobra",
-			"Throw",
-			"Put",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		scope = 2;
 		threat[] = {1, 0.5, 0.1};
-		weapons[] = {
-			"AK_107_kobra",
-			"Throw",
-			"Put",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
+	};
+	class RUS_Soldier_Base : SoldierEB
+	{
+	};
+	class RUS_Soldier1 : RUS_Soldier_Base
+	{
+	};
+	class RUS_Soldier_Medic : RUS_Soldier1
+	{
+		accuracy = 3.7;
+		attendant = 1;
+		canCarryBackpack = 0;
+		cost = 200000;
+		displayName = "$STR_DN_SPECNAZ_MEDIC_CP";
+		icon = "\Ca\characters2\data\icon\i_medic_CA.paa";
+		magazines[] = {
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"HandGrenade_East",
+			"HandGrenade_East",
+			"SmokeShell",
+			"SmokeShellOrange"
+		};
+		picture = "\Ca\characters\data\Ico\i_Med_CA.paa";
+		respawnMagazines[] = {
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"64Rnd_9x19_Bizon",
+			"HandGrenade_East",
+			"SmokeShell"
 		};
 	};
 	class TK_Special_Forces_EP1;
