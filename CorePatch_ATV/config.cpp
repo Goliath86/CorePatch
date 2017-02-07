@@ -23,7 +23,7 @@ class CfgVehicles
 	class Car;
 	class ATV_Base_EP1:Car {
 		model = "\Corepatch\Corepatch_ATV\atv.p3d";
-		damperSize = 0.1;
+		damperSize = 0.08;
 		damperForce = 1;
 		damperDamping = 1;
 		hiddenSelections[] = {"camo1","camo2","camo_mlod"};
@@ -57,14 +57,14 @@ class CfgVehicles
 		side = 3;
 		scope = 1;
 		faction = "CIV";
-		hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_white_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_white_mlod_co.paa"};
+		hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_white_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_white_mlod_co.paa"};
 	};
 
-	class ATV_CIV_Black_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_black_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_black_mlod_co.paa"};};
-	class ATV_CIV_Grey_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_grey_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_grey_mlod_co.paa"};};
-	class ATV_CIV_Red_CP:ATV_CIV_CP		{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_red_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_red_mlod_co.paa"};};
-	class ATV_CIV_Green_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_green_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_green_mlod_co.paa"};};
-	class ATV_CIV_Blue_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_blue_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_blue_mlod_co.paa"};};
-	class ATV_CIV_Yellow_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_yellow_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_yellow_mlod_co.paa"};};
-	class ATV_CIV_Purple_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_purple_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_purple_mlod_co.paa"};};
+	class ATV_CIV_Black_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_black_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_black_mlod_co.paa"};};
+	class ATV_CIV_Grey_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_grey_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_grey_mlod_co.paa"};};
+	class ATV_CIV_Red_CP:ATV_CIV_CP		{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_red_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_red_mlod_co.paa"};};
+	class ATV_CIV_Green_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_green_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_green_mlod_co.paa"};};
+	class ATV_CIV_Blue_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_blue_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_blue_mlod_co.paa"};};
+	class ATV_CIV_Yellow_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_yellow_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_yellow_mlod_co.paa"};};
+	class ATV_CIV_Purple_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_purple_co.paa","\Corepatch\Corepatch_ATV\textures\atv_civ_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_purple_mlod_co.paa"};};
 };
