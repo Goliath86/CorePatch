@@ -1,7 +1,10 @@
 07/02/2017
 
 Fixed:
-	ATV physics and handling issues, low LOD displayed wrong texture
+	ATV physics when driving on objects like bridges (http://dev.withsix.com/issues/75850)
+	ATV handling and bounding issues (http://dev.withsix.com/issues/75851)
+	ATV had wrong low LOD texture
+	Woodland ATV had desert camo texture
 
 
 02/02/2017

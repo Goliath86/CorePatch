@@ -1,5 +1,0 @@
-Fixed: ATV physics and handling issues, low LOD displayed wrong texture
-
-Related tickets:
-http://dev.withsix.com/issues/75850
-http://dev.withsix.com/issues/75851

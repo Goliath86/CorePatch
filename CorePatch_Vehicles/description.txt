@@ -23,6 +23,10 @@ Changed:
 	turret servo sound of some vehicles
 
 Fixed:
+	ATV physics when driving on objects like bridges (http://dev.withsix.com/issues/75850)
+	ATV handling and bounding issues (http://dev.withsix.com/issues/75851)
+	ATV had wrong low LOD texture
+	Woodland ATV had desert camo texture
 	the commander location in advanced vehicles lacks auto-stabilization (http://dev.withsix.com/issues/67383)
 	Mi24 variants are lacking zeroing for YaK-B 12.7 (http://dev.withsix.com/issues/67638)
 	Mi24 variants are lacking rangefinders (http://dev.withsix.com/issues/67640)

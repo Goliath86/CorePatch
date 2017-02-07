@@ -14,8 +14,6 @@ class CfgVehicles
 	class UAV : Plane
 	{
 		class NewTurret;
-		class ViewOptics;
-		class ViewPilot;
 	};
 	class MQ9PredatorB: UAV {
 		model = "\Corepatch\CorePatch_CCP_70991\MQ9PredatorB.p3d";
@@ -35,7 +33,7 @@ class CfgVehicles
 				initTurn = 0;
 			};
 		};
-		class ViewOptics: ViewOptics {
+		class ViewOptics {
 			initFov = 0.85;
 			maxFov = 0.35;
 			minFov = 0.95;
@@ -44,7 +42,7 @@ class CfgVehicles
 				"NVG"
 			};
 		};
-		class ViewPilot: ViewPilot {
+		class ViewPilot {
 			minAngleX = -65;
 			maxAngleX = 85;
 			minAngleY = -150;

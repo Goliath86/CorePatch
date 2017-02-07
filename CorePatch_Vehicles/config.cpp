@@ -8,6 +8,16 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_Vehicles
+		{
+			list[] = {"CorePatch_Vehicles"};
+		};
+	};
+};
 class CfgVehicles
 {
 	class All;
@@ -781,6 +791,12 @@ class CfgVehicles
 	};
 	class ATV_Base_EP1 : Car
 	{
+		model = "\Corepatch\CorePatch_Vehicles\models\atv.p3d";
+		damperSize = 0.08;
+		damperForce = 1;
+		damperDamping = 1;
+		hiddenSelections[] = {"camo1","camo2","camo_mlod"};
+		hiddenSelectionsTextures[] = {"ca\wheeled_e\atv\data\atv_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","ca\wheeled_e\atv\data\atv_mlod_co.paa"};
 		soundGetIn[] = {
 			"ca\Sounds_E\Wheeled_E\ATV\ATV_ext_gearshift",
 			0.56234133,
@@ -788,6 +804,48 @@ class CfgVehicles
 			20
 		};
 	};
+	class BAF_ATV_D:ATV_Base_EP1 {};
+	class BAF_ATV_W:BAF_ATV_D {
+		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_wood_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_wood_mlod_co.paa"};
+	};
+
+	class ATV_TK_CP:ATV_Base_EP1 {
+		side = 0;
+		scope = 1;
+		faction = "BIS_TK";
+		typicalCargo[] = {"TK_Soldier_EP1", "TK_Soldier_EP1"};
+	};
+
+	class ATV_RU_CP:ATV_TK_CP {
+		faction = "RU";
+		typicalCargo[] = {"RU_Soldier", "RU_Soldier"};
+		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_wood_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_wood_mlod_co.paa"};
+	};
+
+	class ATV_Gue_CP:ATV_Base_EP1 {
+		side = 2;
+		scope = 1;
+		faction = "GUE";
+		typicalCargo[] = {"GUE_Soldier_3", "GUE_Soldier_3"};
+		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_black_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_black_mlod_co.paa"};
+	};
+
+	class ATV_CIV_CP:ATV_Base_EP1 {
+		side = 3;
+		scope = 1;
+		faction = "CIV";
+		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
+		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_white_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_white_mlod_co.paa"};
+	};
+
+	class ATV_CIV_Black_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_black_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_black_mlod_co.paa"};};
+	class ATV_CIV_Grey_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_grey_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_grey_mlod_co.paa"};};
+	class ATV_CIV_Red_CP:ATV_CIV_CP		{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_red_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_red_mlod_co.paa"};};
+	class ATV_CIV_Green_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_green_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_green_mlod_co.paa"};};
+	class ATV_CIV_Blue_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_blue_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_blue_mlod_co.paa"};};
+	class ATV_CIV_Yellow_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_yellow_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_yellow_mlod_co.paa"};};
+	class ATV_CIV_Purple_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_purple_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_purple_mlod_co.paa"};};
+
 	class ArmoredSUV_Base_PMC : Car
 	{
 		soundGetIn[] = {
