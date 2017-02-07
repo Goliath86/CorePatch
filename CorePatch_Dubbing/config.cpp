@@ -22,7 +22,7 @@ class SentObjectDestroyedUnknown;
 class RadioProtocolEN: RadioProtocolBase {
 
 	class Words {
-		WeRequireLongRangeTransportHowCopyQ[] = {"EN\secops\transport\secop_trans_01.wss"};
+		WeRequireLongRangeTransportHowCopyQ[] = {"\ca\dubbing\global\radio\male05\en\secops\transport\secop_trans_01.wss"};
 	};
 };
 
