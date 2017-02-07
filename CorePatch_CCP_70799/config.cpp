@@ -4,7 +4,14 @@ class CfgPatches
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
-		units[] = {};
+		units[] = {
+			"MVD_Soldier_Medic",
+			"RU_Soldier_Engineer",
+			"RUS_Soldier_Medic",
+			"TK_Special_Forces_Medic_EP1",
+			"UN_CDF_Soldier_Engineer_EP1",
+			"UN_CDF_Soldier_Medic_EP1"
+		};
 		weapons[] = {};
 	};
 };
@@ -20,10 +27,7 @@ class CfgAddons
 };
 class CfgVehicles 
 {
-	class SoldierEB;
-	class MVD_Soldier_Base : SoldierEB
-	{
-	};
+	class MVD_Soldier_Base;
 	class MVD_Soldier : MVD_Soldier_Base
 	{
 	};
@@ -60,9 +64,7 @@ class CfgVehicles
 			"ItemRadio"
 		};
 	};
-	class RU_Soldier_Base : SoldierEB
-	{
-	};
+	class RU_Soldier_Base;
 	class RU_Soldier : RU_Soldier_Base
 	{
 	};
@@ -96,9 +98,7 @@ class CfgVehicles
 		};
 		threat[] = {1, 0.5, 0.1};
 	};
-	class RUS_Soldier_Base : SoldierEB
-	{
-	};
+	class RUS_Soldier_Base;
 	class RUS_Soldier1 : RUS_Soldier_Base
 	{
 	};
