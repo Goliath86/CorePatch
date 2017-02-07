@@ -25,7 +25,6 @@ class CfgVehicles {
 		class ViewPilot;
 	};
 	class Pchela1T: UAV {
-		scope = 2;
 		autocenter = 1;
 		ejectDamageLimit = 1;
 		ejectSpeed[] = {0, 0, 0};
