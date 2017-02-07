@@ -10,6 +10,7 @@ Fixed:
 	MQ-9 Reaper laser designator now precise, propeller correctly turns into blurred one, UAV geometry is visible from gunner view
 	Pchela-1T laser designator works properly, squad.xml decals are properly visible, armor and fuel reduced, unlocked unused CDF version
 
+
 29/01/2017
 
 Fixed:

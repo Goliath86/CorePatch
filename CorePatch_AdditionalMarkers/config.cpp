@@ -58,7 +58,7 @@ class CfgMarkerColors {
 		scope = 1;
 		color[] = {0.333,0.8,0.333,1};
 	};
-	class ColorManz {
+	class ColorMan {
 		scope = 1;
 		color[] = {0.86,0.86,0,1};
 	};
