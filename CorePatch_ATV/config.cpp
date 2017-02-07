@@ -67,14 +67,4 @@ class CfgVehicles
 	class ATV_CIV_Blue_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_blue_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_blue_mlod_co.paa"};};
 	class ATV_CIV_Yellow_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_yellow_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_yellow_mlod_co.paa"};};
 	class ATV_CIV_Purple_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\Corepatch_ATV\textures\atv_purple_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\Corepatch_ATV\textures\atv_purple_mlod_co.paa"};};
-
-	class ATV_Test_CP:ATV_CIV_CP {
-		damperSize = 0.2;
-	};
-	class ATV_Test2_CP:ATV_Test_CP {
-		damperSize = 1;
-	};
-	class ATV_Test3_CP:ATV_Test_CP {
-		damperSize = 0.05;
-	};
 };
