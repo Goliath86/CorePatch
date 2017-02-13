@@ -143,4 +143,20 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 	};
+
+	// Backwards compatibility
+	class CorePatch_Zargabad_Intro_Fix {
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 1;
+		requiredAddons[] = {};
+	};
+};
+
+class CfgAddons {
+	class PreloadAddons {
+		class ca_communityconfigurationproject_e_editor_addedallweaponslotsinfantryvariants {
+			list[] = {"ca_communityconfigurationproject_e_editor_addedallweaponslotsinfantryvariants"};
+		};
+	};
 };
