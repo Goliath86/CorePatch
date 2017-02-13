@@ -143,14 +143,6 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 	};
-
-	// Backwards compatibility
-	class CorePatch_Zargabad_Intro_Fix {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 1;
-		requiredAddons[] = {};
-	};
 };
 
 class CfgAddons {
