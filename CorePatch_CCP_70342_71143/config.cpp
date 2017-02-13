@@ -175,8 +175,8 @@ class CfgVehicles
 					"4Rnd_AT9_Mi24P"
 				};
 				weapons[] = {
-					"HeliBombLauncher",
-					"AT9Launcher"
+					"AT9Launcher",
+					"HeliBombLauncher"
 				};
 			};
 		};
