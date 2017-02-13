@@ -46,6 +46,11 @@ class CfgVehicles {
 		driverOpticsModel = "\ca\weapons\optika_empty";
 		memoryPointDriverOptics = "pilotview";
 		armor = 6;
+		NoDestructionExplosion_CP = 1;
+		cabinOpening = 0;
+		getInRadius = 2;
+		getInAction = "GetInLow";
+		getOutAction = "GetOutLow";
 
 		class Turrets {
 			class MainTurret: NewTurret {
@@ -78,6 +83,8 @@ class CfgVehicles {
 				weapons[] = {"Laserdesignator_mounted"};
 				magazines[] = {"Laserbatteries"};
 				stabilizedInAxes = "StabilizedInAxesBoth";
+				gunnerGetInAction = "GetInLow";
+				gunnerGetOutAction = "GetOutLow";
 
 				class ViewOptics
 				{
