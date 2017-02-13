@@ -144,11 +144,3 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-
-class CfgAddons {
-	class PreloadAddons {
-		class ca_communityconfigurationproject_e_editor_addedallweaponslotsinfantryvariants {
-			list[] = {"ca_communityconfigurationproject_e_editor_addedallweaponslotsinfantryvariants"};
-		};
-	};
-};
