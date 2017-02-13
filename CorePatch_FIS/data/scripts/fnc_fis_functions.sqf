@@ -27,7 +27,7 @@ BIS_Effects_startEvent =
 	if(time <= 0) exitWith {(_this select 1) spawn { //Fire in the sky bug fix
 		waitUntil {time > 0};
 		_this call BIS_Effects_startEvent;
-	}};;
+	}};
 	(_this select 1) call BIS_Effects_startEvent;
 };
 
