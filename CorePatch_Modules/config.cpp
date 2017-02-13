@@ -8,3 +8,5 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+
+// All changes were merged into modules.pbo addons in A2 and OA
