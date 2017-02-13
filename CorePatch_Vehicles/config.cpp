@@ -832,19 +832,19 @@ class CfgVehicles
 
 	class ATV_CIV_CP:ATV_Base_EP1 {
 		side = 3;
-		scope = 1;
-		faction = "CIV";
+		scope = 2;
+		faction = "BIS_TK_CIV";
 		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
 		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_white_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_white_mlod_co.paa"};
 	};
 
-	class ATV_CIV_Black_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_black_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_black_mlod_co.paa"};};
-	class ATV_CIV_Grey_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_grey_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_grey_mlod_co.paa"};};
-	class ATV_CIV_Red_CP:ATV_CIV_CP		{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_red_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_red_mlod_co.paa"};};
-	class ATV_CIV_Green_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_green_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_green_mlod_co.paa"};};
-	class ATV_CIV_Blue_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_blue_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_blue_mlod_co.paa"};};
-	class ATV_CIV_Yellow_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_yellow_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_yellow_mlod_co.paa"};};
-	class ATV_CIV_Purple_CP:ATV_CIV_CP	{hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_purple_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_purple_mlod_co.paa"};};
+	class ATV_CIV_Black_CP:ATV_CIV_CP	{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_black_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_black_mlod_co.paa"};};
+	class ATV_CIV_Grey_CP:ATV_CIV_CP	{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_grey_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_grey_mlod_co.paa"};};
+	class ATV_CIV_Red_CP:ATV_CIV_CP		{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_red_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_red_mlod_co.paa"};};
+	class ATV_CIV_Green_CP:ATV_CIV_CP	{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_green_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_green_mlod_co.paa"};};
+	class ATV_CIV_Blue_CP:ATV_CIV_CP	{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_blue_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_blue_mlod_co.paa"};};
+	class ATV_CIV_Yellow_CP:ATV_CIV_CP	{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_yellow_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_yellow_mlod_co.paa"};};
+	class ATV_CIV_Purple_CP:ATV_CIV_CP	{scope = 1; hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_purple_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_purple_mlod_co.paa"};};
 
 	class ArmoredSUV_Base_PMC : Car
 	{
