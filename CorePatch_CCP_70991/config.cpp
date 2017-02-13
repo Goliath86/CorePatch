@@ -21,6 +21,8 @@ class CfgVehicles
 		driverOpticsModel = "\ca\weapons\optika_empty";
 		selectionRotorStill = "propellerStatic";
 		selectionRotorMove = "propellerBlurred";
+		cabinOpening = 0;
+		getInRadius = 3;
 		class Turrets {
 			class MainTurret: NewTurret {
 				gunBeg = "laser_end";
@@ -31,6 +33,8 @@ class CfgVehicles
 				minTurn = -180;
 				maxTurn = 180;
 				initTurn = 0;
+				gunnerGetInAction = "GetInHigh";
+				gunnerGetOutAction = "GetOutHigh";
 			};
 		};
 		class ViewOptics {
