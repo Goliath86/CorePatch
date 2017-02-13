@@ -3,6 +3,9 @@
 	_t =_this select 2;
 	_pos = getpos _v;
 
+	// No explosion CorePatch flag
+	_no_explosion = getNumber(configFile >> "CfgVehicles" >> typeOf _v >> "NoDestructionExplosion_CP") > 0;
+
 	// Particle effects
 	private ["_smoke", "_fire", "_dirt"];
 
@@ -33,7 +36,7 @@
 	};
 
 	// Ground craters
-	if(local _v) then {
+	if(local _v && !_no_explosion) then {
 		_v spawn {
 			_index = 0;
 			_old_pos = [0,0,0];
@@ -95,7 +98,9 @@
 
 	if (local _v) then {
 		["Burn", _v, _int, _t] call BIS_Effects_globalEvent;
-		[_v,_int,false] spawn BIS_Effects_Secondaries;
+		if(!_no_explosion) then {
+			[_v,_int,false] spawn BIS_Effects_Secondaries;
+		};
 	};
 
 	sleep 0.5;

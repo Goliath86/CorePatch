@@ -3,6 +3,9 @@ _v=_this select 0;
 _int = (fuel _v)*(8+random 2);
 _t=time;
 
+// No explosion CorePatch flag
+_no_explosion = getNumber(configFile >> "CfgVehicles" >> typeOf _v >> "NoDestructionExplosion_CP") > 0;
+
 if !(isDedicated) then { //dw, particle stuff don't need run on dedicated
 	_fl = "#particlesource" createVehicleLocal getpos _v;
 	_fl attachto [_v,[0,0,0],"destructionEffect2"];
@@ -29,7 +32,7 @@ _tv=11;
 //Remove weapons/ammo to prevent explosion. Script will create its own explosions (doesnt work?)
 removeallweapons _v;
 
-if (local _v) then { // Sa-Matra: Small explosion regardless of where vehicle landed
+if (local _v && !_no_explosion) then { // Sa-Matra: Small explosion regardless of where vehicle landed
 	_trig = "EmptyDetector" createVehicleLocal [0,0,0];
 	_trig setTriggerArea [0,0,0,false];
 	_trig setVariable ["obj", _v];
@@ -91,15 +94,17 @@ if((getTerrainHeightASL getPosASL _v < -1) && (getPosASL _v select 2 < 1)) then 
 		//_expl="HelicopterExploBig" createvehicle [_pos select 0,_pos select 1,(_pos select 2) + 1];
 
 		// Sa-Matra: Big explosion only if landed on solid ground
-		_trig = "EmptyDetector" createVehicleLocal [0,0,0];
-		_trig setTriggerArea [0,0,0,false];
-		_trig setVariable ["obj", _v];
-		_trig setTriggerStatements ["
-			_v = thisTrigger getVariable [""obj"", objNull];
-			_atl = getPosATL _v; _atl set [2, (_atl select 2) + 1];
-			createVehicle [""HelicopterExploBig"", getPos _v, [], 0, ""CAN_COLLIDE""] setPosATL _atl;
-			deleteVehicle thisTrigger;
-		", "", ""];
+		if(!_no_explosion) then {
+			_trig = "EmptyDetector" createVehicleLocal [0,0,0];
+			_trig setTriggerArea [0,0,0,false];
+			_trig setVariable ["obj", _v];
+			_trig setTriggerStatements ["
+				_v = thisTrigger getVariable [""obj"", objNull];
+				_atl = getPosATL _v; _atl set [2, (_atl select 2) + 1];
+				createVehicle [""HelicopterExploBig"", getPos _v, [], 0, ""CAN_COLLIDE""] setPosATL _atl;
+				deleteVehicle thisTrigger;
+			", "", ""];
+		};
 
 		sleep 0.05;
 
