@@ -258,8 +258,8 @@ class CfgVehicles
 			};
 		};
 	};
-	class Ka137_Base_PMC : Helicopter
-	{
+	class Ka137_Base_PMC : Helicopter {
+		NoDestructionExplosion_CP = 1;
 	};
 	class Ka137_PMC : Ka137_Base_PMC
 	{
