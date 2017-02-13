@@ -1,6 +1,16 @@
 07/02/2017
 
 Fixed:
+	Mi-24P properly hides bomb proxies when they're used up by gunner
+	Pchela-1T had no get in memory points, had wrong get in animation
+	MQ-9 Reaper had needless get in animation delay
+	Ka-137 and Pchela-1T no longer explode into huge explosion on destruction
+	Fire in the sky bug fixed
+
+
+07/02/2017
+
+Fixed:
 	ATV physics when driving on objects like bridges (http://dev.withsix.com/issues/75850)
 	ATV handling and bounding issues (http://dev.withsix.com/issues/75851)
 	ATV had wrong low LOD texture
