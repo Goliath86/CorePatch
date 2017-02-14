@@ -6,8 +6,7 @@ class CfgPatches {
 		weapons[] = {};
 	};
 
-	class CorePatch_Zargabad_Intro_Fix:CorePatch_Compatibility {};
-	class CorePatch_GC_Fix:CorePatch_Compatibility {};
+	class CorePatch_GC_Fix: CorePatch_Compatibility {};
 };
 
 class CfgAddons {
