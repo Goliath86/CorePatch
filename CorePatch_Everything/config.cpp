@@ -132,7 +132,6 @@ class CfgPatches
 			"CorePatch_M113_PMC",
 			"CorePatch_Magazines",
 			"CorePatch_Missions",
-			"CorePatch_Modules",
 			"CorePatch_NoPierDestruction",
 			"CorePatch_UI",
 			"CorePatch_UralTransportMagazines",
