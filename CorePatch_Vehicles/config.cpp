@@ -792,6 +792,7 @@ class CfgVehicles
 	class ATV_Base_EP1 : Car
 	{
 		model = "\Corepatch\CorePatch_Vehicles\models\atv.p3d";
+		turnCoef = 1.3;
 		damperSize = 0.08;
 		damperForce = 1;
 		damperDamping = 1;
@@ -813,11 +814,13 @@ class CfgVehicles
 		side = 0;
 		scope = 1;
 		faction = "BIS_TK";
+		crew = "TK_Soldier_EP1";
 		typicalCargo[] = {"TK_Soldier_EP1", "TK_Soldier_EP1"};
 	};
 
 	class ATV_RU_CP:ATV_TK_CP {
 		faction = "RU";
+		crew = "RU_Soldier";
 		typicalCargo[] = {"RU_Soldier", "RU_Soldier"};
 		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_wood_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_wood_mlod_co.paa"};
 	};
@@ -826,6 +829,7 @@ class CfgVehicles
 		side = 2;
 		scope = 1;
 		faction = "GUE";
+		crew = "GUE_Soldier_3";
 		typicalCargo[] = {"GUE_Soldier_3", "GUE_Soldier_3"};
 		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_black_co.paa","ca\wheeled_e\atv\data\atv_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_black_mlod_co.paa"};
 	};
@@ -834,7 +838,8 @@ class CfgVehicles
 		side = 3;
 		scope = 2;
 		faction = "BIS_TK_CIV";
-		typicalCargo[] = {"TK_CIV_Takistani01_EP1"};
+		crew = "TK_CIV_Takistani01_EP1";
+		typicalCargo[] = {"TK_CIV_Takistani01_EP1", "TK_CIV_Takistani01_EP1"};
 		hiddenSelectionsTextures[] = {"\Corepatch\CorePatch_Vehicles\textures\atv_white_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_civ_detail_co.paa","\Corepatch\CorePatch_Vehicles\textures\atv_white_mlod_co.paa"};
 	};
 
