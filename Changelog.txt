@@ -3,6 +3,9 @@
 Changed:
 	models of 20Rnd_9x19_EVO(SD) and 30Rnd_9x19_MP5SD magazines to more suitable
 
+Fixed:
+	SCAR_H_STD_EGLM_Spect no 1x option (http://dev.withsix.com/issues/17245)
+
 
 13/02/2017
 
