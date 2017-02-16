@@ -1,3 +1,9 @@
+16/02/2017
+
+Changed:
+	models of 20Rnd_9x19_EVO(SD) and 30Rnd_9x19_MP5SD magazines to more suitable
+
+
 13/02/2017
 
 Fixed:

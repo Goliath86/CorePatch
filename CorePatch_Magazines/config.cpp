@@ -15,6 +15,15 @@ class CfgMagazines
 	{
 		picture = "\CorePatch\CorePatch_Magazines\M_OG7V_ca.paa";
 	};
+	class CA_Magazine;
+	class 30Rnd_9x19_MP5SD : CA_Magazine
+	{
+		model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_9x19_MP5.p3d";
+	};
+	class 20Rnd_9x19_EVOSD : 30Rnd_9x19_MP5SD
+	{
+		model = "\ca\weapons\mag_univ.p3d";
+	};
 	class VehicleMagazine;
 	class 180Rnd_30mm_GSh301 : VehicleMagazine
 	{
@@ -28,6 +37,11 @@ class CfgMagazines
 	class 60Rnd_762x54_DT : 100Rnd_762x54_PK
 	{
 		delete ammo;
+	};
+	class 30Rnd_9x19_MP5;
+	class 20Rnd_9x19_EVO : 30Rnd_9x19_MP5
+	{
+		model = "\ca\weapons\mag_univ.p3d";
 	};
 	class 230Rnd_30mmHE_2A42;
 	class 1904Rnd_30mmAA_2A38M : 230Rnd_30mmHE_2A42

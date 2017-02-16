@@ -1,6 +1,7 @@
 Changed:
 	ammo of 60Rnd_762x54_DT to one with tracers
 	inventory picture of OG7
+	models of 20Rnd_9x19_EVO(SD) and 30Rnd_9x19_MP5SD to more suitable
 	number of every tracers in a belt of 1904Rnd_30mmAA_2A38M
 
 Fixed:
