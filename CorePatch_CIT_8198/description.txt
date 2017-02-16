@@ -1,1 +1,6 @@
-Fixed: Hind distance LOD colour (http://dev.withsix.com/issues/8198).
+Fixed: Mi-24 distance LOD colour (http://dev.withsix.com/issues/8198).
+Fixed: ACR Mi-24 clan sign was always black (https://dev.withsix.com/issues/43013)
+Fixed: ACR Mi-24 Yak-B was not rotating with the turret
+Added: Mi-24 proper holographic sights
+Fixed: Mi-24 engine too vulnerable (https://dev.withsix.com/issues/26427 https://dev.withsix.com/issues/28110)
+Fixed: Mi-24P was not able to aim ATGMs (https://dev.withsix.com/issues/27938)
