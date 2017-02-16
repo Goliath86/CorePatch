@@ -1,10 +1,17 @@
 16/02/2017
 
+Added:
+	Mi-24 proper holographic sights
+
 Changed:
 	models of 20Rnd_9x19_EVO(SD) and 30Rnd_9x19_MP5SD magazines to more suitable
 
 Fixed:
 	SCAR_H_STD_EGLM_Spect no 1x option (http://dev.withsix.com/issues/17245)
+	ACR Mi-24 clan sign was always black (https://dev.withsix.com/issues/43013)
+	ACR Mi-24 Yak-B was not rotating with the turret
+	Mi-24 engine too vulnerable (https://dev.withsix.com/issues/26427 https://dev.withsix.com/issues/28110)
+	Mi-24P was not able to aim ATGMs (https://dev.withsix.com/issues/27938)
 
 
 13/02/2017
