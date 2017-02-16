@@ -153,6 +153,7 @@ Changed:
 Fixed:
 	[LAV-25 | LAV-25 (HQ)] driver-view, turned-out, look right back problem (http://dev.withsix.com/issues/1694)
 	AK-107 model issue when fire (http://dev.withsix.com/issues/5342)
+	wrong sight pictures of all AK, PK and Bizon (http://dev.withsix.com/issues/5343)
 	AI can see and shoot through the walls on one side of the long white animal Shed (http://dev.withsix.com/issues/7147)
 	Hind distance LOD colour (http://dev.withsix.com/issues/8198)
 	locking guided missiles, AI-fired RPGs, and BMP-2 have trouble hitting LAV-25 HQ (http://dev.withsix.com/issues/62100)
