@@ -60,6 +60,7 @@ class CfgPatches
 			"CorePatch_CIT_14421",
 			"CorePatch_CIT_14483",
 			"CorePatch_CIT_16115",
+			"CorePatch_CIT_17245",
 			"CorePatch_CIT_19295",
 			"CorePatch_CIT_19347",
 			"CorePatch_CIT_22551",
@@ -131,12 +132,13 @@ class CfgPatches
 			"CorePatch_LaserTargetCSide",
 			"CorePatch_M113_PMC",
 			"CorePatch_Magazines",
-			"CorePatch_Missions",
 			"CorePatch_NoPierDestruction",
+			"CorePatch_Shapur_Intro_Fix",
 			"CorePatch_UI",
 			"CorePatch_UralTransportMagazines",
 			"CorePatch_Vehicles",
-			"CorePatch_Weapons"
+			"CorePatch_Weapons",
+			"CorePatch_Zargabad_Intro_Fix"
 		};
 		requiredVersion = 1.00;
 		units[] = {};

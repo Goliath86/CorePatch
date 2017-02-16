@@ -1,0 +1,1 @@
+Fixed: SCAR_H_STD_EGLM_Spect no 1x option (http://dev.withsix.com/issues/17245)
