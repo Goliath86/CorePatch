@@ -49,6 +49,7 @@ class CfgPatches
 			"CorePatch_CIT_1694",
 			"CorePatch_CIT_2793",
 			"CorePatch_CIT_5342",
+			"CorePatch_CIT_5343",
 			"CorePatch_CIT_7147",
 			"CorePatch_CIT_8198",
 			"CorePatch_CIT_11696",

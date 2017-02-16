@@ -527,24 +527,12 @@ class CfgWeapons
 			displayName = "";
 		};
 	};
-	class PK : Rifle
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\PK";
-	};
 	class Saiga12K : Rifle
 	{
 		class Single : Mode_SemiAuto
 		{
 			displayName = "";
 		};
-	};
-	class bizon : Rifle
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\bizon";
-	};
-	class bizon_silenced : bizon
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\bizon_silenced";
 	};
 	class m8_base : Rifle
 	{
@@ -586,46 +574,13 @@ class CfgWeapons
 			};
 		};
 	};
-	class AK_BASE;
-	class AK_47_M : AK_BASE
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AK_47_M";
-	};
-	class AK_47_S : AK_47_M
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AK_47_S";
-	};
-	class AKS_GOLD : AK_47_S
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AKS_GOLD";
-	};
-	class AK_74 : AK_BASE
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AK_74";
-	};
+	class AK_74;
 	class RPK_74 : AK_74
 	{
 		class manual : Mode_FullAuto
 		{
 			delete displayName;
 		};
-	};
-	class AK_74_GL : AK_BASE
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AK_74_GL";
-	};
-	class AKS_BASE;
-	class AKS_74 : AKS_BASE
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AKS_74";
-	};
-	class AKS_74_NSPU : AKS_BASE
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AKS_74_NSPU";
-	};
-	class AKS_74_U : AKS_BASE
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\AKS_74_U";
 	};
 	class AK_107_BASE;
 	class AK_107_kobra : AK_107_BASE

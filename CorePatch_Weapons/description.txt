@@ -22,6 +22,5 @@ Fixed:
 	AI rate of fire distance at medium range of GAU12
 	M1014 model issue when magazine is empty
 	disabled postprocess optics effects of some iron, collimator, NV and TI sights
-	view through ironsight of AK, PK and bizon
 	some localization mistakes
 	some other issues

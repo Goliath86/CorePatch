@@ -1,0 +1,1 @@
+Fixed: wrong sight pictures of all AK, PK and Bizon (http://dev.withsix.com/issues/5343)
