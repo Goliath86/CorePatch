@@ -11,13 +11,22 @@ class CfgPatches
 class CfgAmmo
 {
 	class MissileBase;
-	class M_AT3_AT : MissileBase
+	class AT3 : MissileBase
 	{
+		cost = 7000;
 		hit = 350;
 		indirectHit = 10;
+		indirectHitRange = 1;
 		manualControl = 1;
 		maxControlRange = 3000;
-		maxSpeed = 200;
+	};
+};
+class CfgMagazines
+{
+	class VehicleMagazine;
+	class AT3 : VehicleMagazine
+	{
+		initSpeed = 80;
 	};
 };
 class CfgWeapons
