@@ -62,6 +62,19 @@ class CfgWeapons
 			reloadTime = 0.03; // 2000 SPM
 		};
 	};
+	class 2A28 : CannonCore
+	{
+		reloadSound[] = {
+			"\ca\Sounds\weapons\cannon\gun125reload",
+			1,
+			1
+		};
+		sound[] = {
+			"\ca\Sounds\weapons\cannon\gun125",
+			31.622778,
+			1
+		};
+	};
 	class 2A38M : CannonCore
 	{
 		multiplier = 1;
@@ -282,6 +295,19 @@ class CfgWeapons
 		};
 	};
 	class MissileLauncher;
+	class AT3Launcher : MissileLauncher
+	{
+		sound[] = {
+			"\ca\Sounds\weapons\cannon\Javelin1",
+			31.622778,
+			1
+		};
+		soundFly[] = {
+			"\ca\Sounds\weapons\cannon\rocket_fly1",
+			25.118866,
+			0.80000001
+		};
+	};
 	class Igla_twice : MissileLauncher
 	{
 		magazineReloadTime = 5;
@@ -480,6 +506,11 @@ class CfgWeapons
 	class M40A3 : M24
 	{
 		descriptionShort = "$STR_DSS_M40A3_CP";
+	};
+	class CZ_750_S1_ACR : M40A3
+	{
+		model = "\CorePatch\CorePatch_Weapons\models\CZ_750_S1_ACR";
+		scope = 2;
 	};
 	class huntingrifle : M24
 	{

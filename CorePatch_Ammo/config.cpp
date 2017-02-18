@@ -63,6 +63,14 @@ class CfgAmmo
 		indirectHit = 18;
 	};
 	class MissileBase;
+	class AT3 : MissileBase
+	{
+		soundFly[] = {
+			"\Ca\sounds\Weapons\explosions\rocket_fly1",
+			0.316228,
+			1.5
+		};
+	};
 	class M_9M311_AA : MissileBase
 	{
 		trackLead = 0.5;

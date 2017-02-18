@@ -3592,6 +3592,20 @@ class CfgVehicles
 			};
 		};
 	};
+	class BVP1_BASE : BMP2_Base
+	{
+		class Turrets
+		{
+			class CommanderOptics : NewTurret
+			{
+				gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
+			};
+			class MainTurret : NewTurret
+			{
+				gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_gunner";
+			};
+		};
+	};
 	class BMP3 : Tracked_APC
 	{
 		aggregateReflectors[] = {{"1", "1"}}; // {{"CommanderLight"}, {"GunnerLight"}, {"1", "1"}};
