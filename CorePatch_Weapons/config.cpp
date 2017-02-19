@@ -967,6 +967,38 @@ class CfgWeapons
 			};
 		};
 	};
+	class CZ805_A1_ACR:Rifle {
+		model = "CorePatch\CorePatch_Weapons\models\CZ_805_A1";
+	};
+	class CZ805_A1_GL_ACR:CZ805_A1_ACR {
+		model = "CorePatch\CorePatch_Weapons\models\CZ_805_GL";
+	};
+	class CZ805_A2_ACR:CZ805_A1_ACR {};
+	class CZ805_A2_SD_ACR:CZ805_A2_ACR {
+		model = "CorePatch\CorePatch_Weapons\models\CZ_805_SF";
+	};
+	class MP5SD:Rifle {};
+	class MP5A5:MP5SD {};
+	class Evo_ACR:MP5A5	{
+		type = 1;
+		scope = 2;
+		/*begin1[] = {"CA\Sounds_ACR\weapons\evo_1", db8, 1, 1500};
+		begin2[] = {"CA\Sounds_ACR\weapons\evo_2", db8, 1, 1500};
+		begin3[] = {"CA\Sounds_ACR\weapons\evo_3", db8, 1, 1500};
+		soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+		reloadMagazineSound[] = {"CA\Sounds_ACR\weapons\evo_reload", db-30, 1};
+		drySound[] = {"CA\Sounds_ACR\weapons\dry", db-40, 1};*/
+	};
+	class evo_sd_ACR:MP5SD	{
+		type = 1;
+		scope = 2;
+		/*begin1[] = {"CA\Sounds_ACR\weapons\evo_1sd", db8, 1, 400};
+		begin2[] = {"CA\Sounds_ACR\weapons\evo_2sd", db8, 1, 400};
+		begin3[] = {"CA\Sounds_ACR\weapons\evo_3sd", db8, 1, 400};
+		soundBegin[] = {begin1,0.30, begin2,0.30, begin3, 0.40};
+		reloadMagazineSound[] = {"CA\Sounds_ACR\weapons\evo_reload", db-30, 1};
+		drySound[] = {"CA\Sounds_ACR\weapons\dry", db-40, 1};*/
+	};
 };
 class CfgVehicles
 {
