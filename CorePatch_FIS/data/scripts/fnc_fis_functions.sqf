@@ -25,7 +25,7 @@ BIS_Effects_startEvent =
 
 "BIS_effects_gepv" addPublicVariableEventHandler {
 	if(time <= 0) exitWith {(_this select 1) spawn { //Fire in the sky bug fix
-		waitUntil {time > 0};
+		waitUntil {sleep 1; !isNull findDisplay 46}; // Display 46 is indication that client finished loading
 		_this call BIS_Effects_startEvent;
 	}};
 	(_this select 1) call BIS_Effects_startEvent;
