@@ -69,10 +69,10 @@ class CfgVehicles
 		canDeactivateMines = 1;
 		//canHideBodies = 1;
 	};
-	/* class Ins_Soldier_Sapper : Ins_Soldier_Base
-	{
-		engineer = 0;
-	}; */
+	//class Ins_Soldier_Sapper : Ins_Soldier_Base
+	//{
+	//	engineer = 0;
+	//};
 	class Ins_Villager3 : Ins_Soldier_Base
 	{
 		portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca.paa";
@@ -660,10 +660,10 @@ class CfgVehicles
 			delete HitHead;
 		};
 	};
-	/* class FR_Base: SoldierWB
-	{
-		engineer = 1;
-	}; */
+	//class FR_Base: SoldierWB
+	//{
+	//	engineer = 1;
+	//};
 	class GER_Soldier_base_EP1 : SoldierWB
 	{
 		canDeactivateMines = 1;

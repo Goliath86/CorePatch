@@ -17,8 +17,7 @@ class CfgWeapons
 
 		class OpticsModes
 		{
-			class Kolimator
-			{
+			class Collimator {
 				cameraDir = "";
 				distanceZoomMax = 100;
 				distanceZoomMin = 100;
@@ -34,6 +33,7 @@ class CfgWeapons
 				visionMode[] = {};
 			};
 
+			delete Kolimator;
 			delete Mk4;
 		};
 	};
