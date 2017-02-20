@@ -1,3 +1,19 @@
+20/02/2017
+
+Added:
+	Light version of UK-59 (UK59_ACR_Small)
+
+Changed:
+	ACR pistol sounds rearrenged, better new ACR sounds are used
+	ACR SD pistol and SD EVO 3 sound configs adjusted to fit with other SD weapons
+
+Fixed:
+	ACR vehicles are now OA-compatible
+	ACR weapons are now OA-compatible
+	ACR EVO 3 was playing MP5 sounds instead of new ACR sounds
+	ACR CZ 750 used default M24 sound instead of new ACR sound
+	ACR BREN SD sound changed to stock SD 5.56 sound as none of new ACR sounds fit it very well
+
 16/02/2017
 
 Added:

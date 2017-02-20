@@ -1,4 +1,5 @@
 Added:
+	Light version of UK-59 (UK59_ACR_Small)
 	"auto" fire mode to M14_EP1
 	flashlight to M4A1_AIM_SD_camo, M4A1_HWS_GL and M4A1_HWS_GL_camo
 	missed postprocess effects to some optical sights
@@ -8,6 +9,8 @@ Added:
 	zeroing function to some static weapons
 
 Changed:
+	ACR pistol sounds rearrenged, better new ACR sounds are used
+	ACR SD pistol and SD EVO 3 sound configs adjusted to fit with other SD weapons
 	camera memory point of some sniper rifles
 	definitions of some optical sights to more realistic
 	forbade to use NV goggles with (daylight) optical sights of DMR and M4SPR
@@ -19,6 +22,10 @@ Changed:
 	shot sound of M32_heli, YakB and some cannons
 
 Fixed:
+	ACR weapons are now OA-compatible
+	ACR EVO 3 was playing MP5 sounds instead of new ACR sounds
+	ACR CZ 750 used default M24 sound instead of new ACR sound
+	ACR BREN SD sound changed to stock SD 5.56 sound as none of new ACR sounds fit it very well
 	AI rate of fire distance at medium range of GAU12
 	M1014 model issue when magazine is empty
 	disabled postprocess optics effects of some iron, collimator, NV and TI sights
