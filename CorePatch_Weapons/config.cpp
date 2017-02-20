@@ -991,6 +991,7 @@ class CfgWeapons
 	class Evo_ACR:MP5A5 {
 		type = 1;
 		scope = 2;
+		modes[] = {"Single","Burst","FullAuto"};
 		class Single:Mode_SemiAuto {
 			begin1[] = {"CA\Sounds_ACR\weapons\evo_1", db8, 1, 1500};
 			begin2[] = {"CA\Sounds_ACR\weapons\evo_2", db8, 1, 1500};
@@ -1049,7 +1050,7 @@ class CfgWeapons
 	class evo_sd_ACR:MP5SD {
 		type = 1;
 		scope = 2;
-
+		modes[] = {"Single","Burst","FullAuto"};
 		class Single:Mode_SemiAuto {
 			begin1[] = {"CA\Sounds_ACR\weapons\evo_1sd", db3, 1.8, 400};
 			begin2[] = {"CA\Sounds_ACR\weapons\evo_2sd", db3, 1.8, 400};
@@ -1126,7 +1127,7 @@ class CfgWeapons
 		begin1[] = {"CA\Sounds_ACR\weapons\pistol5sd", db8, 2, 300};
 	};
 	class UK59_ACR:Rifle {};
-	class UK59_ACR_Small {type = 1;};
+	class UK59_ACR_Small:UK59_ACR {type = 1;};
 };
 class CfgVehicles
 {
