@@ -27,6 +27,7 @@ class CfgAddons
 	};
 };
 class Mode_FullAuto;
+class Mode_Burst;
 class Mode_SemiAuto;
 class CfgWeapons
 {
@@ -507,11 +508,6 @@ class CfgWeapons
 	{
 		descriptionShort = "$STR_DSS_M40A3_CP";
 	};
-	class CZ_750_S1_ACR : M40A3
-	{
-		model = "\CorePatch\CorePatch_Weapons\models\CZ_750_S1_ACR";
-		scope = 2;
-	};
 	class huntingrifle : M24
 	{
 		class OpticsModes : OpticsModes
@@ -967,6 +963,7 @@ class CfgWeapons
 			};
 		};
 	};
+	// ------------------- ACR -------------------
 	class CZ805_A1_ACR:Rifle {
 		model = "CorePatch\CorePatch_Weapons\models\CZ_805_A1";
 	};
@@ -976,29 +973,160 @@ class CfgWeapons
 	class CZ805_A2_ACR:CZ805_A1_ACR {};
 	class CZ805_A2_SD_ACR:CZ805_A2_ACR {
 		model = "CorePatch\CorePatch_Weapons\models\CZ_805_SF";
+		class Single:Mode_SemiAuto {
+			//begin1[] = {"\CA\Sounds_ACR\weapons\cz-805_silent_single1",db8,1,500};
+			begin1[] = {"ca\sounds\weapons\rifles\rifle-silence-single2",1.0,1,400};
+		};
+		class Burst:Mode_Burst {
+			//begin1[] = {"\CA\Sounds_ACR\weapons\cz-805_silent_single1",db8,1,500};
+			begin1[] = {"ca\sounds\weapons\rifles\rifle-silence-single2",1.0,1,400};
+		};
+		class FullAuto:Mode_FullAuto {
+			//begin1[] = {"\CA\Sounds_ACR\weapons\cz-805_silent_single1",db8,1,500};
+			begin1[] = {"ca\sounds\weapons\rifles\rifle-silence-single2",1.0,1,400};
+		};
 	};
 	class MP5SD:Rifle {};
 	class MP5A5:MP5SD {};
-	class Evo_ACR:MP5A5	{
+	class Evo_ACR:MP5A5 {
 		type = 1;
 		scope = 2;
-		/*begin1[] = {"CA\Sounds_ACR\weapons\evo_1", db8, 1, 1500};
-		begin2[] = {"CA\Sounds_ACR\weapons\evo_2", db8, 1, 1500};
-		begin3[] = {"CA\Sounds_ACR\weapons\evo_3", db8, 1, 1500};
-		soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
-		reloadMagazineSound[] = {"CA\Sounds_ACR\weapons\evo_reload", db-30, 1};
-		drySound[] = {"CA\Sounds_ACR\weapons\dry", db-40, 1};*/
+		class Single:Mode_SemiAuto {
+			begin1[] = {"CA\Sounds_ACR\weapons\evo_1", db8, 1, 1500};
+			begin2[] = {"CA\Sounds_ACR\weapons\evo_2", db8, 1, 1500};
+			begin3[] = {"CA\Sounds_ACR\weapons\evo_3", db8, 1, 1500};
+			soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+			reloadTime = 0.07;
+			recoil = "recoil_single_primary_1outof10";
+			recoilProne = "recoil_single_primary_prone_1outof10";
+			dispersion = 0.003;
+			minRange = 2;
+			minRangeProbab = 0.25;
+			midRange = 40;
+			midRangeProbab = 0.7;
+			maxRange = 150;
+			maxRangeProbab = 0.05;
+		};
+		class Burst:Mode_Burst {
+			begin1[] = {"CA\Sounds_ACR\weapons\evo_1", db8, 1, 1500};
+			begin2[] = {"CA\Sounds_ACR\weapons\evo_2", db8, 1, 1500};
+			begin3[] = {"CA\Sounds_ACR\weapons\evo_3", db8, 1, 1500};
+			soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.1;
+			ffCount = 1;
+			recoil = "recoil_auto_primary_1outof10";
+			recoilProne = "recoil_auto_primary_prone_1outof10";
+			dispersion = 0.003;
+			minRange = 1;
+			minRangeProbab = 0.3;
+			midRange = 30;
+			midRangeProbab = 0.7;
+			maxRange = 60;
+			maxRangeProbab = 0.05;
+		};
+		class FullAuto:Mode_FullAuto {
+			begin1[] = {"CA\Sounds_ACR\weapons\evo_1", db8, 1, 1500};
+			begin2[] = {"CA\Sounds_ACR\weapons\evo_2", db8, 1, 1500};
+			begin3[] = {"CA\Sounds_ACR\weapons\evo_3", db8, 1, 1500};
+			soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+			soundContinuous = 0;
+			reloadTime = 0.1;
+			ffCount = 1;
+			recoil = "recoil_auto_primary_1outof10";
+			recoilProne = "recoil_auto_primary_prone_1outof10";
+			aiRateOfFire = 0.001;
+			dispersion = 0.003;
+			minRange = 0;
+			minRangeProbab = 0.2;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 40;
+			maxRangeProbab = 0.05;
+		};
 	};
-	class evo_sd_ACR:MP5SD	{
+	class evo_sd_ACR:MP5SD {
 		type = 1;
 		scope = 2;
-		/*begin1[] = {"CA\Sounds_ACR\weapons\evo_1sd", db8, 1, 400};
-		begin2[] = {"CA\Sounds_ACR\weapons\evo_2sd", db8, 1, 400};
-		begin3[] = {"CA\Sounds_ACR\weapons\evo_3sd", db8, 1, 400};
-		soundBegin[] = {begin1,0.30, begin2,0.30, begin3, 0.40};
-		reloadMagazineSound[] = {"CA\Sounds_ACR\weapons\evo_reload", db-30, 1};
-		drySound[] = {"CA\Sounds_ACR\weapons\dry", db-40, 1};*/
+
+		class Single:Mode_SemiAuto {
+			begin1[] = {"CA\Sounds_ACR\weapons\evo_1sd", db3, 1.8, 400};
+			begin2[] = {"CA\Sounds_ACR\weapons\evo_2sd", db3, 1.8, 400};
+			begin3[] = {"CA\Sounds_ACR\weapons\evo_3sd", db3, 1.8, 400};
+			soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+			reloadTime = 0.07;
+			recoil = "recoil_single_primary_1outof10";
+			recoilProne = "recoil_single_primary_prone_1outof10";
+			dispersion = 0.003;
+			minRange = 2;
+			minRangeProbab = 0.25;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.05;
+		};
+		class Burst:Mode_Burst {
+			begin1[] = {"CA\Sounds_ACR\weapons\evo_1sd", db3, 1.8, 400};
+			begin2[] = {"CA\Sounds_ACR\weapons\evo_2sd", db3, 1.8, 400};
+			begin3[] = {"CA\Sounds_ACR\weapons\evo_3sd", db3, 1.8, 400};
+			soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.1;
+			ffCount = 1;
+			recoil = "recoil_auto_primary_1outof10";
+			recoilProne = "recoil_auto_primary_prone_1outof10";
+			dispersion = 0.003;
+			minRange = 1;
+			minRangeProbab = 0.3;
+			midRange = 10;
+			midRangeProbab = 0.7;
+			maxRange = 20;
+			maxRangeProbab = 0.05;
+		};
+		class FullAuto:Mode_FullAuto {
+			begin1[] = {"CA\Sounds_ACR\weapons\evo_1sd", db3, 1.8, 400};
+			begin2[] = {"CA\Sounds_ACR\weapons\evo_2sd", db3, 1.8, 400};
+			begin3[] = {"CA\Sounds_ACR\weapons\evo_3sd", db3, 1.8, 400};
+			soundBegin[] = {begin1, 0.30, begin2,0.30, begin3, 0.40};
+			soundContinuous = 0;
+			reloadTime = 0.1;
+			ffCount = 1;
+			recoil = "recoil_auto_primary_1outof10";
+			recoilProne = "recoil_auto_primary_prone_1outof10";
+			aiRateOfFire = 0.001;
+			dispersion = 0.003;
+			minRange = 0;
+			minRangeProbab = 0.2;
+			midRange = 7;
+			midRangeProbab = 0.7;
+			maxRange = 15;
+			maxRangeProbab = 0.05;
+		};
 	};
+	class CZ_750_S1_ACR:M40A3 {
+		scope = 2;
+		model = "\CorePatch\CorePatch_Weapons\models\CZ_750_S1_ACR";
+		begin1[] = {"\CA\Sounds_ACR\weapons\cz-805_single1", db8, 0.8, 1500};
+		soundBegin[] = {"begin1",1};
+	};
+	class M9;
+	class M9SD;
+	class CZ_75_P_07_DUTY:M9 {
+		begin1[] = {"CA\Sounds_ACR\weapons\pistol3", 1.0, 1 ,500};
+	};
+	class CZ_75_D_COMPACT:M9 {
+		begin1[] = {"CA\Sounds_ACR\weapons\pistol4", 1.0, 1, 500};
+	};
+	class CZ_75_SP_01_PHANTOM:M9 {
+		begin1[] = {"CA\Sounds_ACR\weapons\pistol3", 1.0, 1, 500};
+	};
+	class CZ_75_SP_01_PHANTOM_SD:M9SD {
+		begin1[] = {"CA\Sounds_ACR\weapons\pistol5sd", db8, 2, 300};
+	};
+	class UK59_ACR:Rifle {};
+	class UK59_ACR_Small {type = 1;};
 };
 class CfgVehicles
 {
