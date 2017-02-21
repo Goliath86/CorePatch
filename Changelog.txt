@@ -1,7 +1,12 @@
 21/02/2017
 
 Changed:
+	commander optics model of some vehicles
 	reverted CIT #14888 bug fix
+	turret zeroing initial value of Dingo vehicles
+
+Fixed:
+	Dingo w/ GMG cloud effects are too big
 
 
 20/02/2017

@@ -18,6 +18,7 @@ class CfgAddons
 		};
 	};
 };
+class WeaponCloudsMGun;
 class CfgVehicles
 {
 	class All;
@@ -952,6 +953,29 @@ class CfgVehicles
 			0.56234133,
 			1,
 			40
+		};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				discreteDistanceInitIndex = 2;
+			};
+		};
+	};
+	class Dingo_GL_Wdl_ACR : Dingo_Base_ACR
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				discreteDistanceInitIndex = 2;
+
+				class GunFire : WeaponCloudsMGun
+				{
+					interval = 0.0099999998;
+				};
+			};
 		};
 	};
 	class HMMWV_Base : Car
@@ -2328,7 +2352,7 @@ class CfgVehicles
 
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
-				// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+				gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
 				turretInfoType = "RscWeaponEmpty";
 			};
 		};
@@ -2402,7 +2426,7 @@ class CfgVehicles
 
 						gunnerGetInAction = "GetInLow";
 						gunnerGetOutAction = "GetOutLow";
-						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
 						soundServo[] = {
 							"\Ca\sounds\Vehicles\Servos\turret-3",
 							0.0099999998,
@@ -3122,7 +3146,6 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
-				// gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
 
 				class Turrets : Turrets
 				{
@@ -3131,7 +3154,7 @@ class CfgVehicles
 						delete gunnerOutOpticsModel;
 						delete outGunnerMayFire;
 
-						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
 					};
 				};
 			};
@@ -3178,7 +3201,6 @@ class CfgVehicles
 				delete stabilizedInAxes;
 
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
-				// gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
 
 				class Turrets : Turrets
 				{
@@ -3187,7 +3209,7 @@ class CfgVehicles
 						delete gunnerOutOpticsModel;
 						delete outGunnerMayFire;
 
-						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
 						stabilizedInAxes = "StabilizedInAxisY";
 					};
 				};
@@ -3217,7 +3239,7 @@ class CfgVehicles
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
 				discreteDistanceInitIndex = 5;
-				// gunnerOpticsModel = "\ca\Tracked\optika_T72_gunner";
+				// gunnerOpticsModel = "\ca\tracked_e\gunnerOptics_T72";
 
 				class Turrets : Turrets
 				{
@@ -3481,7 +3503,7 @@ class CfgVehicles
 					{
 						delete outGunnerMayFire;
 
-						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
 						stabilizedInAxes = "StabilizedInAxisY";
 
 						class ViewOptics : ViewOptics
@@ -3655,7 +3677,7 @@ class CfgVehicles
 				{
 					class CommanderOptics : CommanderOptics
 					{
-						// gunnerOpticsModel = "\ca\Tracked\optika_T72_commander";
+						gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
 						outGunnerMayFire = 0;
 						stabilizedInAxes = "StabilizedInAxisY";
 					};
