@@ -948,6 +948,7 @@ class CfgVehicles
 	};
 	class Dingo_Base_ACR : Car
 	{
+		memoryPointSupply = "zamerny";
 		soundGetIn[] = {
 			"ca\Sounds_ACR\wheeled\Dingo\door",
 			0.56234133,

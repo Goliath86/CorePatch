@@ -7,6 +7,7 @@ Changed:
 
 Fixed:
 	Dingo w/ GMG cloud effects are too big
+	ACR Dingo MRAP had no external Gear menu access
 	GAZ Volga vehicles have unaccesible inventories from outside (http://dev.withsix.com/issues/66136).
 
 
