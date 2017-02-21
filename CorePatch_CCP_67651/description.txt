@@ -1,1 +1,1 @@
-Added: additional small versions of heavy weapons that allow to carry a launcher/backpack alongside (http://dev.withsix.com/issues/67651).
+Added: additional small versions of heavy weapons that allow to carry a launcher/backpack alongside (http://dev.withsix.com/issues/67651)

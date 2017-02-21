@@ -18,6 +18,7 @@ class CfgPatches
 			"Mk_48_Small",
 			"PK_Small",
 			"Pecheneg_Small",
+			"UK59_ACR_Small",
 			"ksvk_Small",
 			"m107_Small",
 			"m107_TWS_EP1_Small",
@@ -94,6 +95,11 @@ class CfgWeapons
 	};
 	class Pecheneg;
 	class Pecheneg_Small: Pecheneg
+	{
+		type = 1;
+	};
+	class UK59_ACR;
+	class UK59_ACR_Small: UK59_ACR
 	{
 		type = 1;
 	};

@@ -1126,8 +1126,6 @@ class CfgWeapons
 	class CZ_75_SP_01_PHANTOM_SD:M9SD {
 		begin1[] = {"CA\Sounds_ACR\weapons\pistol5sd", db8, 2, 300};
 	};
-	class UK59_ACR:Rifle {};
-	class UK59_ACR_Small:UK59_ACR {type = 1;};
 };
 class CfgVehicles
 {
