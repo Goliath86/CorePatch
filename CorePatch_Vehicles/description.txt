@@ -23,6 +23,7 @@ Changed:
 	turret servo sound of some vehicles
 
 Fixed:
+	T810 had faulty gunner get in points (http://dev.withsix.com/issues/39431)
 	ACR Dingo MRAP had no external Gear menu access
 	ACR vehicles are now OA-compatible
 	ATV physics when driving on objects like bridges (http://dev.withsix.com/issues/75850)

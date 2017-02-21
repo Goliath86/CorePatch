@@ -1876,6 +1876,8 @@ class CfgVehicles
 				};
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"PKTBC"};
+				memoryPointsGetInGunner = "pos codriver";
+				memoryPointsGetInGunnerDir = "pos codriver dir";
 			};
 		};
 	};
