@@ -1,0 +1,1 @@
+GAZ Volga vehicles have unaccesible inventories from outside (http://dev.withsix.com/issues/66136).
