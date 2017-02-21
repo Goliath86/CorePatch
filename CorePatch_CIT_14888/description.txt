@@ -1,0 +1,1 @@
+Fixed: [BAF] AS50 incorrect damage (http://dev.withsix.com/issues/14888)
