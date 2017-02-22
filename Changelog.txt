@@ -1,3 +1,10 @@
+22/02/2017
+
+Fixed:
+	ACR Skoda Octavia had steering wheel turning into wrong direction
+	T810 cargo seat had no proxy and was invisible (http://dev.withsix.com/issues/64332)
+
+
 21/02/2017
 
 Changed:

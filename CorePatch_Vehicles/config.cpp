@@ -790,9 +790,12 @@ class CfgVehicles
 			};
 		};
 	};
+	class Octavia_ACR:Car {
+		model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
+	};
 	class ATV_Base_EP1 : Car
 	{
-		model = "\Corepatch\CorePatch_Vehicles\models\atv.p3d";
+		model = "\Corepatch\CorePatch_Vehicles\models\atv";
 		turnCoef = 1.3;
 		damperSize = 0.08;
 		damperForce = 1;
@@ -1876,13 +1879,12 @@ class CfgVehicles
 				};
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"PKTBC"};
-				memoryPointsGetInGunner = "pos codriver";
-				memoryPointsGetInGunnerDir = "pos codriver dir";
 			};
 		};
 	};
 	class T810A_MG_ACR : T810_Turrets_Base_ACR
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\T810_vp2_ACR";
 		class AnimationSources : AnimationSources
 		{
 			class ReloadMagazine

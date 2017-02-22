@@ -23,6 +23,8 @@ Changed:
 	turret servo sound of some vehicles
 
 Fixed:
+	ACR Skoda Octavia had steering wheel turning into wrong direction
+	T810 cargo seat had no proxy and was invisible (http://dev.withsix.com/issues/64332)
 	T810 had faulty gunner get in points (http://dev.withsix.com/issues/39431)
 	ACR Dingo MRAP had no external Gear menu access
 	ACR vehicles are now OA-compatible
