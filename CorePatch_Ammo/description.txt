@@ -4,5 +4,5 @@ Changed:
 
 Fixed:
 	RPT warnings in ca\communityconfigurationproject_e\gameplay_fixedat1model\p3d\ccp_at1.p3d:shadow(1000)
-	AT1 model is now visible over large distance making it possible to guide it
+	All missiles and rocekts are now visible from large distance
 	some other issues

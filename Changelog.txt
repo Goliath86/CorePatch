@@ -1,3 +1,7 @@
+23/02/2017
+Fixed:
+	All missiles and rocekts are now visible from large distance
+
 22/02/2017
 
 Fixed:

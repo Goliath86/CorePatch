@@ -63,38 +63,9 @@ class CfgAmmo
 		indirectHit = 18;
 	};
 	class MissileBase;
-	class AT3 : MissileBase
-	{
-		soundFly[] = {
-			"\Ca\sounds\Weapons\explosions\rocket_fly1",
-			0.316228,
-			1.5
-		};
-	};
 	class M_9M311_AA : MissileBase
 	{
 		trackLead = 0.5;
-	};
-	class M_AT5_AT : MissileBase
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
-	};
-	class M_AT6_AT : MissileBase
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
-	};
-	class M_AT10_AT : MissileBase
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
-	};
-	class M_Vikhr_AT : MissileBase
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
-	};
-	class RocketCore;
-	class RocketBase : RocketCore
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
 	};
 	class B_762x51_Ball;
 	class B_762x51_noTracer : B_762x51_Ball
@@ -106,14 +77,52 @@ class CfgAmmo
 	{
 		airLock = 0;
 	};
-	class R_SMAW_HEAA;
-	class R_MEEWS_HEAT : R_SMAW_HEAA
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
+
+	class M_TOW_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\TOW_inflight";};
+
+	class M_Javelin_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Javelin_inflight";};
+
+	class M_AT2_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT2_9M17_inflight";};
+
+	class M_AT5_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
+	class M_AT6_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
+	class M_AT10_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
+	class M_Vikhr_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
+
+	class M_Stinger_AA:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Stinger_inflight";};
+	class M_Strela_AA:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Strela_inflight";};
+	class M_Igla_AA:M_Strela_AA	{model = "\CorePatch\CorePatch_Ammo\models\Strela_inflight";};
+
+	class AT3:MissileBase		{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";
+		soundFly[] = {
+			"\Ca\sounds\Weapons\explosions\rocket_fly1",
+			0.316228,
+			1.5
+		};
 	};
-	class R_SMAW_HEDP;
-	class R_MEEWS_HEDP : R_SMAW_HEDP
-	{
-		model = "\CorePatch\CorePatch_Ammo\AT1";
+
+	class RocketCore;
+	class RocketBase:RocketCore	{model = "\CorePatch\CorePatch_Ammo\models\M136_inflight";};
+	class R_SMAW_HEDP:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\SMAW_inflight";};
+	class R_SMAW_HEAA:R_SMAW_HEDP	{};
+	class R_MEEWS_HEAT:R_SMAW_HEAA	{model = "\CorePatch\CorePatch_Ammo\models\M136_inflight";};
+	class R_MEEWS_HEDP:R_SMAW_HEDP	{model = "\CorePatch\CorePatch_Ammo\models\M136_inflight";};
+
+	class R_M136_AT:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\M136_inflight";};
+	class R_RPG18_AT:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\PG9_inflight";};
+	class R_PG7V_AT:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\PG7V_inflight";};
+	class R_PG7VL_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\PG7VL_inflight";};
+	class R_PG7VR_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\PG7VR_inflight";};
+	class R_OG7_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\OG7V_inflight";};
+	class R_PG9_AT:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\PG9_inflight";};
+	class R_OG9_HE:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\OG9_inflight";};
+	class R_GRAD:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
+	class R_MLRS:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
+};
+
+class CfgMagazines {
+	class CA_LauncherMagazine;
+	class RPG18:CA_LauncherMagazine {
+		picture = "\ca\weapons\data\equip\m_pg9_ca.paa";
 	};
 };
