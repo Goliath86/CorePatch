@@ -8,22 +8,22 @@ Fixed:
 22/02/2017
 
 Fixed:
+	[ACR] First unit loaded as cargo (from back) to T810 (MG) isn't seen (http://dev.withsix.com/issues/64332)
 	ACR Skoda Octavia had steering wheel turning into wrong direction
-	T810 cargo seat had no proxy and was invisible (http://dev.withsix.com/issues/64332)
 
 
 21/02/2017
 
 Changed:
-	commander optics model of some vehicles
 	reverted CIT #14888 bug fix
+	commander optics model of some vehicles
 	turret zeroing initial value of Dingo vehicles
 
 Fixed:
-	Dingo w/ GMG cloud effects are too big
+	[ACR] Gunner from T810 (MG) is wounded on disembarking (http://dev.withsix.com/issues/39431)
+	All GAZ Volga vehicles have unaccesible inventories from outside (http://dev.withsix.com/issues/66136)
 	ACR Dingo MRAP had no external Gear menu access
-	T810 had faulty gunner get in points (http://dev.withsix.com/issues/39431)
-	GAZ Volga vehicles have unaccesible inventories from outside (http://dev.withsix.com/issues/66136).
+	Dingo w/ GMG cloud effects are too big
 
 
 20/02/2017
@@ -36,11 +36,11 @@ Changed:
 	ACR SD pistol and SD EVO 3 sound configs adjusted to fit with other SD weapons
 
 Fixed:
+	ACR BREN SD sound changed to stock SD 5.56 sound as none of new ACR sounds fit it very well
+	ACR CZ 750 used default M24 sound instead of new ACR sound
+	ACR EVO 3 was playing MP5 sounds instead of new ACR sounds
 	ACR vehicles are now OA-compatible
 	ACR weapons are now OA-compatible
-	ACR EVO 3 was playing MP5 sounds instead of new ACR sounds
-	ACR CZ 750 used default M24 sound instead of new ACR sound
-	ACR BREN SD sound changed to stock SD 5.56 sound as none of new ACR sounds fit it very well
 
 
 16/02/2017
@@ -53,20 +53,20 @@ Changed:
 
 Fixed:
 	SCAR_H_STD_EGLM_Spect no 1x option (http://dev.withsix.com/issues/17245)
-	ACR Mi-24 clan sign was always black (https://dev.withsix.com/issues/43013)
-	ACR Mi-24 Yak-B was not rotating with the turret
-	Mi-24 engine too vulnerable (https://dev.withsix.com/issues/26427 https://dev.withsix.com/issues/28110)
-	Mi-24P was not able to aim ATGMs (https://dev.withsix.com/issues/27938)
+	Mi-24 engine too vulnerable (http://dev.withsix.com/issues/26427)
+	Mi-24P gunner sight doesn't move when missiles are selected or in any other situation (http://dev.withsix.com/issues/27938)
+	[ACR] Czech Army Missing Mi-24V text on Mi-24V Hind (http://dev.withsix.com/issues/43013)
+	ACR Mi-24 YakB was not rotating with the turret
 
 
 13/02/2017
 
 Fixed:
-	Mi-24P properly hides bomb proxies when they're used up by gunner
-	Pchela-1T had no get in memory points, had wrong get in animation
-	MQ-9 Reaper had needless get in animation delay
+	Fire in the sky bug
 	Ka-137 and Pchela-1T no longer explode into huge explosion on destruction
-	Fire in the sky bug fixed
+	Mi-24P properly hides bomb proxies when they're used up by gunner
+	MQ-9 Reaper had needless get in animation delay
+	Pchela-1T had no get in memory points, had wrong get in animation
 
 
 07/02/2017
@@ -75,7 +75,7 @@ Fixed:
 	ATV physics when driving on objects like bridges (http://dev.withsix.com/issues/75850)
 	ATV handling and bounding issues (http://dev.withsix.com/issues/75851)
 	ATV had wrong low LOD texture
-	Woodland ATV had desert camo texture
+	woodland ATV had desert camo texture
 
 
 02/02/2017
@@ -111,24 +111,23 @@ Fixed:
 Added:
 	some factions and subfactions lack medics and engineers (http://dev.withsix.com/issues/70799)
 	new weapons - M4A3_EP1 and M4A3_RCO_EP1 rifles
-	possibility to deactivate mines and hide corpses (missed) to saboteurs and some soldiers of special forces
+	possibility to deactivate mines to saboteurs and some soldiers of special forces
 	possibility to switch seat between all seats of UH60M helicopter
 
 Changed:
 	reverted and updated CIT #28047 bug fix
 	reverted CCP #71037 bug fix to original state
 	deleted CCP #71142 bug fix due to it's faulty
+	AI should no longer go prone indoors as much
+	civilian and non-transport Urals no longer have huge ammo caches in them
 	definitions of some optical sights to more realistic
 	deleted unnecessary fire mode (@ 2600 SPM) of GSh302K cannon
 	external camera rotation angles of tracked vehicles
 	hit value of pistol and some cannon projectiles
 	inventory picture of OG7 launcher magazine
 	max transportable amount of weapons, magazines and backpacks of some vehicles
-	portrait picture of TK_Soldier_Crew_EP1 character
 	rate of fire of some cannons
 	reverted vision modes of Laserdesignator to original
-	civilian and non-transport Urals no longer have huge ammo caches in them
-	AI should no longer go prone indoors as much
 
 Fixed:
 	CfgWeapons - config references missing sound files (http://dev.withsix.com/issues/22990)
@@ -158,11 +157,12 @@ Fixed:
 	[ACR] CZ 805 BREN optics (http://dev.withsix.com/issues/71282)
 	SCAR_L_STD_Mk4CQT descriptionShort error (http://dev.withsix.com/issues/72718)
 	SILVIE module (http://forums.bistudio.com/topic/181435-a2a2oa-beta-patches-pre-final-patch/page-5#entry2935621)
-	Aircraft crash destruction effects no longer starts mid-air on dedicated server
-	Aircraft explosions now always appear at correct height
+	aircraft crash destruction effects no longer starts mid-air on dedicated server
+	aircraft explosions now always appear at correct height
 	broken IR laser of M4A1_RCO_GL rifle
 	incompatibility of FN_FAL and M14_EP1 rifles with JSRS mod
 	incompatibility of RPK_74 machine gun and GSh30x cannons with ACE and CWR2 mods
+	portrait picture of TK_Soldier_Crew_EP1 character
 	some localization mistakes
 	some other issues
 
@@ -180,7 +180,6 @@ Added:
 Changed:
 	deleted CIT #22991, #22992, #22994, #22996, #22998, #22999, #24661, #24662, #24663, #24666 and #24670 bug fixes due to causes appearance of "No owner" messages in RPT file
 	ammo of 250Rnd_30mm_GSh302 magazine to HE
-	HUD of some vehicles
 	camera memory point of some sniper rifles
 	decreased discrete distances range of M110_TWS_EP1 rifle and turrets with some cannons
 	decreased max transportable amount of backpacks of SUV_PMC car
@@ -190,6 +189,7 @@ Changed:
 	forbade air locking of AP and "no tracer" (uses in sniper rifles) bullets
 	"get in" / "get out" actions of some vehicles
 	"get in" / "get out" sounds of some vehicles
+	HUD of some vehicles
 	increased discrete distances range of some sniper rifles
 	main turret max elevation angle of ZSU_Shilka vehicle
 	optics model of M4A1_RCO_GL, m16a4_acg, M16A4_ACG_GL and Sa58V_RCO_EP1 rifles
