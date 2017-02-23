@@ -3629,7 +3629,15 @@ class CfgVehicles
 			};
 			class MainTurret : NewTurret
 			{
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
+				discreteDistanceInitIndex = 5;
 				gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_gunner";
+				turretInfoType = "RscWeaponZeroing";
+				weapons[] = {
+					"2A28",
+					"AT3Launcher",
+					"PKTBC"
+				};
 			};
 		};
 	};

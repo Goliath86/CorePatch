@@ -30,6 +30,10 @@ class CfgWeapons
 	{
 		ballisticsComputer = 2;
 	};
+	class 2A28 : CannonCore
+	{
+		ballisticsComputer = 2;
+	};
 	class 2A42 : CannonCore
 	{
 		ballisticsComputer = 2;

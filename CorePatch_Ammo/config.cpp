@@ -63,19 +63,22 @@ class CfgAmmo
 		indirectHit = 18;
 	};
 	class MissileBase;
+	class AT3 : MissileBase
+	{
+		model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";
+		soundFly[] = {
+			"\Ca\sounds\Weapons\explosions\rocket_fly1",
+			0.316228,
+			1.5
+		};
+	};
 	class M_9M311_AA : MissileBase
 	{
 		trackLead = 0.5;
 	};
-	class B_762x51_Ball;
-	class B_762x51_noTracer : B_762x51_Ball
+	class M_AT3_AT : MissileBase
 	{
-		airLock = 0;
-	};
-	class B_127x99_Ball;
-	class B_127x99_Ball_noTracer : B_127x99_Ball
-	{
-		airLock = 0;
+		model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";
 	};
 
 	class M_TOW_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\TOW_inflight";};
@@ -92,14 +95,6 @@ class CfgAmmo
 	class M_Stinger_AA:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Stinger_inflight";};
 	class M_Strela_AA:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Strela_inflight";};
 	class M_Igla_AA:M_Strela_AA	{model = "\CorePatch\CorePatch_Ammo\models\Strela_inflight";};
-
-	class AT3:MissileBase		{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";
-		soundFly[] = {
-			"\Ca\sounds\Weapons\explosions\rocket_fly1",
-			0.316228,
-			1.5
-		};
-	};
 
 	class RocketCore;
 	class RocketBase:RocketCore	{model = "\CorePatch\CorePatch_Ammo\models\M136_inflight";};
@@ -118,8 +113,18 @@ class CfgAmmo
 	class R_OG9_HE:R_PG9_AT		{model = "\CorePatch\CorePatch_Ammo\models\OG9_inflight";};
 	class R_GRAD:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
 	class R_MLRS:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
-};
 
+	class B_762x51_Ball;
+	class B_762x51_noTracer : B_762x51_Ball
+	{
+		airLock = 0;
+	};
+	class B_127x99_Ball;
+	class B_127x99_Ball_noTracer : B_127x99_Ball
+	{
+		airLock = 0;
+	};
+};
 class CfgMagazines {
 	class CA_LauncherMagazine;
 	class RPG18:CA_LauncherMagazine {

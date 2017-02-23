@@ -20,12 +20,58 @@ class CfgAmmo
 		manualControl = 1;
 		maxControlRange = 3000;
 	};
+	class M_AT3_AT : MissileBase
+	{
+		cost = 7000;
+		effectsMissile = "missile4";
+		explosive = 0.35;
+		hit = 350;
+		indirectHit = 10;
+		initTime = 0;
+		maneuvrability = 8;
+		manualControl = 1;
+		maxControlRange = 3000;
+		maxSpeed = 200;
+		nameSound = "missiles";
+		proxyShape = "\ca\tracked_ACR\BVP1\AT3_proxy";
+		sideAirFriction = 0.2;
+		soundEngine[] = {
+			"\ca\Weapons\Data\Sound\noise",
+			0.031622998,
+			1
+		};
+		soundFly[] = {
+			"\Ca\sounds\Weapons\explosions\rocket_fly1",
+			0.316228,
+			1.5
+		};
+		soundHit[] = {
+			"\ca\Weapons\Data\Sound\explosion_large1",
+			17.782795,
+			1
+		};
+		thrust = 350;
+		thrustTime = 30;
+		timeToLive = 20;
+		typicalSpeed = 200;
+	};
 };
 class CfgMagazines
 {
 	class VehicleMagazine;
+	class 1Rnd_AT3 : VehicleMagazine
+	{
+		ammo = "M_AT3_AT";
+		count = 1;
+		displayName = "$STR_DN_M_AT3_CP";
+		initSpeed = 80;
+		nameSound = "missiles";
+	};
 	class AT3 : VehicleMagazine
 	{
+		ammo = "M_AT3_AT";
+		descriptionShort = "";
+		displayName = "$STR_DN_M_AT3_CP";
 		initSpeed = 80;
 	};
 };
@@ -34,6 +80,7 @@ class CfgWeapons
 	class CannonCore;
 	class 2A28 : CannonCore
 	{
+		canLock = 0;
 		cursor = "Cannon";
 		cursorAim = "\ca\Weapons\Data\clear_empty";
 	};
@@ -43,6 +90,11 @@ class CfgWeapons
 		canLock = 1;
 		cursor = "Rocket";
 		displayName = "$STR_DN_AT3LAUNCHER_CP";
+		magazines[] = {
+			"1Rnd_AT3",
+			"4Rnd_AT3",
+			"AT3"
+		};
 		magazineReloadTime = 30;
 		maxRange = 3000;
 		minRange = 500;

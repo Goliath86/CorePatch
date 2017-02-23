@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="CorePatch">
+	<Key ID="STR_DN_M_AT3_CP">
+		<Original>Malyutka 9M11</Original>
+		<Chinese>Malyutka 9M11</Chinese>
+		<Czech>Malyutka 9M11</Czech>
+		<English>Malyutka 9M11</English>
+		<French>Malyutka 9M11</French>
+		<German>Malyutka 9M11</German>
+		<Hungarian>Malyutka 9M11</Hungarian>
+		<Italian>Malyutka 9M11</Italian>
+		<Japanese>Malyutka 9M11</Japanese>
+		<Polish>Malyutka 9M11</Polish>
+		<Russian>ПТУР 9М11</Russian>
+		<Spanish>Malyutka 9M11</Spanish>
+	</Key>
 	<Key ID="STR_DN_AT3LAUNCHER_CP">
 		<Original>Malyutka 9K11</Original>
 		<Chinese>Malyutka 9K11</Chinese>

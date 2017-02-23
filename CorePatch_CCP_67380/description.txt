@@ -1,1 +1,1 @@
-Added: ballistics computer to more weapons (http://dev.withsix.com/issues/67380).
+Added: ballistics computer to more weapons (http://dev.withsix.com/issues/67380)
