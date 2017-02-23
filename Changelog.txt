@@ -1,6 +1,9 @@
 23/02/2017
+
 Fixed:
-	All missiles and rocekts are now visible from large distance
+	HMMWV Terminal is represented by left bottom picture/icon from HMMWV (http://dev.withsix.com/issues/67544)
+	all missiles and rockets are now visible from large distance
+
 
 22/02/2017
 

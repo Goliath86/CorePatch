@@ -1,0 +1,1 @@
+Fixed: HMMWV Terminal is represented by left bottom picture/icon from HMMWV (http://dev.withsix.com/issues/67544)
