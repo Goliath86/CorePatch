@@ -115,7 +115,7 @@ class CfgAmmo
 	class R_PG7VR_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\PG7VR_inflight";};
 	class R_OG7_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\OG7V_inflight";};
 	class R_PG9_AT:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\PG9_inflight";};
-	class R_OG9_HE:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\OG9_inflight";};
+	class R_OG9_HE:R_PG9_AT		{model = "\CorePatch\CorePatch_Ammo\models\OG9_inflight";};
 	class R_GRAD:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
 	class R_MLRS:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
 };
