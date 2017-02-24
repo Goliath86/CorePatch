@@ -47,6 +47,7 @@ class CfgVehicles {
 	class Mi24_V2:Mi24_V {
 		scope = 1;
 		model = "\CorePatch\CorePatch_CIT_8198\models\Mi24_V2.p3d";
+		magazines[] = {"40Rnd_80mm","120Rnd_CMFlareMagazine"};
 		class Turrets:Turrets {
 			class MainTurret:MainTurret {
 				weapons[] = {"YakB", "AT9Launcher"};
