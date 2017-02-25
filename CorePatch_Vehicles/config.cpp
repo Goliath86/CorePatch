@@ -1265,7 +1265,7 @@ class CfgVehicles
 
 				class ViewOptics
 				{
-					thermalMode[] = {2, 3};
+					thermalMode[] = {0, 1};
 					visionMode[] = {
 						"Normal",
 						"Ti"
@@ -1886,6 +1886,7 @@ class CfgVehicles
 	class T810A_MG_ACR : T810_Turrets_Base_ACR
 	{
 		model = "\CorePatch\CorePatch_Vehicles\models\T810_vp2_ACR";
+
 		class AnimationSources : AnimationSources
 		{
 			class ReloadMagazine
@@ -2692,6 +2693,11 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				startEngine = 1;
+
+				class ViewOptics
+				{
+					thermalMode[] = {0, 1};
+				};
 			};
 		};
 	};

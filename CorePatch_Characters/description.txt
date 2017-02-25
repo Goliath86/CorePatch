@@ -4,5 +4,6 @@ Added:
 
 Fixed:
 	armor of body parts of some characters
+	civilians could not use binoculars when seated
 	portrait picture of some characters
 	some localization mistakes
