@@ -5,6 +5,9 @@ Changed:
 	optics model of BMP-1 gunner
 	TI optics vision mode of HMMWV_TOW and M1135_ATGMV_EP1
 
+Fixed:
+	civilians could not use binoculars when seated
+
 
 24/02/2017
 

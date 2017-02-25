@@ -22,6 +22,29 @@ class CfgAddons
 		};
 	};
 };
+class CfgMovesBasic
+{
+	class Actions
+	{
+		class CivilProneActions;
+		class BinocProneCivilActions : CivilProneActions
+		{
+			playerCrouch = "AwopPknlMstpSoptWbinDnon_non";
+			playerProne = "";
+		};
+		class CivilStandActions;
+		class BinocStandCivilActions : CivilStandActions
+		{
+			playerCrouch = "AwopPknlMstpSoptWbinDnon_non";
+			playerStand = "";
+		};
+		class BinocKneelCivilActions : BinocStandCivilActions
+		{
+			playerCrouch = "";
+			playerStand = "AwopPercMstpSoptWbinDnon_non";
+		};
+	};
+};
 class CfgFactionClasses
 {
 	class BIS_CZ
