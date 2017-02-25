@@ -98,7 +98,7 @@ class CfgWeapons
 		magazineReloadTime = 30;
 		maxRange = 3000;
 		minRange = 500;
-		reloadTime = 90;
+		reloadTime = 30;
 	};
 };
 class CfgVehicles

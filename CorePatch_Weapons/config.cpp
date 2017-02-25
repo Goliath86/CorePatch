@@ -313,6 +313,11 @@ class CfgWeapons
 	{
 		magazineReloadTime = 5;
 	};
+	class AT5Launcher;
+	class AT5LauncherSingle : AT5Launcher
+	{
+		reloadTime = 30;
+	};
 	class Rifle;
 	class AA12_PMC : Rifle
 	{
