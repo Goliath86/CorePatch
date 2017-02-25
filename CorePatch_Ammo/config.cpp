@@ -65,7 +65,6 @@ class CfgAmmo
 	class MissileBase;
 	class AT3 : MissileBase
 	{
-		model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";
 		soundFly[] = {
 			"\Ca\sounds\Weapons\explosions\rocket_fly1",
 			0.316228,
@@ -89,7 +88,7 @@ class CfgAmmo
 
 	class M_AT5_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
 	class M_AT6_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
-	class M_AT10_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
+	class M_AT10_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";	muzzleEffect = "BIS_Effects_RocketBarrel";};
 	class M_Vikhr_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
 
 	class M_Stinger_AA:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Stinger_inflight";};
@@ -110,9 +109,34 @@ class CfgAmmo
 	class R_PG7VR_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\PG7VR_inflight";};
 	class R_OG7_AT:R_PG7V_AT	{model = "\CorePatch\CorePatch_Ammo\models\OG7V_inflight";};
 	class R_PG9_AT:RocketBase	{model = "\CorePatch\CorePatch_Ammo\models\PG9_inflight";};
-	class R_OG9_HE:R_PG9_AT		{model = "\CorePatch\CorePatch_Ammo\models\OG9_inflight";};
+	class R_OG9_HE:R_PG9_AT		{model = "\CorePatch\CorePatch_Ammo\models\OG9_inflight";};//	explosionEffects = "HERocketExplosion";
 	class R_GRAD:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
 	class R_MLRS:RocketBase		{model = "\CorePatch\CorePatch_Ammo\models\Grad_inflight";};
+
+	class ShellBase;
+	class PG15V:ShellBase {
+		model = "\CorePatch\CorePatch_Ammo\models\PG9_inflight";
+		muzzleEffect = "BIS_Effects_RocketBarrel";
+		/*simulation = "shotRocket";
+
+		simulationStep = 0.05;
+		timeToLive = 20;
+		maneuvrability = 0;
+		maxControlRange = 0;
+
+		visibleFire = 32;
+		audibleFire = 32;
+		visibleFireTime = 20;
+
+		initTime = 0;
+		thrustTime = 1;
+		thrust = 1500;
+		cost = 800;
+		deflecting = 5;
+
+		initSpeed = 435;
+		nameSound = "sabot";*/
+	};
 
 	class B_762x51_Ball;
 	class B_762x51_noTracer : B_762x51_Ball

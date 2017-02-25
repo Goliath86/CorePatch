@@ -17,5 +17,31 @@ class CfgAddons {
 };
 
 class DefaultEventhandlers {
-	init = "if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then {[] call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}";
+	init = "if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then {call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}";
+};
+
+class CfgVehicles
+{
+	class LandVehicle;
+	class Car: LandVehicle {
+		class Eventhandlers: DefaultEventhandlers
+		{
+			init = "if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then {call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}; _this call compile preprocessFileLineNumbers '\ca\communityconfigurationproject_e\ai_madetankgunnersuseatandheammo\muzzle\init.sqf';";
+			fired = "_this call BIS_Effects_EH_Fired; _this call BIS_CPP_Muzzle_ForceReload;";
+		};
+	};
+	class Tank: LandVehicle	{
+		class Eventhandlers: DefaultEventhandlers
+		{
+			init = "if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then {call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}; _this call compile preprocessFileLineNumbers '\ca\communityconfigurationproject_e\ai_madetankgunnersuseatandheammo\muzzle\init.sqf';";
+			fired = "_this call BIS_Effects_EH_Fired; _this call BIS_CPP_Muzzle_ForceReload;";
+		};
+	};
+	class StaticWeapon:LandVehicle {
+		class Eventhandlers: DefaultEventhandlers
+		{
+			init = "if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then {call compile preProcessFileLineNumbers '\CorePatch\CorePatch_FIS\data\scripts\init.sqf';}; _this call compile preprocessFileLineNumbers '\ca\communityconfigurationproject_e\ai_madetankgunnersuseatandheammo\muzzle\init.sqf';";
+			fired = "_this call BIS_Effects_EH_Fired; _this call BIS_CPP_Muzzle_ForceReload;";
+		};
+	};
 };

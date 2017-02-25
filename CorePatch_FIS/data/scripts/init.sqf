@@ -2,27 +2,31 @@
 if(isNil 'BIS_Effects_Init' || isNil 'Corepatch_Effects_Init') then
 {
 	BIS_Effects_Init=true;
-	BIS_Effects_EH_Fired=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\fired.sqf";
-	BIS_Effects_EH_Killed=compile preprocessFileLineNumbers "\CorePatch\CorePatch_FIS\data\scripts\killed.sqf";
+	BIS_Effects_EH_Fired=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\fired.sqf";
+	BIS_Effects_EH_Killed=compile preprocessFileLineNumbers "CorePatch\CorePatch_FIS\data\scripts\killed.sqf";
 
-	BIS_Effects_Rifle=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\rifle.sqf";
-	BIS_Effects_Cannon=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\cannon.sqf";
-	BIS_Effects_HeavyCaliber=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\heavycaliber.sqf";
-	BIS_Effects_HeavySniper=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\heavysniper.sqf";
-	BIS_Effects_Rocket=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\rocket.sqf";
-	BIS_Effects_SmokeShell=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\smokeshell.sqf";
-	BIS_Effects_SmokeLauncher=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\smokelauncher.sqf";
-	BIS_Effects_Flares=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\flares.sqf";
+	BIS_Effects_Rifle=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\rifle.sqf";
+	BIS_Effects_Cannon=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\cannon.sqf";
+	BIS_Effects_HeavyCaliber=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\heavycaliber.sqf";
+	BIS_Effects_HeavySniper=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\heavysniper.sqf";
+	BIS_Effects_Rocket=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\rocket.sqf";
+	BIS_Effects_RocketBarrel=compile preprocessFileLineNumbers "CorePatch\CorePatch_FIS\data\scripts\rocketbarrel.sqf";
+	BIS_Effects_SmokeShell=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\smokeshell.sqf";
+	BIS_Effects_SmokeLauncher=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\smokelauncher.sqf";
+	BIS_Effects_Flares=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\flares.sqf";
 		
 	//must use spawn command for these:
-	BIS_Effects_Burn=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf";
-	BIS_Effects_AircraftVapour=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\misc\aircraftvapour.sqf";
-	BIS_Effects_AirDestruction=compile preprocessFileLineNumbers "\CorePatch\CorePatch_FIS\data\scripts\AirDestruction.sqf";
-	BIS_Effects_AirDestructionStage2=compile preprocessFileLineNumbers "\CorePatch\CorePatch_FIS\data\scripts\AirDestructionStage2.sqf";
-	BIS_Effects_Secondaries=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\destruction\Secondaries.sqf";
-	//BIS_Effects_RocketTrail=compile preprocessFileLineNumbers "\ca\Data\ParticleEffects\SCRIPTS\muzzle\rockettrail.sqf";
+	BIS_Effects_Burn=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf";
+	BIS_Effects_AircraftVapour=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\misc\aircraftvapour.sqf";
+	BIS_Effects_AirDestruction=compile preprocessFileLineNumbers "CorePatch\CorePatch_FIS\data\scripts\AirDestruction.sqf";
+	BIS_Effects_AirDestructionStage2=compile preprocessFileLineNumbers "CorePatch\CorePatch_FIS\data\scripts\AirDestructionStage2.sqf";
+	BIS_Effects_Secondaries=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\destruction\Secondaries.sqf";
+	//BIS_Effects_RocketTrail=compile preprocessFileLineNumbers "ca\Data\ParticleEffects\SCRIPTS\muzzle\rockettrail.sqf";
 
-	[] call compile preprocessFileLineNumbers "\CorePatch\CorePatch_FIS\data\scripts\fnc_fis_functions.sqf";
+	[] call compile preprocessFileLineNumbers "CorePatch\CorePatch_FIS\data\scripts\fnc_fis_functions.sqf";
+
+	Corepatch_BMP1_Fired = compile preprocessFileLineNumbers "CorePatch\CorePatch_Vehicles\scripts\bmp1_fired.sqf";
+	Corepatch_scriptNull = 0 spawn {};
 
 	Corepatch_Effects_Init=true;
 };
@@ -47,6 +51,6 @@ then
 if (isnil 'RE') then
 	{
 	private ["_ok"];
-	_ok = [] execVM "\ca\Modules\MP\data\scripts\MPframework.sqf";
+	_ok = [] execVM "ca\Modules\MP\data\scripts\MPframework.sqf";
 	};
 */

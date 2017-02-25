@@ -13,7 +13,7 @@ class CfgAmmo
 	class MissileBase;
 	class AT3 : MissileBase
 	{
-		cost = 7000;
+		cost = 6000;
 		hit = 350;
 		indirectHit = 10;
 		indirectHitRange = 1;
@@ -22,19 +22,31 @@ class CfgAmmo
 	};
 	class M_AT3_AT : MissileBase
 	{
-		cost = 7000;
-		effectsMissile = "missile4";
+		model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight.p3d";
+		proxyShape = "\CorePatch\CorePatch_Ammo\models\AT3_Proxy.p3d";
+
+		cost = 6000;
+
 		explosive = 0.35;
 		hit = 350;
 		indirectHit = 10;
-		initTime = 0;
-		maneuvrability = 8;
+
+		maneuvrability = 4;
 		manualControl = 1;
 		maxControlRange = 3000;
+		sideAirFriction = 0.076;
+		trackLead = 1;
+		trackOversteer = 1;
+
+		initTime = 0;
+		thrust = 125;
+		thrustTime = 3;
+		timeToLive = 20;
 		maxSpeed = 200;
+		typicalSpeed = 200;
+
+		effectsMissile = "missile2";
 		nameSound = "missiles";
-		proxyShape = "\ca\tracked_ACR\BVP1\AT3_proxy";
-		sideAirFriction = 0.2;
 		soundEngine[] = {
 			"\ca\Weapons\Data\Sound\noise",
 			0.031622998,
@@ -50,10 +62,6 @@ class CfgAmmo
 			17.782795,
 			1
 		};
-		thrust = 350;
-		thrustTime = 30;
-		timeToLive = 20;
-		typicalSpeed = 200;
 	};
 };
 class CfgMagazines
@@ -83,6 +91,7 @@ class CfgWeapons
 		canLock = 0;
 		cursor = "Cannon";
 		cursorAim = "\ca\Weapons\Data\clear_empty";
+		effectsFire = "";
 	};
 	class MissileLauncher;
 	class AT3Launcher : MissileLauncher
@@ -95,7 +104,7 @@ class CfgWeapons
 			"4Rnd_AT3",
 			"AT3"
 		};
-		magazineReloadTime = 30;
+		magazineReloadTime = 1e-1;//30;
 		maxRange = 3000;
 		minRange = 500;
 		reloadTime = 30;

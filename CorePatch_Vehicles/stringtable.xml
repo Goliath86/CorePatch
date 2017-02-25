@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CorePatch">
+	<Container name="Vehicles">
+		<Key ID="str_dn_BMP1_CP">
+			<German>BMP-1</German>
+			<English>BMP-1</English>
+			<Italian>BMP-1</Italian>
+			<Spanish>BMP-1</Spanish>
+			<French>BMP-1</French>
+			<Czech>BMP-1</Czech>
+			<Russian>БМП-1</Russian>
+			<Polish>BMP-1</Polish>
+			<Hungarian>BMP-1</Hungarian>
+		</Key>
+	</Container>
+</Project>

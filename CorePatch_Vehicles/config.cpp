@@ -18,6 +18,7 @@ class CfgAddons
 		};
 	};
 };
+//class DefaultEventhandlers;
 class WeaponCloudsMGun;
 class CfgVehicles
 {
@@ -2831,6 +2832,7 @@ class CfgVehicles
 			minAngleX = -65;
 			minAngleY = -150;
 		};
+		class EventHandlers;
 	};
 	class 2S6M_Tunguska : Tank
 	{
@@ -3621,6 +3623,17 @@ class CfgVehicles
 	};
 	class BVP1_BASE : BMP2_Base
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\BMP1";
+		hiddenSelections[] ={
+			"camo1",
+			"camo2",
+			"brvno"
+		};
+		hiddenSelectionsTextures[] ={
+			"\ca\Tracked_ACR\BVP1\data\trup_ext0_co",
+			"\ca\Tracked_ACR\BVP1\data\veza0_co",
+			"\ca\Tracked_ACR\BVP1\data\trup_ext0_co"
+		};
 		class Turrets
 		{
 			class CommanderOptics : NewTurret
@@ -3638,9 +3651,58 @@ class CfgVehicles
 					"AT3Launcher",
 					"PKTBC"
 				};
+				magazines[] = {
+					"40rnd_PG15V",
+					"4Rnd_AT3",
+					"2000Rnd_762x54_PKT"
+				};
+			};
+		};
+		class EventHandlers:EventHandlers {
+			Fired = "_this call BIS_Effects_EH_Fired; _this call BIS_CPP_Muzzle_ForceReload; _this call Corepatch_BMP1_Fired";
+		};
+		class AnimationSources {
+			/*class ATGM_reload {
+				source = "reloadmagazine";
+				weapon = "AT3Launcher";
+			};*/
+			class ATGM_hide {
+				source = "user";
+				animPeriod = 1e-5;
 			};
 		};
 	};
+	class BVP1_TK_GUE_ACR:BVP1_BASE {
+		
+	};
+	class BVP1_TK_ACR:BVP1_BASE {
+		hiddenSelectionsTextures[] ={
+			"\ca\Tracked_ACR\BVP1\data\trup_ext0_TAK_CO",
+			"\ca\Tracked_ACR\BVP1\data\veza0_TAK_CO"
+		};
+	};
+	class BMP1_INS_CP:BVP1_BASE {
+		side = 1;
+		scope = 1;
+		expansion = 3;
+		faction = "INS";
+		displayName = $STR_DN_BMP1_CP;
+		/*hiddenSelectionsTextures[] ={
+			"\ca\Tracked_ACR\BVP1\data\trup_ext0_co",
+			"\ca\Tracked_ACR\BVP1\data\veza0_co",
+			"\ca\Tracked_ACR\BVP1\data\trup_ext0_co"
+		};*/
+		crew = "Ins_Soldier_Crew";
+		typicalCargo[] = {
+			"Ins_Soldier_Crew",
+			"Ins_Soldier_Crew",
+			"Ins_Soldier_Crew",
+			"Ins_Soldier_AT",
+			"Ins_Soldier_MG",
+			"Ins_Soldier_1"
+		};
+	};
+
 	class BMP3 : Tracked_APC
 	{
 		aggregateReflectors[] = {{"1", "1"}}; // {{"CommanderLight"}, {"GunnerLight"}, {"1", "1"}};
