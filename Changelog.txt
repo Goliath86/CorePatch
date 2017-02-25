@@ -3,6 +3,7 @@
 Changed:
 	decreased reload time of AT-3 and AT-5 missile launchers
 	optics model of BMP-1 gunner
+	TI optics vision mode of HMMWV_TOW and M1135_ATGMV_EP1
 
 
 24/02/2017

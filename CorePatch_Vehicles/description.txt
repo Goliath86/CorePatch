@@ -20,6 +20,7 @@ Changed:
 	max transportable amount of weapons, magazines and backpacks of some vehicles
 	neared Wheeled_APC 3rd person view
 	optics model of HMMWV_TOW gunner and T72 commander
+	TI optics vision mode of HMMWV_TOW and M1135_ATGMV_EP1
 	turret servo sound of some vehicles
 
 Fixed:
