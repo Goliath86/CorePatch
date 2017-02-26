@@ -90,7 +90,7 @@ class CfgVehicles
 	class Ins_Soldier_Sab : Ins_Soldier_Base
 	{
 		canDeactivateMines = 1;
-		canHideBodies = 1;
+		//canHideBodies = 1;
 		// engineer = 0;
 	};
 	//class Ins_Soldier_Sapper : Ins_Soldier_Base
@@ -112,7 +112,7 @@ class CfgVehicles
 	class MVD_Soldier_Base : SoldierEB
 	{
 		canDeactivateMines = 1;
-		canHideBodies = 1;
+		//canHideBodies = 1;
 	};
 	class RU_Soldier_Base : SoldierEB
 	{
@@ -145,7 +145,7 @@ class CfgVehicles
 	class RUS_Soldier_Base : SoldierEB
 	{
 		canDeactivateMines = 1;
-		canHideBodies = 1;
+		//canHideBodies = 1;
 
 		class HitPoints : HitPoints
 		{
@@ -228,7 +228,7 @@ class CfgVehicles
 	class TK_Special_Forces_EP1 : TK_Soldier_base_EP1
 	{
 		canDeactivateMines = 1;
-		canHideBodies = 1;
+		//canHideBodies = 1;
 		portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
 
 		class HitPoints : HitPoints
@@ -270,7 +270,7 @@ class CfgVehicles
 	};
 	class GUE_Soldier_Sab : GUE_Soldier_Base
 	{
-		canHideBodies = 1;
+		//canHideBodies = 1;
 		// engineer = 0;
 	};
 	class GUE_Soldier_Sniper : GUE_Soldier_Base
@@ -314,7 +314,7 @@ class CfgVehicles
 	class US_Delta_Force_Undercover_Takistani_Base_EP1 : TK_GUE_Soldier_Base_EP1
 	{
 		canDeactivateMines = 1;
-		canHideBodies = 1;
+		//canHideBodies = 1;
 	};
 	class UN_CDF_Soldier_base_EP1 : SoldierGB
 	{
