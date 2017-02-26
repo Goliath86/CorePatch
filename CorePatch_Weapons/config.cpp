@@ -631,6 +631,28 @@ class CfgWeapons
 	{
 		displayName = "$STR_DN_AK107_PSO_CP";
 	};
+	class AK_107_CP:AK_107_kobra {
+		model = "\CorePatch\CorePatch_Weapons\models\AK107";
+		picture = "\CorePatch\CorePatch_Weapons\textures\w_ak107_ca.paa";
+		displayName = "$STR_DN_AK107_CP";
+		weaponInfoType = "RscWeaponZeroing";
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
+		discreteDistanceInitIndex = 0;
+	};
+	class AK_107_GL_CP:AK_107_GL_kobra {
+		model = "\CorePatch\CorePatch_Weapons\models\AK107_GL";
+		picture = "\CorePatch\CorePatch_Weapons\textures\w_ak107_gl_ca.paa";
+		displayName = "$STR_DN_AK107_GL_CP";
+		weaponInfoType = "RscWeaponZeroing";
+		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
+		discreteDistanceInitIndex = 0;
+	};
+	class AKS_74_UN_kobra;
+	class AKS_74_UN_CP:AKS_74_UN_kobra {
+		model = "\CorePatch\CorePatch_Weapons\models\AKS74UN";
+		picture = "\CorePatch\CorePatch_Weapons\textures\w_aks74un_ca.paa";
+	};
+
 	class L85A2_base_BAF;
 	class BAF_L85A2_RIS_ACOG : L85A2_base_BAF
 	{

@@ -28,6 +28,34 @@
 		<Russian>550 в/м</Russian>
 		<Spanish>550 rpm</Spanish>
 	</Key>
+	<Key ID="STR_DN_AK107_CP">
+		<Original>AK-107</Original>
+		<Chinese>AK-107</Chinese>
+		<Czech>AK-107</Czech>
+		<English>AK-107</English>
+		<French>AK-107</French>
+		<German>AK-107</German>
+		<Hungarian>AK-107</Hungarian>
+		<Italian>AK-107</Italian>
+		<Japanese>AK-107</Japanese>
+		<Polish>AK-107</Polish>
+		<Russian>АК-107 ЭКП 'Кобра'</Russian>
+		<Spanish>AK-107</Spanish>
+	</Key>
+	<Key ID="STR_DN_AK107_GL_CP">
+		<Original>AK-107 GL</Original>
+		<Chinese>AK-107 GL</Chinese>
+		<Czech>AK-107 GL</Czech>
+		<English>AK-107 GL</English>
+		<French>AK-107 LG</French>
+		<German>AK-107 GL</German>
+		<Hungarian>AK-107/GP-25</Hungarian>
+		<Italian>AK-107 GL</Italian>
+		<Japanese>AK-107 GL</Japanese>
+		<Polish>AK-107 GL</Polish>
+		<Russian>АК-107 ГП-25</Russian>
+		<Spanish>AK-107 GL</Spanish>
+	</Key>
 	<Key ID="STR_DN_AK107_KOBRA_CP">
 		<Original>AK-107 Kobra</Original>
 		<Chinese>AK-107 Kobra</Chinese>
