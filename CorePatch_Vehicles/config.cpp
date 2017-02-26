@@ -1265,7 +1265,7 @@ class CfgVehicles
 
 				class ViewOptics
 				{
-					thermalMode[] = {2, 3};
+					thermalMode[] = {0, 1};
 					visionMode[] = {
 						"Normal",
 						"Ti"
@@ -2692,6 +2692,11 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				startEngine = 1;
+
+				class ViewOptics
+				{
+					thermalMode[] = {0, 1};
+				};
 			};
 		};
 	};
