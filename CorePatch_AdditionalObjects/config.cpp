@@ -177,7 +177,7 @@ class CfgVehicles {
 	class WarfareBDepot;
 	class WarfareBDepot_Destructible:WarfareBDepot {
 		scope = 1;
-		armor = 1500;
+		armor = 2500;
 	};
 
 	class Wall_L_2m5_EP1;
