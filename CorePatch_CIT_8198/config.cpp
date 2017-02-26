@@ -4,8 +4,18 @@ class CfgPatches
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
-		units[] = {};
+		units[] = {"Mi24_V2"};
 		weapons[] = {};
+	};
+};
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_CIT_8198
+		{
+			list[] = {"CorePatch_CIT_8198"};
+		};
 	};
 };
 class CfgVehicles {
