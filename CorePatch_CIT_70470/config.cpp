@@ -31,11 +31,11 @@ class CfgAmmo
 		hit = 350;
 		indirectHit = 10;
 
-		maneuvrability = 4;
+		maneuvrability = 3;
 		manualControl = 1;
 		maxControlRange = 3000;
 		sideAirFriction = 0.076;
-		trackLead = 1;
+		trackLead = 0.1;
 		trackOversteer = 1;
 
 		initTime = 0;

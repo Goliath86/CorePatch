@@ -117,26 +117,16 @@ class CfgAmmo
 	class PG15V:ShellBase {
 		model = "\CorePatch\CorePatch_Ammo\models\PG9_inflight";
 		muzzleEffect = "BIS_Effects_RocketBarrel";
-		/*simulation = "shotRocket";
-
-		simulationStep = 0.05;
-		timeToLive = 20;
-		maneuvrability = 0;
-		maxControlRange = 0;
-
-		visibleFire = 32;
-		audibleFire = 32;
-		visibleFireTime = 20;
-
-		initTime = 0;
-		thrustTime = 1;
-		thrust = 1500;
-		cost = 800;
-		deflecting = 5;
-
-		initSpeed = 435;
-		nameSound = "sabot";*/
 	};
+
+	/*class R_PG15V_AT_CP:R_PG9_AT {
+		muzzleEffect = "BIS_Effects_RocketBarrel";
+		nameSound = "sabot";
+		initTime = 0;
+		thrustTime = 0.01;
+		initSpeed = 400;
+		maxSpeed = 665;
+	};*/
 
 	class B_762x51_Ball;
 	class B_762x51_noTracer : B_762x51_Ball
@@ -154,4 +144,8 @@ class CfgMagazines {
 	class RPG18:CA_LauncherMagazine {
 		picture = "\ca\weapons\data\equip\m_pg9_ca.paa";
 	};
+	/*class VehicleMagazine;
+	class PG15V:VehicleMagazine {
+		ammo = "R_PG15V_AT_CP";
+	};*/
 };

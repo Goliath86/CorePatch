@@ -1265,7 +1265,7 @@ class CfgVehicles
 
 				class ViewOptics
 				{
-					thermalMode[] = {0, 1};
+					thermalMode[] = {2, 3};
 					visionMode[] = {
 						"Normal",
 						"Ti"
@@ -1886,7 +1886,6 @@ class CfgVehicles
 	class T810A_MG_ACR : T810_Turrets_Base_ACR
 	{
 		model = "\CorePatch\CorePatch_Vehicles\models\T810_vp2_ACR";
-
 		class AnimationSources : AnimationSources
 		{
 			class ReloadMagazine
@@ -2693,11 +2692,6 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				startEngine = 1;
-
-				class ViewOptics
-				{
-					thermalMode[] = {0, 1};
-				};
 			};
 		};
 	};
@@ -3642,10 +3636,6 @@ class CfgVehicles
 		};
 		class Turrets
 		{
-			class CommanderOptics : NewTurret
-			{
-				gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
-			};
 			class MainTurret : NewTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000};
@@ -3662,6 +3652,12 @@ class CfgVehicles
 					"4Rnd_AT3",
 					"2000Rnd_762x54_PKT"
 				};
+				class GunFire: WeaponCloudsMGun {};
+			};
+			class CommanderOptics : NewTurret
+			{
+				gunnerOpticsModel = "\CorePatch\CorePatch_Vehicles\models\optika_T72_commander";
+				selectionFireAnim = "zasleh_1";
 			};
 		};
 		class EventHandlers:EventHandlers {
