@@ -84,7 +84,10 @@ class CfgAmmo
 
 	class M_Javelin_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\Javelin_inflight";};
 
-	class M_AT2_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT2_9M17_inflight";};
+	class M_AT2_AT:MissileBase	{
+		model = "\CorePatch\CorePatch_Ammo\models\AT2_9M17_inflight";
+		proxyShape = "\CorePatch\CorePatch_Ammo\models\AT2_9M17_proxy";
+	};
 
 	class M_AT5_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
 	class M_AT6_AT:MissileBase	{model = "\CorePatch\CorePatch_Ammo\models\AT3_9M14_inflight";};
