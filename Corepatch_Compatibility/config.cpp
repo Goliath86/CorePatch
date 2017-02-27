@@ -7,6 +7,7 @@ class CfgPatches {
 	};
 
 	class CorePatch_GC_Fix: CorePatch_Compatibility {};
+	class CorePatch_CIT_8198: CorePatch_Compatibility {};
 };
 
 class CfgAddons {

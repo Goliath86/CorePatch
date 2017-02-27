@@ -1,0 +1,89 @@
+ambient[]={1.000000,1.000000,1.000000,1.000000};
+diffuse[]={1.000000,1.000000,1.000000,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,1.000000};
+emmisive[]={0.000000,0.000000,0.000000,1.000000};
+specular[]={1.000000,1.000000,1.000000,1.000000};
+specularPower=3000.000000;
+PixelShaderID="Super";
+VertexShaderID="Super";
+class Stage1
+{
+	texture="ca\Data\Destruct\destr_glass_armour2_full_NOHQ.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={4.000000,0.000000,0.000000};
+		up[]={0.000000,4.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage2
+{
+	texture="ca\Data\Destruct\destr_glass_armour2_full_CA.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={4.000000,0.000000,0.000000};
+		up[]={0.000000,4.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage3
+{
+	texture="ca\Data\Destruct\destr_glass_armour2_full_CA.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={4.000000,0.000000,0.000000};
+		up[]={0.000000,4.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage4
+{
+	texture="#(rgb,8,8,3)color(1,1.0,1.0,1,AS)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage5
+{
+	texture="ca\Data\Destruct\destr_glass_armour2_full_SMDI.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={4.000000,0.000000,0.000000};
+		up[]={0.000000,4.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage6
+{
+	texture="#(ai,32,128,1)fresnel(0.81,2.2)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage7
+{
+	texture="ca\Data\env_land_co.tga";
+	uvSource="none";
+};
+class StageTI
+{
+	texture="Ca\Air_E\AH64\data\AH64D_glass_ti_ca.tga";
+};
