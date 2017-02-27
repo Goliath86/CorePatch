@@ -24,6 +24,12 @@ Changed:
 	turret servo sound of some vehicles
 
 Fixed:
+	BMP-1 fire effects and PKT muzzle flash
+	BMP-1 effects when in water
+	BMP-1 ATGM get hidden during reloading
+	BMP-1 ATGM was aiming too high
+	BMP-1 ATGM handling and effects
+	ATGM muzzle flash on BMP-3
 	ACR Skoda Octavia had steering wheel turning into wrong direction
 	T810 cargo seat had no proxy and was invisible (http://dev.withsix.com/issues/64332)
 	T810 had faulty gunner get in points (http://dev.withsix.com/issues/39431)

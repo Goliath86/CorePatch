@@ -1,3 +1,20 @@
+27/02/2017
+
+Added:
+	AK-107 and AKS-74UN without Kobra sight versions
+
+Fixed:
+	All missiles and rockets visibility increased and now limited by object view distance
+	BMP-1 fire effects and PKT muzzle flash
+	BMP-1 effects when in water
+	BMP-1 ATGM get hidden during reloading
+	BMP-1 ATGM was aiming too high
+	BMP-1 ATGM handling and effects
+	ATGM muzzle flash on BMP-3
+	AT3 Falanga proxy issue on Mi-24D
+	Fire effects are enabled on all static weapons
+
+
 25/02/2017
 
 Changed:

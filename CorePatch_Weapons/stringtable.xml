@@ -112,6 +112,17 @@
 		<Russian>АК-107 ГП-25 ПСО-1</Russian>
 		<Spanish>AK-107 GL PSO</Spanish>
 	</Key>
+	<Key ID="STR_DN_AKS74_UN_Kobra_CP">
+		<German>AKS-74UN Kobra</German>
+		<English>AKS-74UN Kobra</English>
+		<Italian>AKS-74UN Kobra</Italian>
+		<Spanish>AKS-74UN Kobra</Spanish>
+		<French>AKS-74UN Kobra</French>
+		<Czech>AKS-74UN Kobra</Czech>
+		<Russian>АКС-74УНБ ЭКП 'Кобра'</Russian>
+		<Polish>AKS-74UN Kobra</Polish>
+		<Hungarian>AKSz-74UN Kobra</Hungarian>
+	</Key>
 	<Key ID="STR_DN_G36A_CP">
 		<Original>G36A</Original>
 		<Chinese>G36A</Chinese>

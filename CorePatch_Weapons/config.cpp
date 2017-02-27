@@ -647,8 +647,12 @@ class CfgWeapons
 		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
 		discreteDistanceInitIndex = 0;
 	};
-	class AKS_74_UN_kobra;
+	class AKS_BASE;
+	class AKS_74_UN_kobra:AKS_BASE {
+		displayName = $STR_DN_AKS74_UN_Kobra_CP;
+	};
 	class AKS_74_UN_CP:AKS_74_UN_kobra {
+		displayName = $STR_DN_AKS74_UN;
 		model = "\CorePatch\CorePatch_Weapons\models\AKS74UN";
 		picture = "\CorePatch\CorePatch_Weapons\textures\w_aks74un_ca.paa";
 	};

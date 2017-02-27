@@ -1,4 +1,5 @@
 Added:
+	AK-107 and AKS-74UN without Kobra sight versions
 	Light version of UK-59 (UK59_ACR_Small)
 	"auto" fire mode to M14_EP1
 	flashlight to M4A1_AIM_SD_camo, M4A1_HWS_GL and M4A1_HWS_GL_camo
