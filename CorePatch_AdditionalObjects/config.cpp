@@ -157,8 +157,9 @@ class CfgVehicles {
 	class Land_ConcreteRamp;
 	class Land_ConcreteRamp_Destructible:Land_ConcreteRamp {
 		scope = 1;
-		armor = 700;
+		armor = 800;
 		destrType = "DestructBuilding";
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\concrete_ramp";
 	};
 
 	class Land_ConcreteRamp2_Destructible:Land_ConcreteRamp_Destructible {
@@ -170,8 +171,9 @@ class CfgVehicles {
 	class Land_ConcreteBlock;
 	class Land_ConcreteBlock_Destructible:Land_ConcreteBlock {
 		scope = 1;
-		armor = 750;
+		armor = 800;
 		destrType = "DestructBuilding";
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\concrete_block";
 	};
 
 	class WarfareBDepot;
