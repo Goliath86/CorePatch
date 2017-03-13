@@ -2009,7 +2009,7 @@ class CfgVehicles
 			"\ca\Sounds_E\Wheeled_E\lada\lada_door",
 			1,
 			1,
-			30
+			60
 		};
 	};
 	class SUV_Base_EP1 : Car
@@ -2018,7 +2018,7 @@ class CfgVehicles
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
 			1,
-			20
+			60
 		};
 	};
 	class SUV_PMC : SUV_Base_EP1
@@ -2033,7 +2033,7 @@ class CfgVehicles
 			"ca\sounds\vehicles\Wheeled\Car\ext\ext-Car-getout-1",
 			0.31622776,
 			1,
-			30
+			60
 		};
 	};
 	class car_hatchback : SkodaBase
@@ -2042,7 +2042,7 @@ class CfgVehicles
 			"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedna-getout-1",
 			0.31622776,
 			1,
-			30
+			60
 		};
 	};
 	class car_sedan : SkodaBase
@@ -2051,7 +2051,7 @@ class CfgVehicles
 			"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedna-getout-1",
 			0.31622776,
 			1,
-			30
+			60
 		};
 	};
 	class datsun1_civil_1_open : SkodaBase
@@ -2060,16 +2060,17 @@ class CfgVehicles
 			"\ca\sounds\vehicles\wheeled\offroad\ext\ext-offroad-getout-1",
 			0.25118864,
 			1,
-			30
+			60
 		};
 	};
 	class TowingTractor : Car
 	{
 		soundGetIn[] = {
-			"ca\sounds\vehicles\Wheeled\Tractor\ext\ext-Tractor-getout-1",
+			//"ca\sounds\vehicles\Wheeled\Tractor\ext\ext-Tractor-getout-1",
+			"",
 			0.1,
 			1,
-			30
+			60
 		};
 	};
 	class Tractor: Car
@@ -2078,7 +2079,7 @@ class CfgVehicles
 			"\Ca\sounds\Vehicles\Wheeled\URAL\ext\ext-ural-getout",
 			0.1,
 			1,
-			30
+			60
 		};
 	};
 	class UAZ_Base : Car
@@ -2087,7 +2088,7 @@ class CfgVehicles
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
 			1,
-			20
+			60
 		};
 
 		class Turrets : Turrets
@@ -2116,7 +2117,7 @@ class CfgVehicles
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
 			1,
-			20
+			60
 		};
 
 		class Turrets : Turrets
@@ -2150,7 +2151,7 @@ class CfgVehicles
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
 			1,
-			20
+			60
 		};
 	};
 	class UAZ_SPG9_Base : UAZ_Base
@@ -2169,7 +2170,7 @@ class CfgVehicles
 			"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",
 			0.56234133,
 			1,
-			20
+			60
 		};
 
 		class Turrets : Turrets
@@ -2189,7 +2190,7 @@ class CfgVehicles
 			"ca\sounds\Vehicles\wheeled\GOLF\ext\ext-golf-getout",
 			0.56234133,
 			1,
-			40
+			60
 		};
 	};
 	class Volha_TK_CIV_Base_EP1 : Car
@@ -2198,7 +2199,7 @@ class CfgVehicles
 			"\ca\Sounds_E\Wheeled_E\lada\lada_door",
 			1,
 			1,
-			30
+			60
 		};
 	};
 	class hilux1_civil_1_open : Car
@@ -2207,7 +2208,7 @@ class CfgVehicles
 			"\ca\sounds\vehicles\wheeled\offroad\ext\ext-offroad-getout-1",
 			0.56234133,
 			1,
-			30
+			60
 		};
 	};
 	class hilux1_civil_3_open_EP1 : Car
@@ -2216,7 +2217,7 @@ class CfgVehicles
 			"\ca\sounds\vehicles\wheeled\offroad\ext\ext-offroad-getout-1",
 			0.56234133,
 			1,
-			30
+			60
 		};
 	};
 	class Wheeled_APC : Car
@@ -2230,7 +2231,7 @@ class CfgVehicles
 			"\ca\sounds\vehicles\Wheeled\Armored_Vehicle\ext\ext-AV-getin",
 			1,
 			1,
-			40
+			60
 		};
 		unitInfoType = "RscUnitInfoTank";
 
@@ -2322,13 +2323,13 @@ class CfgVehicles
 			"\ca\sounds\vehicles\Wheeled\Armored_Vehicle\ext\ext-AV-getout",
 			1,
 			1,
-			40
+			60
 		};
 		soundGetIn[] = {
 			"\ca\sounds\vehicles\Wheeled\Armored_Vehicle\ext\ext-AV-getin",
 			1,
 			1,
-			40
+			60
 		};
 
 		class Reflectors
@@ -2371,7 +2372,7 @@ class CfgVehicles
 			"\ca\Sounds_E\Wheeled_E\BTR60\btr_door",
 			1,
 			1,
-			30
+			60
 		};
 
 		class Turrets : Turrets
@@ -2397,7 +2398,7 @@ class CfgVehicles
 			"\ca\sounds\vehicles\Wheeled\Armored_Vehicle\ext\ext-AV-getin",
 			1,
 			1,
-			30
+			60
 		};
 		unitInfoType = "RscUnitInfoTank";
 
@@ -2516,7 +2517,7 @@ class CfgVehicles
 			"\ca\sounds\vehicles\Wheeled\Armored_Vehicle\ext\ext-AV-getin",
 			1,
 			1,
-			30
+			60
 		};
 		unitInfoType = "RscUnitInfoTank";
 
@@ -2610,7 +2611,7 @@ class CfgVehicles
 			"\ca\sounds\vehicles\Wheeled\Armored_Vehicle\ext\ext-AV-getin",
 			1,
 			1,
-			50
+			60
 		};
 		unitInfoType = "RscUnitInfoTank";
 
@@ -2681,7 +2682,7 @@ class CfgVehicles
 			"\ca\Sounds_E\Wheeled_E\stryker\stryker_door",
 			1,
 			1,
-			30
+			60
 		};
 		unitInfoType = "RscUnitInfoTank";
 	};
@@ -2904,7 +2905,7 @@ class CfgVehicles
 			"Ca\sounds_baf\tracked\ext_door",
 			0.56234133,
 			1,
-			50
+			60
 		};
 
 		class Turrets : Turrets
@@ -2929,7 +2930,7 @@ class CfgVehicles
 			"ca\SOUNDS\Vehicles\Tracked\M1A1\ext\ext-m1-door-1",
 			0.56234133,
 			1,
-			50
+			60
 		};
 
 		class AnimationSources
@@ -3050,7 +3051,7 @@ class CfgVehicles
 			"ca\SOUNDS\Vehicles\Tracked\Other\int\int-tracked-getin-01",
 			0.56234133,
 			1,
-			50
+			60
 		};
 
 		class Turrets : Turrets
@@ -3666,7 +3667,7 @@ class CfgVehicles
 			};
 		};
 		class EventHandlers:EventHandlers {
-			Fired = "_this call BIS_Effects_EH_Fired; _this call BIS_CPP_Muzzle_ForceReload; _this call Corepatch_BMP1_Fired";
+			Fired = "_this call BIS_Effects_EH_Fired; _this call BIS_CPP_Muzzle_ForceReload; if(isServer) then {_this call Corepatch_BMP1_Fired;};";
 		};
 		class AnimationSources {
 			/*class ATGM_reload {
@@ -3674,7 +3675,7 @@ class CfgVehicles
 				weapon = "AT3Launcher";
 			};*/
 			class ATGM_hide {
-				source = "user";
+				source = "instant"; // Can be anything but user
 				animPeriod = 1e-5;
 			};
 		};
