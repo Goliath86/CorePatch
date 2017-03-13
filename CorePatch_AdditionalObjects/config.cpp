@@ -179,7 +179,7 @@ class CfgVehicles {
 	class WarfareBDepot;
 	class WarfareBDepot_Destructible:WarfareBDepot {
 		scope = 1;
-		armor = 2500;
+		armor = 2000;
 	};
 
 	class Wall_L_2m5_EP1;
@@ -192,5 +192,107 @@ class CfgVehicles {
 	class Land_fort_rampart_Destructible:Land_fort_rampart {
 		scope = 1;
 		destrType = "DestructBuilding";
+	};
+
+	class Land_LHD_house_2;
+	class Land_LHD_house_2_CP:Land_LHD_house_2 {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\LHD_house_2";
+	};
+	class Land_LHD_elev_R;
+	class Land_LHD_elev_L:Land_LHD_elev_R {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\LHD_elev_L";
+	};
+
+	class Land_fortified_nest_big;
+	class Land_fortified_nest_big_CP:Land_fortified_nest_big {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\fortified_nest_big";
+	};
+	class Base_WarfareBBarrier10x;
+	class Base_WarfareBBarrier10x_CP:Base_WarfareBBarrier10x {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_10x";
+	};
+	class Base_WarfareBBarrier10xTall;
+	class Base_WarfareBBarrier10xTall_CP:Base_WarfareBBarrier10xTall {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_big_10x";
+	};
+	class Base_WarfareBBarrier5x;
+	class Base_WarfareBBarrier5x_CP:Base_WarfareBBarrier5x {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_5x";
+	};
+	class Base_WarfareBBarrier3x_CP:Base_WarfareBBarrier5x {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_3x";
+	};
+	class Base_WarfareBBarrier1x_CP:Base_WarfareBBarrier5x {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_1x";
+	};
+
+	class UserTexture1M_CP:CorePatch_NonStrategic {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTexture1M";
+		hiddenSelections[] = {"usertexture"};
+	};
+	class UserTexture2M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTexture2M";
+	};
+	class UserTexture5M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTexture5M";
+	};
+	class UserTexture10M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTexture10M";
+	};
+	class UserTextureGround1M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTextureGround1M";
+	};
+	class UserTextureGround2M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTextureGround2M";
+	};
+	class UserTextureGround5M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTextureGround5M";
+	};
+	class UserTextureGround10M_CP:UserTexture1M_CP {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\UserTextureGround10M";
+	};
+
+	class Library_WeaponHolder;
+	class WeaponHolder_Inaccessible_CP:Library_WeaponHolder {
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\WeaponHolder_Inaccessible";
+	};
+
+	class PowerGenerator;
+	class PowerGenerator_CP:PowerGenerator {
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\PowerGenerator";
+		hiddenSelections[] = {"camo_PowerGenerator"};
+		hiddenSelectionsTextures[] = {"ca\misc3\powergenerator\data\power_generator_co.paa"};
+
+		armor = 60;
+		destrType = "DestructDefault";
+		selectionDamage = "camo_PowerGenerator";
+
+		class Damage {
+			tex[]={};
+			mat[]={
+				"ca\misc3\powergenerator\data\metal.rvmat",
+				"CorePatch\CorePatch_AdditionalObjects\textures\power_generator_damage_half.rvmat",
+				"CorePatch\CorePatch_AdditionalObjects\textures\power_generator_damage_full.rvmat"
+			};
+		};
+
+		class DestructionEffects {};
+
+		class AnimationSources {
+			class Hatch {
+				animPeriod = 1;
+				source = "user";
+			};
+		};
 	};
 };
