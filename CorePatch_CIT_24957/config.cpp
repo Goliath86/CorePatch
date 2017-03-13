@@ -13,15 +13,17 @@ class CfgAmmo
 	class Default;
 	class BombCore : Default
 	{
-		delete irLock;
+		//delete irLock;
 	};
 	class Bo_FAB_250 : BombCore
 	{
-		delete irLock;
+		//delete irLock;
+		
 	};
 	class LaserBombCore : BombCore
 	{
-		delete irLock;
+		//delete irLock;
+		irLock = 0;
 	};
 	class MissileCore;
 	class MissileBase : MissileCore

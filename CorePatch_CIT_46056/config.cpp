@@ -13,14 +13,17 @@ class CfgWeapons
 	class RocketPods;
 	class HeliBombLauncher : RocketPods
 	{
-		canLock = 0;
+		//canLock = 0;
+		canLock = 2;
 	};
 	class AirBombLauncher : HeliBombLauncher
 	{
-		canLock = 0;
+		//canLock = 0;
+		canLock = 2;
 	};
 	class Mk82BombLauncher : RocketPods
 	{
-		canLock = 0;
+		//canLock = 0;
+		canLock = 2;
 	};
 };

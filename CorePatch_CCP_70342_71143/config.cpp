@@ -158,12 +158,14 @@ class CfgVehicles
 		magazines[] = {
 			"750Rnd_30mm_GSh301",
 			"40Rnd_80mm",
-			"120Rnd_CMFlareMagazine"
+			"120Rnd_CMFlareMagazine",
+			"2Rnd_FAB_250"
 		};
 		weapons[] = {
 			"GSh302K",
 			"80mmLauncher",
-			"CMFlareLauncher"
+			"CMFlareLauncher",
+			"HeliBombLauncher"
 		};
 
 		class Turrets: Turrets
@@ -171,12 +173,10 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
 				magazines[] = {
-					"2Rnd_FAB_250",
 					"4Rnd_AT9_Mi24P"
 				};
 				weapons[] = {
-					"AT9Launcher",
-					"HeliBombLauncher"
+					"AT9Launcher"
 				};
 			};
 		};
