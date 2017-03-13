@@ -42,11 +42,17 @@ class CfgVehicles {
 			class HitEngine:HitEngine {
 				armor = 0.9;
 			};
+			class HitGlass1:HitGlass1 { // Gunner thick front armored glass
+				armor = 10;
+			};
 			class HitGlass2:HitGlass2 { // Gunner thin side glass
-				armor = 0.3;
+				armor = 0.4;
+			};
+			class HitGlass3:HitGlass3 { // Pilot thick front armored glass
+				armor = 10;
 			};
 			class HitGlass4:HitGlass4 { // Pilot thin side glass
-				armor = 0.3;
+				armor = 0.4;
 			};
 			class HitGlass5:HitGlass5 { // Left cargo glass
 				armor = 0.2;
