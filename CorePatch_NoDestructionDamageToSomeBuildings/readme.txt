@@ -1,0 +1,1 @@
+This patch removes destruction damage from some buildings like sandbag or hesco walls

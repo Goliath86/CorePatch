@@ -142,7 +142,9 @@ class CfgPatches
 			"CorePatch_UralTransportMagazines",
 			"CorePatch_Vehicles",
 			"CorePatch_Weapons",
-			"CorePatch_Zargabad_Intro_Fix"
+			"CorePatch_Zargabad_Intro_Fix",
+			"CorePatch_Mi24",
+			"CorePatch_NoDestructionDamageToSomeBuildings"
 		};
 		requiredVersion = 1.00;
 		units[] = {};

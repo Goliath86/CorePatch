@@ -1,17 +1,17 @@
-class CfgAddons {
-	class PreloadAddons {
-		class CorePatch_AdditionalObjects {
-			list[] = {"CorePatch_AdditionalObjects"};
-		};
-	};
-};
-
 class CfgPatches {
 	class CorePatch_AdditionalObjects {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"CorePatch"};
+	};
+};
+
+class CfgAddons {
+	class PreloadAddons {
+		class CorePatch_AdditionalObjects {
+			list[] = {"CorePatch_AdditionalObjects"};
+		};
 	};
 };
 
@@ -188,13 +188,64 @@ class CfgVehicles {
 		model = "\ca\structures_e\Wall\Wall_L\Wall_L_5m_EP1.p3d";
 	};
 
-	class Land_fort_rampart;
+/*	class Land_fort_rampart;
 	class Land_fort_rampart_Destructible:Land_fort_rampart {
 		scope = 1;
 		destrType = "DestructBuilding";
+	};*/
+	class House;
+	class Land_fort_rampart:House {
+		destrType = "DestructBuilding";
 	};
 
-	class Land_LHD_house_2;
+	class Land_Dirthump01;
+	class Land_Dirthump01_Destructible:Land_Dirthump01 {
+		scope = 1;
+		armor = 2000;
+		destrType = "DestructBuilding";		
+	};
+	class Land_Dirthump01_Destructible_EP1:Land_Dirthump01_Destructible {
+		expansion = 1;
+		model = "\ca\Misc_E\dirthump01_ep1";
+	};
+
+	class Land_Dirthump02;
+	class Land_Dirthump02_Destructible:Land_Dirthump01 {
+		scope = 1;
+		armor = 2000;
+		destrType = "DestructBuilding";		
+	};
+	class Land_Dirthump02_Destructible_EP1:Land_Dirthump02_Destructible {
+		expansion = 1;
+		model = "\ca\Misc_E\dirthump02_ep1";
+	};
+
+	class Land_Dirthump03;
+	class Land_Dirthump03_Destructible:Land_Dirthump01 {
+		scope = 1;
+		armor = 2000;
+		destrType = "DestructBuilding";		
+	};
+	class Land_Dirthump03_Destructible_EP1:Land_Dirthump03_Destructible {
+		expansion = 1;
+		model = "\ca\Misc_E\dirthump03_ep1";
+	};
+
+	class Land_WoodenRamp;
+	class Land_WoodenRamp_CP:Land_WoodenRamp {
+		scope = 1;
+		destrType = "DestructBuilding";
+		armor = 70;
+	};
+
+	class Land_prebehlavka;
+	class Land_prebehlavka_CP:Land_prebehlavka {
+		scope = 1;
+		destrType = "DestructBuilding";
+		armor = 100;
+	};
+
+/*	class Land_LHD_house_2;
 	class Land_LHD_house_2_CP:Land_LHD_house_2 {
 		scope = 1;
 		model = "\CorePatch\CorePatch_AdditionalObjects\models\LHD_house_2";
@@ -203,6 +254,130 @@ class CfgVehicles {
 	class Land_LHD_elev_L:Land_LHD_elev_R {
 		scope = 1;
 		model = "\CorePatch\CorePatch_AdditionalObjects\models\LHD_elev_L";
+	};*/
+
+	class StaticShip;
+	class Land_LHD_house_2_CP: StaticShip
+	{
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\LHD_house_2";
+		displayName = "$STR_DN_LHD";
+		ladders[] = {{"start1","end1"}};
+		featureSize = 100;
+		destrType = 0;
+		class MarkerLights
+		{
+			class WhiteStill
+			{
+				name = "bila sedma";
+				color[] = {0.003,0.003,0.003,0.0};
+				ambient[] = {0.03,0.023,0.0056,0.0};
+				brightness = 0.1;
+				blinking = "false";
+			};
+			class BlueStill
+			{
+				name = "modry pozicni";
+				color[] = {0.012,0.012,0.12,1.0};
+				ambient[] = {0.03,0.023,0.0056,1.0};
+				brightness = 0.01;
+				blinking = "false";
+			};
+			class YellowStill
+			{
+				name = "zluty pozicni";
+				color[] = {0.03,0.027,0.00672,1.0};
+				ambient[] = {0.03,0.023,0.0056,1.0};
+				brightness = 0.01;
+				blinking = "false";
+			};
+			class RedStill
+			{
+				name = "cerveny pozicni";
+				color[] = {0.12,0.006,0.006,1.0};
+				ambient[] = {0.1,0.01,0.01,1.0};
+				brightness = 0.01;
+				blinking = "false";
+			};
+		};
+		class AnimationSources
+		{
+			class dveremale
+			{
+				animPeriod = 1;
+				initPhase = 1;
+			};
+			class dverevelkeL
+			{
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class dverevelkeR
+			{
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class Lights_1
+			{
+				source = "user";
+				animPeriod = 0.001;
+				initPhase = 0;
+			};
+		};
+		class UserActions
+		{
+			class OpenDoors1
+			{
+				displayNameDefault = "$STR_DN_OUT_O_DOOR_DEFAULT";
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "osa_dveremale";
+				radius = 2;
+				onlyForPlayer = "false";
+				condition = "isnil""BIS_lockKheSanhDoors_small"" and this animationPhase ""dveremale"" < 0.5";
+				statement = "this animate [""dveremale"", 1]";
+			};
+			class CloseDoors1
+			{
+				displayNameDefault = "$STR_DN_OUT_C_DOOR_DEFAULT";
+				displayName = "$STR_DN_OUT_C_DOOR";
+				position = "osa_dveremale";
+				radius = 2;
+				onlyForPlayer = "false";
+				condition = "isnil""BIS_lockKheSanhDoors_small"" and this animationPhase ""dveremale"" >= 0.5";
+				statement = "this animate [""dveremale"", 0]";
+			};
+			class OpenDoors2
+			{
+				displayNameDefault = "$STR_DN_OUT_O_DOOR_DEFAULT";
+				displayName = "$STR_DN_OUT_O_DOOR";
+				position = "osa_dverevelkeL";
+				radius = 4;
+				onlyForPlayer = "false";
+				condition = "isnil""BIS_lockKheSanhDoors_large"" and this animationPhase ""dverevelkeL"" < 0.5";
+				statement = "this animate [""dverevelkeL"", 1];this animate [""dverevelkeR"", 1]";
+			};
+			class CloseDoors2
+			{
+				displayNameDefault = "$STR_DN_OUT_C_DOOR_DEFAULT";
+				displayName = "$STR_DN_OUT_C_DOOR";
+				position = "osa_dverevelkeL";
+				radius = 4;
+				onlyForPlayer = "false";
+				condition = "isnil""BIS_lockKheSanhDoors_large"" and this animationPhase ""dverevelkeL"" >= 0.5";
+				statement = "this animate [""dverevelkeL"", 0];this animate [""dverevelkeR"", 0]";
+			};
+		};
+		actionBegin1 = "OpenDoors1";
+		actionEnd1 = "OpenDoors1";
+		actionBegin2 = "OpenDoors2";
+		actionEnd2 = "OpenDoors2";
+	};
+	class Land_LHD_elev_L: StaticShip
+	{
+		scope = 1;
+		model = "\CorePatch\CorePatch_AdditionalObjects\models\LHD_elev_L";
+		displayName = "$STR_DN_LHD";
+		destrType = 0;
 	};
 
 	class Land_fortified_nest_big;
@@ -228,10 +403,12 @@ class CfgVehicles {
 	class Base_WarfareBBarrier3x_CP:Base_WarfareBBarrier5x {
 		scope = 1;
 		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_3x";
+		armor = 400;
 	};
 	class Base_WarfareBBarrier1x_CP:Base_WarfareBBarrier5x {
 		scope = 1;
 		model = "\CorePatch\CorePatch_AdditionalObjects\models\WF_hesco_1x";
+		armor = 200;
 	};
 
 	class UserTexture1M_CP:CorePatch_NonStrategic {
