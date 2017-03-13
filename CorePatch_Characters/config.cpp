@@ -117,24 +117,24 @@ class CfgVehicles
 	class RU_Soldier_Base : SoldierEB
 	{
 	};
-	class RU_Commander : RU_Soldier_Base
+	/*class RU_Commander : RU_Soldier_Base
 	{
 		class HitPoints : HitPoints
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
-	};
+	};*/
 	class RU_Soldier_Light : RU_Soldier_Base
 	{
 		class HitPoints : HitPoints
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -151,7 +151,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -161,7 +161,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.85000002;
+				armor = 0.85;
 			};
 		};
 	};
@@ -171,7 +171,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -183,7 +183,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -195,7 +195,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 		};
 	};
@@ -211,7 +211,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -221,7 +221,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 		};
 	};
@@ -235,7 +235,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -250,7 +250,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -304,7 +304,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 		};
 	};
@@ -322,7 +322,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.85000002;
+				armor = 0.85;
 			};
 		};
 	};
@@ -332,7 +332,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 		};
 	};
@@ -347,7 +347,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -373,7 +373,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.85000002;
+				armor = 0.85;
 			};
 		};
 	};
@@ -416,7 +416,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -457,11 +457,11 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -472,12 +472,12 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.85000002;
+				armor = 0.85;
 			};
 			class HitBody : HitBody
 			{
 				armor = 1;
-				passThrough = 0.80000001;
+				passThrough = 0.8;
 			};
 		};
 	};
@@ -487,7 +487,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -505,11 +505,11 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -520,11 +520,11 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -537,7 +537,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -548,7 +548,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -559,11 +559,11 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -574,7 +574,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -585,7 +585,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -598,7 +598,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -610,7 +610,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.85000002;
+				armor = 0.85;
 			};
 		};
 	};
@@ -628,7 +628,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -665,7 +665,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.69999999;
+				armor = 0.7;
 			};
 		};
 	};
@@ -689,7 +689,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -702,7 +702,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -727,7 +727,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -743,7 +743,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -759,11 +759,11 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -780,7 +780,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -794,7 +794,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
@@ -822,7 +822,7 @@ class CfgVehicles
 		{
 			class HitHead : HitHead
 			{
-				armor = 0.60000002;
+				armor = 0.6;
 			};
 		};
 	};
@@ -836,7 +836,7 @@ class CfgVehicles
 		{
 			class HitBody : HitBody
 			{
-				armor = 0.80000001;
+				armor = 0.8;
 				passThrough = 1;
 			};
 		};
