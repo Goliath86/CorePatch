@@ -84,6 +84,7 @@ class CfgVehicles {
 	class Land_fort_bagfence_round:House		{class DestructionEffects:DestructionEffects_NonStrategic_NoDamage_NoSmoke_CP {};};
 
 	class Land_HBarrier_large:NonStrategic		{class DestructionEffects:DestructionEffects_NonStrategic_NoDamage_CP {};};
+	class Land_BagFenceCorner:Land_HBarrier_large	{class DestructionEffects:DestructionEffects_NonStrategic_NoDamage_NoSmoke_CP {};};
 
 	class Land_CncBlock:NonStrategic		{class DestructionEffects:DestructionEffects_NonStrategic_NoDamage_NoSmoke_CP {};};
 	class Land_CncBlock_Stripes:NonStrategic	{class DestructionEffects:DestructionEffects_NonStrategic_NoDamage_NoSmoke_CP {};};
