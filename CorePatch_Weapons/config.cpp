@@ -12,7 +12,10 @@ class CfgPatches
 		};
 		weapons[] = {
 			"M4A3_EP1",
-			"M4A3_RCO_EP1"
+			"M4A3_RCO_EP1",
+			"AK_107_CP",
+			"AK_107_GL_CP",
+			"AKS_74_UN_CP"
 		};
 	};
 };
