@@ -1,6 +1,3 @@
-#define _ARMA_
-
-//Class weapons : DMR\Data\fake_optics.rvmat{
 ambient[] = {1.0,1.0,1.0,1.0};
 diffuse[] = {1.0,1.0,1.0,1.0};
 forcedDiffuse[] = {1.0,1.0,1.0,1.0};
@@ -79,4 +76,3 @@ class Stage7
 	texture = "ca\data\env_land_optic_co.paa";
 	uvSource = "none";
 };
-//};

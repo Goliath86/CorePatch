@@ -1,14 +1,14 @@
-ambient[] = {1.0,1.0,1.0,1.0};
-diffuse[] = {1.0,1.0,1.0,1.0};
+ambient[] = {2.0,2.0,2.0,1.0};
+diffuse[] = {2.0,2.0,2.0,1.0};
 forcedDiffuse[] = {0.0,0.0,0.0,0.0};
 emmisive[] = {0.0,0.0,0.0,1.0};
-specular[] = {0.293856,0.313726,0.283922,1.0};
-specularPower = 128.0;
+specular[] = {0.355,0.333437,0.325,1.0};
+specularPower = 100.0;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "ca\weapons\data\m24_nohq.paa";
+	texture = "ca\weapons\AK\Data\ak107_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "ca\weapons\data\detailmaps\metal_detail_dt.paa";
+	texture = "ca\weapons\Data\DetailMaps\Metal_Detail_DT.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "#(argb,8,8,3)color(0,0,0,0)";
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "CorePatch\CorePatch_Weapons\textures\m24_as.paa";
+	texture = "CorePatch\CorePatch_Weapons\textures\ak107_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "ca\weapons\data\m24_smdi.paa";
+	texture = "ca\weapons\AK\Data\ak107_SMDI.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -68,11 +68,11 @@ class Stage5
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(0.38,0.17)";
+	texture = "#(ai,64,64,1)fresnel(5.64,0.87)";
 	uvSource = "none";
 };
 class Stage7
 {
-	texture = "ca\data\env_land_co.paa";
+	texture = "ca\Data\env_land_co.paa";
 	uvSource = "none";
 };
