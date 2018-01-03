@@ -144,7 +144,8 @@ class CfgPatches
 			"CorePatch_Weapons",
 			"CorePatch_Zargabad_Intro_Fix",
 			"CorePatch_Mi24",
-			"CorePatch_NoDestructionDamageToSomeBuildings"
+			"CorePatch_NoDestructionDamageToSomeBuildings",
+			"CorePatch_Mi8"
 		};
 		requiredVersion = 1.00;
 		units[] = {};

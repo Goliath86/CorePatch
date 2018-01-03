@@ -26,7 +26,7 @@ Changed:
 Fixed:
 	BMP-1 fire effects and PKT muzzle flash
 	BMP-1 effects when in water
-	BMP-1 ATGM get hidden during reloading
+	BMP-1 ATGM gets hidden during reloading
 	BMP-1 ATGM was aiming too high
 	BMP-1 ATGM handling and effects
 	ATGM muzzle flash on BMP-3

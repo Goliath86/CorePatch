@@ -1,3 +1,14 @@
+03/01/2018
+
+Added:
+	Mi-8 proper holographic sights
+Fixed:
+	Mi-8 MTV3 front gunner visual bugs
+	Rotor shaft wasn't turning with the rotor itself
+	ACR Mi-8 had no squad logo
+	Various smaller model issues across all versions
+
+
 27/02/2017
 
 Added:
@@ -7,7 +18,7 @@ Fixed:
 	All missiles and rockets visibility increased and now limited by object view distance
 	BMP-1 fire effects and PKT muzzle flash
 	BMP-1 effects when in water
-	BMP-1 ATGM get hidden during reloading
+	BMP-1 ATGM gets hidden during reloading
 	BMP-1 ATGM was aiming too high
 	BMP-1 ATGM handling and effects
 	ATGM muzzle flash on BMP-3
