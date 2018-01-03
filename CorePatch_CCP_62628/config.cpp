@@ -8,6 +8,16 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class CorePatch_CCP_62628
+		{
+			list[] = {"CorePatch_CCP_62628"};
+		};
+	};
+};
 class CfgWeapons
 {
 	class RifleCore;

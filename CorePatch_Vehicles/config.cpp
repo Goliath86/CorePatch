@@ -1845,6 +1845,7 @@ class CfgVehicles
 	};
 	class MTVR : Truck
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\mtvr";
 		soundGetIn[] = {
 			"ca\sounds\vehicles\Wheeled\MTVR\ext\ext-truck-getin",
 			0.70794576,
@@ -1854,8 +1855,17 @@ class CfgVehicles
 	};
 	class MtvrRefuel : MTVR
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\mtvr_Fuel";
 		transportMaxMagazines = 50;
 		transportMaxWeapons = 10;
+	};
+	class MtvrReammo : MTVR
+	{
+		model = "\CorePatch\CorePatch_Vehicles\models\mtvr_Ammunition";
+	};
+	class MtvrRepair : MTVR
+	{
+		model = "\CorePatch\CorePatch_Vehicles\models\mtvr_Repair";
 	};
 	class T810_Turrets_Base_ACR : Truck
 	{

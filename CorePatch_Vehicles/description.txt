@@ -24,6 +24,7 @@ Changed:
 	turret servo sound of some vehicles
 
 Fixed:
+	MTVR driver proxy position
 	BMP-1 fire effects and PKT muzzle flash
 	BMP-1 effects when in water
 	BMP-1 ATGM gets hidden during reloading

@@ -2,4 +2,4 @@ Added: Mi-8 proper holographic sights
 Fixed: Mi-8 MTV3 front gunner visual bugs
 Fixed: Rotor shaft wasn't turning with the rotor itself
 Fixed: ACR Mi-8 had no squad logo
-Fixed: Various smaller model issues across all versions
+Fixed: Various Mi-8 model issues across all versions

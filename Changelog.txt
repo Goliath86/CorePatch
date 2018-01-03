@@ -6,7 +6,8 @@ Fixed:
 	Mi-8 MTV3 front gunner visual bugs
 	Rotor shaft wasn't turning with the rotor itself
 	ACR Mi-8 had no squad logo
-	Various smaller model issues across all versions
+	Various Mi-8 model issues across all versions
+	MTVR driver proxy position
 
 
 27/02/2017
