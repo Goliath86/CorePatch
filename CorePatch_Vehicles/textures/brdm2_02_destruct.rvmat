@@ -1,0 +1,96 @@
+ambient[]={1.000000,1.000000,1.000000,1.000000};
+diffuse[]={1.000000,1.000000,1.000000,1.000000};
+forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
+emmisive[]={0.000000,0.000000,0.000000,1.000000};
+specular[]={0.124000,0.124000,0.124000,0.000000};
+specularPower=40.000000;
+PixelShaderID="Super";
+VertexShaderID="Super";
+class Stage1
+{
+	texture="ca\wheeled\data\brdm2_02_nohq.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage2
+{
+	texture="ca\Data\Destruct\destruct_plech_full_dt.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={6.000000,0.000000,0.000000};
+		up[]={0.000000,6.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage3
+{
+	texture="ca\Data\Destruct\destruct_plech_full_mc.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={6.000000,0.000000,0.000000};
+		up[]={0.000000,6.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage4
+{
+	texture="#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage5
+{
+	texture="Ca\wheeled_E\BRDM2\Data\BRDM2_02_SMDI.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage6
+{
+	texture="#(ai,64,64,1)fresnel(2.0,0.1)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class Stage7
+{
+	texture="ca\Data\env_land_co.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1.000000,0.000000,0.000000};
+		up[]={0.000000,1.000000,0.000000};
+		dir[]={0.000000,0.000000,0.000000};
+		pos[]={0.000000,0.000000,0.000000};
+	};
+};
+class StageTI
+{
+    texture="Ca\Ca_E\data\destruct_ti_ca.tga";
+};

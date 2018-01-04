@@ -2270,6 +2270,24 @@ class CfgVehicles
 				};
 			};
 		};
+
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"Ca\wheeled_E\BRDM2\Data\Detailmapy\BRDM2_01.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\brdm2_01_damage.rvmat", //"Ca\wheeled_E\BRDM2\Data\Detailmapy\BRDM2_01.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\brdm2_01_destruct.rvmat", //"Ca\wheeled_E\BRDM2\Data\Detailmapy\brdm2_01_destruct.rvmat",
+
+				"Ca\wheeled_E\BRDM2\Data\Detailmapy\brdm2_02.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\brdm2_02_damage.rvmat", //"Ca\wheeled_E\BRDM2\Data\Detailmapy\brdm2_02.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\brdm2_02_destruct.rvmat", //"Ca\wheeled_E\BRDM2\Data\Detailmapy\brdm2_02_destruct.rvmat",
+
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default_destruct.rvmat"
+			};
+		};
 	};
 	class BRDM2_ATGM_Base : BRDM2_Base
 	{
@@ -2373,6 +2391,33 @@ class CfgVehicles
 				turretInfoType = "RscWeaponEmpty";
 			};
 		};
+
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"Ca\wheeled_E\BTR60\Data\btr60_body.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\btr60_body_damage.rvmat", //"Ca\wheeled_E\BTR60\Data\btr60_body_damage.rvmat",
+				"Ca\wheeled_E\BTR60\Data\btr60_body_destruct.rvmat",
+
+				"Ca\wheeled_E\BTR60\Data\btr60_details.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\btr60_details_damage.rvmat", //"Ca\wheeled_E\BTR60\Data\btr60_details_damage.rvmat",
+				"Ca\wheeled_E\BTR60\Data\btr60_details_destruct.rvmat",
+
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default_destruct.rvmat"
+			};
+		};
+	};
+	class BTR60_Gue_CP : BTR60_TK_EP1 {
+		scope = 1;
+		side = 2;
+		faction = "GUE";
+		accuracy = 0.3;
+		crew = "GUE_Soldier_1";
+		typicalCargo[] = {"GUE_Soldier_1","GUE_Soldier_1","GUE_Soldier_1"};
+		hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\btr60_body_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\btr60_details_gue_co.paa"};	
 	};
 	class BTR40_MG_base_EP1 : Wheeled_APC
 	{
@@ -2399,6 +2444,24 @@ class CfgVehicles
 			initFov = 0.69999999;
 			maxFov = 0.85000002;
 			minFov = 0.41999999;
+		};
+
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"ca\wheeled_e\btr40\data\btr40ext.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\btr40ext_damage.rvmat", //"ca\wheeled_e\btr40\data\btr40ext_damage.rvmat",
+				"ca\wheeled_e\btr40\data\btr40ext_destruct.rvmat",
+
+				"ca\wheeled_e\btr40\data\btr40int.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\btr40int_damage.rvmat", //"ca\wheeled_e\btr40\data\btr40int_damage.rvmat",
+				"ca\wheeled_e\btr40\data\btr40int_destruct.rvmat",
+
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default_destruct.rvmat"
+			};
 		};
 	};
 	class BTR90_Base : Wheeled_APC
@@ -3238,6 +3301,23 @@ class CfgVehicles
 				};
 			};
 		};
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"Ca\Tracked_E\T55\data\t55_body.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\t55_body_damage.rvmat", //"Ca\Tracked_E\T55\data\t55_body_damage.rvmat",
+				"Ca\Tracked_E\T55\data\t55_body_destruct.rvmat",
+
+				"Ca\Tracked_E\T55\data\t55_tower.rvmat",
+				"CorePatch\CorePatch_Vehicles\textures\t55_tower_damage.rvmat", //"Ca\Tracked_E\T55\data\t55_tower_damage.rvmat",
+				"Ca\Tracked_E\T55\data\t55_tower_destruct.rvmat",
+
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default.rvmat",
+				"Ca\Ca_E\data\default_destruct.rvmat"
+			};
+		};
 	};
 	class T72_Base : Tank
 	{
@@ -3437,7 +3517,7 @@ class CfgVehicles
 		accuracy = 0.3;
 		crew = "GUE_Soldier_1";
 		typicalCargo[] = {"GUE_Soldier_1","GUE_Soldier_1","GUE_Soldier_1"};
-		hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\zsu_01_co.paa","\CorePatch\CorePatch_Vehicles\textures\zsu_02_co.paa","\CorePatch\CorePatch_Vehicles\textures\zsu_03_co.paa"};
+		hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\zsu_01_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\zsu_02_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\zsu_03_gue_co.paa"};
 	};
 	class Tracked_APC : Tank
 	{

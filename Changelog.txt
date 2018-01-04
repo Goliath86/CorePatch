@@ -1,6 +1,8 @@
 04/01/2018
 
 Fixed:
+	BRDM-2 had no damaged material
+	Damaged materials on T-55, BTR-60 and BTR-40 looks like fully destroyed ones
 	ZSU-23 Shilka guns elevation increased to more realistic 80 degrees
 	ZSU-23 Shilka geometry LOD fixed, no longer flips when aiming high up
 
