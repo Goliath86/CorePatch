@@ -3408,7 +3408,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};
-				maxElev = 57;
+				maxElev = 80;//57;
 
 				class Turrets : Turrets
 				{
@@ -3426,6 +3426,18 @@ class CfgVehicles
 				};
 			};
 		};
+
+		model = "\CorePatch\CorePatch_Vehicles\models\zsu";
+	};
+	class ZSU_Gue_CP : ZSU_Base
+	{
+		scope = 1;
+		side = 2;
+		faction = "GUE";
+		accuracy = 0.3;
+		crew = "GUE_Soldier_1";
+		typicalCargo[] = {"GUE_Soldier_1","GUE_Soldier_1","GUE_Soldier_1"};
+		hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\zsu_01_co.paa","\CorePatch\CorePatch_Vehicles\textures\zsu_02_co.paa","\CorePatch\CorePatch_Vehicles\textures\zsu_03_co.paa"};
 	};
 	class Tracked_APC : Tank
 	{

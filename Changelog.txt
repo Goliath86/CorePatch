@@ -1,3 +1,10 @@
+04/01/2018
+
+Fixed:
+	ZSU-23 Shilka guns elevation increased to more realistic 80 degrees
+	ZSU-23 Shilka geometry LOD fixed, no longer flips when aiming high up
+
+
 03/01/2018
 
 Added:

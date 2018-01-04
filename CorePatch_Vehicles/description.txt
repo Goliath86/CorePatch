@@ -24,6 +24,8 @@ Changed:
 	turret servo sound of some vehicles
 
 Fixed:
+	ZSU-23 Shilka guns elevation increased to more realistic 80 degrees
+	ZSU-23 Shilka geometry LOD fixed, no longer flips when aiming high up
 	MTVR driver proxy position
 	BMP-1 fire effects and PKT muzzle flash
 	BMP-1 effects when in water
