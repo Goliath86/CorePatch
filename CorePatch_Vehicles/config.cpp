@@ -739,6 +739,47 @@ class CfgVehicles
 			1,
 			40
 		};
+
+		class MFD
+		{
+			class AirplaneHUD
+			{
+				class Draw
+				{
+					class weapons
+					{
+						pos[] = {{0.06,0.84},1};
+						right[] = {{0.12,0.84},1};
+						down[] = {{0.06,0.88},1};
+						type = "text";
+						source = "weapon";
+						align = "right";
+						scale = 1;
+						sourceScale = 1;
+					};
+					class ammo
+					{
+						pos[] = {{0.06,0.89},1};
+						right[] = {{0.12,0.89},1};
+						down[] = {{0.06,0.93},1};
+						type = "text";
+						source = "ammo";
+						align = "right";
+						scale = 1;
+						sourceScale = 1;
+					};
+				};
+			};
+		};
+	};
+	class Su39 : Su25_base
+	{
+	};
+	class Su39_CP: Su39
+	{
+		scope = 1;
+		model = "\Corepatch\CorePatch_Vehicles\models\su25_cp";
+		magazines[] = {"750Rnd_30mm_GSh301","6Rnd_Ch29","2Rnd_R73","40Rnd_S8T","120Rnd_CMFlareMagazine"};
 	};
 	class Su34 : Plane
 	{
@@ -762,6 +803,41 @@ class CfgVehicles
 						minAngle = 360;
 					};
 				};
+				class Draw
+				{
+					class MGun
+					{
+						/*class Lines
+						{
+							points[] = {{"VelocityNotCenter",0.001,"WeaponAim",1,"HorizonBankMGun",{0.2,0},1},{"VelocityNotCenter",0.1,"WeaponAim",1,"HorizonBankMGun",{0.18,-0.01},1},{"VelocityNotCenter",0.2,"WeaponAim",1,"HorizonBankMGun",{0.16,-0.03},1},{"VelocityNotCenter",0.3,"WeaponAim",1,"HorizonBankMGun",{0.14,-0.06},1},{"VelocityNotCenter",0.4,"WeaponAim",1,"HorizonBankMGun",{0.12,-0.1},1},{"VelocityNotCenter",0.5,"WeaponAim",1,"HorizonBankMGun",{0.1,-0.15},1},{"VelocityNotCenter",0.6,"WeaponAim",1,"HorizonBankMGun",{0.08,-0.21},1},{"VelocityNotCenter",0.7,"WeaponAim",1,"HorizonBankMGun",{0.06,-0.28},1},{"VelocityNotCenter",0.8,"WeaponAim",1,"HorizonBankMGun",{0.04,-0.4},1},{},{"VelocityNotCenter",0.001,"WeaponAim",1,"HorizonBankMGun",{-0.2,0},1},{"VelocityNotCenter",0.1,"WeaponAim",1,"HorizonBankMGun",{-0.18,-0.01},1},{"VelocityNotCenter",0.2,"WeaponAim",1,"HorizonBankMGun",{-0.16,-0.03},1},{"VelocityNotCenter",0.3,"WeaponAim",1,"HorizonBankMGun",{-0.14,-0.06},1},{"VelocityNotCenter",0.4,"WeaponAim",1,"HorizonBankMGun",{-0.12,-0.1},1},{"VelocityNotCenter",0.5,"WeaponAim",1,"HorizonBankMGun",{-0.1,-0.15},1},{"VelocityNotCenter",0.6,"WeaponAim",1,"HorizonBankMGun",{-0.08,-0.21},1},{"VelocityNotCenter",0.7,"WeaponAim",1,"HorizonBankMGun",{-0.06,-0.28},1},{"VelocityNotCenter",0.8,"WeaponAim",1,"HorizonBankMGun",{-0.04,-0.4},1}};
+							type = "line";
+						};
+						condition = "mgun";*/
+						condition = "on";
+					};
+					class weapons
+					{
+						pos[] = {{0.06,0.84},1};
+						right[] = {{0.12,0.84},1};
+						down[] = {{0.06,0.88},1};
+						type = "text";
+						source = "weapon";
+						align = "right";
+						scale = 1;
+						sourceScale = 1;
+					};
+					class ammo
+					{
+						pos[] = {{0.06,0.89},1};
+						right[] = {{0.12,0.89},1};
+						down[] = {{0.06,0.93},1};
+						type = "text";
+						source = "ammo";
+						align = "right";
+						scale = 1;
+						sourceScale = 1;
+					};
+				};
 			};
 		};
 		class Turrets
@@ -775,6 +851,34 @@ class CfgVehicles
 			};
 		};
 		gunAimDown = 0; //0.145;
+	};
+	class Su34_CP : Su34
+	{
+		scope = 1;
+		model = "\Corepatch\CorePatch_Vehicles\models\su34_cp";
+		magazines[] = {
+			"180Rnd_30mm_GSh301",
+			"120Rnd_CMFlareMagazine"
+		};
+		weapons[] = {
+			"GSh301",
+			"CMFlareLauncher"
+		};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {
+					"8Rnd_Ch29",
+					"4Rnd_R73"
+				};
+				weapons[] = {
+					"Ch29Launcher_Su34",
+					"R73Launcher"
+				};
+			};
+		};
 	};
 	class Land : AllVehicles
 	{

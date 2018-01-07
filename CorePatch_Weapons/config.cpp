@@ -299,6 +299,14 @@ class CfgWeapons
 		};
 	};
 	class MissileLauncher;
+	class Ch29Launcher : MissileLauncher
+	{
+		magazines[] = {"4Rnd_Ch29","6Rnd_Ch29","8Rnd_Ch29"};
+	};
+	class Ch29Launcher_Su34 : Ch29Launcher
+	{
+		magazines[] = {"6Rnd_Ch29","4Rnd_Ch29","8Rnd_Ch29"};
+	};
 	class AT3Launcher : MissileLauncher
 	{
 		sound[] = {

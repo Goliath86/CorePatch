@@ -48,4 +48,9 @@ class CfgMagazines
 	{
 		tracersEvery = 3;
 	};
+	class 4Rnd_Ch29;
+	class 8Rnd_Ch29 : 4Rnd_Ch29
+	{
+		count = 8;
+	};
 };
