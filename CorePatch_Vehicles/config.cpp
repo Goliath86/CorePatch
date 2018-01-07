@@ -771,8 +771,10 @@ class CfgVehicles
 				gunnerCompartments = "Compartment1";
 				gunnerGetInAction = "GetInHigh";
 				gunnerGetOutAction = "GetOutHigh";
+				//primaryGunner = 0;
 			};
 		};
+		gunAimDown = 0; //0.145;
 	};
 	class Land : AllVehicles
 	{
