@@ -1,3 +1,9 @@
+09/01/2018
+
+Fixed:
+	HMMWV SOV had untextured frames in first person view, plus minor fixes
+
+
 08/01/2018
 
 Changed:

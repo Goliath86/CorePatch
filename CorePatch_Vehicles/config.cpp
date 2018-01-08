@@ -1219,6 +1219,8 @@ class CfgVehicles
 	};
 	class HMMWV_M998A2_SOV_DES_EP1 : HMMWV_Base
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\M998A2_sov";
+
 		soundGetIn[] = {
 			"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\get_in2",
 			0.56234133,
