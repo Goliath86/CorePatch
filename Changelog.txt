@@ -1,3 +1,12 @@
+08/01/2018
+
+Changed:
+	RPK magazine model adjusted to represent real magazine
+
+Fixed:
+	faulty textures and shadows on some CCP magazine models
+
+
 04/01/2018
 
 Fixed:

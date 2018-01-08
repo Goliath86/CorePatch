@@ -620,6 +620,9 @@ class CfgWeapons
 	class AK_74;
 	class RPK_74 : AK_74
 	{
+		picture = "\CorePatch\CorePatch_Weapons\textures\w_rpk_74_ca.paa";
+		model = "\CorePatch\CorePatch_Weapons\models\RPK_74";
+
 		class manual : Mode_FullAuto
 		{
 			delete displayName;

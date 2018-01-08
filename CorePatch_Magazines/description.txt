@@ -5,4 +5,5 @@ Changed:
 	number of every tracers in a belt of 1904Rnd_30mmAA_2A38M
 
 Fixed:
+	faulty textures and shadows on some CCP magazine models
 	some localization mistakes

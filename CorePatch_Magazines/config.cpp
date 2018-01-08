@@ -13,7 +13,7 @@ class CfgMagazines
 	class CA_LauncherMagazine;
 	class OG7 : CA_LauncherMagazine
 	{
-		picture = "\CorePatch\CorePatch_Magazines\M_OG7V_ca.paa";
+		picture = "\CorePatch\CorePatch_Magazines\textures\M_OG7V_ca.paa";
 	};
 	class CA_Magazine;
 	class 30Rnd_9x19_MP5SD : CA_Magazine
@@ -33,7 +33,10 @@ class CfgMagazines
 	{
 		delete displayName;
 	};
-	class 100Rnd_762x54_PK;
+	class 100Rnd_762x54_PK : CA_Magazine
+	{
+		model = "\CorePatch\CorePatch_Magazines\models\mag_pk";
+	};
 	class 60Rnd_762x54_DT : 100Rnd_762x54_PK
 	{
 		delete ammo;
@@ -52,5 +55,14 @@ class CfgMagazines
 	class 8Rnd_Ch29 : 4Rnd_Ch29
 	{
 		count = 8;
+	};
+	class 75Rnd_545x39_RPK: CA_Magazine
+	{
+		picture = "\CorePatch\CorePatch_Magazines\textures\m_rpk_74_ca.paa";
+		model = "\CorePatch\CorePatch_Magazines\models\mag_rpk";
+	};
+	class 5Rnd_762x51_M24: CA_Magazine
+	{
+		model = "\CorePatch\CorePatch_Magazines\models\mag_m24";
 	};
 };

@@ -10,6 +10,7 @@ Added:
 	zeroing function to some static weapons
 
 Changed:
+	RPK magazine model adjusted to represent real magazine
 	ACR pistol sounds rearrenged, better new ACR sounds are used
 	ACR SD pistol and SD EVO 3 sound configs adjusted to fit with other SD weapons
 	camera memory point of some sniper rifles
