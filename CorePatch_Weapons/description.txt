@@ -24,6 +24,7 @@ Changed:
 	shot sound of M32_heli, YakB and some cannons
 
 Fixed:
+	M240 M145 didn't move scope lenses during reload
 	ACR weapons are now OA-compatible
 	ACR EVO 3 was playing MP5 sounds instead of new ACR sounds
 	ACR CZ 750 used default M24 sound instead of new ACR sound

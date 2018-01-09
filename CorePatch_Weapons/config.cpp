@@ -934,6 +934,7 @@ class CfgWeapons
 	class M240;
 	class m240_scoped_EP1 : M240
 	{
+		model = "\CorePatch\CorePatch_Weapons\models\m240_scoped";
 		displayName = "$STR_DN_M240_SCOPED_CP";
 		optics = 1;
 		visionMode[] = {};
