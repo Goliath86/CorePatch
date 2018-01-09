@@ -4,7 +4,23 @@ class CfgPatches
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
-		units[] = {"Su39_CP", "Su34_CP"};
+		units[] = {
+			"Su39_CP",
+			"Su34_CP",
+			"BTR60_Gue_CP",
+			"ZSU_Gue_CP",
+			"ATV_TK_CP",
+			"ATV_RU_CP",
+			"ATV_Gue_CP",
+			"ATV_CIV_CP",
+			"ATV_CIV_Black_CP",
+			"ATV_CIV_Grey_CP",
+			"ATV_CIV_Red_CP",
+			"ATV_CIV_Green_CP",
+			"ATV_CIV_Blue_CP",
+			"ATV_CIV_Yellow_CP",
+			"ATV_CIV_Purple_CP",
+			"BMP1_INS_CP"
 		weapons[] = {};
 	};
 };
