@@ -21,6 +21,7 @@ class CfgPatches
 			"ATV_CIV_Yellow_CP",
 			"ATV_CIV_Purple_CP",
 			"BMP1_INS_CP"
+		};
 		weapons[] = {};
 	};
 };
