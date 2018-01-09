@@ -991,6 +991,8 @@ class CfgVehicles
 	};
 	class BAF_Jackal2_BASE_D : Car
 	{
+		extCameraPosition[] = {0.5, 2, -9};
+
 		soundGetIn[] = {
 			"\Ca\sounds_baf\wheeled\jackal_door",
 			1,
@@ -1014,6 +1016,8 @@ class CfgVehicles
 	};
 	class BAF_Jackal2_GMG_D : BAF_Jackal2_BASE_D
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\Jackal_GMG_BAF";
+
 		class Turrets : Turrets
 		{
 			class GMG_Turret : MainTurret
@@ -1034,8 +1038,14 @@ class CfgVehicles
 			};
 		};
 	};
+	class BAF_Jackal2_GMG_W : BAF_Jackal2_GMG_D
+	{
+		model = "\CorePatch\CorePatch_Vehicles\models\Jackal_GMG_W_BAF";
+	};
 	class BAF_Jackal2_L2A1_D : BAF_Jackal2_BASE_D
 	{
+		model = "\CorePatch\CorePatch_Vehicles\models\Jackal_L2A1_BAF";
+
 		class Turrets : Turrets
 		{
 			class M2_Turret : MainTurret
@@ -1055,6 +1065,10 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+	class BAF_Jackal2_L2A1_W : BAF_Jackal2_L2A1_D
+	{
+		model = "\CorePatch\CorePatch_Vehicles\models\Jackal_L2A1_W_BAF";
 	};
 	class Dingo_Base_ACR : Car
 	{
