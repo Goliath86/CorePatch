@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		requiredAddons[] = {"CorePatch"};
 		requiredVersion = 1.00;
-		units[] = {};
+		units[] = {"Su39_CP", "Su34_CP"};
 		weapons[] = {};
 	};
 };
