@@ -28,7 +28,7 @@ Fixed:
 	Jackal M2 Woodland had desert textures in gunner first person view
 	HMMWV SOV had untextured frames in first person view, plus minor fixes
 	BRDM-2 had no damaged material
-	Damaged materials on T-55, BTR-60 and BTR-40 looks like fully destroyed ones
+	Damaged materials on T-55, BTR-60 and BTR-40 looked like fully destroyed ones
 	ZSU-23 Shilka guns elevation increased to more realistic 80 degrees
 	ZSU-23 Shilka geometry LOD fixed, no longer flips when aiming high up
 	MTVR driver proxy position
