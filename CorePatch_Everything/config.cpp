@@ -7,7 +7,7 @@ class CfgPatches
 			"CorePatch_AdditionalMarkers",
 			"CorePatch_AdditionalObjects",
 			"CorePatch_Ammo",
-			"CorePatch_AntiProne",
+			// "CorePatch_AntiProne",
 			"CorePatch_Armory_Fix",
 			"CorePatch_CCP_62628",
 			"CorePatch_CCP_63107",
