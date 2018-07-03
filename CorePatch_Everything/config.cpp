@@ -131,6 +131,7 @@ class CfgPatches
 			"CorePatch_CIT_72718",
 			"CorePatch_Dubbing_Fix",
 			"CorePatch_FIS_Fix",
+			"CorePatch_Flares",
 			"CorePatch_GAU22",
 			"CorePatch_Javelin_Fix",
 			"CorePatch_LaserTargetCSide",

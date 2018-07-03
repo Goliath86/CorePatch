@@ -1,0 +1,1 @@
+Fixed a bug that occurred with launched flares (launched with a grenade launcher) that caused terrain and bushes to flicker at night (after 08:30pm)
