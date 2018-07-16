@@ -151,6 +151,37 @@ class CfgWeapons
 	class m16a4_acg: m16a4
 	{
 		model = "\CorePatch\CorePatch_CCP_63107\models\m16a4_acg";
+		class OpticsModes
+		{
+			class ACOG // 4x zoom
+			{
+				opticsID = 1;
+				useModelOptics = true;
+				opticsPPEffects[]={"OpticsCHAbera1","OpticsBlur1"};
+				opticsZoomMin = 0.0623;
+				opticsZoomMax = 0.0623;
+				opticsZoomInit= 0.0623;
+				memoryPointCamera = "opticView";
+				visionMode[] = {"Normal"};
+				opticsFlare = true;
+				opticsDisablePeripherialVision = true;
+				distanceZoomMin=300;
+				distanceZoomMax=300;
+				cameraDir = "";
+			};
+			class Kolimator:ACOG
+			{
+				opticsID = 2;
+				useModelOptics = false;
+				opticsFlare = false;
+				opticsDisablePeripherialVision = false;
+				opticsZoomMin=0.25;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.5;
+				memoryPointCamera = "eye";
+				visionMode[] = {};
+			};
+		};
 	};
 	class M4A1;
 	class M4A1_RCO_GL: M4A1

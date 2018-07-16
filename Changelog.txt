@@ -1,3 +1,26 @@
+13/07/2018
+
+Fixed:
+	MK19 Tripod misaligned optic views
+
+Added:	
+	CQB optic on ArmA 2 M16A4 with ACOG
+
+
+11/07/2018
+
+Reverted:
+	CorePatch_Antiprone is now disabled because of some issues (need more testing and investigation)
+
+Fixed:
+	Ambient Civilian Module (Expansion) now spawns only takistani civilians and no more western people
+	Fixed a typo on the "DSHKM_RU" on warfare (now it is "KORD_high")
+	Fixed arrays indexes on Config_Squads.sqf script file of warfare2_e
+	Fixed "Server_UpdateAirport.sqf" script not found error on Bear Rising mission
+	Fixed the "flickering textures" bug when launched a flare at night
+	Fixed some SOM module scripting errors
+	Fixed a script initialization error of Marta module
+
 09/01/2018
 
 Fixed:

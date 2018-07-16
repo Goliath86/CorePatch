@@ -1226,7 +1226,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100};
 				discreteDistanceInitIndex = 2;
 				turretInfoType = "RscWeaponZeroing";
 
@@ -1285,6 +1285,7 @@ class CfgVehicles
 	};
 	class MK19_TriPod : StaticGrenadeLauncher
 	{
+		model = "\CorePatch\CorePatch_Weapons\models\mk19_stat";
 		/* class AnimationSources
 		{
 			class ReloadAnim
@@ -1312,12 +1313,19 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
 				discreteDistanceInitIndex = 2;
 				turretInfoType = "RscWeaponZeroing";
 				weapons[] = {"MK19BC"};
 			};
 		};
+	};
+	class Mk19_TriPod_Base: Mk19_TriPod
+	{	
+		model = "\CorePatch\CorePatch_Weapons\models\mk19_stat";
+	};
+	class MK19_TriPod_US_EP1: MK19_TriPod_base
+	{
 	};
 	class StaticMGWeapon : StaticWeapon
 	{
