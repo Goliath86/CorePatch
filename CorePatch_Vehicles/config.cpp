@@ -1341,6 +1341,7 @@ class CfgVehicles
 	};
 	class M1114_AGS_ACR : HMMWV_M1151_M2_DES_Base_EP1
 	{
+		displayName = $STR_ACR_DN_HMMMX_AGS_CP;
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1355,6 +1356,10 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+	class M1114_DSK_ACR : HMMWV_M1151_M2_DES_Base_EP1
+	{
+		displayName = $STR_ACR_DN_HMMMX_DSHKM_CP;
 	};
 	class HMMWV_MK19 : HMMWV_Base
 	{
