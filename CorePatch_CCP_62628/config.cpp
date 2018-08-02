@@ -789,18 +789,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class SCAR_L_STD_EGLM_RCO : SCAR_L_STD_Mk4CQT
-	{
-		class OpticsModes
-		{
-			class ACOG;
-			class Kolimator : ACOG
-			{
-				distanceZoomMax = 50;
-				distanceZoomMin = 50;
-			};
-		};
-	};
 	class Sa58V_EP1;
 	class Sa58V_CCO_EP1 : Sa58V_EP1
 	{

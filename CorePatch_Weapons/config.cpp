@@ -886,12 +886,13 @@ class CfgWeapons
 		{
 			class ACOG
 			{
-				visionMode[] = {};
+				visionMode[] = {"Normal"};
 			};
 			class Kolimator : ACOG
 			{
 				delete visionMode;
-
+				distanceZoomMax = 50;
+				distanceZoomMin = 50;
 				opticsPPEffects[] = {};
 			};
 		};

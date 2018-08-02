@@ -1,3 +1,9 @@
+15/07/2018
+
+Fixed:
+	CQB optic on ArmA 2 M16A4 GL with ACOG
+
+
 13/07/2018
 
 Fixed:
