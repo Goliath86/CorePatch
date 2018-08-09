@@ -1881,6 +1881,8 @@ class CfgVehicles
 	};
 	class Offroad_DSHKM_base : Car
 	{
+		model="\Corepatch\CorePatch_Vehicles\models\hilux_DSHK";
+
 		soundGetIn[] = {
 			"\ca\sounds\vehicles\wheeled\offroad\ext\ext-offroad-getout-1",
 			0.25118864,
@@ -1900,6 +1902,8 @@ class CfgVehicles
 	};
 	class Offroad_SPG9_Gue : Offroad_DSHKM_base
 	{
+		model="\ca\wheeled_E\Hilux_Armed\hilux_SPG9";
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
