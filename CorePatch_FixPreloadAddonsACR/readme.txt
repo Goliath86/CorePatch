@@ -1,0 +1,1 @@
+Removes preloading of A2-only addons with ACR (and ACR-lite) installed, this fixes issues related to saving and loading campaigns in OA-only and some other setups.

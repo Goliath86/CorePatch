@@ -146,7 +146,8 @@ class CfgPatches
 			"CorePatch_Zargabad_Intro_Fix",
 			"CorePatch_Mi24",
 			"CorePatch_NoDestructionDamageToSomeBuildings",
-			"CorePatch_Mi8"
+			"CorePatch_Mi8",
+			"CorePatch_FixPreloadAddonsACR"
 		};
 		requiredVersion = 1.00;
 		units[] = {};
